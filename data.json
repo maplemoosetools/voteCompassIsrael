@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "election": "Israeli General Election",
+    "lastUpdated": "2026-06",
+    "language": "en",
+    "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
+  },
+  "topics": [
+    { "id": "economy", "label": "Economy & Cost of Living" },
+    { "id": "security", "label": "Security & Defense" },
+    { "id": "peace_process", "label": "Peace Process & Two-State Solution" },
+    { "id": "religion_state", "label": "Religion & State" },
+    { "id": "secular_society", "label": "Secular Society" },
+    { "id": "judiciary", "label": "Judiciary & Rule of Law" },
+    { "id": "housing", "label": "Housing" },
+    { "id": "public_transport", "label": "Public Transportation" },
+    { "id": "lgbtq", "label": "LGBTQ+ Rights" },
+    { "id": "arab_citizens", "label": "Arab Citizens of Israel" },
+    { "id": "ultra_orthodox", "label": "Ultra-Orthodox Integration" },
+    { "id": "environment", "label": "Environment & Climate" },
+    { "id": "healthcare", "label": "Healthcare" },
+    { "id": "education", "label": "Education" },
+    { "id": "immigration", "label": "Immigration & Diaspora" }
+  ],
+  "parties": [
+    {
+      "id": "likud",
+      "name": "Likud",
+      "nameHe": "הליכוד",
+      "color": "#1357BE",
+      "leader": "Benjamin Netanyahu",
+      "bloc": "Right",
+      "positions": [
+        {
+          "id": "likud_1",
+          "title": "Opposition to Palestinian State",
+          "summary": "Opposes the establishment of a Palestinian state west of the Jordan River. Advocates for Israeli security control over all territory between the river and the sea.",
+          "topics": ["peace_process", "security"]
+        },
+        {
+          "id": "likud_2",
+          "title": "Judicial Reform",
+          "summary": "Supports reforms to rebalance power between the Knesset and the judiciary, including changes to the override clause and judicial appointments committee.",
+          "topics": ["judiciary"]
+        },
+        {
+          "id": "likud_3",
+          "title": "Free-Market Economy",
+          "summary": "Favors privatization, reducing business regulation, and encouraging foreign investment to stimulate growth.",
+          "topics": ["economy"]
+        },
+        {
+          "id": "likud_4",
+          "title": "Settlement Expansion",
+          "summary": "Supports continued building in West Bank settlements and opposes settlement freezes as a precondition for negotiations.",
+          "topics": ["peace_process", "housing"]
+        },
+        {
+          "id": "likud_5",
+          "title": "Strong Military Response in Gaza",
+          "summary": "Advocates for continued military pressure until Hamas is dismantled and all hostages are returned.",
+          "topics": ["security"]
+        },
+        {
+          "id": "likud_6",
+          "title": "Status Quo on Religion and State",
+          "summary": "Generally maintains the status quo arrangement on religious affairs, including Shabbat observance laws, as part of coalition agreements.",
+          "topics": ["religion_state", "secular_society"]
+        }
+      ]
+    },
+    {
+      "id": "yesh_atid",
+      "name": "Yesh Atid",
+      "nameHe": "יש עתיד",
+      "color": "#00A0DC",
+      "leader": "Yair Lapid",
+      "bloc": "Center",
+      "positions": [
+        {
+          "id": "yatid_1",
+          "title": "Two-State Solution in Principle",
+          "summary": "Supports the framework of a two-state solution as a long-term goal, contingent on Palestinian recognition of Israel as a Jewish state and security guarantees.",
+          "topics": ["peace_process"]
+        },
+        {
+          "id": "yatid_2",
+          "title": "Ultra-Orthodox Military Conscription",
+          "summary": "Strongly advocates for mandatory IDF service for ultra-Orthodox men, viewing it as a matter of equal civic burden-sharing.",
+          "topics": ["ultra_orthodox", "religion_state", "secular_society"]
+        },
+        {
+          "id": "yatid_3",
+          "title": "Civil Marriage",
+          "summary": "Supports introducing civil marriage as an alternative to the rabbinate-controlled marriage system.",
+          "topics": ["religion_state", "secular_society", "lgbtq"]
+        },
+        {
+          "id": "yatid_4",
+          "title": "Judicial Independence",
+          "summary": "Strongly opposes judicial reform legislation, advocating for an independent judiciary as a cornerstone of Israeli democracy.",
+          "topics": ["judiciary"]
+        },
+        {
+          "id": "yatid_5",
+          "title": "Hostage Deal Priority",
+          "summary": "Places return of hostages as the top security priority, even if it requires pausing military operations.",
+          "topics": ["security", "peace_process"]
+        },
+        {
+          "id": "yatid_6",
+          "title": "Cost of Living Reform",
+          "summary": "Proposes reducing food and housing costs through breaking up monopolies, increasing competition, and reforming import regulations.",
+          "topics": ["economy", "housing"]
+        },
+        {
+          "id": "yatid_7",
+          "title": "Public Transit on Shabbat",
+          "summary": "Supports running public transportation on Shabbat in major cities, framing it as a matter of economic access and secular civic freedom.",
+          "topics": ["public_transport", "secular_society", "religion_state"]
+        }
+      ]
+    },
+    {
+      "id": "mafdal",
+      "name": "Mafdal–Religious Zionism",
+      "nameHe": "מפד\"ל – הציונות הדתית",
+      "color": "#F57C00",
+      "leader": "Bezalel Smotrich",
+      "bloc": "Far Right",
+      "positions": [
+        {
+          "id": "mafdal_1",
+          "title": "Israeli Sovereignty over All of Judea & Samaria",
+          "summary": "Advocates for full Israeli annexation of the West Bank. Opposes any Palestinian political sovereignty in the land of Israel.",
+          "topics": ["peace_process", "security"]
+        },
+        {
+          "id": "mafdal_2",
+          "title": "Jewish Law as Foundation of State Law",
+          "summary": "Believes Israeli law should be guided by halacha (Jewish law) in relevant domains, particularly family law and public life.",
+          "topics": ["religion_state"]
+        },
+        {
+          "id": "mafdal_3",
+          "title": "Encouragement of Arab Emigration",
+          "summary": "Has proposed incentivizing Arab citizens and Palestinian residents to voluntarily emigrate, a position widely condemned as discriminatory.",
+          "topics": ["arab_citizens", "peace_process"]
+        },
+        {
+          "id": "mafdal_4",
+          "title": "Settlement as National Mission",
+          "summary": "Views Jewish settlement throughout the Land of Israel as a religious and national imperative, with large budget allocations to settlements.",
+          "topics": ["peace_process", "housing", "religion_state"]
+        },
+        {
+          "id": "mafdal_5",
+          "title": "Opposition to LGBTQ+ Legal Rights",
+          "summary": "Opposes same-sex adoption, surrogacy rights, and legal recognition of same-sex partnerships under religious grounds.",
+          "topics": ["lgbtq", "religion_state"]
+        }
+      ]
+    },
+    {
+      "id": "avoda",
+      "name": "Labor",
+      "nameHe": "העבודה",
+      "color": "#E53935",
+      "leader": "Yair Golan",
+      "bloc": "Center-Left",
+      "positions": [
+        {
+          "id": "avoda_1",
+          "title": "Two-State Solution",
+          "summary": "Committed to a negotiated two-state solution based on 1967 borders with agreed land swaps, as the only path to lasting peace.",
+          "topics": ["peace_process"]
+        },
+        {
+          "id": "avoda_2",
+          "title": "Welfare State & Workers' Rights",
+          "summary": "Supports strengthening trade unions, raising the minimum wage, expanding social safety nets, and improving labor protections.",
+          "topics": ["economy"]
+        },
+        {
+          "id": "avoda_3",
+          "title": "Universal Healthcare Strengthening",
+          "summary": "Advocates for increased public investment in hospitals, reducing out-of-pocket medical costs, and expanding mental health coverage.",
+          "topics": ["healthcare"]
+        },
+        {
+          "id": "avoda_4",
+          "title": "Separation of Religion and State",
+          "summary": "Advocates for civil marriage, public transit on Shabbat, and reducing the Orthodox rabbinate's control over personal status law.",
+          "topics": ["religion_state", "secular_society", "public_transport"]
+        },
+        {
+          "id": "avoda_5",
+          "title": "Equal Civic Participation for Arab Citizens",
+          "summary": "Supports full integration of Arab citizens into the economy and public service, with targeted investment in Arab communities.",
+          "topics": ["arab_citizens"]
+        },
+        {
+          "id": "avoda_6",
+          "title": "Climate Action Plan",
+          "summary": "Proposes binding carbon reduction targets, investment in renewable energy, and phasing out coal by 2030.",
+          "topics": ["environment"]
+        }
+      ]
+    },
+    {
+      "id": "meretz",
+      "name": "Meretz",
+      "nameHe": "מרצ",
+      "color": "#43A047",
+      "leader": "Zehava Galon",
+      "bloc": "Left",
+      "positions": [
+        {
+          "id": "meretz_1",
+          "title": "Immediate Ceasefire & Negotiations",
+          "summary": "Calls for an immediate ceasefire in Gaza, the return of all hostages through negotiation, and a political horizon for Palestinian statehood.",
+          "topics": ["peace_process", "security"]
+        },
+        {
+          "id": "meretz_2",
+          "title": "Full LGBTQ+ Equality",
+          "summary": "Supports same-sex marriage, joint adoption, and full legal equality for LGBTQ+ individuals, including surrogacy rights.",
+          "topics": ["lgbtq", "secular_society"]
+        },
+        {
+          "id": "meretz_3",
+          "title": "Complete Separation of Religion and State",
+          "summary": "Advocates for ending state funding of religious institutions, abolishing the rabbinate's monopoly on marriage, and fully secular public space.",
+          "topics": ["religion_state", "secular_society"]
+        },
+        {
+          "id": "meretz_4",
+          "title": "Progressive Taxation",
+          "summary": "Proposes a wealth tax and higher marginal income tax rates to fund public services and reduce inequality.",
+          "topics": ["economy"]
+        },
+        {
+          "id": "meretz_5",
+          "title": "Arab-Jewish Coexistence",
+          "summary": "Strongly supports equal rights for Arab citizens, Arabic as a genuinely co-equal official language in practice, and joint Arab-Jewish political projects.",
+          "topics": ["arab_citizens"]
+        },
+        {
+          "id": "meretz_6",
+          "title": "Green New Deal for Israel",
+          "summary": "Proposes major public investment in renewable energy, free public transit, and binding emissions law as climate emergency response.",
+          "topics": ["environment", "public_transport"]
+        }
+      ]
+    },
+    {
+      "id": "shas",
+      "name": "Shas",
+      "nameHe": "ש\"ס",
+      "color": "#7B1FA2",
+      "leader": "Aryeh Deri",
+      "bloc": "Right (Haredi-Sephardi)",
+      "positions": [
+        {
+          "id": "shas_1",
+          "title": "Yeshiva Student Draft Exemptions",
+          "summary": "Firmly opposes mandatory IDF conscription for yeshiva students, viewing Torah study as an equal national contribution.",
+          "topics": ["ultra_orthodox", "religion_state"]
+        },
+        {
+          "id": "shas_2",
+          "title": "Religious Marriage Law",
+          "summary": "Defends the rabbinate's sole authority over Jewish marriage and divorce in Israel. Opposes civil marriage.",
+          "topics": ["religion_state", "secular_society"]
+        },
+        {
+          "id": "shas_3",
+          "title": "Mizrahi Community Investment",
+          "summary": "Prioritizes budgets for Sephardi and Mizrahi communities, including religious schools (talmudei torah) and community centers.",
+          "topics": ["education", "economy"]
+        },
+        {
+          "id": "shas_4",
+          "title": "Social Welfare for Large Families",
+          "summary": "Advocates for generous child allowances and subsidized housing targeted at large religious families.",
+          "topics": ["economy", "housing"]
+        },
+        {
+          "id": "shas_5",
+          "title": "No Public Transit on Shabbat",
+          "summary": "Strongly opposes any public transportation on Shabbat, viewing it as a violation of the Jewish character of the state.",
+          "topics": ["public_transport", "religion_state", "secular_society"]
+        }
+      ]
+    },
+    {
+      "id": "hadash_taal",
+      "name": "Hadash–Ta'al",
+      "nameHe": "חד\"ש–תע\"ל",
+      "color": "#00897B",
+      "leader": "Ayman Odeh / Ahmad Tibi",
+      "bloc": "Arab-Jewish Left",
+      "positions": [
+        {
+          "id": "hadash_1",
+          "title": "End of Occupation",
+          "summary": "Calls for full Israeli withdrawal from the occupied territories and establishment of a Palestinian state alongside Israel based on 1967 borders.",
+          "topics": ["peace_process", "security"]
+        },
+        {
+          "id": "hadash_2",
+          "title": "Equal Rights for Arab Citizens",
+          "summary": "Advocates for full equality in law and practice for Arab citizens, including combating systemic discrimination in housing, employment, and policing.",
+          "topics": ["arab_citizens"]
+        },
+        {
+          "id": "hadash_3",
+          "title": "Bilingual State Services",
+          "summary": "Demands that all state services, signage, and official communications be fully available in Arabic as well as Hebrew.",
+          "topics": ["arab_citizens", "education"]
+        },
+        {
+          "id": "hadash_4",
+          "title": "Workers' Rights & Anti-Privatization",
+          "summary": "Opposes privatization of public utilities, advocates for strong labor law enforcement, and supports expanding the public sector.",
+          "topics": ["economy"]
+        },
+        {
+          "id": "hadash_5",
+          "title": "Secular Democratic State",
+          "summary": "Advocates for a state based on civic rather than ethnic or religious identity, with full separation of religion and state.",
+          "topics": ["religion_state", "secular_society", "lgbtq"]
+        },
+        {
+          "id": "hadash_6",
+          "title": "Dismantling of Nuclear Arsenal",
+          "summary": "Calls for a nuclear-free Middle East and Israeli participation in non-proliferation treaties.",
+          "topics": ["security"]
+        }
+      ]
+    }
+  ]
+}

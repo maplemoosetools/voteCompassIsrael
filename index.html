@@ -1,209 +1,913 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Israel VoteCompass</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vote Compass Israel — Compare Party Platforms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1B3A6B;
+      --navy-light: #2a5298;
+      --sand: #F5F0E8;
+      --sand-dark: #EDE7D9;
+      --crimson: #C0392B;
+      --crimson-light: #e74c3c;
+      --gray: #6B7280;
+      --gray-light: #D1D5DB;
+      --gray-xlight: #F3F4F6;
+      --white: #FFFFFF;
+      --text: #111827;
+      --text-muted: #4B5563;
+      --col-width: 260px;
+      --label-col: 220px;
+      --header-h: 64px;
+      --filter-w: 300px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── TOP BAR ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    header .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+    header .logo span {
+      display: block;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.04em;
+    }
+    header .spacer { flex: 1; }
+    header .disclaimer-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 4px 10px;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    header .disclaimer-btn:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+    header .filter-toggle {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--white);
+      background: rgba(255,255,255,0.12);
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s;
+      flex-shrink: 0;
+    }
+    header .filter-toggle:hover { background: rgba(255,255,255,0.2); }
+    header .filter-toggle .filter-badge {
+      background: var(--crimson);
+      color: #fff;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 1px 7px;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    /* ── LAYOUT ── */
+    .app-body {
+      display: flex;
+      position: relative;
+    }
+
+    /* ── FILTER PANEL ── */
+    .filter-panel {
+      position: fixed;
+      top: var(--header-h);
+      right: 0;
+      width: var(--filter-w);
+      height: calc(100vh - var(--header-h));
+      background: var(--white);
+      border-left: 1px solid var(--gray-light);
+      box-shadow: -4px 0 16px rgba(0,0,0,0.08);
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+    }
+    .filter-panel.open { transform: translateX(0); }
+
+    .filter-panel-head {
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid var(--gray-light);
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      z-index: 1;
+    }
+    .filter-panel-head h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .filter-panel-head p {
+      font-size: 0.75rem;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+
+    .filter-section {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .filter-section h3 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    /* Party checkboxes */
+    .party-check-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .party-check-item:hover { background: var(--gray-xlight); margin: 0 -4px; padding: 6px 4px; }
+    .party-check-item input[type="checkbox"] { display: none; }
+    .party-swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      border: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .party-check-item input:checked ~ .party-label-wrap .party-swatch { border-color: var(--navy); }
+    .party-check-box {
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--gray-light);
+      border-radius: 3px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .party-check-item.checked .party-check-box {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .party-check-box::after {
+      content: '';
+      display: none;
+      width: 4px;
+      height: 7px;
+      border: 2px solid white;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translateY(-1px);
+    }
+    .party-check-item.checked .party-check-box::after { display: block; }
+    .party-check-label {
+      flex: 1;
+      min-width: 0;
+    }
+    .party-check-name {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .party-check-bloc {
+      font-size: 0.7rem;
+      color: var(--gray);
+      margin-top: 1px;
+    }
+
+    /* Topic checkboxes */
+    .topic-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 5px 0;
+      cursor: pointer;
+    }
+    .topic-check-item:hover .topic-check-box { border-color: var(--navy); }
+    .topic-check-box {
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--gray-light);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .topic-check-item.checked .topic-check-box {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .topic-check-box::after {
+      content: '';
+      display: none;
+      width: 3px;
+      height: 6px;
+      border: 1.5px solid white;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translateY(-1px);
+    }
+    .topic-check-item.checked .topic-check-box::after { display: block; }
+    .topic-check-content {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .topic-check-name {
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .topic-hidden-counts {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex-shrink: 0;
+    }
+    .topic-hidden-pill {
+      font-size: 0.65rem;
+      font-weight: 600;
+      border-radius: 20px;
+      padding: 1px 5px;
+      color: white;
+      min-width: 18px;
+      text-align: center;
+      opacity: 0.85;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      transition: margin-right 0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+    .main-content.panel-open {
+      margin-right: var(--filter-w);
+    }
+
+    /* ── SELECTOR BAR ── */
+    .selector-bar {
+      background: var(--sand);
+      border-bottom: 1px solid var(--sand-dark);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .selector-bar-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gray);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .party-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: white;
+      cursor: default;
+    }
+    .party-tag .remove-party {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      border: none;
+      color: white;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: background 0.15s;
+    }
+    .party-tag .remove-party:hover { background: rgba(255,255,255,0.4); }
+    .no-parties-hint {
+      font-size: 0.8rem;
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .table-scroll-wrapper {
+      overflow-x: auto;
+      overflow-y: visible;
+    }
+
+    table.compare {
+      border-collapse: collapse;
+      width: max-content;
+      min-width: 100%;
+      table-layout: fixed;
+    }
+    table.compare col.label-col { width: var(--label-col); }
+    table.compare col.party-col { width: var(--col-width); }
+
+    /* Sticky party header row */
+    table.compare thead tr th {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 50;
+      background: var(--white);
+      border-bottom: 3px solid var(--gray-light);
+      padding: 0;
+      vertical-align: bottom;
+    }
+    table.compare thead tr th.label-th {
+      background: var(--white);
+      z-index: 51;
+      left: 0;
+    }
+    .party-header-cell {
+      padding: 16px 16px 14px;
+      text-align: left;
+    }
+    .party-header-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .party-header-name {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      vertical-align: middle;
+    }
+    .party-header-leader {
+      font-size: 0.72rem;
+      color: var(--gray);
+      margin-top: 3px;
+    }
+    .party-header-bloc {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-top: 6px;
+      color: white;
+    }
+
+    /* Topic group header rows */
+    tr.topic-group-header td {
+      background: var(--navy);
+      color: white;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      padding: 8px 16px;
+      position: sticky;
+      left: 0;
+    }
+    tr.topic-group-header td[colspan] {
+      position: static;
+    }
+
+    /* Position rows */
+    tr.position-row td {
+      vertical-align: top;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--gray-light);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    tr.position-row:nth-child(even) td { background: var(--sand); }
+    tr.position-row:nth-child(odd) td { background: var(--white); }
+    tr.position-row td.label-td {
+      position: sticky;
+      left: 0;
+      z-index: 10;
+      font-weight: 600;
+      font-size: 0.78rem;
+      color: var(--navy);
+      border-right: 2px solid var(--gray-light);
+    }
+    tr.position-row:nth-child(even) td.label-td { background: var(--sand); }
+    tr.position-row:nth-child(odd) td.label-td { background: var(--white); }
+
+    .position-title {
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .position-summary {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .position-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 8px;
+    }
+    .position-topic-tag {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: var(--sand-dark);
+      color: var(--navy);
+    }
+    .no-position-cell {
+      color: var(--gray-light);
+      font-size: 0.75rem;
+      font-style: italic;
+      padding: 14px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    tr.position-row:nth-child(even) td.no-position-cell { background: var(--sand); }
+    tr.position-row:nth-child(odd) td.no-position-cell { background: var(--white); }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      padding: 80px 24px;
+      text-align: center;
+      color: var(--gray);
+    }
+    .empty-state .icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    .empty-state h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .empty-state p {
+      font-size: 0.85rem;
+      max-width: 360px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ── DISCLAIMER MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 28px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .modal h2 {
+      font-family: 'Libre Baskerville', serif;
+      color: var(--navy);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .modal p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .modal button.close-modal {
+      margin-top: 8px;
+      background: var(--navy);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 9px 20px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .modal button.close-modal:hover { background: var(--navy-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--gray);
+      border-top: 1px solid var(--gray-light);
+      margin-top: 24px;
+    }
+    footer a { color: var(--navy); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--gray-xlight); }
+    ::-webkit-scrollbar-thumb { background: var(--gray-light); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--gray); }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <div class="container mx-auto p-4 max-w-3xl">
-    <h1 class="text-3xl font-bold text-center mb-6">Israel VoteCompass</h1>
-    <div id="quiz" class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-xl font-semibold mb-4">Question <span id="questionNumber">1</span>/<span id="totalQuestions"></span></h2>
-      <p id="questionText" class="mb-4"></p>
-      <div class="space-y-4">
-        <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 answer" data-value="2">Strongly Agree</button>
-        <button class="w-full bg-blue-400 text-white py-2 rounded hover:bg-blue-500 answer" data-value="1">Agree</button>
-        <button class="w-full bg-gray-400 text-white py-2 rounded hover:bg-gray-500 answer" data-value="0">Neutral</button>
-        <button class="w-full bg-blue-400 text-white py-2 rounded hover:bg-blue-500 answer" data-value="-1">Disagree</button>
-        <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 answer" data-value="-2">Strongly Disagree</button>
-      </div>
-      <div class="mt-6 flex justify-between">
-        <button id="prev" class="bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Previous</button>
-        <button id="next" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Next</button>
-      </div>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    Vote Compass Israel
+    <span>Party Platform Comparison</span>
+  </div>
+  <div class="spacer"></div>
+  <button class="disclaimer-btn" onclick="openDisclaimer()">About this tool</button>
+  <button class="filter-toggle" id="filterToggleBtn" onclick="toggleFilter()">
+    ☰ Filters
+    <span class="filter-badge" id="activeTopicCount">—</span>
+  </button>
+</header>
+
+<!-- DISCLAIMER MODAL -->
+<div class="modal-overlay" id="disclaimerModal">
+  <div class="modal">
+    <h2>About Vote Compass Israel</h2>
+    <p>This tool summarizes and compares the published platforms and public positions of Israeli political parties. It is intended as a research aid for voters.</p>
+    <p>Platform positions are simplified summaries. Always consult each party's official platform before making decisions. This tool does not endorse any party or position.</p>
+    <p>Data is maintained in <code>data.json</code> — contributions and corrections are welcome via GitHub.</p>
+    <button class="close-modal" onclick="closeDisclaimer()">Got it</button>
+  </div>
+</div>
+
+<!-- APP BODY -->
+<div class="app-body">
+
+  <!-- FILTER PANEL -->
+  <div class="filter-panel" id="filterPanel">
+    <div class="filter-panel-head">
+      <h2>Filter</h2>
+      <p>Select parties to compare and topics you care about.</p>
     </div>
-    <div id="results" class="hidden bg-white p-6 rounded-lg shadow-md mt-6">
-      <h2 class="text-xl font-semibold mb-4">Your Political Alignment</h2>
-      <canvas id="compassChart" class="mb-4"></canvas>
-      <p id="resultText" class="text-center"></p>
-      <button id="restart" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Take Quiz Again</button>
+
+    <div class="filter-section">
+      <h3>Parties</h3>
+      <div id="partyCheckList"></div>
+    </div>
+
+    <div class="filter-section">
+      <h3>Topics</h3>
+      <p style="font-size:0.72rem;color:var(--gray);margin-bottom:10px;">Unchecked topics show a tally of hidden positions per party.</p>
+      <div id="topicCheckList"></div>
     </div>
   </div>
 
-  <script>
-    const questions = [
-      { text: "Israel should prioritize security and military strength over diplomatic solutions.", axis: "security" },
-      { text: "The government should increase funding for social welfare programs.", axis: "economic" },
-      { text: "Settlements in the West Bank should be expanded.", axis: "security" },
-      { text: "The government should reduce taxes to stimulate economic growth.", axis: "economic" },
-      { text: "Religious laws should play a larger role in Israeli governance.", axis: "religious" },
-      { text: "A two-state solution is a viable path to peace with the Palestinians.", axis: "security" },
-      { text: "The government should invest more in public transportation infrastructure.", axis: "economic" },
-      { text: "Haredi exemptions from military service should be maintained.", axis: "religious" },
-      { text: "Israel should strengthen ties with the United States over other global allies.", axis: "security" },
-      { text: "Economic inequality in Israel needs to be addressed through government intervention.", axis: "economic" }
-    ];
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="mainContent">
 
-    const parties = [
-      { name: "Likud", security: 4, economic: 3, religious: 2 },
-      { name: "Yesh Atid", security: 1, economic: 1, religious: -2 },
-      { name: "National Unity", security: 3, economic: 0, religious: 0 },
-      { name: "Shas", security: 2, economic: 2, religious: 4 },
-      { name: "United Torah Judaism", security: 1, economic: 1, religious: 5 },
-      { name: "Religious Zionist Party", security: 5, economic: 2, religious: 3 },
-      { name: "Labor", security: -1, economic: -3, religious: -2 },
-      { name: "Meretz", security: -2, economic: -4, religious: -3 }
-    ];
+    <!-- SELECTED PARTIES BAR -->
+    <div class="selector-bar" id="selectorBar">
+      <span class="selector-bar-label">Comparing:</span>
+      <div id="selectedPartiesTags"></div>
+    </div>
 
-    let currentQuestion = 0;
-    let userScores = { security: 0, economic: 0, religious: 0 };
-    const totalQuestions = questions.length;
+    <!-- TABLE AREA -->
+    <div class="table-scroll-wrapper">
+      <div id="tableContainer"></div>
+    </div>
 
-    document.getElementById("totalQuestions").textContent = totalQuestions;
-    displayQuestion();
+    <footer>
+      Data last updated: <span id="lastUpdated"></span> &nbsp;|&nbsp;
+      <a href="https://github.com/maplemoosetools/votecompassisrael" target="_blank">View on GitHub</a> &nbsp;|&nbsp;
+      Contribute corrections via pull request
+    </footer>
+  </div>
+</div>
 
-    function displayQuestion() {
-      document.getElementById("questionNumber").textContent = currentQuestion + 1;
-      document.getElementById("questionText").textContent = questions[currentQuestion].text;
-      document.getElementById("prev").disabled = currentQuestion === 0;
-    }
+<script>
+  let DATA = null;
+  let selectedParties = new Set();
+  let selectedTopics = new Set();
+  let filterOpen = false;
 
-    document.querySelectorAll(".answer").forEach(button => {
-      button.addEventListener("click", () => {
-        const value = parseInt(button.dataset.value);
-        const axis = questions[currentQuestion].axis;
-        userScores[axis] += value;
-        currentQuestion++;
-        if (currentQuestion < totalQuestions) {
-          displayQuestion();
+  // ── LOAD DATA ──
+  fetch('data.json')
+    .then(r => r.json())
+    .then(data => {
+      DATA = data;
+      document.getElementById('lastUpdated').textContent = data.meta.lastUpdated;
+      // Default: select all parties and all topics
+      data.parties.forEach(p => selectedParties.add(p.id));
+      data.topics.forEach(t => selectedTopics.add(t.id));
+      renderFilterPanel();
+      renderTable();
+    })
+    .catch(err => {
+      document.getElementById('tableContainer').innerHTML =
+        `<div class="empty-state"><div class="icon">⚠️</div><h2>Could not load data</h2><p>Make sure <code>data.json</code> is in the same directory as this file.</p></div>`;
+    });
+
+  // ── FILTER TOGGLE ──
+  function toggleFilter() {
+    filterOpen = !filterOpen;
+    document.getElementById('filterPanel').classList.toggle('open', filterOpen);
+    document.getElementById('mainContent').classList.toggle('panel-open', filterOpen);
+  }
+
+  // ── DISCLAIMER ──
+  function openDisclaimer() { document.getElementById('disclaimerModal').classList.add('open'); }
+  function closeDisclaimer() { document.getElementById('disclaimerModal').classList.remove('open'); }
+  document.getElementById('disclaimerModal').addEventListener('click', function(e) {
+    if (e.target === this) closeDisclaimer();
+  });
+
+  // ── RENDER FILTER PANEL ──
+  function renderFilterPanel() {
+    renderPartyChecks();
+    renderTopicChecks();
+    updateFilterBadge();
+  }
+
+  function renderPartyChecks() {
+    const container = document.getElementById('partyCheckList');
+    container.innerHTML = '';
+    DATA.parties.forEach(party => {
+      const checked = selectedParties.has(party.id);
+      const item = document.createElement('label');
+      item.className = 'party-check-item' + (checked ? ' checked' : '');
+      item.style.cursor = 'pointer';
+      item.innerHTML = `
+        <div class="party-check-box"></div>
+        <div class="party-check-label">
+          <div class="party-check-name">
+            <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${party.color};margin-right:6px;vertical-align:middle;"></span>
+            ${party.name}
+          </div>
+          <div class="party-check-bloc">${party.leader} · ${party.bloc}</div>
+        </div>
+      `;
+      item.addEventListener('click', () => {
+        if (selectedParties.has(party.id)) {
+          selectedParties.delete(party.id);
         } else {
-          showResults();
+          selectedParties.add(party.id);
         }
+        renderFilterPanel();
+        renderTable();
       });
+      container.appendChild(item);
     });
+  }
 
-    document.getElementById("prev").addEventListener("click", () => {
-      if (currentQuestion > 0) {
-        currentQuestion--;
-        displayQuestion();
-      }
-    });
+  function renderTopicChecks() {
+    const container = document.getElementById('topicCheckList');
+    container.innerHTML = '';
 
-    document.getElementById("next").addEventListener("click", () => {
-      if (currentQuestion < totalQuestions - 1) {
-        currentQuestion++;
-        displayQuestion();
-      }
-    });
+    // For each topic, for each selected party, count positions tagged with that topic that are NOT shown (topic unchecked)
+    DATA.topics.forEach(topic => {
+      const checked = selectedTopics.has(topic.id);
+      const item = document.createElement('div');
+      item.className = 'topic-check-item' + (checked ? ' checked' : '');
 
-    document.getElementById("restart").addEventListener("click", () => {
-      currentQuestion = 0;
-      userScores = { security: 0, economic: 0, religious: 0 };
-      document.getElementById("quiz").classList.remove("hidden");
-      document.getElementById("results").classList.add("hidden");
-      displayQuestion();
-    });
-
-    function showResults() {
-      document.getElementById("quiz").classList.add("hidden");
-      document.getElementById("results").classList.remove("hidden");
-
-      const distances = parties.map(party => ({
-        name: party.name,
-        distance: Math.sqrt(
-          Math.pow(party.security - userScores.security, 2) +
-          Math.pow(party.economic - userScores.economic, 2) +
-          Math.pow(party.religious - userScores.religious, 2)
-        )
-      }));
-
-      distances.sort((a, b) => a.distance - b.distance);
-      const closestParty = distances[0].name;
-      document.getElementById("resultText").textContent = `Your views are closest to ${closestParty}.`;
-
-      const ctx = document.getElementById("compassChart").getContext("2d");
-      new Chart(ctx, {
-        type: "scatter",
-        data: {
-          datasets: [
-            {
-              label: "Your Position",
-              data: [{ x: userScores.security, y: userScores.economic }],
-              backgroundColor: "red",
-              pointRadius: 10
-            },
-            ...parties.map(party => ({
-              label: party.name,
-              data: [{ x: party.security, y: party.economic }],
-              backgroundColor: getPartyColor(party.name),
-              pointRadius: 8
-            }))
-          ]
-        },
-        options: {
-          scales: {
-            x: { title: { display: true, text: "Security (Hawkish to Dovish)" }, min: -5, max: 5 },
-            y: { title: { display: true, text: "Economic (Left to Right)" }, min: -5, max: 5 }
+      // Build hidden count pills for unchecked topics
+      let pillsHTML = '';
+      if (!checked) {
+        const activeParts = DATA.parties.filter(p => selectedParties.has(p.id));
+        activeParts.forEach(party => {
+          const count = party.positions.filter(pos => pos.topics.includes(topic.id)).length;
+          if (count > 0) {
+            pillsHTML += `<span class="topic-hidden-pill" style="background:${party.color}" title="${party.name}: ${count} position${count>1?'s':''}">${count}</span>`;
           }
+        });
+      }
+
+      item.innerHTML = `
+        <div class="topic-check-box"></div>
+        <div class="topic-check-content">
+          <span class="topic-check-name">${topic.label}</span>
+          <div class="topic-hidden-counts">${pillsHTML}</div>
+        </div>
+      `;
+      item.addEventListener('click', () => {
+        if (selectedTopics.has(topic.id)) {
+          selectedTopics.delete(topic.id);
+        } else {
+          selectedTopics.add(topic.id);
         }
+        renderFilterPanel();
+        renderTable();
       });
+      container.appendChild(item);
+    });
+  }
+
+  function updateFilterBadge() {
+    const badge = document.getElementById('activeTopicCount');
+    badge.textContent = selectedTopics.size + '/' + DATA.topics.length;
+  }
+
+  // ── RENDER TABLE ──
+  function renderTable() {
+    const container = document.getElementById('tableContainer');
+    const tagsContainer = document.getElementById('selectedPartiesTags');
+
+    const activeParties = DATA.parties.filter(p => selectedParties.has(p.id));
+
+    // Render selector bar tags
+    if (activeParties.length === 0) {
+      tagsContainer.innerHTML = '<span class="no-parties-hint">No parties selected — use Filters to add parties</span>';
+    } else {
+      tagsContainer.innerHTML = activeParties.map(p =>
+        `<span class="party-tag" style="background:${p.color}">
+          ${p.name}
+          <button class="remove-party" onclick="removeParty('${p.id}')" title="Remove ${p.name}">✕</button>
+        </span>`
+      ).join('');
     }
 
-    function getPartyColor(partyName) {
-      const colors = {
-        "Likud": "#003087",
-        "Yesh Atid": "#00A1D6",
-        "National Unity": "#4B0082",
-        "Shas": "#FFD700",
-        "United Torah Judaism": "#000000",
-        "Religious Zionist Party": "#228B22",
-        "Labor": "#FF0000",
-        "Meretz": "#008000"
-      };
-      return colors[partyName] || "#000000";
+    if (activeParties.length === 0) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="icon">🗳️</div>
+          <h2>No parties selected</h2>
+          <p>Open Filters and select at least one party to begin comparing platforms.</p>
+        </div>`;
+      return;
     }
-  </script>
+
+    // Get active topics
+    const activeTopicIds = new Set(selectedTopics);
+    const activeTopics = DATA.topics.filter(t => activeTopicIds.has(t.id));
+
+    if (activeTopics.length === 0) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="icon">🔎</div>
+          <h2>No topics selected</h2>
+          <p>Open Filters and select at least one topic to display positions.</p>
+        </div>`;
+      return;
+    }
+
+    // Build table
+    // For each active topic, collect all positions from all parties tagged with that topic
+    // Build a flat list of "rows" per topic
+    let tableHTML = `<table class="compare">`;
+
+    // colgroup
+    tableHTML += `<colgroup><col class="label-col" />`;
+    activeParties.forEach(() => { tableHTML += `<col class="party-col" />`; });
+    tableHTML += `</colgroup>`;
+
+    // thead
+    tableHTML += `<thead><tr>`;
+    tableHTML += `<th class="label-th"><div class="party-header-cell" style="color:var(--gray);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;padding-bottom:16px;">Topic / Position</div></th>`;
+    activeParties.forEach(party => {
+      const blocColor = getBlocColor(party.bloc);
+      tableHTML += `<th>
+        <div class="party-header-cell">
+          <div><span class="party-header-dot" style="background:${party.color}"></span><span class="party-header-name">${party.name}</span></div>
+          <div class="party-header-leader">${party.leader}</div>
+          <div><span class="party-header-bloc" style="background:${blocColor}">${party.bloc}</span></div>
+        </div>
+      </th>`;
+    });
+    tableHTML += `</tr></thead><tbody>`;
+
+    // For each topic, gather all unique positions across selected parties tagged with that topic
+    activeTopics.forEach(topic => {
+      // Gather all positions for this topic from all active parties
+      const positionsByParty = {};
+      activeParties.forEach(party => {
+        positionsByParty[party.id] = party.positions.filter(pos => pos.topics.includes(topic.id));
+      });
+
+      const maxRows = Math.max(...activeParties.map(p => positionsByParty[p.id].length), 0);
+      if (maxRows === 0) return; // skip topic with no data
+
+      // Topic group header
+      tableHTML += `<tr class="topic-group-header">
+        <td colspan="${activeParties.length + 1}">${topic.label}</td>
+      </tr>`;
+
+      // Position rows
+      for (let i = 0; i < maxRows; i++) {
+        // Row label: just the row index or blank
+        tableHTML += `<tr class="position-row"><td class="label-td">${i === 0 ? '' : ''}</td>`;
+        activeParties.forEach(party => {
+          const pos = positionsByParty[party.id][i];
+          if (pos) {
+            const topicTags = pos.topics.map(tid => {
+              const t = DATA.topics.find(x => x.id === tid);
+              return t ? `<span class="position-topic-tag">${t.label}</span>` : '';
+            }).join('');
+            tableHTML += `<td>
+              <div class="position-title">${pos.title}</div>
+              <div class="position-summary">${pos.summary}</div>
+              <div class="position-topics">${topicTags}</div>
+            </td>`;
+          } else {
+            tableHTML += `<td class="no-position-cell">—</td>`;
+          }
+        });
+        tableHTML += `</tr>`;
+      }
+    });
+
+    tableHTML += `</tbody></table>`;
+    container.innerHTML = tableHTML;
+  }
+
+  function removeParty(id) {
+    selectedParties.delete(id);
+    renderFilterPanel();
+    renderTable();
+  }
+
+  function getBlocColor(bloc) {
+    const map = {
+      'Right': '#1B3A6B',
+      'Far Right': '#7B1FA2',
+      'Center-Right': '#2a5298',
+      'Center': '#00A0DC',
+      'Center-Left': '#E53935',
+      'Left': '#43A047',
+      'Arab-Jewish Left': '#00897B',
+      'Right (Haredi-Sephardi)': '#6D4C41',
+    };
+    return map[bloc] || '#6B7280';
+  }
+</script>
 </body>
 </html>
