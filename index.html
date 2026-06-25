@@ -166,6 +166,19 @@
       width: max-content;
       min-width: unset;
     }
+    .phcard-details {
+      background: var(--card);
+      border-left: 1px solid var(--divider);
+      border-bottom: 12px solid var(--bg);
+      padding: 10px 16px 12px;
+      margin: 0 4px;
+      height: 100%;
+      text-align: center;
+    }
+    tr.details-row td { padding: 0; vertical-align: top; height: 1px; }
+    tr.details-row td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
+    tr.details-row td:nth-child(2) .phcard-details { margin-left: 0; }
+    tr.details-row td:last-child   .phcard-details { margin-right: 24px; }
 
     /* ── OUTER SCROLL ── */
     .outer {
@@ -209,6 +222,7 @@
       padding: 13px 16px 11px;
       margin: 0 4px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+      text-align: center;
     }
     thead th { padding: 0; vertical-align: bottom; background: var(--bg); }
     thead th.lth { position: sticky; left: 0; z-index: 80; height: 1px; background: var(--bg); }
@@ -218,7 +232,7 @@
     .phc-name {
       font-family: 'Libre Baskerville', serif;
       font-size: 0.95rem; font-weight: 700; color: var(--text);
-      display: flex; align-items: center; gap: 7px;
+      display: flex; align-items: center; justify-content: center; gap: 7px;
     }
     .phc-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
     .phc-leader { font-size: 0.68rem; color: var(--text-faint); margin-top: 4px; padding-left: 15px; }
@@ -433,7 +447,7 @@
 
 <script>
 let DATA = null;
-let selectedParties = ['likud', 'beyahad_together'];
+let selectedParties = ['likud', 'beyahad_together','yisrael_beiteinu'];
 let selectedTopics  = new Set();
 
 fetch('data.json')
@@ -534,16 +548,25 @@ function renderTable() {
   parties.forEach(p => {
     html += `<th><div class="phcard" style="--pc:${p.color}">
       <div class="phc-name"><span class="phc-dot" style="background:${p.color}"></span>${p.name}</div>
-      <div class="phc-leader">${p.leader}</div>
-      <span class="phc-bloc" style="background:${blocColor(p.bloc)}">${p.bloc}</span>
-      ${p.topline ? `<div class="phc-topline">${p.topline}</div>` : ''}
-      ${p.website ? `<a class="phc-website" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
     </div></th>`;
   });
   html += `</tr></thead></table></div>`;
 
   /* ── BODY TABLE ── */
   html += `<div class="outer"><table class="ct">${colgroup}<tbody>`;
+  html += `<tr class="details-row">`;
+  html += `<td class="ltd"><div class="section-label-cell" style="border-bottom:3px solid var(--divider);">
+    <span class="section-label-text">Party Details</span>
+  </div></td>`;
+  parties.forEach(p => {
+    html += `<td><div class="phcard-details">
+      <div class="phc-leader" style="margin-top:0; padding-left:0;">${p.leader}</div>
+      <span class="phc-bloc" style="background:${blocColor(p.bloc)};margin-left:0;">${p.bloc}</span>
+      ${p.topline ? `<div class="phc-topline" style="margin-left:0;">${p.topline}</div>` : ''}
+      ${p.website ? `<a class="phc-website" style="margin-left:0;" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
+    </div></td>`;
+  });
+  html += `</tr>`;
 
   groups.forEach(({ topic, byParty }) => {
     html += `<tr class="drow">`;
