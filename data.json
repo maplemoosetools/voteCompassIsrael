@@ -6,7 +6,7 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
-    { "id": "economy",         "label": "Economy & Cost of Living" },
+    { "id": "economy",         "label": "Economy" },
     { "id": "security",        "label": "Security & Defense" },
     { "id": "internal_security","label": "Internal Security and Law Enforcement" },
     { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
@@ -16,28 +16,25 @@
     { "id": "transit",         "label": "Transit and Transportation" },
     { "id": "liberal_rights",  "label": "Liberal Rights" },
     { "id": "arab_citizens",   "label": "Arab Citizens of Israel" },
-    { "id": "haredi",           "label": "Haredi Sector" },
+    { "id": "haredi",          "label": "Haredi Sector" },
     { "id": "environment",     "label": "Environment & Climate" },
     { "id": "healthcare",      "label": "Healthcare" },
     { "id": "education",       "label": "Education" },
-    { "id": "aliyah",           "label": "Immigration & Diaspora" },
-    { "id": "_oct7",            "label": "October 7th" },
+    { "id": "aliyah",          "label": "Immigration & Diaspora" },
+    { "id": "_oct7",           "label": "October 7th" },
     { "id": "palestinians",    "label": "Palestinians" },
-    { "id": "draft",            "label": "Army Enlistment and Draft" },
-    { "id": "cost_of_living",      "label": "Cost of Living" },
+    { "id": "draft",           "label": "Army Enlistment and Draft" },
+    { "id": "cost_of_living",  "label": "Cost of Living" },
     { "id": "international_relations",       "label": "International Relations" },      
-    { "id": "government",      "label": "Governemnt" },
-    { "id": "local_government",    "label": "Local Government" },
-    { "id": "periphery",         "label": "The Periphery" },
-    { "id": "retirees",   "label": "Retirees and Pensioners" },
-    { "id": "veterans",         "label": "Veterans" },
+    { "id": "government",      "label": "Government" },
+    { "id": "local_government","label": "Local Government" },
+    { "id": "periphery",       "label": "The Periphery" },
+    { "id": "retirees",        "label": "Retirees and Pensioners" },
+    { "id": "veterans",        "label": "Veterans" },
     { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
-    { "id": "gaza",        "label": "Gaza" },
-    { "id": "occupation",  "label": "Occupation" },
-    { "id": "west_bank",   "label": "West Bank" },
-    { "id": "constitution","label": "Constitution" },
-    { "id": "knesset",     "label": "Knesset" },
-    { "id": "ultra_orthodox","label": "Ultra-Orthodox Integration" }
+    { "id": "media",           "label": "Culture and Media" },
+    { "id": "constitution",    "label": "Constitution" },
+    { "id": "workers",         "label": "Employment and workers" }
   ],
   "parties": [
     {
@@ -92,7 +89,7 @@
     {
       "id": "beyahad_together",
       "name": "BeYahad (Together)",
-      "color": "#23C2EB",
+      "color": "#005EB8",
       "leader": "Naftali Bennet <br> Yair Lapid",
       "bloc": "Opposition - Center to Center Right",
       "website": "https://go.be-yahad.org.il/",
@@ -529,23 +526,6 @@
       ]
     },
     {
-      "id": "jointarab",
-      "name": "Joint Arab List",
-      "nameHe": "ביחד",
-      "color": "#B01E1E",
-      "leader": "Naftali Bennett",
-      "key-people": ["Naftali Bennett", "Yair Lapid"],
-      "bloc": "Opposition - Arab, Left",
-      "positions": [
-        {
-          "id": "by_1",
-          "title": "Annexation of Gaza & Jewish Resettlement",
-          "summary": "Advocates for full Israeli annexation of the Gaza Strip and the establishment of Jewish settlements there following military operations.",
-          "topics": ["peace_process", "security", "housing"]
-        }
-      ]
-    },
-    {
       "id": "yisrael_beiteinu",
       "name": "Yisrael Beiteinu",
       "color": "#23C2EB",
@@ -766,6 +746,226 @@
             "https://beytenu.org.il/party-platform/",
             "https://beytenu.org.il/%d7%94%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%a9%d7%9c-%d7%9c%d7%99%d7%91%d7%a8%d7%9e%d7%9f-%d7%9c%d7%99%d7%95%d7%9d-%d7%a9%d7%90%d7%97%d7%a8%d7%99-%d7%a8%d7%90%d7%99%d7%95%d7%9f-%d7%9c%d7%95%d7%95/"
           ]
+        }
+      ]
+    },
+    {
+      "id": "hadash",
+      "name": "Hadash",
+      "color": "#D61922",
+      "leader": "Yousef Jabareen",
+      "bloc": "Opposition - Arab, Communist",
+      "website": "https://hadash.org.il/",
+      "positions": [
+        {
+          "id": "hadash_1",
+          "title": "Israeli-Palestinian and Israeli-Arab Peace",
+          "summary": "Regional peace based on:\n1. Israeli withdrawal to the Green Line, including leaving 'Arab Jerusalem', which will become the capital of Palestine\n2. Israeli withdrawl from the Golan Heights, occupied Syria, and occupied Lebanon\n3. A solution to the Palestinian Refugee problem, per UN resolutions\n4. Dismantelling settlements in the West Bank",
+          "topics": [
+            "security",
+            "pal_statehood",
+            "palestinian_territories",
+            "peace_process",
+            "periphary"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_2",
+          "title": "Israeli Political Neutrality",
+          "summary": "Cancellation of the strategic alliance between Israel and the US, and Israeli neutrality",
+          "topics": [
+            "security",
+            "international_relations"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_3",
+          "title": "Reducing military spending",
+          "summary": "Reducing military spending, and ending all funding for settlements.",
+          "topics": [
+            "security",
+            "economy",
+            "palestinian_territories"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_4",
+          "title": "Workers rights and conditions",
+          "summary": "Protect workers rights and improving working and living conditions. \nGuarenteeing jobs for anyone that wants them. Fighting layoff and unemployment, and ensuring full unemployment benefits.\nFighting descrimination.\nRepealing any laws that limit workers rights, the right to assembly, or the right to strike.",
+          "topics": [
+            "workers",
+            "economy",
+            "welfare",
+            "liberal_rights"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_5",
+          "title": "Guarenteeing Social Services",
+          "summary": "Guarenteering the right to social services, including free healthcare, housing, and decent living conditions.",
+          "topics": [
+            "liberal_rights",
+            "welfare",
+            "healthcare"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_6",
+          "title": "Funding culture and sports",
+          "summary": "Increase funding for culture and sports, both infrastructure and development.",
+          "topics": [
+            "media"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_7",
+          "title": "Equality for Arabs",
+          "summary": "Recognize the Arab/Palestinian community as a national minority in the political, cultural, and social spaces.\nEnd discriminatory policies.\nDesignate Arabic as an official language equivalent to Hebrew",
+          "topics": [
+            "arab_citizens",
+            "liberal_rights"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_8",
+          "title": "Arab housing rights",
+          "summary": "End land confiscation and house demolitions. Recognition of all Arab communities. Establish local authorities for those communities. \nEqual allocation of funding between Arab and Jewish local authorities. \nFund construction in slus and then give them to families in exchange for their old, unlivable apartments.",
+          "topics": [
+            "arab_citizens",
+            "liberal_rights",
+            "local_government"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_9",
+          "title": "Palestinian Refugees",
+          "summary": "Give Palestinian refugees Israeli citizenship.",
+          "topics": [
+            "arab_citizens",
+            "liberal_rights"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_10",
+          "title": "Arab economy",
+          "summary": "Designate Arab towns and communities as development zones. Fund development, housing, education, ect. Encourage building factories in development zones.",
+          "topics": [
+            "arab_citizens",
+            "local_government",
+            "economy"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_11",
+          "title": "Crime in Arab communities",
+          "summary": "Combat sectarian divisions and fighting in Arab communities.",
+          "topics": [
+            "arab_citizens",
+            "internal_security"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_12",
+          "title": "Muslim religious organizations",
+          "summary": "Release funding to Islamic Waqfs, and respect the right of the Arab public to establish their own religious bodies.",
+          "topics": [
+            "religion_state"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_13",
+          "title": "No draft for the Druze",
+          "summary": "Abolish mandatory draft for the Druze community",
+          "topics": [
+            "draft",
+            "arab_citizens"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_14",
+          "title": "Accept Arab academics and scholars",
+          "summary": "Open the doors of academic institutions to Arab academics",
+          "topics": [
+            "arab_citizens",
+            "education"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_15",
+          "title": "Israeli Constitution",
+          "summary": "Adopt a constitution that protects human and civil rights, defines Israel as a secular country, and ensures equality",
+          "topics": [
+            "religion_state",
+            "constitution",
+            "liberal_rights"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_16",
+          "title": "Protecting liberal rights",
+          "summary": "Fight racism and fascism. Protect the freedom of the press, assembly, political activity, concience, and relgious rights.\nRecognize the right to refuse to serve in Palestinian territories.\nRepeal laws that enable religious coersion",
+          "topics": [
+            "religion_state",
+            "palestinian_territories",
+            "liberal_rights",
+            "media"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_17",
+          "title": "Protecting the Knesset",
+          "summary": "Reject any changes to the proportional electoral system",
+          "topics": [
+            "government",
+            "constitution"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_18",
+          "title": "Womens rights",
+          "summary": "Repealing discrimanetory laws. Enact a law guarenteeing equal rights for women, based on UN declarations.\nEnforce laws against domestic violence, and increase resources for victims of violence.\nIncrease womens representation in the governement and public institutions",
+          "topics": [
+            "liberal_rights",
+            "healthcare"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_19",
+          "title": "Environmental protection",
+          "summary": "Increase funding for environmental protection and combatting pollution. Protecting water, seas, and rivers. Build sewage treatment plants and plumbing in all towns.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://hadash.org.il/"
+        },
+        {
+          "id": "hadash_20",
+          "title": "Banning weapons of mass destruction",
+          "summary": "Make weapons of mass descruction illegal. Join the Non-Proliferation Treaty. Make the Middle East a nuclear free zone. Get rid of Israel's nuclear weapons.",
+          "topics": [
+            "environment",
+            "security",
+            "international_relations"
+          ],
+          "source": "https://hadash.org.il/"
         }
       ]
     }

@@ -511,7 +511,21 @@ function toggleParty(id) {
 
 function toggleTopic(tid) {
   selectedTopics.has(tid) ? selectedTopics.delete(tid) : selectedTopics.add(tid);
+  const outer = document.querySelector('.outer');
+  const scrollTop = outer ? outer.scrollTop : 0;
+  const scrollLeft = outer ? outer.scrollLeft : 0;
+  const atBottom = outer ? (outer.scrollTop + outer.clientHeight >= outer.scrollHeight - 10) : false;
   render();
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const newOuter = document.querySelector('.outer');
+    if (!newOuter) return;
+    newOuter.scrollLeft = scrollLeft;
+    if (atBottom) {
+      newOuter.scrollTop = newOuter.scrollHeight;
+    } else {
+      newOuter.scrollTop = scrollTop;
+    }
+  }));
 }
 
 /* ── TABLE ── */
@@ -616,7 +630,10 @@ function renderTable() {
     html += `<td><div class="cbox-card"><div class="cbox-head">${p.name}</div>`;
     DATA.topics.forEach(topic => {
       const on = selectedTopics.has(topic.id);
-      const hidden = !on ? p.positions.filter(pos => pos.topics.includes(topic.id)).length : 0;
+      const hidden = !on ? p.positions.filter(pos => 
+        pos.topics.includes(topic.id) && 
+        !pos.topics.some(t => selectedTopics.has(t))
+      ).length : 0;
       const badge = (!on && hidden > 0)
         ? `<span class="cbox-badge" style="background:${p.color}">${hidden}</span>` : '';
       html += `<div class="cbox-item ${on?'on':''}" onclick="toggleTopic('${topic.id}')">
