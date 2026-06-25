@@ -5,909 +5,645 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vote Compass Israel — Compare Party Platforms</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #1B3A6B;
-      --navy-light: #2a5298;
-      --sand: #F5F0E8;
-      --sand-dark: #EDE7D9;
-      --crimson: #C0392B;
-      --crimson-light: #e74c3c;
-      --gray: #6B7280;
-      --gray-light: #D1D5DB;
-      --gray-xlight: #F3F4F6;
-      --white: #FFFFFF;
-      --text: #111827;
-      --text-muted: #4B5563;
-      --col-width: 260px;
-      --label-col: 220px;
-      --header-h: 64px;
-      --filter-w: 300px;
+      --bg:           #f0f0f0;
+      --bg2:          #e4e4e4;
+      --card:         #FFFFFF;
+      --surface:      #F8F6F3;
+      --header-bg:    #0e4f97;
+      --header-bg2:   #1e5ca3;
+      --text:         #000000;
+      --text-muted:   #3f3e3c;
+      --text-faint:   #A09890;
+      --divider:      #E0DDD8;
+      --label-bg:     #FFFFFF;
+      --label-border: #D4CFC8;
+      --section-bg:   #FFFFFF;
+      --section-text: #3A3028;
+      --shadow-sm:    0 1px 3px rgba(0,0,0,0.08);
+      --radius:       10px;
+      --radius-sm:    5px;
+      --col-width:    500px;
+      --label-w:      38px;
+      --header-h:     56px;
     }
 
     body {
       font-family: 'DM Sans', sans-serif;
-      background: var(--white);
+      background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
     }
 
-    /* ── TOP BAR ── */
+    /* ── HEADER ── */
+    .phcard {
+      min-height: 0px;
+    }
+    .phc-topline {
+      font-size: 0.72rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-top: 8px;
+      margin-left: 15px;
+      line-height: 1.45;
+    }
+    .phc-website {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--text-faint);
+      text-decoration: none;
+      margin-top: 7px;
+      margin-left: 15px;
+      letter-spacing: 0.02em;
+      transition: color .15s;
+    }
+    .phc-website:hover { color: var(--text); }
     header {
+      position: relative;
+      background: var(--header-bg);
+      height: var(--header-h);
+      display: flex; align-items: center;
+      padding: 0 24px; gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.05rem; font-weight: 700; color: #fff; line-height: 1.15;
+    }
+    .logo-sub {
+      display: block; font-family: 'DM Sans', sans-serif;
+      font-weight: 400; font-size: 0.64rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.07em; text-transform: uppercase; margin-top: 3px;
+    }
+    .hdr-gap { flex: 1; }
+    .about-btn {
+      font-size: 0.72rem; color: rgba(255,255,255,0.5);
+      background: none; border: 1px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius-sm); padding: 5px 13px;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      transition: color .15s, border-color .15s;
+    }
+    .about-btn:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+
+    /* ── PARTY SELECTOR BAR ── */
+    .party-selector-bar {
+      position: relative;
+      background: var(--header-bg2);
+      padding: 10px 24px;
+      display: flex; align-items: center;
+      gap: 8px; flex-wrap: wrap;
+      border-bottom: 2px solid rgba(0,0,0,0.2);
+    }
+    .sel-lbl {
+      font-size: 0.64rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: rgba(255,255,255,0.32); flex-shrink: 0;
+      margin-right: 4px;
+    }
+    .party-btn {
+      position: relative;
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px 4px 9px;
+      border-radius: 20px;
+      font-size: 0.75rem; font-weight: 600;
+      color: #fff;
+      border: 2px solid transparent;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: opacity .15s, transform .1s;
+      white-space: nowrap;
+    }
+    .party-btn.selected {
+      opacity: 1;
+      border-color: rgba(255,255,255,0.4);
+    }
+    .party-btn.unselected {
+      opacity: 0.38;
+    }
+    .party-btn.unselected:hover { opacity: 0.6; }
+    .party-btn-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.6); flex-shrink: 0;
+    }
+    .party-btn-rank {
+      position: absolute;
+      top: -5px; right: -5px;
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      font-size: 0.55rem; font-weight: 700;
+      border-radius: 50%;
+      width: 14px; height: 14px;
+      display: flex; align-items: center; justify-content: center;
+      line-height: 1;
+    }
+
+    /* ── ADD PARTY DROPDOWN (kept for data compat, hidden) ── */
+    .add-dd { display: none; }
+
+    /* ── PARTY HEADER — sticky ── */
+    .party-header-scroll {
+      overflow-x: scroll;
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--navy);
-      height: var(--header-h);
-      display: flex;
-      align-items: center;
-      padding: 0 24px;
-      gap: 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      background: var(--bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 100%;
     }
-    header .logo {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.2;
-      flex-shrink: 0;
-    }
-    header .logo span {
-      display: block;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.6);
-      letter-spacing: 0.04em;
-    }
-    header .spacer { flex: 1; }
-    header .disclaimer-btn {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.55);
-      background: none;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 4px;
-      padding: 4px 10px;
-      cursor: pointer;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    header .disclaimer-btn:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
-    header .filter-toggle {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--white);
-      background: rgba(255,255,255,0.12);
-      border: none;
-      border-radius: 6px;
-      padding: 8px 16px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.15s;
-      flex-shrink: 0;
-    }
-    header .filter-toggle:hover { background: rgba(255,255,255,0.2); }
-    header .filter-toggle .filter-badge {
-      background: var(--crimson);
-      color: #fff;
-      border-radius: 20px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 1px 7px;
-      min-width: 20px;
-      text-align: center;
-    }
-
-    /* ── LAYOUT ── */
-    .app-body {
-      display: flex;
-      position: relative;
-    }
-
-    /* ── FILTER PANEL ── */
-    .filter-panel {
-      position: fixed;
-      top: var(--header-h);
-      right: 0;
-      width: var(--filter-w);
-      height: calc(100vh - var(--header-h));
-      background: var(--white);
-      border-left: 1px solid var(--gray-light);
-      box-shadow: -4px 0 16px rgba(0,0,0,0.08);
-      overflow-y: auto;
-      transform: translateX(100%);
-      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
-      z-index: 90;
-      display: flex;
-      flex-direction: column;
-    }
-    .filter-panel.open { transform: translateX(0); }
-
-    .filter-panel-head {
-      padding: 20px 20px 16px;
-      border-bottom: 1px solid var(--gray-light);
-      position: sticky;
-      top: 0;
-      background: var(--white);
-      z-index: 1;
-    }
-    .filter-panel-head h2 {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 4px;
-    }
-    .filter-panel-head p {
-      font-size: 0.75rem;
-      color: var(--gray);
-      line-height: 1.4;
-    }
-
-    .filter-section {
-      padding: 16px 20px;
-      border-bottom: 1px solid var(--gray-light);
-    }
-    .filter-section h3 {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--gray);
-      margin-bottom: 12px;
-    }
-
-    /* Party checkboxes */
-    .party-check-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 6px 0;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .party-check-item:hover { background: var(--gray-xlight); margin: 0 -4px; padding: 6px 4px; }
-    .party-check-item input[type="checkbox"] { display: none; }
-    .party-swatch {
-      width: 16px;
-      height: 16px;
-      border-radius: 3px;
-      flex-shrink: 0;
-      border: 2px solid transparent;
-      transition: border-color 0.15s;
-    }
-    .party-check-item input:checked ~ .party-label-wrap .party-swatch { border-color: var(--navy); }
-    .party-check-box {
-      width: 16px;
-      height: 16px;
-      border: 2px solid var(--gray-light);
-      border-radius: 3px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.15s, border-color 0.15s;
-    }
-    .party-check-item.checked .party-check-box {
-      background: var(--navy);
-      border-color: var(--navy);
-    }
-    .party-check-box::after {
-      content: '';
-      display: none;
-      width: 4px;
-      height: 7px;
-      border: 2px solid white;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg) translateY(-1px);
-    }
-    .party-check-item.checked .party-check-box::after { display: block; }
-    .party-check-label {
-      flex: 1;
-      min-width: 0;
-    }
-    .party-check-name {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .party-check-bloc {
-      font-size: 0.7rem;
-      color: var(--gray);
-      margin-top: 1px;
-    }
-
-    /* Topic checkboxes */
-    .topic-check-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 5px 0;
-      cursor: pointer;
-    }
-    .topic-check-item:hover .topic-check-box { border-color: var(--navy); }
-    .topic-check-box {
-      width: 14px;
-      height: 14px;
-      border: 2px solid var(--gray-light);
-      border-radius: 2px;
-      flex-shrink: 0;
-      margin-top: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.15s, border-color 0.15s;
-    }
-    .topic-check-item.checked .topic-check-box {
-      background: var(--navy);
-      border-color: var(--navy);
-    }
-    .topic-check-box::after {
-      content: '';
-      display: none;
-      width: 3px;
-      height: 6px;
-      border: 1.5px solid white;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg) translateY(-1px);
-    }
-    .topic-check-item.checked .topic-check-box::after { display: block; }
-    .topic-check-content {
-      flex: 1;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 6px;
-    }
-    .topic-check-name {
-      font-size: 0.8rem;
-      color: var(--text);
-      line-height: 1.4;
-    }
-    .topic-hidden-counts {
-      display: flex;
-      gap: 4px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      flex-shrink: 0;
-    }
-    .topic-hidden-pill {
-      font-size: 0.65rem;
-      font-weight: 600;
-      border-radius: 20px;
-      padding: 1px 5px;
-      color: white;
-      min-width: 18px;
-      text-align: center;
-      opacity: 0.85;
-    }
-
-    /* ── MAIN CONTENT ── */
-    .main-content {
-      flex: 1;
-      min-width: 0;
-      transition: margin-right 0.28s cubic-bezier(0.4,0,0.2,1);
-    }
-    .main-content.panel-open {
-      margin-right: var(--filter-w);
-    }
-
-    /* ── SELECTOR BAR ── */
-    .selector-bar {
-      background: var(--sand);
-      border-bottom: 1px solid var(--sand-dark);
-      padding: 12px 24px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .selector-bar-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--gray);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      flex-shrink: 0;
-    }
-    .party-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px 10px 5px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: white;
-      cursor: default;
-    }
-    .party-tag .remove-party {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.25);
-      border: none;
-      color: white;
-      font-size: 0.75rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      transition: background 0.15s;
-    }
-    .party-tag .remove-party:hover { background: rgba(255,255,255,0.4); }
-    .no-parties-hint {
-      font-size: 0.8rem;
-      color: var(--gray);
-      font-style: italic;
-    }
-
-    /* ── COMPARISON TABLE ── */
-    .table-scroll-wrapper {
-      overflow-x: auto;
-      overflow-y: visible;
-    }
-
-    table.compare {
+    .party-header-scroll::-webkit-scrollbar { display: none; }
+    table.header-table {
       border-collapse: collapse;
-      width: max-content;
-      min-width: 100%;
       table-layout: fixed;
-    }
-    table.compare col.label-col { width: var(--label-col); }
-    table.compare col.party-col { width: var(--col-width); }
-
-    /* Sticky party header row */
-    table.compare thead tr th {
-      position: sticky;
-      top: var(--header-h);
-      z-index: 50;
-      background: var(--white);
-      border-bottom: 3px solid var(--gray-light);
-      padding: 0;
-      vertical-align: bottom;
-    }
-    table.compare thead tr th.label-th {
-      background: var(--white);
-      z-index: 51;
-      left: 0;
-    }
-    .party-header-cell {
-      padding: 16px 16px 14px;
-      text-align: left;
-    }
-    .party-header-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: 6px;
-      vertical-align: middle;
-    }
-    .party-header-name {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--text);
-      vertical-align: middle;
-    }
-    .party-header-leader {
-      font-size: 0.72rem;
-      color: var(--gray);
-      margin-top: 3px;
-    }
-    .party-header-bloc {
-      display: inline-block;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 20px;
-      margin-top: 6px;
-      color: white;
+      width: max-content;
+      min-width: unset;
     }
 
-    /* Topic group header rows */
-    tr.topic-group-header td {
-      background: var(--navy);
-      color: white;
-      font-family: 'Libre Baskerville', serif;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      padding: 8px 16px;
-      position: sticky;
-      left: 0;
+    /* ── OUTER SCROLL ── */
+    .outer {
+      overflow-x: scroll;
+      overflow-y: auto;
+      padding: 0 0 48px 0;
+      flex: 1;
     }
-    tr.topic-group-header td[colspan] {
-      position: static;
+    .outer::-webkit-scrollbar { height: 8px; }
+    .outer::-webkit-scrollbar-track { background: var(--bg2); }
+    .outer::-webkit-scrollbar-thumb { background: #c8c3bc; border-radius: 4px; }
+    .outer::-webkit-scrollbar-thumb:hover { background: #a8a39c; }
+    
+    /* ── TABLE ── */
+    table.ct {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: max-content;
+      min-width: unset;
     }
+    col.lcol { width: var(--label-w); }
+    col.pcol  { width: var(--col-width); }
 
-    /* Position rows */
-    tr.position-row td {
-      vertical-align: top;
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--gray-light);
-      font-size: 0.82rem;
-      line-height: 1.55;
-    }
-    tr.position-row:nth-child(even) td { background: var(--sand); }
-    tr.position-row:nth-child(odd) td { background: var(--white); }
-    tr.position-row td.label-td {
-      position: sticky;
-      left: 0;
-      z-index: 10;
-      font-weight: 600;
-      font-size: 0.78rem;
-      color: var(--navy);
-      border-right: 2px solid var(--gray-light);
-    }
-    tr.position-row:nth-child(even) td.label-td { background: var(--sand); }
-    tr.position-row:nth-child(odd) td.label-td { background: var(--white); }
-
-    .position-title {
-      font-weight: 600;
-      font-size: 0.82rem;
-      color: var(--text);
-      margin-bottom: 4px;
-    }
-    .position-summary {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-    .position-topics {
+    /* corner cell */
+    .lth-inner {
+      background: var(--section-bg);
+      border-bottom: 3px solid var(--label-border);
+      border-right: 1px solid var(--divider);
+      height: 100%;
+      margin-left: 24px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 8px;
-    }
-    .position-topic-tag {
-      font-size: 0.62rem;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      padding: 2px 6px;
-      border-radius: 3px;
-      background: var(--sand-dark);
-      color: var(--navy);
-    }
-    .no-position-cell {
-      color: var(--gray-light);
-      font-size: 0.75rem;
-      font-style: italic;
-      padding: 14px 16px;
-      vertical-align: top;
-      border-bottom: 1px solid var(--gray-light);
-    }
-    tr.position-row:nth-child(even) td.no-position-cell { background: var(--sand); }
-    tr.position-row:nth-child(odd) td.no-position-cell { background: var(--white); }
-
-    /* ── EMPTY STATE ── */
-    .empty-state {
-      padding: 80px 24px;
-      text-align: center;
-      color: var(--gray);
-    }
-    .empty-state .icon {
-      font-size: 3rem;
-      margin-bottom: 16px;
-    }
-    .empty-state h2 {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1.3rem;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-    .empty-state p {
-      font-size: 0.85rem;
-      max-width: 360px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* ── DISCLAIMER MODAL ── */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
-      z-index: 200;
       align-items: center;
       justify-content: center;
-      padding: 24px;
     }
-    .modal-overlay.open { display: flex; }
-    .modal {
-      background: var(--white);
-      border-radius: 8px;
-      padding: 28px;
-      max-width: 480px;
-      width: 100%;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+
+    /* party header card */
+    .phcard {
+      background: var(--card);
+      border-top: 4px solid var(--pc, #888);
+      border-bottom: 3px solid var(--divider);
+      padding: 13px 16px 11px;
+      margin: 0 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.12);
     }
-    .modal h2 {
+    thead th { padding: 0; vertical-align: bottom; background: var(--bg); }
+    thead th.lth { position: sticky; left: 0; z-index: 80; height: 1px; background: var(--bg); }
+    thead th:nth-child(2) .phcard { margin-left: 0; }
+    thead th:last-child   .phcard { margin-right: 24px; }
+
+    .phc-name {
       font-family: 'Libre Baskerville', serif;
-      color: var(--navy);
-      font-size: 1.1rem;
-      margin-bottom: 12px;
+      font-size: 0.95rem; font-weight: 700; color: var(--text);
+      display: flex; align-items: center; gap: 7px;
     }
-    .modal p {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 10px;
+    .phc-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .phc-leader { font-size: 0.68rem; color: var(--text-faint); margin-top: 4px; padding-left: 15px; }
+    .phc-bloc {
+      display: inline-block; font-size: 0.58rem; font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 2px 7px; border-radius: 20px;
+      margin-top: 6px; margin-left: 15px; color: #fff;
     }
-    .modal button.close-modal {
-      margin-top: 8px;
-      background: var(--navy);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      padding: 9px 20px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
+
+    /* ── DATA ROWS ── */
+    tr.drow td {
+      padding: 0; vertical-align: top; height: 1px;
     }
-    .modal button.close-modal:hover { background: var(--navy-light); }
+    tr.drow td.ltd {
+      position: sticky; left: 0; z-index: 20;
+      background: var(--bg);
+    }
+
+    /* rotated section label cell */
+    .section-label-cell {
+      background: var(--section-bg);
+      margin-left: 24px;
+      height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      border-bottom: 12px solid var(--bg);
+      border-right: 1px solid var(--divider);
+    }
+    .section-label-text {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.72rem; font-weight: 700;
+      color: var(--section-text);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      padding: 10px 10px;
+    }
+
+    /* party position cell */
+    .pos-cell {
+      background: var(--card);
+      border-left: 1px solid var(--divider);
+      border-bottom: 12px solid var(--bg);
+      padding: 14px 16px;
+      height: 100%;
+      margin: 0 4px;
+    }
+    tr.drow td:nth-child(2) .pos-cell { margin-left: 0; }
+    tr.drow td:last-child   .pos-cell { margin-right: 24px; }
+
+    .pos-cell.empty { display: flex; align-items: center; }
+    .pos-empty-dash { color: var(--text-faint); font-size: 1rem; }
+
+    .pos-entry { padding-bottom: 12px; }
+    .pos-entry:last-child { padding-bottom: 0; }
+    .pos-entry + .pos-entry {
+      border-top: 1px solid var(--divider);
+      padding-top: 12px;
+    }
+    .pos-title {
+      font-size: 0.81rem; font-weight: 600;
+      color: var(--text); line-height: 1.35; margin-bottom: 5px;
+    }
+    .pos-summary {
+      font-size: 0.75rem; color: var(--text-muted); line-height: 1.55;
+    }
+    .pos-summary ul, .pos-summary ol {
+      padding-left: 1.2em;
+    }
+
+    /* citations */
+    .pos-citations {
+      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px;
+    }
+    .pos-citation {
+      font-size: 0.57rem; font-weight: 600; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 2px 6px; border-radius: 3px;
+      background: var(--bg2); color: var(--text-muted);
+      border: 1px solid var(--label-border);
+      text-decoration: none;
+      transition: background .12s, color .12s;
+    }
+    .pos-citation:hover {
+      background: var(--header-bg);
+      color: #fff;
+      border-color: var(--header-bg);
+    }
+    /* non-linked citation */
+    .pos-citation.no-link {
+      cursor: default; opacity: 0.5;
+    }
+
+    /* ── CHECKBOX FOOTER ROW ── */
+    tr.crow td { padding: 0; vertical-align: top; height: 1px; }
+    tr.crow td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
+
+    /* topics label — matches section-label-cell style */
+    .cbox-label-cell {
+      background: var(--section-bg);
+      margin-left: 24px;
+      height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      border-right: 1px solid var(--divider);
+    }
+    .cbox-label-text {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.72rem; font-weight: 700;
+      color: var(--section-text);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      padding: 10px 0;
+    }
+
+    .cbox-card {
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-top: none;
+      padding: 12px 14px 12px;
+      margin: 0 4px;
+      height: 100%;
+    }
+    tr.crow td:nth-child(2) .cbox-card { margin-left: 0; }
+    tr.crow td:last-child   .cbox-card { margin-right: 24px; }
+
+    .cbox-head {
+      font-size: 0.62rem; font-weight: 600;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--text-faint); margin-bottom: 8px;
+    }
+    .cbox-item {
+      display: flex; align-items: center; gap: 7px;
+      padding: 3px 0; cursor: pointer; user-select: none;
+    }
+    .cbox-item:hover .cbox-box { border-color: var(--header-bg); }
+    .cbox-box {
+      width: 13px; height: 13px;
+      border: 1.5px solid var(--label-border);
+      border-radius: 2px; flex-shrink: 0; background: var(--card);
+      display: flex; align-items: center; justify-content: center;
+      transition: background .12s, border-color .12s;
+    }
+    .cbox-item.on .cbox-box { background: var(--header-bg); border-color: var(--header-bg); }
+    .cbox-box::after {
+      content: ''; display: none; width: 3px; height: 5px;
+      border: 1.5px solid #fff; border-top: none; border-left: none;
+      transform: rotate(45deg) translateY(-1px);
+    }
+    .cbox-item.on .cbox-box::after { display: block; }
+    .cbox-lbl { font-size: 0.72rem; color: var(--text-muted); flex: 1; line-height: 1.3; }
+    .cbox-item.on .cbox-lbl { color: var(--text); }
+    .cbox-badge {
+      font-size: 0.6rem; font-weight: 700; border-radius: 20px;
+      padding: 1px 5px; color: #fff; min-width: 16px;
+      text-align: center; flex-shrink: 0;
+    }
+
+    /* ── STATES ── */
+    .state-wrap { padding: 80px 24px; text-align: center; color: var(--text-muted); }
+    .state-wrap .ico { font-size: 2.2rem; margin-bottom: 14px; }
+    .state-wrap h2 { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; color: var(--text); margin-bottom: 8px; }
+    .state-wrap p { font-size: 0.8rem; max-width: 400px; margin: 6px auto; line-height: 1.65; }
+    .state-wrap code { background: var(--bg2); padding: 1px 5px; border-radius: 3px; font-size: 0.77rem; }
+
+    /* ── MODAL ── */
+    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 500; align-items: center; justify-content: center; padding: 24px; }
+    .modal-bg.open { display: flex; }
+    .modal { background: var(--card); border-radius: var(--radius); padding: 28px; max-width: 450px; width: 100%; box-shadow: 0 24px 64px rgba(0,0,0,0.2); }
+    .modal h2 { font-family: 'Libre Baskerville', serif; color: var(--text); font-size: 1.1rem; margin-bottom: 12px; }
+    .modal p { font-size: 0.79rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 10px; }
+    .modal-close { margin-top: 10px; background: var(--header-bg); color: #fff; border: none; border-radius: var(--radius-sm); padding: 9px 20px; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500; cursor: pointer; }
+    .modal-close:hover { background: var(--header-bg2); }
 
     /* ── FOOTER ── */
-    footer {
-      padding: 24px;
-      text-align: center;
-      font-size: 0.72rem;
-      color: var(--gray);
-      border-top: 1px solid var(--gray-light);
-      margin-top: 24px;
-    }
-    footer a { color: var(--navy); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    .page-footer { text-align: center; padding: 0 24px 32px; font-size: 0.69rem; color: var(--text-faint); }
+    .page-footer a { color: var(--text-muted); text-decoration: none; }
+    .page-footer a:hover { text-decoration: underline; }
 
-    /* ── SCROLLBAR ── */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: var(--gray-xlight); }
-    ::-webkit-scrollbar-thumb { background: var(--gray-light); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--gray); }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: #c8c3bc; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #a8a39c; }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="logo">
-    Vote Compass Israel
-    <span>Party Platform Comparison</span>
-  </div>
-  <div class="spacer"></div>
-  <button class="disclaimer-btn" onclick="openDisclaimer()">About this tool</button>
-  <button class="filter-toggle" id="filterToggleBtn" onclick="toggleFilter()">
-    ☰ Filters
-    <span class="filter-badge" id="activeTopicCount">—</span>
-  </button>
+  <div class="logo">Vote Compass Israel<span class="logo-sub">Party Platform Comparison</span></div>
+  <div class="hdr-gap"></div>
+  <button class="about-btn" onclick="document.getElementById('modal').classList.add('open')">About</button>
 </header>
 
-<!-- DISCLAIMER MODAL -->
-<div class="modal-overlay" id="disclaimerModal">
+<div class="party-selector-bar" id="partySelectorBar">
+  <span class="sel-lbl">Parties</span>
+</div>
+
+<div class="modal-bg" id="modal" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="modal">
     <h2>About Vote Compass Israel</h2>
-    <p>This tool summarizes and compares the published platforms and public positions of Israeli political parties. It is intended as a research aid for voters.</p>
-    <p>Platform positions are simplified summaries. Always consult each party's official platform before making decisions. This tool does not endorse any party or position.</p>
-    <p>Data is maintained in <code>data.json</code> — contributions and corrections are welcome via GitHub.</p>
-    <button class="close-modal" onclick="closeDisclaimer()">Got it</button>
+    <p>This tool summarizes and compares the published platforms and public positions of Israeli political parties. It is a research aid for voters — not an endorsement of any party or position.</p>
+    <p>Platform positions are simplified summaries. Always consult each party's official platform before making decisions.</p>
+    <p>Data lives in <code>data.json</code> — contributions and corrections welcome via GitHub pull request.</p>
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">Got it</button>
   </div>
 </div>
 
-<!-- APP BODY -->
-<div class="app-body">
+<div id="mainArea" style="flex:1; overflow:hidden; display:flex; flex-direction:column;"></div>
 
-  <!-- FILTER PANEL -->
-  <div class="filter-panel" id="filterPanel">
-    <div class="filter-panel-head">
-      <h2>Filter</h2>
-      <p>Select parties to compare and topics you care about.</p>
-    </div>
 
-    <div class="filter-section">
-      <h3>Parties</h3>
-      <div id="partyCheckList"></div>
-    </div>
-
-    <div class="filter-section">
-      <h3>Topics</h3>
-      <p style="font-size:0.72rem;color:var(--gray);margin-bottom:10px;">Unchecked topics show a tally of hidden positions per party.</p>
-      <div id="topicCheckList"></div>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="main-content" id="mainContent">
-
-    <!-- SELECTED PARTIES BAR -->
-    <div class="selector-bar" id="selectorBar">
-      <span class="selector-bar-label">Comparing:</span>
-      <div id="selectedPartiesTags"></div>
-    </div>
-
-    <!-- TABLE AREA -->
-    <div class="table-scroll-wrapper">
-      <div id="tableContainer"></div>
-    </div>
-
-    <footer>
-      Data last updated: <span id="lastUpdated"></span> &nbsp;|&nbsp;
-      <a href="https://github.com/maplemoosetools/votecompassisrael" target="_blank">View on GitHub</a> &nbsp;|&nbsp;
-      Contribute corrections via pull request
-    </footer>
-  </div>
-</div>
 
 <script>
-  let DATA = null;
-  let selectedParties = new Set();
-  let selectedTopics = new Set();
-  let filterOpen = false;
+let DATA = null;
+let selectedParties = ['likud', 'beyahad_together'];
+let selectedTopics  = new Set();
 
-  // ── LOAD DATA ──
-  fetch('data.json')
-    .then(r => r.json())
-    .then(data => {
-      DATA = data;
-      document.getElementById('lastUpdated').textContent = data.meta.lastUpdated;
-      // Default: select all parties and all topics
-      data.parties.forEach(p => selectedParties.add(p.id));
-      data.topics.forEach(t => selectedTopics.add(t.id));
-      renderFilterPanel();
-      renderTable();
-    })
-    .catch(err => {
-      document.getElementById('tableContainer').innerHTML =
-        `<div class="empty-state"><div class="icon">⚠️</div><h2>Could not load data</h2><p>Make sure <code>data.json</code> is in the same directory as this file.</p></div>`;
-    });
-
-  // ── FILTER TOGGLE ──
-  function toggleFilter() {
-    filterOpen = !filterOpen;
-    document.getElementById('filterPanel').classList.toggle('open', filterOpen);
-    document.getElementById('mainContent').classList.toggle('panel-open', filterOpen);
-  }
-
-  // ── DISCLAIMER ──
-  function openDisclaimer() { document.getElementById('disclaimerModal').classList.add('open'); }
-  function closeDisclaimer() { document.getElementById('disclaimerModal').classList.remove('open'); }
-  document.getElementById('disclaimerModal').addEventListener('click', function(e) {
-    if (e.target === this) closeDisclaimer();
+fetch('data.json')
+  .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+  .then(data => {
+    DATA = data;
+    ['government', 'draft', 'veterans'].forEach(t => selectedTopics.add(t));
+    render();
+  })
+  .catch(() => {
+    document.getElementById('mainArea').innerHTML = `
+      <div class="state-wrap">
+        <div class="ico">⚠️</div>
+        <h2>Could not load data</h2>
+        <p>Open via XAMPP, or run <code>python3 -m http.server</code> and open <code>http://localhost:8000</code></p>
+      </div>`;
   });
 
-  // ── RENDER FILTER PANEL ──
-  function renderFilterPanel() {
-    renderPartyChecks();
-    renderTopicChecks();
-    updateFilterBadge();
+function render() {
+  renderSelectorBar();
+  renderTable();
+}
+
+/* ── SELECTOR BAR ── */
+function renderSelectorBar() {
+  if (!DATA) return;
+  const bar = document.getElementById('partySelectorBar');
+
+  // unselected parties ordered by their rank (order they were deselected, or data order)
+  let unselectedRank = 1;
+
+  const btns = DATA.parties.map(p => {
+    const isSelected = selectedParties.includes(p.id);
+    const rank = isSelected ? null : unselectedRank++;
+    return { p, isSelected, rank };
+  });
+
+  bar.innerHTML = `<span class="sel-lbl">Parties</span>` + btns.map(({ p, isSelected, rank }) => {
+    const rankBadge = '';
+    return `<button
+      class="party-btn ${isSelected ? 'selected' : 'unselected'}"
+      style="background:${p.color}"
+      onclick="toggleParty('${p.id}')"
+    >
+      <span class="party-btn-dot"></span>
+      ${p.name}
+      ${rankBadge}
+    </button>`;
+  }).join('');
+}
+
+function toggleParty(id) {
+  if (selectedParties.includes(id)) {
+    if (selectedParties.length === 1) return; // keep at least one
+    selectedParties = selectedParties.filter(x => x !== id);
+  } else {
+    selectedParties.push(id);
+  }
+  render();
+}
+
+function toggleTopic(tid) {
+  selectedTopics.has(tid) ? selectedTopics.delete(tid) : selectedTopics.add(tid);
+  render();
+}
+
+/* ── TABLE ── */
+function renderTable() {
+  const area = document.getElementById('mainArea');
+  if (!DATA) return;
+
+  const parties = selectedParties.map(id => party(id));
+
+  if (parties.length === 0) {
+    area.innerHTML = `<div class="state-wrap"><div class="ico">🗳️</div><h2>No parties selected</h2>
+      <p>Select parties above to start comparing platforms.</p></div>`;
+    return;
   }
 
-  function renderPartyChecks() {
-    const container = document.getElementById('partyCheckList');
-    container.innerHTML = '';
-    DATA.parties.forEach(party => {
-      const checked = selectedParties.has(party.id);
-      const item = document.createElement('label');
-      item.className = 'party-check-item' + (checked ? ' checked' : '');
-      item.style.cursor = 'pointer';
-      item.innerHTML = `
-        <div class="party-check-box"></div>
-        <div class="party-check-label">
-          <div class="party-check-name">
-            <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${party.color};margin-right:6px;vertical-align:middle;"></span>
-            ${party.name}
-          </div>
-          <div class="party-check-bloc">${party.leader} · ${party.bloc}</div>
-        </div>
-      `;
-      item.addEventListener('click', () => {
-        if (selectedParties.has(party.id)) {
-          selectedParties.delete(party.id);
-        } else {
-          selectedParties.add(party.id);
-        }
-        renderFilterPanel();
-        renderTable();
-      });
-      container.appendChild(item);
+  const activeTopics = DATA.topics.filter(t => selectedTopics.has(t.id));
+  const groups = activeTopics.map(topic => {
+    const byParty = {};
+    parties.forEach(p => {
+      byParty[p.id] = p.positions.filter(pos => pos.topics.includes(topic.id));
     });
-  }
+    const hasAny = parties.some(p => byParty[p.id].length > 0);
+    return { topic, byParty, hasAny };
+  }).filter(g => g.hasAny);
 
-  function renderTopicChecks() {
-    const container = document.getElementById('topicCheckList');
-    container.innerHTML = '';
+  /* colgroup shared by both tables */
+  const colgroup = `<colgroup><col class="lcol" />${parties.map(() => `<col class="pcol" />`).join('')}</colgroup>`;
 
-    // For each topic, for each selected party, count positions tagged with that topic that are NOT shown (topic unchecked)
+  /* ── STICKY HEADER TABLE ── */
+  let html = `<div class="party-header-scroll"><table class="ct header-table">${colgroup}<thead><tr>`;
+  html += `<th class="lth"><div class="lth-inner" style="display:flex;align-items:center;justify-content:center;">
+    <span style="font-family:'Libre Baskerville',serif;font-size:0.72rem;font-weight:700;color:var(--section-text);letter-spacing:0.03em;white-space:nowrap;writing-mode:vertical-lr;transform:rotate(180deg);padding:10px 10px;">Party</span>
+  </div></th>`;
+  parties.forEach(p => {
+    html += `<th><div class="phcard" style="--pc:${p.color}">
+      <div class="phc-name"><span class="phc-dot" style="background:${p.color}"></span>${p.name}</div>
+      <div class="phc-leader">${p.leader}</div>
+      <span class="phc-bloc" style="background:${blocColor(p.bloc)}">${p.bloc}</span>
+      ${p.topline ? `<div class="phc-topline">${p.topline}</div>` : ''}
+      ${p.website ? `<a class="phc-website" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
+    </div></th>`;
+  });
+  html += `</tr></thead></table></div>`;
+
+  /* ── BODY TABLE ── */
+  html += `<div class="outer"><table class="ct">${colgroup}<tbody>`;
+
+  groups.forEach(({ topic, byParty }) => {
+    html += `<tr class="drow">`;
+    html += `<td class="ltd"><div class="section-label-cell">
+      <span class="section-label-text">${topic.label}</span>
+    </div></td>`;
+
+    parties.forEach(p => {
+      const positions = byParty[p.id];
+      if (positions.length === 0) {
+        html += `<td><div class="pos-cell empty"><span class="pos-empty-dash">—</span></div></td>`;
+      } else {
+        html += `<td><div class="pos-cell">`;
+        positions.forEach(pos => {
+          /* build citations */
+          const sources = Array.isArray(pos.source)
+            ? pos.source
+            : (pos.source ? [pos.source] : []);
+          const citations = sources.length > 0
+            ? sources.map((src, i) => {
+                const label = sources.length === 1 ? 'Source' : `Source ${i + 1}`;
+                if (src && src !== 'add') {
+                  return `<a class="pos-citation" href="${src}" target="_blank" rel="noopener">${label}</a>`;
+                }
+                return `<span class="pos-citation no-link">${label}</span>`;
+              }).join('')
+            : '';
+
+          html += `<div class="pos-entry">
+            <div class="pos-title">${pos.title}</div>
+            <div class="pos-summary">${pos.summary}</div>
+            ${citations ? `<div class="pos-citations">${citations}</div>` : ''}
+          </div>`;
+        });
+        html += `</div></td>`;
+      }
+    });
+    html += `</tr>`;
+  });
+
+  /* ── CHECKBOX FOOTER ── */
+  html += `<tr class="crow">`;
+  html += `<td class="ltd"><div class="cbox-label-cell">
+    <span class="cbox-label-text">Topics</span>
+  </div></td>`;
+  parties.forEach(p => {
+    html += `<td><div class="cbox-card"><div class="cbox-head">${p.name}</div>`;
     DATA.topics.forEach(topic => {
-      const checked = selectedTopics.has(topic.id);
-      const item = document.createElement('div');
-      item.className = 'topic-check-item' + (checked ? ' checked' : '');
-
-      // Build hidden count pills for unchecked topics
-      let pillsHTML = '';
-      if (!checked) {
-        const activeParts = DATA.parties.filter(p => selectedParties.has(p.id));
-        activeParts.forEach(party => {
-          const count = party.positions.filter(pos => pos.topics.includes(topic.id)).length;
-          if (count > 0) {
-            pillsHTML += `<span class="topic-hidden-pill" style="background:${party.color}" title="${party.name}: ${count} position${count>1?'s':''}">${count}</span>`;
-          }
-        });
-      }
-
-      item.innerHTML = `
-        <div class="topic-check-box"></div>
-        <div class="topic-check-content">
-          <span class="topic-check-name">${topic.label}</span>
-          <div class="topic-hidden-counts">${pillsHTML}</div>
-        </div>
-      `;
-      item.addEventListener('click', () => {
-        if (selectedTopics.has(topic.id)) {
-          selectedTopics.delete(topic.id);
-        } else {
-          selectedTopics.add(topic.id);
-        }
-        renderFilterPanel();
-        renderTable();
-      });
-      container.appendChild(item);
+      const on = selectedTopics.has(topic.id);
+      const hidden = !on ? p.positions.filter(pos => pos.topics.includes(topic.id)).length : 0;
+      const badge = (!on && hidden > 0)
+        ? `<span class="cbox-badge" style="background:${p.color}">${hidden}</span>` : '';
+      html += `<div class="cbox-item ${on?'on':''}" onclick="toggleTopic('${topic.id}')">
+        <div class="cbox-box"></div>
+        <span class="cbox-lbl">${topic.label}</span>${badge}
+      </div>`;
     });
-  }
+    html += `</div></td>`;
+  });
+  html += `</tr></tbody></table></div>`;
 
-  function updateFilterBadge() {
-    const badge = document.getElementById('activeTopicCount');
-    badge.textContent = selectedTopics.size + '/' + DATA.topics.length;
-  }
+  area.innerHTML = html;
 
-  // ── RENDER TABLE ──
-  function renderTable() {
-    const container = document.getElementById('tableContainer');
-    const tagsContainer = document.getElementById('selectedPartiesTags');
-
-    const activeParties = DATA.parties.filter(p => selectedParties.has(p.id));
-
-    // Render selector bar tags
-    if (activeParties.length === 0) {
-      tagsContainer.innerHTML = '<span class="no-parties-hint">No parties selected — use Filters to add parties</span>';
-    } else {
-      tagsContainer.innerHTML = activeParties.map(p =>
-        `<span class="party-tag" style="background:${p.color}">
-          ${p.name}
-          <button class="remove-party" onclick="removeParty('${p.id}')" title="Remove ${p.name}">✕</button>
-        </span>`
-      ).join('');
-    }
-
-    if (activeParties.length === 0) {
-      container.innerHTML = `
-        <div class="empty-state">
-          <div class="icon">🗳️</div>
-          <h2>No parties selected</h2>
-          <p>Open Filters and select at least one party to begin comparing platforms.</p>
-        </div>`;
-      return;
-    }
-
-    // Get active topics
-    const activeTopicIds = new Set(selectedTopics);
-    const activeTopics = DATA.topics.filter(t => activeTopicIds.has(t.id));
-
-    if (activeTopics.length === 0) {
-      container.innerHTML = `
-        <div class="empty-state">
-          <div class="icon">🔎</div>
-          <h2>No topics selected</h2>
-          <p>Open Filters and select at least one topic to display positions.</p>
-        </div>`;
-      return;
-    }
-
-    // Build table
-    // For each active topic, collect all positions from all parties tagged with that topic
-    // Build a flat list of "rows" per topic
-    let tableHTML = `<table class="compare">`;
-
-    // colgroup
-    tableHTML += `<colgroup><col class="label-col" />`;
-    activeParties.forEach(() => { tableHTML += `<col class="party-col" />`; });
-    tableHTML += `</colgroup>`;
-
-    // thead
-    tableHTML += `<thead><tr>`;
-    tableHTML += `<th class="label-th"><div class="party-header-cell" style="color:var(--gray);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;padding-bottom:16px;">Topic / Position</div></th>`;
-    activeParties.forEach(party => {
-      const blocColor = getBlocColor(party.bloc);
-      tableHTML += `<th>
-        <div class="party-header-cell">
-          <div><span class="party-header-dot" style="background:${party.color}"></span><span class="party-header-name">${party.name}</span></div>
-          <div class="party-header-leader">${party.leader}</div>
-          <div><span class="party-header-bloc" style="background:${blocColor}">${party.bloc}</span></div>
-        </div>
-      </th>`;
-    });
-    tableHTML += `</tr></thead><tbody>`;
-
-    // For each topic, gather all unique positions across selected parties tagged with that topic
-    activeTopics.forEach(topic => {
-      // Gather all positions for this topic from all active parties
-      const positionsByParty = {};
-      activeParties.forEach(party => {
-        positionsByParty[party.id] = party.positions.filter(pos => pos.topics.includes(topic.id));
-      });
-
-      const maxRows = Math.max(...activeParties.map(p => positionsByParty[p.id].length), 0);
-      if (maxRows === 0) return; // skip topic with no data
-
-      // Topic group header
-      tableHTML += `<tr class="topic-group-header">
-        <td colspan="${activeParties.length + 1}">${topic.label}</td>
-      </tr>`;
-
-      // Position rows
-      for (let i = 0; i < maxRows; i++) {
-        // Row label: just the row index or blank
-        tableHTML += `<tr class="position-row"><td class="label-td">${i === 0 ? '' : ''}</td>`;
-        activeParties.forEach(party => {
-          const pos = positionsByParty[party.id][i];
-          if (pos) {
-            const topicTags = pos.topics.map(tid => {
-              const t = DATA.topics.find(x => x.id === tid);
-              return t ? `<span class="position-topic-tag">${t.label}</span>` : '';
-            }).join('');
-            tableHTML += `<td>
-              <div class="position-title">${pos.title}</div>
-              <div class="position-summary">${pos.summary}</div>
-              <div class="position-topics">${topicTags}</div>
-            </td>`;
-          } else {
-            tableHTML += `<td class="no-position-cell">—</td>`;
-          }
-        });
-        tableHTML += `</tr>`;
-      }
+  /* sync horizontal scroll */
+  /* sync horizontal scroll + equalise header card heights */
+  requestAnimationFrame(() => {
+    const headerScroll = document.querySelector('.party-header-scroll');
+    const bodyScroll   = document.querySelector('.outer');
+    if (!headerScroll || !bodyScroll) return;
+    bodyScroll.addEventListener('scroll', () => {
+      headerScroll.scrollLeft = bodyScroll.scrollLeft;
     });
 
-    tableHTML += `</tbody></table>`;
-    container.innerHTML = tableHTML;
-  }
+    /* make all party header cards the same height */
+    const cards = headerScroll.querySelectorAll('.phcard');
+    let maxH = 0;
+    cards.forEach(c => {
+      c.style.height = 'auto';
+      if (c.offsetHeight > maxH) maxH = c.offsetHeight;
+    });
+    cards.forEach(c => { c.style.height = maxH + 'px'; });
+  });
+}
 
-  function removeParty(id) {
-    selectedParties.delete(id);
-    renderFilterPanel();
-    renderTable();
-  }
-
-  function getBlocColor(bloc) {
-    const map = {
-      'Right': '#1B3A6B',
-      'Far Right': '#7B1FA2',
-      'Center-Right': '#2a5298',
-      'Center': '#00A0DC',
-      'Center-Left': '#E53935',
-      'Left': '#43A047',
-      'Arab-Jewish Left': '#00897B',
-      'Right (Haredi-Sephardi)': '#6D4C41',
-    };
-    return map[bloc] || '#6B7280';
-  }
+function party(id) { return DATA.parties.find(p => p.id === id); }
+function blocColor(bloc) {
+  return ({
+    'Right':                    '#8B4513',
+    'Far Right':                '#6B0000',
+    'Center-Right':             '#A0522D',
+    'Center':                   '#4A6741',
+    'Center-Left':              '#2F4F6F',
+    'Left':                     '#1A4A6B',
+    'Arab-Jewish Left':         '#2D5A3D',
+    'Right (Haredi-Sephardi)':  '#4A2060',
+    'Opposition - Center':      '#4A6741',
+    'Opposition - Arab, Left':  '#2D5A3D',
+    'Opposition - Secular, Right': '#7A5020',
+  })[bloc] || '#444';
+}
 </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 A side-by-side political platform comparison tool for Israeli elections, inspired by GSMArena's phone comparison interface.
 
-**Live site:** [maplemoosetools.github.io/votecompassisrael](https://maplemoosetools.github.io/votecompassisrael)
+**Live site:** [maplemoosetools.github.io/voteCompassIsrael](https://maplemoosetools.github.io/voteCompassIsrael)
 
 ---
 
@@ -18,7 +18,7 @@ A side-by-side political platform comparison tool for Israeli elections, inspire
 1. Fork this repository
 2. Go to **Settings → Pages**
 3. Set source to **Deploy from a branch**, branch: `main`, folder: `/ (root)`
-4. Your site will be live at `https://yourusername.github.io/votecompassisrael`
+4. Your site will be live at `https://yourusername.github.io/voteCompassSsrael`
 
 ## How to update party data
 
@@ -51,9 +51,8 @@ All party data lives in **`data.json`**. The structure is:
 
 Each position can have **multiple topic tags** — a position on running public transit on Shabbat, for example, would be tagged `["public_transport", "secular_society", "religion_state"]`.
 
-## Contributing
-
-Corrections, additions, and new parties are welcome via pull request. Please cite primary sources (official party platforms, published policy documents) for any positions added or changed.
+## Get in touch
+Please email me at votecompassisrael(at)gmail.com
 
 ## License
 

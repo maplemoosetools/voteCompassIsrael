@@ -6,30 +6,50 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
-    { "id": "economy", "label": "Economy & Cost of Living" },
-    { "id": "security", "label": "Security & Defense" },
-    { "id": "peace_process", "label": "Peace Process & Two-State Solution" },
-    { "id": "religion_state", "label": "Religion & State" },
-    { "id": "secular_society", "label": "Secular Society" },
-    { "id": "judiciary", "label": "Judiciary & Rule of Law" },
-    { "id": "housing", "label": "Housing" },
-    { "id": "public_transport", "label": "Public Transportation" },
-    { "id": "lgbtq", "label": "LGBTQ+ Rights" },
-    { "id": "arab_citizens", "label": "Arab Citizens of Israel" },
-    { "id": "ultra_orthodox", "label": "Ultra-Orthodox Integration" },
-    { "id": "environment", "label": "Environment & Climate" },
-    { "id": "healthcare", "label": "Healthcare" },
-    { "id": "education", "label": "Education" },
-    { "id": "immigration", "label": "Immigration & Diaspora" }
+    { "id": "economy",         "label": "Economy & Cost of Living" },
+    { "id": "security",        "label": "Security & Defense" },
+    { "id": "internal_security","label": "Internal Security and Law Enforcement" },
+    { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
+    { "id": "religion_state",  "label": "Religion & State" },
+    { "id": "judiciary",       "label": "Judiciary & Rule of Law" },
+    { "id": "housing",         "label": "Housing" },
+    { "id": "transit",         "label": "Transit and Transportation" },
+    { "id": "liberal_rights",  "label": "Liberal Rights" },
+    { "id": "arab_citizens",   "label": "Arab Citizens of Israel" },
+    { "id": "haredi",           "label": "Haredi Sector" },
+    { "id": "environment",     "label": "Environment & Climate" },
+    { "id": "healthcare",      "label": "Healthcare" },
+    { "id": "education",       "label": "Education" },
+    { "id": "aliyah",           "label": "Immigration & Diaspora" },
+    { "id": "_oct7",            "label": "October 7th" },
+    { "id": "palestinians",    "label": "Palestinians" },
+    { "id": "draft",            "label": "Army Enlistment and Draft" },
+    { "id": "cost_of_living",      "label": "Cost of Living" },
+    { "id": "international_relations",       "label": "International Relations" },      
+    { "id": "government",      "label": "Governemnt" },
+    { "id": "local_government",    "label": "Local Government" },
+    { "id": "periphery",         "label": "The Periphery" },
+    { "id": "retirees",   "label": "Retirees and Pensioners" },
+    { "id": "veterans",         "label": "Veterans" },
+    { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
+    { "id": "gaza",        "label": "Gaza" },
+    { "id": "occupation",  "label": "Occupation" },
+    { "id": "west_bank",   "label": "West Bank" },
+    { "id": "constitution","label": "Constitution" },
+    { "id": "knesset",     "label": "Knesset" },
+    { "id": "ultra_orthodox","label": "Ultra-Orthodox Integration" }
   ],
   "parties": [
     {
       "id": "likud",
       "name": "Likud",
       "nameHe": "הליכוד",
-      "color": "#1357BE",
+      "color": "#1A5DC8",
       "leader": "Benjamin Netanyahu",
+      "key-people": ["Naftali Bennett", "Yair Lapid"],
+      "currentmks": 50,
       "bloc": "Right",
+      "topline": "Only Bibi can win.",
       "positions": [
         {
           "id": "likud_1",
@@ -65,277 +85,687 @@
           "id": "likud_6",
           "title": "Status Quo on Religion and State",
           "summary": "Generally maintains the status quo arrangement on religious affairs, including Shabbat observance laws, as part of coalition agreements.",
-          "topics": ["religion_state", "secular_society"]
-        }
-      ]
-    },
-    {
-      "id": "yesh_atid",
-      "name": "Yesh Atid",
-      "nameHe": "יש עתיד",
-      "color": "#00A0DC",
-      "leader": "Yair Lapid",
-      "bloc": "Center",
-      "positions": [
-        {
-          "id": "yatid_1",
-          "title": "Two-State Solution in Principle",
-          "summary": "Supports the framework of a two-state solution as a long-term goal, contingent on Palestinian recognition of Israel as a Jewish state and security guarantees.",
-          "topics": ["peace_process"]
-        },
-        {
-          "id": "yatid_2",
-          "title": "Ultra-Orthodox Military Conscription",
-          "summary": "Strongly advocates for mandatory IDF service for ultra-Orthodox men, viewing it as a matter of equal civic burden-sharing.",
-          "topics": ["ultra_orthodox", "religion_state", "secular_society"]
-        },
-        {
-          "id": "yatid_3",
-          "title": "Civil Marriage",
-          "summary": "Supports introducing civil marriage as an alternative to the rabbinate-controlled marriage system.",
-          "topics": ["religion_state", "secular_society", "lgbtq"]
-        },
-        {
-          "id": "yatid_4",
-          "title": "Judicial Independence",
-          "summary": "Strongly opposes judicial reform legislation, advocating for an independent judiciary as a cornerstone of Israeli democracy.",
-          "topics": ["judiciary"]
-        },
-        {
-          "id": "yatid_5",
-          "title": "Hostage Deal Priority",
-          "summary": "Places return of hostages as the top security priority, even if it requires pausing military operations.",
-          "topics": ["security", "peace_process"]
-        },
-        {
-          "id": "yatid_6",
-          "title": "Cost of Living Reform",
-          "summary": "Proposes reducing food and housing costs through breaking up monopolies, increasing competition, and reforming import regulations.",
-          "topics": ["economy", "housing"]
-        },
-        {
-          "id": "yatid_7",
-          "title": "Public Transit on Shabbat",
-          "summary": "Supports running public transportation on Shabbat in major cities, framing it as a matter of economic access and secular civic freedom.",
-          "topics": ["public_transport", "secular_society", "religion_state"]
-        }
-      ]
-    },
-    {
-      "id": "mafdal",
-      "name": "Mafdal–Religious Zionism",
-      "nameHe": "מפד\"ל – הציונות הדתית",
-      "color": "#F57C00",
-      "leader": "Bezalel Smotrich",
-      "bloc": "Far Right",
-      "positions": [
-        {
-          "id": "mafdal_1",
-          "title": "Israeli Sovereignty over All of Judea & Samaria",
-          "summary": "Advocates for full Israeli annexation of the West Bank. Opposes any Palestinian political sovereignty in the land of Israel.",
-          "topics": ["peace_process", "security"]
-        },
-        {
-          "id": "mafdal_2",
-          "title": "Jewish Law as Foundation of State Law",
-          "summary": "Believes Israeli law should be guided by halacha (Jewish law) in relevant domains, particularly family law and public life.",
           "topics": ["religion_state"]
-        },
-        {
-          "id": "mafdal_3",
-          "title": "Encouragement of Arab Emigration",
-          "summary": "Has proposed incentivizing Arab citizens and Palestinian residents to voluntarily emigrate, a position widely condemned as discriminatory.",
-          "topics": ["arab_citizens", "peace_process"]
-        },
-        {
-          "id": "mafdal_4",
-          "title": "Settlement as National Mission",
-          "summary": "Views Jewish settlement throughout the Land of Israel as a religious and national imperative, with large budget allocations to settlements.",
-          "topics": ["peace_process", "housing", "religion_state"]
-        },
-        {
-          "id": "mafdal_5",
-          "title": "Opposition to LGBTQ+ Legal Rights",
-          "summary": "Opposes same-sex adoption, surrogacy rights, and legal recognition of same-sex partnerships under religious grounds.",
-          "topics": ["lgbtq", "religion_state"]
         }
       ]
     },
     {
-      "id": "avoda",
-      "name": "Labor",
-      "nameHe": "העבודה",
-      "color": "#E53935",
-      "leader": "Yair Golan",
-      "bloc": "Center-Left",
+      "id": "beyahad_together",
+      "name": "BeYahad (Together)",
+      "color": "#23C2EB",
+      "leader": "Naftali Bennet <br> Yair Lapid",
+      "bloc": "Opposition - Center to Center Right",
+      "website": "https://go.be-yahad.org.il/",
+      "topline": "Implement a \"New Agreement\" that fully changes the book on how the government is run, and how it works for the benefit of Israel's citizens and Israel's standing.\nTo build a functioning government that works for its citizens, we need to completely overhaul it.",
       "positions": [
         {
-          "id": "avoda_1",
-          "title": "Two-State Solution",
-          "summary": "Committed to a negotiated two-state solution based on 1967 borders with agreed land swaps, as the only path to lasting peace.",
-          "topics": ["peace_process"]
+          "id": "beyahad_together_1",
+          "title": "Consitutional Reform",
+          "summary": "Create a Constitution in line with the principles of the Declaration of Independence\nTerm limits for Prime Ministers: Limited to 8 consecutive years",
+          "topics": [
+            "government"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/hok-yesod-1/"
+          ]
         },
         {
-          "id": "avoda_2",
-          "title": "Welfare State & Workers' Rights",
-          "summary": "Supports strengthening trade unions, raising the minimum wage, expanding social safety nets, and improving labor protections.",
-          "topics": ["economy"]
+          "id": "beyahad_together_2",
+          "title": "Commission of Inquiry",
+          "summary": "Open a non-partisan, apolitical State Commission of Inquiry into the events of October 7th and the conduct of the state afterwards.",
+          "topics": [
+            "_oct7"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
         },
         {
-          "id": "avoda_3",
-          "title": "Universal Healthcare Strengthening",
-          "summary": "Advocates for increased public investment in hospitals, reducing out-of-pocket medical costs, and expanding mental health coverage.",
-          "topics": ["healthcare"]
+          "id": "beyahad_together_4",
+          "title": "Judicial Reform",
+          "summary": "Limiting and formalizing the courts' abilities of Judicial Review and striking basic laws, subject to broad consensus.",
+          "topics": [
+            "government",
+            "judiciary"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
         },
         {
-          "id": "avoda_4",
-          "title": "Separation of Religion and State",
-          "summary": "Advocates for civil marriage, public transit on Shabbat, and reducing the Orthodox rabbinate's control over personal status law.",
-          "topics": ["religion_state", "secular_society", "public_transport"]
+          "id": "beyahad_together_5",
+          "title": "Meeting the IDF Manpower Needs",
+          "summary": "Recruit 20,000 additional combat soldiers",
+          "topics": [
+            "draft",
+            "security"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
         },
         {
-          "id": "avoda_5",
-          "title": "Equal Civic Participation for Arab Citizens",
-          "summary": "Supports full integration of Arab citizens into the economy and public service, with targeted investment in Arab communities.",
-          "topics": ["arab_citizens"]
+          "id": "beyahad_together_7",
+          "title": "Improving the education system",
+          "summary": "Improve quality of public education to meet the level of private schools\nImprove teacher salaries\nExtending the school day until 4:00 PM, and increasing classes, athletics, and provide a hot meal.",
+          "topics": [
+            "education"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
         },
         {
-          "id": "avoda_6",
-          "title": "Climate Action Plan",
-          "summary": "Proposes binding carbon reduction targets, investment in renewable energy, and phasing out coal by 2030.",
-          "topics": ["environment"]
+          "id": "beyahad_together_8",
+          "title": "Improving the education system",
+          "summary": "Completely revamp the Ministry of Education",
+          "topics": [
+            "education",
+            "government"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_10",
+          "title": "Fighting organized crime",
+          "summary": "Focus on rooting out organized crime. Identify the top 3 families and top 100 criminals and go after them directly",
+          "topics": [
+            "internal_security",
+            "periphery"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/plans/negev/"
+          ]
+        },
+        {
+          "id": "beyahad_together_11",
+          "title": "Improve the public service",
+          "summary": "Improve the quality of the public service, through the use of KPIs.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_12",
+          "title": "Move authorities to local governments",
+          "summary": "Decentralize powers and give more authority to local regional governments",
+          "topics": [
+            "local_government",
+            "government"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_13",
+          "title": "Fighting the cost of living",
+          "summary": "Lower the cost of food by 30% within a year, by dismantling closed industries and opening Israel to foreign suppliers",
+          "topics": [
+            "economy",
+            "cost_of_living"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_14",
+          "title": "Draft Equality",
+          "summary": "National Service Law (ie military service) will apply to all Israeli citizens, regardless of ethnicity, religious community, or gender. Laws that permit draft evasion will be repealed.\nDraft dodgers or draft evaders will have benefits removed, specifically:\n- Kindergarten subsidies\n- Property tax discounts\n- Bituach Leumi discounts and student status\n- Child support benefits\nEstimated savings: 4.4 billion NIS",
+          "topics": [
+            "haredi",
+            "arab_citizens",
+            "religion_state",
+            "draft",
+            "security",
+            "welfare"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/plans/meshartim/"
+          ]
+        },
+        {
+          "id": "beyahad_together_15",
+          "title": "Creating a core curriculum",
+          "summary": "The state will only fund schools in the state education stream, which will be obligated to teach the core curriculum, making up a minimum of 60% of education hours.",
+          "topics": [
+            "haredi",
+            "arab_citizens",
+            "education"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F",
+            "https://www.timesofisrael.com/at-new-partys-first-rally-bennett-vows-to-unite-the-nation-and-enact-constitution/"
+          ]
+        },
+        {
+          "id": "beyahad_together_16",
+          "title": "Benefits only to those who embrace Israeli society",
+          "summary": "Benefits and government funding will only go to citizens and communities that work, enlist, and participate in the state education system.",
+          "topics": [
+            "haredi",
+            "draft",
+            "education",
+            "welfare",
+            "veterans"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/plans/meshartim/"
+          ]
+        },
+        {
+          "id": "beyahad_together_17",
+          "title": "Improving Israel's position internationally",
+          "summary": "Actively combat international anti-Israel sentiment and work to create a positive brand. Improve regional relationships and end international political isolation. Build regional alliances.",
+          "topics": [
+            "international_relations",
+            "peace_process"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_19",
+          "title": "Jews around the world",
+          "summary": "Recognize that Israel's political position directly impacts the diaspora",
+          "topics": [
+            "aliyah"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_20",
+          "title": "Fighting crime in the Negev",
+          "summary": "Recognize that the Negev is in a state of emergency, and bring the Shin Bet to fight crime.",
+          "topics": [
+            "periphery",
+            "internal_security"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_22",
+          "title": "Building the Periphery",
+          "summary": "Increase settlement of the Negev and the North, and clamp down on illegal construction",
+          "topics": [
+            "periphery",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_23",
+          "title": "Combatting incitement",
+          "summary": "Monitor the education system to make sure that incitement against the state isn't being taught",
+          "topics": [
+            "education",
+            "internal_security"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_24",
+          "title": "Fighting polygamy",
+          "summary": "Enforce bans on polygamy, including closing loopholes with the PA, and ensuring that Bituach Leumi isn't providing illegal benefits",
+          "topics": [
+            "welfare",
+            "liberal_rights",
+            "arab_citizens"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_25",
+          "title": "Bringing the Beduins into Israeli society",
+          "summary": "Build the connection between the Bedouin community and the state, with economic stimulus, education, and sanctions.",
+          "topics": [
+            "arab_citizens",
+            "periphery"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_27",
+          "title": "Improve Miluimnik Benefits",
+          "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
+          "topics": [
+            "veterans",
+            "draft",
+            "housing",
+            "cost_of_living"
+          ],
+          "source": "https://bennett2026.org.il/plans/meshartim/"
+        },
+        {
+          "id": "beyahad_together_28",
+          "title": "Improve Veteran Benefits",
+          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
+          "topics": [
+            "veterans",
+            "draft",
+            "housing",
+            "cost_of_living"
+          ],
+          "source": "https://bennett2026.org.il/plans/meshartim/"
+        },
+        {
+          "id": "beyahad_together_29",
+          "title": "Fight corruption though wasteful political spending",
+          "summary": "\"Coalition Funds\" (government funding for niche party priorities that is promised to get parties to join a coalition) will be cancelled. Useless government ministries will be closed. Estimated savings: 4.4 billion NIS Move away from political appointments to professional appointments.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://bennett2026.org.il/plans/meshartim/"
+        },
+        {
+          "id": "beyahad_together_31",
+          "title": "Building the North",
+          "summary": "Define Metula, Shlomi, and Kiryat Shemoneh as a National Reconstruction Area, with the goal of doubling the population (relative to before the war) within 10 years.",
+          "topics": [
+            "periphery",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_32",
+          "title": "Encouraging business in the North",
+          "summary": "Create a temporary (4 years) tax exempt zone in the North near Kiryat Shemonah:\n- No corporate tax for new local industries, tech companies, and defense companies\n- 50% discount on property taxes for businesses\n- Grants for expansion\n- Subsidize high salaries",
+          "topics": [
+            "periphery",
+            "economy"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_33",
+          "title": "Encouraging living in the North",
+          "summary": "Encourage return and new settlement though economic benefits:\n- No income tax up to 1 million shekels (for 4 years)\n- Housing loan of 400,00 shekels for academics and professionals after 7 years of residence",
+          "topics": [
+            "periphery",
+            "cost_of_living",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_34",
+          "title": "Connecting the North with the rest of Israel",
+          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:\n- Build a protected emergency room\n- Build public transit access\n- Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion",
+          "topics": [
+            "periphery",
+            "cost_of_living",
+            "healthcare",
+            "transit"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_35",
+          "title": "Improve rehabilitation services for injured and disabled veterans",
+          "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\nRemove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans. Publish benchmarks and scores to show if the rehabilitation system is improving.",
+          "topics": [
+            "healthcare",
+            "veterans"
+          ],
+          "source": "https://bennett2026.org.il/plans/rehabilitation/"
+        },
+        {
+          "id": "beyahad_together_38",
+          "title": "Improving mental health access and capacity",
+          "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\nLowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
+          "topics": [
+            "healthcare",
+            "veterans",
+            "education"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/rehabilitation/",
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_40",
+          "title": "Housing for disabled veterans",
+          "summary": "Create a new supportive housing path for wounded and disabled service veterans",
+          "topics": [
+            "housing",
+            "veterans"
+          ],
+          "source": "https://bennett2026.org.il/plans/rehabilitation/"
+        },
+        {
+          "id": "beyahad_together_43",
+          "title": "Improve Private and Public Transit",
+          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.",
+          "topics": [
+            "transit"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_45",
+          "title": "Get local authorities involved in transit",
+          "summary": "Move responsibilities and authorities around transit to local regional authorities",
+          "topics": [
+            "transit",
+            "local_government"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_46",
+          "title": "Supporting the elderly",
+          "summary": "Increase old age pensions by indexing them to the average salary. Doubling the pensions of retirees making below minimum wage, and gradually increasing pensions for those just above it.",
+          "topics": [
+            "welfare",
+            "retirees",
+            "cost_of_living"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_48",
+          "title": "Housing for veterans",
+          "summary": "Expand the subsidized rental program by 250,000 units, and build a new city in the Merkaz specifically for young veterans.",
+          "topics": [
+            "housing",
+            "veterans",
+            "welfare"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_49",
+          "title": "Improving access to housing",
+          "summary": "Allow residents in the subsidized rental program to buy their apartment at cost, minus rent paid, after 10 years.",
+          "topics": [
+            "housing",
+            "welfare"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_50",
+          "title": "Public Transit on Shabbat",
+          "summary": "Allow public transit on shabbat, based on the decision by the local regional authority.",
+          "topics": [
+            "religion_state",
+            "transit",
+            "local_government"
+          ],
+          "source": [
+            "https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/",
+            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F"
+          ]
+        },
+        {
+          "id": "beyahad_together_51",
+          "title": "Civil Marriage",
+          "summary": "Break the Rabbanut monopoly on marriage, and facilitate civil marriages",
+          "topics": [
+            "religion_state",
+            "liberal_rights"
+          ],
+          "source": [
+            "https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/",
+            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F"
+          ]
         }
       ]
     },
     {
-      "id": "meretz",
-      "name": "Meretz",
-      "nameHe": "מרצ",
-      "color": "#43A047",
-      "leader": "Zehava Galon",
-      "bloc": "Left",
+      "id": "jointarab",
+      "name": "Joint Arab List",
+      "nameHe": "ביחד",
+      "color": "#B01E1E",
+      "leader": "Naftali Bennett",
+      "key-people": ["Naftali Bennett", "Yair Lapid"],
+      "bloc": "Opposition - Arab, Left",
       "positions": [
         {
-          "id": "meretz_1",
-          "title": "Immediate Ceasefire & Negotiations",
-          "summary": "Calls for an immediate ceasefire in Gaza, the return of all hostages through negotiation, and a political horizon for Palestinian statehood.",
-          "topics": ["peace_process", "security"]
-        },
-        {
-          "id": "meretz_2",
-          "title": "Full LGBTQ+ Equality",
-          "summary": "Supports same-sex marriage, joint adoption, and full legal equality for LGBTQ+ individuals, including surrogacy rights.",
-          "topics": ["lgbtq", "secular_society"]
-        },
-        {
-          "id": "meretz_3",
-          "title": "Complete Separation of Religion and State",
-          "summary": "Advocates for ending state funding of religious institutions, abolishing the rabbinate's monopoly on marriage, and fully secular public space.",
-          "topics": ["religion_state", "secular_society"]
-        },
-        {
-          "id": "meretz_4",
-          "title": "Progressive Taxation",
-          "summary": "Proposes a wealth tax and higher marginal income tax rates to fund public services and reduce inequality.",
-          "topics": ["economy"]
-        },
-        {
-          "id": "meretz_5",
-          "title": "Arab-Jewish Coexistence",
-          "summary": "Strongly supports equal rights for Arab citizens, Arabic as a genuinely co-equal official language in practice, and joint Arab-Jewish political projects.",
-          "topics": ["arab_citizens"]
-        },
-        {
-          "id": "meretz_6",
-          "title": "Green New Deal for Israel",
-          "summary": "Proposes major public investment in renewable energy, free public transit, and binding emissions law as climate emergency response.",
-          "topics": ["environment", "public_transport"]
+          "id": "by_1",
+          "title": "Annexation of Gaza & Jewish Resettlement",
+          "summary": "Advocates for full Israeli annexation of the Gaza Strip and the establishment of Jewish settlements there following military operations.",
+          "topics": ["peace_process", "security", "housing"]
         }
       ]
     },
     {
-      "id": "shas",
-      "name": "Shas",
-      "nameHe": "ש\"ס",
-      "color": "#7B1FA2",
-      "leader": "Aryeh Deri",
-      "bloc": "Right (Haredi-Sephardi)",
+      "id": "yisrael_beiteinu",
+      "name": "Yisrael Beiteinu",
+      "color": "#23C2EB",
+      "leader": "Avigdor Leiberman",
+      "bloc": "Opposition - Right",
+      "website": "https://beytenu.org.il/",
+      "topline": "The 38th government of the State of Israel will be formed out of a sense of historical mission and deep responsibility for the future of the people and the state. After the October 7 massacre and the multi-front war that was forced upon Israel, the State of Israel faces the greatest challenge since its establishment. The next government will be committed to the reconstruction of the affected regions of the country, and to the healing of the rifts in Israeli society. It will consist exclusively of Zionist parties, and will work to implement the Zionist vision: a strong, democratic, modern, and egalitarian Jewish state – alongside the gathering of exiles, encouraging immigration, and strengthening ties with Diaspora Jewry.",
       "positions": [
         {
-          "id": "shas_1",
-          "title": "Yeshiva Student Draft Exemptions",
-          "summary": "Firmly opposes mandatory IDF conscription for yeshiva students, viewing Torah study as an equal national contribution.",
-          "topics": ["ultra_orthodox", "religion_state"]
+          "id": "yisrael_beiteinu_1",
+          "title": "Commission of Inquiry",
+          "summary": "Establish a full State Commission of Inquiry to examine the failures that lead up to October 7th. The Commission will have a mandate to determine responsibility in the Political, Military, and Intelligence levels. The Commission with be authorized to critique failures and bring justice",
+          "topics": [
+            "_oct7"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
         },
         {
-          "id": "shas_2",
-          "title": "Religious Marriage Law",
-          "summary": "Defends the rabbinate's sole authority over Jewish marriage and divorce in Israel. Opposes civil marriage.",
-          "topics": ["religion_state", "secular_society"]
+          "id": "yisrael_beiteinu_2",
+          "title": "Draft Equality",
+          "summary": "Pass a new law that mandates conscription and service of every Israeli at the age of 18, regardless of religion or community. Both military and civilian (healthcare, police, firefighting, ect) will qualify.",
+          "topics": [
+            "haredi",
+            "arab_citizens",
+            "religion_state",
+            "draft",
+            "security"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/7093-2/"
+          ]
         },
         {
-          "id": "shas_3",
-          "title": "Mizrahi Community Investment",
-          "summary": "Prioritizes budgets for Sephardi and Mizrahi communities, including religious schools (talmudei torah) and community centers.",
-          "topics": ["education", "economy"]
+          "id": "yisrael_beiteinu_3",
+          "title": "Benefits only for those who draft",
+          "summary": "Anyone who doesn't draft/serve will be barred from rights and benefits, including: \n- Housing and tax discounts\n- Childcare benefits\n- The right to work in the public service\n- Affirmative action to get into university",
+          "topics": [
+            "draft",
+            "housing",
+            "welfare",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/%d7%a9%d7%9e%d7%99%d7%9d-%d7%a1%d7%95%d7%a3-%d7%9c%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%94%d7%9e%d7%a9%d7%aa%d7%9e%d7%98%d7%99%d7%9d/"
+          ]
         },
         {
-          "id": "shas_4",
-          "title": "Social Welfare for Large Families",
-          "summary": "Advocates for generous child allowances and subsidized housing targeted at large religious families.",
-          "topics": ["economy", "housing"]
+          "id": "yisrael_beiteinu_4",
+          "title": "Penalties for draft avoidance",
+          "summary": "Draft dodgers will be subject to: \n- Criminal Records\n- Losing the right to vote\n- Losing the right to leave the country",
+          "topics": [
+            "liberal_rights",
+            "draft",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/%d7%a9%d7%9e%d7%99%d7%9d-%d7%a1%d7%95%d7%a3-%d7%9c%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%94%d7%9e%d7%a9%d7%aa%d7%9e%d7%98%d7%99%d7%9d/"
+          ]
         },
         {
-          "id": "shas_5",
-          "title": "No Public Transit on Shabbat",
-          "summary": "Strongly opposes any public transportation on Shabbat, viewing it as a violation of the Jewish character of the state.",
-          "topics": ["public_transport", "religion_state", "secular_society"]
-        }
-      ]
-    },
-    {
-      "id": "hadash_taal",
-      "name": "Hadash–Ta'al",
-      "nameHe": "חד\"ש–תע\"ל",
-      "color": "#00897B",
-      "leader": "Ayman Odeh / Ahmad Tibi",
-      "bloc": "Arab-Jewish Left",
-      "positions": [
-        {
-          "id": "hadash_1",
-          "title": "End of Occupation",
-          "summary": "Calls for full Israeli withdrawal from the occupied territories and establishment of a Palestinian state alongside Israel based on 1967 borders.",
-          "topics": ["peace_process", "security"]
+          "id": "yisrael_beiteinu_5",
+          "title": "Constitutional Reform",
+          "summary": "Create a Constitution, in line with the work prepared by professionals <a href=\"https://beytenu.org.il/liberman-constitution/\">here</a>. Elements include:\n<ul><li>The largest party in the Knesset gets first chance to form a government</li>\n<li>Budgets failing will no longer trigger elections</li>\n<li>Basic laws become constitutional laws</li>\n<li>Limits to number of ministers</li>\n<li>Term limits to the Prime Minister</li>\n<li>The Government has the right to independant legal representation</li>\n<li>Repealing the \"Norwegian Law\", where Ministers can opt out of the Knesset and be replaced by other party members</li>\n<li>Reform the Judicial System</li>\n<li>Obligate every citizen to serve.</li>\n</ul>",
+          "topics": [
+            "constitution",
+            "government",
+            "judiciary",
+            "draft"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/liberman-constitution/"
+          ]
         },
         {
-          "id": "hadash_2",
-          "title": "Equal Rights for Arab Citizens",
-          "summary": "Advocates for full equality in law and practice for Arab citizens, including combating systemic discrimination in housing, employment, and policing.",
-          "topics": ["arab_citizens"]
+          "id": "yisrael_beiteinu_6",
+          "title": "Gaza Strip",
+          "summary": "Maintain freedom of IDF action in Gaza. \nEnd Israeli responsibility for Gaza, and stop suppying water, electricity, and maanging the border. \nTransfer responsibility to Egypt, and if Egypt doesn't agree, to the Palestinians to do whatever they want, without out management.",
+          "topics": [
+            "peace_process",
+            "war",
+            "security"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/%d7%94%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%a9%d7%9c-%d7%9c%d7%99%d7%91%d7%a8%d7%9e%d7%9f-%d7%9c%d7%99%d7%95%d7%9d-%d7%a9%d7%90%d7%97%d7%a8%d7%99-%d7%a8%d7%90%d7%99%d7%95%d7%9f-%d7%9c%d7%95%d7%95/"
+          ]
         },
         {
-          "id": "hadash_3",
-          "title": "Bilingual State Services",
-          "summary": "Demands that all state services, signage, and official communications be fully available in Arabic as well as Hebrew.",
-          "topics": ["arab_citizens", "education"]
+          "id": "yisrael_beiteinu_7",
+          "title": "West Bank",
+          "summary": "Work with Jordan to increase security and economic development for Palestinians. Transfer Area A to Jordan, and keep areas B and C.",
+          "topics": [
+            "peace_process",
+            "war",
+            "security"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/%d7%94%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%a9%d7%9c-%d7%9c%d7%99%d7%91%d7%a8%d7%9e%d7%9f-%d7%9c%d7%99%d7%95%d7%9d-%d7%a9%d7%90%d7%97%d7%a8%d7%99-%d7%a8%d7%90%d7%99%d7%95%d7%9f-%d7%9c%d7%95%d7%95/"
+          ]
         },
         {
-          "id": "hadash_4",
-          "title": "Workers' Rights & Anti-Privatization",
-          "summary": "Opposes privatization of public utilities, advocates for strong labor law enforcement, and supports expanding the public sector.",
-          "topics": ["economy"]
+          "id": "yisrael_beiteinu_8",
+          "title": "Cost of Living",
+          "summary": "Reduce regulation, downsize government ministries, increasing competition",
+          "topics": [
+            "government",
+            "cost_of_living"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
         },
         {
-          "id": "hadash_5",
-          "title": "Secular Democratic State",
-          "summary": "Advocates for a state based on civic rather than ethnic or religious identity, with full separation of religion and state.",
-          "topics": ["religion_state", "secular_society", "lgbtq"]
+          "id": "yisrael_beiteinu_9",
+          "title": "Core curriculum in Education",
+          "summary": "Mandated core curriculum of: Math, English, Technology, Civics, and Tanach. \nInstitutions that don't meet requirements will not be funded.",
+          "topics": [
+            "religion_state",
+            "education"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
         },
         {
-          "id": "hadash_6",
-          "title": "Dismantling of Nuclear Arsenal",
-          "summary": "Calls for a nuclear-free Middle East and Israeli participation in non-proliferation treaties.",
-          "topics": ["security"]
+          "id": "yisrael_beiteinu_10",
+          "title": "Increasing teachers salaries",
+          "summary": "Salary increases for teachers will be directly deposited to their bank accounts",
+          "topics": [
+            "education"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_11",
+          "title": "Reducing Rabbanut Overhead",
+          "summary": "Only one Chief Rabbi of Israel, instead of the current 2. One City Rabbi for each authority. Abolishing religious councils and make religious services be a department in municipalities.",
+          "topics": [
+            "religion_state",
+            "government",
+            "local_government"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_12",
+          "title": "Breaking Rabbanut Monopoly on Marriage",
+          "summary": "Legislate civil marriage and divorce",
+          "topics": [
+            "religion_state",
+            "liberal_rights"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_13",
+          "title": "Breaking Rabbanut Monopoly on Conversion",
+          "summary": "Legislate the <a href=\"https://en.idi.org.il/articles/23653\">Nissim Report</a> on conversion, which would move conversion away from the Rabbanut to an independant (Orthodox) body",
+          "topics": [
+            "religion_state"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_14",
+          "title": "Public Transit on Shabbat",
+          "summary": "Allowing local authorities to descide whether to offer public transit on shabbat",
+          "topics": [
+            "religion_state",
+            "transit",
+            "local_government"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_15",
+          "title": "Aliyah and the Diaspora",
+          "summary": "Create a committee to encourage Aliyah. Work with the Diaspora to make Aliyah easy and seamless.",
+          "topics": [
+            "aliyah"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_16",
+          "title": "New Bodies to Fight Crime",
+          "summary": "Make a National Crime Headquarters against organized crime, and set up 3 new specialized courts for serious crime: The North, Lod, the South",
+          "topics": [
+            "internal_security",
+            "judiciary"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/internal-security/"
+          ]
+        },
+        {
+          "id": "yisrael_beiteinu_17",
+          "title": "New Crime Fighting Legislation",
+          "summary": "New legislation to allow for the administrative arrest of heads of criminal organizations, and to permit the use of spyware to catch them",
+          "topics": [
+            "internal_security",
+            "liberal_rights"
+          ],
+          "source": "https://beytenu.org.il/party-platform/"
+        },
+        {
+          "id": "yisrael_beiteinu_18",
+          "title": "Palestinian Statehood",
+          "summary": "No Palestinian State. End the Oslo Accords. Transfer Gaza to Egypt and Area A of the West Bank to Jordan. Do not trust the PA.",
+          "topics": [
+            "pal_statehood"
+          ],
+          "source": [
+            "https://beytenu.org.il/party-platform/",
+            "https://beytenu.org.il/%d7%94%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%a9%d7%9c-%d7%9c%d7%99%d7%91%d7%a8%d7%9e%d7%9f-%d7%9c%d7%99%d7%95%d7%9d-%d7%a9%d7%90%d7%97%d7%a8%d7%99-%d7%a8%d7%90%d7%99%d7%95%d7%9f-%d7%9c%d7%95%d7%95/"
+          ]
         }
       ]
     }
