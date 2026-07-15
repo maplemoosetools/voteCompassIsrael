@@ -40,7 +40,7 @@
   "parties": [
     {
       "id": "likud",
-      "name": "likud",
+      "name": "Likud",
       "color": "#1f5aa5",
       "leader": "Benjamin Netanyahu",
       "bloc": "Government - Right",
@@ -1016,6 +1016,210 @@
             "local_government",
             "retirees"
           ]
+        }
+      ]
+    },
+    {
+      "id": "otzma_yehudit_jewish_power",
+      "name": "Otzma Yehudit (Jewish Power)",
+      "color": "#FF4500",
+      "leader": "Itamar Ben Gvir",
+      "bloc": "Government - Far Right",
+      "website": "ozma-yeudit.co.il",
+      "topline": "Complete the land of Israel by annexing Judea and Samaria/West Bank. Strengthening Jewish identity in Education, and reforming the government to strengthen the Jewish character of Israel.",
+      "positions": [
+        {
+          "id": "otzma_yehudit_jewish_power_1",
+          "title": "No Platform Published",
+          "summary": "No updated platform has been published since 2022",
+          "topics": [
+            "economy",
+            "internal_security",
+            "pal_statehood",
+            "constitution",
+            "aliyah",
+            "education",
+            "international_relations",
+            "peace_process",
+            "security",
+            "draft",
+            "transit",
+            "media",
+            "arab_citizens",
+            "environment",
+            "judiciary",
+            "periphery",
+            "workers",
+            "housing",
+            "veterans",
+            "war",
+            "cost_of_living",
+            "haredi",
+            "liberal_rights",
+            "religion_state",
+            "_oct7",
+            "welfare",
+            "palestinian_territories",
+            "government",
+            "healthcare",
+            "local_government",
+            "retirees"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_democrats",
+      "name": "The Democrats",
+      "color": "#D61922",
+      "leader": "Yair Golan",
+      "bloc": "Opposition - Left",
+      "website": "https://democrats.org.il/",
+      "topline": "Fight for a strong, secure, and just Israel, which is Jewish and Democratioc, liberal, egalitarian, and in the spirit of the Declaration of Independance.",
+      "positions": [
+        {
+          "id": "the_democrats_1",
+          "title": "Regional Peace and Normalization with Saudi Arabia",
+          "summary": "Recognize that Israel is viewed as an extremist pariah in the region, and rectify it. Build a regional alliance along with the USA and moderate Arab states, to collectively combat radical groups in the area. This group would also work to weaken Iran.\n<br> This requires recognizing that we need to make progress with the Palestinians to get regional buy in, and that regional partnerships benefit Israel's security.\n<br> The Democrats will also build normalization with Saudi Arabia, and support the India-Middle East-Europe infrastructure system in Israel.",
+          "topics": [
+            "international_relations",
+            "peace_process",
+            "security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_2",
+          "title": "End the \"Swords of Iron\" war on all fronts",
+          "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. \n<br> Gaza will be demiliterized, Hamas removed, and governance provided by trusted international partners.\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border, and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
+          "topics": [
+            "war",
+            "security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_3",
+          "title": "End annexation and fight Jewish terrorism/settler violence",
+          "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
+          "topics": [
+            "palestinian_territories",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_4",
+          "title": "Try to create a \"Palestinian Alternative\"",
+          "summary": "Promote a \"moderate, stable, and effective\" alternative government for the Palestinians. No terrorist organizations will be allowed to grow into governments.",
+          "topics": [
+            "peace_process",
+            "pal_statehood"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_5",
+          "title": "Establish a State Commission of Inquiry into October 7th",
+          "summary": "Establish a State Commission of Inquiry into the events of October 7th, and fully implement its conclusions.",
+          "topics": [
+            "_oct7",
+            "government",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_6",
+          "title": "Iran",
+          "summary": "Every tool will be used to stop Iran from getting a nuclear bomb, and to decrease the missile threat.",
+          "topics": [
+            "security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_7",
+          "title": "Strengthen and de-politicize the security establishment",
+          "summary": "Strengthen the IDF, Police, Shin Bet, ect. Make sure they have the manpower they need. \n<br> Remove politics from the defense sector and make it professional and independent. Make sure appointments are appropriate, and descisions are made by professionals.",
+          "topics": [
+            "security",
+            "draft"
+          ],
+          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+        },
+        {
+          "id": "the_democrats_8",
+          "title": "Increase civil rights in Basic Laws/Constitution",
+          "summary": "Add human and social rights (equality, freedom of expression, freedom of protest, freedom of and from religion, healthcare, education, and housing) to the Basic Laws of Israel and give that law 'Supreme Constitutional Status' [editors note: it is unclear if this is a plan for a Constitution]\n<br> Amend the Nation State Law to reflect Israel's Jewish and Democratic nature.",
+          "topics": [
+            "constitution",
+            "liberal_rights",
+            "judiciary",
+            "government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+        },
+        {
+          "id": "the_democrats_9",
+          "title": "Define the Knesset's role, powers, and supremacy",
+          "summary": "Enact \"Basic Law: Legislation\" to regulate the status and amendment procedure for Basic Laws, as well as regulate the court's ability for Judicial Review. \n<br> Strengthen the Knesset's ability to do its work by changing how committees and the plenum operate. Also strengthen the Ethics Committee, and improve the legislative process.",
+          "topics": [
+            "constitution",
+            "government",
+            "judiciary"
+          ],
+          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+        },
+        {
+          "id": "the_democrats_10",
+          "title": "Strengthen Ethics and Professional rules on the Government",
+          "summary": "Enact binding ethical rules and standards of service on government ministers and civil service employees.\n<br> Formalize legislation around legal advice and the binding status of legal opinions.\n<br> Ensure professional appointments procedures for senior appoinments, and protect politically sensitive civil servants from political pressure.\n<br> Punish government corruption and misuse of public funds.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+        },
+        {
+          "id": "the_democrats_11",
+          "title": "Term Limits for Prime Ministers",
+          "summary": "8 year term limits for Prime Ministers.\n<br> Establish systems for impeachement\n<br> Prohibit holding government office while under indictment.",
+          "topics": [
+            "government",
+            "constitution"
+          ],
+          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+        },
+        {
+          "id": "the_democrats_12",
+          "title": "Judicial Reform",
+          "summary": "Repeal legislation designed to weaken the Judicial system, specifically changes to the Judicial Selection Committee and increased powers of the religious courts.\n<br> Formalize through legislation the powers and limitations of Judicial Review.\n<br> Reform the judicial system by appointing judges, estabilishing more appeal courts, and streamline the judicial process.\n<br> Make dispute resolution more accessible through simple processes, community focused solutions, and improving accss to the courts.",
+          "topics": [
+            "government",
+            "judiciary"
+          ],
+          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+        },
+        {
+          "id": "the_democrats_13",
+          "title": "Civil Marriage and Divorce",
+          "summary": "Break the Rabbinate monopoly on marriage and divorce, and legislate full choice in religious or civil marriage. Also work on civil divorce solutions for people who have religious marriages.",
+          "topics": [
+            "liberal_rights",
+            "religion_state",
+            "arab_citizens"
+          ],
+          "source": "https://yes.democrats.org.il/topics/religion-state"
+        },
+        {
+          "id": "the_democrats_14",
+          "title": "Conversion and Kashrut",
+          "summary": "Break the Rabbinate monopoly on Kashrut. Recognize non-Rabbanut conversion and non-Orthodox conversion.",
+          "topics": [
+            "liberal_rights",
+            "religion_state"
+          ],
+          "source": "https://yes.democrats.org.il/topics/religion-state"
         }
       ]
     }
