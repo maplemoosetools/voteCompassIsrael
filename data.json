@@ -6,83 +6,84 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
+    { "id": "draft",           "label": "Army Enlistment and Draft" },
+    { "id": "arab_citizens",   "label": "Arab Sector" },
+    { "id": "media",           "label": "Culture and Media" },
+    { "id": "cost_of_living",  "label": "Cost of Living" }, 
+    { "id": "constitution",    "label": "Constitution" },
     { "id": "economy",         "label": "Economy" },
-    { "id": "security",        "label": "Security & Defense" },
-    { "id": "internal_security","label": "Internal Security and Law Enforcement" },
-    { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
-    { "id": "religion_state",  "label": "Religion & State" },
-    { "id": "judiciary",       "label": "Judiciary & Rule of Law" },
-    { "id": "housing",         "label": "Housing" },
-    { "id": "transit",         "label": "Transit and Transportation" },
-    { "id": "liberal_rights",  "label": "Liberal Rights" },
-    { "id": "arab_citizens",   "label": "Arab Citizens of Israel" },
-    { "id": "haredi",          "label": "Haredi Sector" },
-    { "id": "environment",     "label": "Environment & Climate" },
-    { "id": "healthcare",      "label": "Healthcare" },
     { "id": "education",       "label": "Education" },
+    { "id": "workers",         "label": "Employment and workers" },
+    { "id": "environment",     "label": "Environment & Climate" },
+    { "id": "government",      "label": "Government" },
+    { "id": "haredi",          "label": "Haredi Sector" },
+    { "id": "healthcare",      "label": "Healthcare" },
+    { "id": "housing",         "label": "Housing" },
     { "id": "aliyah",          "label": "Immigration & Diaspora" },
+    { "id": "international_relations",       "label": "International Relations" },     
+    { "id": "internal_security","label": "Internal Security and Law Enforcement" },
+    { "id": "judiciary",       "label": "Judiciary & Rule of Law" },
+    { "id": "liberal_rights",  "label": "Liberal Rights" },
+    { "id": "local_government","label": "Local Government" },
     { "id": "_oct7",           "label": "October 7th" },
     { "id": "palestinians",    "label": "Palestinians" },
-    { "id": "draft",           "label": "Army Enlistment and Draft" },
-    { "id": "cost_of_living",  "label": "Cost of Living" },
-    { "id": "international_relations",       "label": "International Relations" },      
-    { "id": "government",      "label": "Government" },
-    { "id": "local_government","label": "Local Government" },
+    { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
     { "id": "periphery",       "label": "The Periphery" },
+    { "id": "religion_state",  "label": "Religion & State" },
     { "id": "retirees",        "label": "Retirees and Pensioners" },
+    { "id": "security",        "label": "Security & Defense" },
+    { "id": "transit",         "label": "Transit and Transportation" },
     { "id": "veterans",        "label": "Veterans" },
-    { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
-    { "id": "media",           "label": "Culture and Media" },
-    { "id": "constitution",    "label": "Constitution" },
-    { "id": "workers",         "label": "Employment and workers" }
+    { "id": "welfare",         "label": "Welfare & Bituach Leumi" }
+
   ],
   "parties": [
     {
       "id": "likud",
-      "name": "Likud",
-      "nameHe": "הליכוד",
-      "color": "#1A5DC8",
+      "name": "likud",
+      "color": "#1f5aa5",
       "leader": "Benjamin Netanyahu",
-      "key-people": ["Naftali Bennett", "Yair Lapid"],
-      "currentmks": 50,
-      "bloc": "Right",
-      "topline": "Only Bibi can win.",
+      "bloc": "Government - Right",
+      "website": "https://www.likud.org.il/en/",
+      "topline": "Only Bibi Netanyahu can protect Israel",
       "positions": [
         {
           "id": "likud_1",
-          "title": "Opposition to Palestinian State",
-          "summary": "Opposes the establishment of a Palestinian state west of the Jordan River. Advocates for Israeli security control over all territory between the river and the sea.",
-          "topics": ["peace_process", "security"]
-        },
-        {
-          "id": "likud_2",
-          "title": "Judicial Reform",
-          "summary": "Supports reforms to rebalance power between the Knesset and the judiciary, including changes to the override clause and judicial appointments committee.",
-          "topics": ["judiciary"]
-        },
-        {
-          "id": "likud_3",
-          "title": "Free-Market Economy",
-          "summary": "Favors privatization, reducing business regulation, and encouraging foreign investment to stimulate growth.",
-          "topics": ["economy"]
-        },
-        {
-          "id": "likud_4",
-          "title": "Settlement Expansion",
-          "summary": "Supports continued building in West Bank settlements and opposes settlement freezes as a precondition for negotiations.",
-          "topics": ["peace_process", "housing"]
-        },
-        {
-          "id": "likud_5",
-          "title": "Strong Military Response in Gaza",
-          "summary": "Advocates for continued military pressure until Hamas is dismantled and all hostages are returned.",
-          "topics": ["security"]
-        },
-        {
-          "id": "likud_6",
-          "title": "Status Quo on Religion and State",
-          "summary": "Generally maintains the status quo arrangement on religious affairs, including Shabbat observance laws, as part of coalition agreements.",
-          "topics": ["religion_state"]
+          "title": "No Platform Published",
+          "summary": "No platform has been published.",
+          "topics": [
+            "economy",
+            "internal_security",
+            "pal_statehood",
+            "constitution",
+            "aliyah",
+            "education",
+            "international_relations",
+            "peace_process",
+            "security",
+            "draft",
+            "transit",
+            "media",
+            "arab_citizens",
+            "environment",
+            "judiciary",
+            "periphery",
+            "workers",
+            "housing",
+            "veterans",
+            "war",
+            "cost_of_living",
+            "haredi",
+            "liberal_rights",
+            "religion_state",
+            "_oct7",
+            "welfare",
+            "palestinian_territories",
+            "government",
+            "healthcare",
+            "local_government",
+            "retirees"
+          ]
         }
       ]
     },
@@ -966,6 +967,55 @@
             "international_relations"
           ],
           "source": "https://hadash.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "religious_zionism",
+      "name": "Religious Zionism",
+      "color": "#214785",
+      "leader": "Bezalel Smotrich",
+      "bloc": "Government - Right",
+      "website": "zionutdatit.org.il",
+      "topline": "The RZP's goal is to strengthen the state's Jewish Identity, reform the legal system, settle the Negev, Galilee, Judea, and Samaria, preserve religious education, and support immigration, agriculture, and charity.",
+      "positions": [
+        {
+          "id": "religious_zionism_1",
+          "title": "No Platform Published",
+          "summary": "No updated platform has been published since 2022",
+          "topics": [
+            "economy",
+            "internal_security",
+            "pal_statehood",
+            "constitution",
+            "aliyah",
+            "education",
+            "international_relations",
+            "peace_process",
+            "security",
+            "draft",
+            "transit",
+            "media",
+            "arab_citizens",
+            "environment",
+            "judiciary",
+            "periphery",
+            "workers",
+            "housing",
+            "veterans",
+            "war",
+            "cost_of_living",
+            "haredi",
+            "liberal_rights",
+            "religion_state",
+            "_oct7",
+            "welfare",
+            "palestinian_territories",
+            "government",
+            "healthcare",
+            "local_government",
+            "retirees"
+          ]
         }
       ]
     }

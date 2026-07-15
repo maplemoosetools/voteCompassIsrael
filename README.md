@@ -13,12 +13,7 @@ A side-by-side political platform comparison tool for Israeli elections, inspire
 - Each platform position is tagged with multiple relevant topics
 - Unchecked topics show a colored tally of how many hidden positions each party has on that topic — so you never miss something relevant
 
-## How to deploy (GitHub Pages)
 
-1. Fork this repository
-2. Go to **Settings → Pages**
-3. Set source to **Deploy from a branch**, branch: `main`, folder: `/ (root)`
-4. Your site will be live at `https://yourusername.github.io/voteCompassSsrael`
 
 ## How to update party data
 
@@ -53,7 +48,3 @@ Each position can have **multiple topic tags** — a position on running public 
 
 ## Get in touch
 Please email me at votecompassisrael(at)gmail.com
-
-## License
-
-MIT — free to use, fork, and adapt.
