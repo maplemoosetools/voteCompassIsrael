@@ -27,6 +27,7 @@
     { "id": "local_government","label": "Local Government" },
     { "id": "_oct7",           "label": "October 7th" },
     { "id": "palestinians",    "label": "Palestinians" },
+    { "id": "palestinian_territories",    "label": "Palestinian Territories" },
     { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
     { "id": "periphery",       "label": "The Periphery" },
     { "id": "religion_state",  "label": "Religion & State" },
