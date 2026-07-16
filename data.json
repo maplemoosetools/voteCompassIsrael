@@ -1202,8 +1202,8 @@
         },
         {
           "id": "the_democrats_13",
-          "title": "Civil Marriage and Divorce",
-          "summary": "Break the Rabbinate monopoly on marriage and divorce, and legislate full choice in religious or civil marriage. Also work on civil divorce solutions for people who have religious marriages.",
+          "title": "Life Cycle Events, Kashrut, Conversion",
+          "summary": "Break the Rabbinate monopoly on Kashrut. Recognize non-Rabbanut conversion and non-Orthodox conversion.\n<br> Recognize liberal streams of Judaism and subsidize them as much as Orthodoxy. \n<br> Fund non-orthodox and non-religious burial ceremonies.",
           "topics": [
             "liberal_rights",
             "religion_state",
@@ -1213,13 +1213,229 @@
         },
         {
           "id": "the_democrats_14",
-          "title": "Conversion and Kashrut",
-          "summary": "Break the Rabbinate monopoly on Kashrut. Recognize non-Rabbanut conversion and non-Orthodox conversion.",
+          "title": "National Service for All Citizens",
+          "summary": "Equalize the burden in society by mandating national service for all citizens.",
+          "topics": [
+            "haredi",
+            "draft"
+          ],
+          "source": "https://yes.democrats.org.il/topics/religion-state"
+        },
+        {
+          "id": "the_democrats_15",
+          "title": "Religion in the public square",
+          "summary": "Develop 'clear rules' for religious practice in public spaces, ensuring that spaces are are open to all citizens and that religion and prayer services can not be used as a pretext to deny access or discriminate in public spaces.\nLocal authorities will have powers to regulate public spaces, under the restriction of laws that ensure that discrimination is not permitted. They will try to breate a balance between freedom of expression and worship and the right to freedom from religion and accessing public spaces.\n<br>\nFight the 'religiousization' of the IDF, education system, and public sphere. Stop units and divisions from excluding women in order to integrate Haredim.",
+          "topics": [
+            "haredi",
+            "religion_state",
+            "liberal_rights",
+            "local_government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/religion-state"
+        },
+        {
+          "id": "the_democrats_16",
+          "title": "Public Transit on Shabbat",
+          "summary": "Public transit will run 7 a week, including on shabbat. Local authorities will be given power to adapt transit lines to appropriately accomodate neighbourhoods and communities.",
+          "topics": [
+            "religion_state",
+            "transit"
+          ],
+          "source": "https://yes.democrats.org.il/topics/religion-state"
+        },
+        {
+          "id": "the_democrats_17",
+          "title": "Marriage & Parenthood Rights",
+          "summary": "Break the Rabbinate monopoly on marriage and divorce, and legislate full choice in religious or civil marriage. Also work on civil divorce solutions for people who have religious marriages.\n<br> Allow same-sex marriage, same-sex parental registration, and surrogacy for same-sex couples. Implement full equality in all government bodies, like the Interior Ministry and Bituach Leumi.",
           "topics": [
             "liberal_rights",
             "religion_state"
           ],
-          "source": "https://yes.democrats.org.il/topics/religion-state"
+          "source": [
+            "https://yes.democrats.org.il/topics/lgbtq-equality",
+            "https://yes.democrats.org.il/topics/religion-state"
+          ]
+        },
+        {
+          "id": "the_democrats_18",
+          "title": "Protect the LGBTQ Community",
+          "summary": "Prohibit conversion therapy. Recognize, by law, victims of hate crimes. Amend the Criminal Code to include incitement against LGBTQ people and increase punishments for hate crimes based on gender identity. \n<br> Add sexual orientation and gender identity to protected characteristics under laws prohibiting discrimination.\n<br> End government support for groups that promote discriminating against the LGBTQ community.\n<br> Promote a national plan to combat homophobia.\n<br> Create up to date procedures for the Trans community in Israeli prisons.",
+          "topics": [
+            "liberal_rights",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/lgbtq-equality"
+        },
+        {
+          "id": "the_democrats_19",
+          "title": "Fund initiatives to grow tolerance and support the LGBTQ Community",
+          "summary": "Expand budgets for programs that build tolerance and support LGBTQ youth. Add contents on issues facing the community to the education system.\n<br> Expant the Division for the Advancement of the LGBT Population in the Ministry of Social Equality.\n<br> Fund shelters for youth, and develop programs for youth, seniors, the periphery, in Arab and Haredi society.\n<br> Fund culture within the LGBTQ community. Work on training and job placement for people who are discriminated against.",
+          "topics": [
+            "liberal_rights",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": "https://yes.democrats.org.il/topics/lgbtq-equality"
+        },
+        {
+          "id": "the_democrats_20",
+          "title": "Redirect funds from political communities to welfare and economy",
+          "summary": "Stop funding politically advantagious communities and programs in the West Bank. Instead, use that money for Israel's Social Safety Net and to grow the economy.",
+          "topics": [
+            "economy",
+            "welfare",
+            "workers"
+          ],
+          "source": "https://yes.democrats.org.il/topics/economy-society"
+        },
+        {
+          "id": "the_democrats_21",
+          "title": "Support young families and workers",
+          "summary": "Shorten the work week, add vacation days and sick days. Provide parental leave for fathers. Make early childhood education more accessible and affordable.",
+          "topics": [
+            "cost_of_living",
+            "workers",
+            "education"
+          ],
+          "source": "https://yes.democrats.org.il/topics/economy-society"
+        },
+        {
+          "id": "the_democrats_22",
+          "title": "Lower the cost of living and invest in transit",
+          "summary": "Dismantle monopolies and bring in competition. Add more products to the price regulation list.\n<br> Lower the cost of public transit and build it out, so that by 2040 Israel is a leading country. Additionally, invest in sidewalks and bike paths, and non-car infrastructure.",
+          "topics": [
+            "cost_of_living",
+            "transit"
+          ],
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/environment-animals"
+          ]
+        },
+        {
+          "id": "the_democrats_23",
+          "title": "Address housing costs though urban planning, and environemental protection",
+          "summary": "Build more housing, particularly near transit. Expand long term rental and public housing options.\n<br> Strengthen the independance and quality of planning institutions, environmental oversight systems, and public participation. Add more local and public representation onto planning committes.\n<br> Ensure the participation of environmental organizations on planning committees.\n<br> Encourage Urban Renewal over new towns and sprawl.",
+          "topics": [
+            "housing"
+          ],
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/environment-animals"
+          ]
+        },
+        {
+          "id": "the_democrats_24",
+          "title": "Invest in the Periphery",
+          "summary": "Invest in the economy, education, health services, housing, culture, and transportation in the North and the South. Move money away from annexation and towards the Periphery.",
+          "topics": [
+            "housing",
+            "periphery",
+            "transit"
+          ],
+          "source": "https://yes.democrats.org.il/topics/economy-society"
+        },
+        {
+          "id": "the_democrats_25",
+          "title": "Create a Basic Law: The Environment and Climate",
+          "summary": "Protect the environment by creating a Basic Law that will guarentee the right to a healthy environment and require the State to preserve natural resources.\n<br> Re-establish the Future Generations Commission [a Knesset committee from the early 2000s that had the right to intervene in legislation that could negatively affect future generations].\n<br> Enact a Climate Law, targetting reducing emissions to 50% by 2030 and 100% by 2050.",
+          "topics": [
+            "environment",
+            "constitution",
+            "government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/environment-animals"
+        },
+        {
+          "id": "the_democrats_26",
+          "title": "Transition to Clean Industries and Clean Energy",
+          "summary": "Close coal power plants. Rehabilitate the Haifa Bay. End industries and factories that are sources of pollution. Increase enforcement against pollution, noise, radiation, and other things that impact public health.\n<br> Reduce energy consumption and strengthen energy resilience though a transition to a cleaner and more distributed system. Deploy solar all over the country, and invest in Israeli R&D in energy and climate.",
+          "topics": [
+            "economy",
+            "environment"
+          ],
+          "source": "https://yes.democrats.org.il/topics/environment-animals"
+        },
+        {
+          "id": "the_democrats_27",
+          "title": "Address the garbage crisis",
+          "summary": "Reform the waste system by:\n<ul><li>Establishing a national waste authority</li>\n<li>Encouraging and investing in recycling and waste reduction to reduce the amount of trash in landfills</li>\n<li>Making producers responsible for end of life disposal, and for reducing single use packaging materials</li>\n</ul>\n<br>\nEncourage local food production and create a natonal food security plan, and then use that to reduce food waste.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://yes.democrats.org.il/topics/environment-animals"
+        },
+        {
+          "id": "the_democrats_28",
+          "title": "Protect plants and animals",
+          "summary": "Work with Jordan and the PA to protect the environment and water, and restore the lower Jordan and the Dead Sea.\n<br> Fight the illegal trade for plants and animals, and amend Money Laundering and Animal Cruelty laws to address them.\n<br> Make 30% of Israeli land and sea into nature preseves by 2030.\n<br> Make a national action plan to preserve and restore biodiversity, with funding.\n<br> Take more State revenues from natural resource extraction.",
+          "topics": [
+            "environment",
+            "international_relations",
+            "economy"
+          ],
+          "source": "https://yes.democrats.org.il/topics/environment-animals"
+        },
+        {
+          "id": "the_democrats_29",
+          "title": "Even out funding for students between religious streams",
+          "summary": "End the current situation where state-religious schools are being funded 26% more than state-hebrew schools and 39% more than state-arab schools.\nFunding will based solely on a school's number of students and the socio-economic background.",
+          "topics": [
+            "education",
+            "religion_state",
+            "arab_citizens"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
+        },
+        {
+          "id": "the_democrats_30",
+          "title": "Establish a State Education Council",
+          "summary": "Establish a council similar to the State-Religious Education Council, for the secular education system.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
+        },
+        {
+          "id": "the_democrats_31",
+          "title": "Fund Early Childhood Education",
+          "summary": "Expand subsidized daycare for ages 0-3 and raise staff salaries",
+          "topics": [
+            "education",
+            "cost_of_living",
+            "workers"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
+        },
+        {
+          "id": "the_democrats_32",
+          "title": "End funding for non-state Haredi school systems",
+          "summary": "Currently, the government funds privately owned school systems in the Haredi community, that do not teach math, english, or civics, and promote draft dodging. That funding will be ended, and invested into the State-Haredi education system.",
+          "topics": [
+            "education",
+            "religion_state",
+            "haredi"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
+        },
+        {
+          "id": "the_democrats_33",
+          "title": "Mandatory Civics Classes",
+          "summary": "Add Democracy and Civics to the curriculum at the same status as Math and English. \n<br> Add study hours to all streams for Jewish-democratic-liberal identity, at a level currently used in the state-religious stream.\n<br> Fund pre-military academies and youth organziations that reflect these values.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
+        },
+        {
+          "id": "the_democrats_34",
+          "title": "Invest in Teachers and Principals",
+          "summary": "Reform the employment structure and strengthen the role of teachers and principals. Decentralize authority to local education boards and increase professional development in staff.",
+          "topics": [
+            "education",
+            "local_government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/education"
         }
       ]
     }
