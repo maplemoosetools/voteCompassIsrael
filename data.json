@@ -27,16 +27,14 @@
     { "id": "liberal_rights",  "label": "Liberal Rights" },
     { "id": "local_government","label": "Local Government" },
     { "id": "_oct7",           "label": "October 7th" },
-    { "id": "palestinians",    "label": "Palestinians" },
-    { "id": "pal_statehood",    "label": "Palestinian Statehood" },
-    { "id": "palestinian_territories",    "label": "Palestinian Territories" },
+    { "id": "palestinians",    "label": "Palestinians, Statehood, & the Territories" },
     { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
     { "id": "periphery",       "label": "The Periphery" },
-    { "id": "religion_state",  "label": "Religion & State" },
+    { "id": "religion_state",  "label": "Religion, the State, & State Identity" },
     { "id": "retirees",        "label": "Retirees and Pensioners" },
     { "id": "security",        "label": "Security & Defense" },
     { "id": "transit",         "label": "Transit and Transportation" },
-    { "id": "veterans",        "label": "Veterans" },
+    { "id": "soldiers",        "label": "Soldiers, Reservists, & Veterans" },
     { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
     { "id": "war",         "label": "The War" }
 
@@ -58,7 +56,7 @@
           "topics": [
             "economy",
             "internal_security",
-            "pal_statehood",
+            "palestinians",
             "constitution",
             "aliyah",
             "education",
@@ -74,7 +72,7 @@
             "periphery",
             "workers",
             "housing",
-            "veterans",
+            "soldiers",
             "war",
             "cost_of_living",
             "haredi",
@@ -82,7 +80,7 @@
             "religion_state",
             "_oct7",
             "welfare",
-            "palestinian_territories",
+            "palestinians",
             "government",
             "healthcare",
             "local_government",
@@ -263,7 +261,7 @@
             "draft",
             "education",
             "welfare",
-            "veterans"
+            "soldiers"
           ],
           "source": [
             "https://bennett2026.org.il/plans/",
@@ -276,7 +274,7 @@
           "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\nRemove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans. Publish benchmarks and scores to show if the rehabilitation system is improving.",
           "topics": [
             "healthcare",
-            "veterans"
+            "soldiers"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -286,7 +284,7 @@
           "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
           "topics": [
             "healthcare",
-            "veterans",
+            "soldiers",
             "education"
           ],
           "source": [
@@ -301,7 +299,7 @@
           "summary": "Create a new supportive housing path for wounded and disabled service veterans",
           "topics": [
             "housing",
-            "veterans"
+            "soldiers"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -311,7 +309,7 @@
           "summary": "Expand the subsidized rental program by 250,000 units, and build a new city in the Merkaz specifically for young veterans.",
           "topics": [
             "housing",
-            "veterans",
+            "soldiers",
             "welfare"
           ],
           "source": [
@@ -494,7 +492,7 @@
           "title": "Improve Miluimnik Benefits",
           "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
           "topics": [
-            "veterans",
+            "soldiers",
             "draft",
             "housing",
             "cost_of_living"
@@ -506,7 +504,7 @@
           "title": "Improve Veteran Benefits",
           "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
           "topics": [
-            "veterans",
+            "soldiers",
             "draft",
             "housing",
             "cost_of_living"
@@ -544,7 +542,7 @@
           "summary": "Move the early childhood education system (0-3 years) to the state education system, and subsidize working and serving parents.\n<br>Oversight will strengthen, with childcare requiring certifications and salaries for childcare providers increasing.",
           "topics": [
             "education",
-            "veterans",
+            "soldiers",
             "cost_of_living",
             "workers"
           ],
@@ -789,7 +787,7 @@
           "title": "Palestinian Statehood",
           "summary": "No Palestinian State. End the Oslo Accords. Transfer Gaza to Egypt and Area A of the West Bank to Jordan. Do not trust the PA.",
           "topics": [
-            "pal_statehood"
+            "palestinians"
           ],
           "source": [
             "https://beytenu.org.il/party-platform/",
@@ -812,8 +810,7 @@
           "summary": "Regional peace based on:\n1. Israeli withdrawal to the Green Line, including leaving 'Arab Jerusalem', which will become the capital of Palestine\n2. Israeli withdrawl from the Golan Heights, occupied Syria, and occupied Lebanon\n3. A solution to the Palestinian Refugee problem, per UN resolutions\n4. Dismantelling settlements in the West Bank",
           "topics": [
             "security",
-            "pal_statehood",
-            "palestinian_territories",
+            "palestinians",
             "peace_process",
             "periphery"
           ],
@@ -836,7 +833,7 @@
           "topics": [
             "security",
             "economy",
-            "palestinian_territories"
+            "palestinians"
           ],
           "source": "https://hadash.org.il/"
         },
@@ -970,7 +967,7 @@
           "summary": "Fight racism and fascism. Protect the freedom of the press, assembly, political activity, concience, and relgious rights.\nRecognize the right to refuse to serve in Palestinian territories.\nRepeal laws that enable religious coersion",
           "topics": [
             "religion_state",
-            "palestinian_territories",
+            "palestinians",
             "liberal_rights",
             "media"
           ],
@@ -1034,7 +1031,7 @@
           "topics": [
             "economy",
             "internal_security",
-            "pal_statehood",
+            "palestinians",
             "constitution",
             "aliyah",
             "education",
@@ -1050,7 +1047,7 @@
             "periphery",
             "workers",
             "housing",
-            "veterans",
+            "soldiers",
             "war",
             "cost_of_living",
             "haredi",
@@ -1058,7 +1055,7 @@
             "religion_state",
             "_oct7",
             "welfare",
-            "palestinian_territories",
+            "palestinians",
             "government",
             "healthcare",
             "local_government",
@@ -1083,7 +1080,7 @@
           "topics": [
             "economy",
             "internal_security",
-            "pal_statehood",
+            "palestinians",
             "constitution",
             "aliyah",
             "education",
@@ -1099,7 +1096,7 @@
             "periphery",
             "workers",
             "housing",
-            "veterans",
+            "soldiers",
             "war",
             "cost_of_living",
             "haredi",
@@ -1107,7 +1104,7 @@
             "religion_state",
             "_oct7",
             "welfare",
-            "palestinian_territories",
+            "palestinians",
             "government",
             "healthcare",
             "local_government",
@@ -1151,7 +1148,7 @@
           "title": "End annexation and fight Jewish terrorism/settler violence",
           "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
           "topics": [
-            "palestinian_territories",
+            "palestinians",
             "internal_security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
@@ -1162,7 +1159,7 @@
           "summary": "Promote a \"moderate, stable, and effective\" alternative government for the Palestinians. No terrorist organizations will be allowed to grow into governments.",
           "topics": [
             "peace_process",
-            "pal_statehood"
+            "palestinians"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
         },
@@ -1605,7 +1602,7 @@
             "welfare",
             "workers",
             "housing",
-            "veterans"
+            "soldiers"
           ],
           "source": [
             "https://yasharwitheisenkot.com/agenda_point/",
@@ -1680,7 +1677,7 @@
           "summary": "During times that are neither major war nor peacetime, reserve duties will be capped at 50 days/year, with a hard limit of 150 days in 3 years.\n<br>Reservists will be given, under normal circumstances, at least 5 months advanced notice of service times.",
           "topics": [
             "draft",
-            "veterans"
+            "soldiers"
           ],
           "source": "https://yasharwitheisenkot.com/principles/reservists-honour-and-compensation/"
         },
@@ -1690,7 +1687,7 @@
           "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:\n<ul><li>Direct benefits</li>\n<li>Compensation for employers</li>\n<li>Advanced degree funding</li>\n<li>Family funding: childcare, babysitting, after school classes, travel.</li>\n<li>Housing benefits</li>\n</ul>",
           "topics": [
             "welfare",
-            "veterans",
+            "soldiers",
             "housing"
           ],
           "source": "https://yasharwitheisenkot.com/principles/reservists-honour-and-compensation/"
