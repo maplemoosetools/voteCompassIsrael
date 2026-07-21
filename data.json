@@ -6,6 +6,7 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
+    { "id": "AI",           "label": "Artificial Intelligence" },
     { "id": "draft",           "label": "Army Enlistment and Draft" },
     { "id": "arab_citizens",   "label": "Arab Sector" },
     { "id": "media",           "label": "Culture and Media" },
@@ -27,6 +28,7 @@
     { "id": "local_government","label": "Local Government" },
     { "id": "_oct7",           "label": "October 7th" },
     { "id": "palestinians",    "label": "Palestinians" },
+    { "id": "pal_statehood",    "label": "Palestinian Statehood" },
     { "id": "palestinian_territories",    "label": "Palestinian Territories" },
     { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
     { "id": "periphery",       "label": "The Periphery" },
@@ -35,7 +37,8 @@
     { "id": "security",        "label": "Security & Defense" },
     { "id": "transit",         "label": "Transit and Transportation" },
     { "id": "veterans",        "label": "Veterans" },
-    { "id": "welfare",         "label": "Welfare & Bituach Leumi" }
+    { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
+    { "id": "war",         "label": "The War" }
 
   ],
   "parties": [
@@ -46,7 +49,7 @@
       "leader": "Benjamin Netanyahu",
       "bloc": "Government - Right",
       "website": "https://www.likud.org.il/en/",
-      "topline": "Only Bibi Netanyahu can protect Israel",
+      "topline": "Not published",
       "positions": [
         {
           "id": "likud_1",
@@ -91,7 +94,7 @@
     {
       "id": "beyahad_together",
       "name": "BeYahad (Together)",
-      "color": "#005EB8",
+      "color": "#23C2EB",
       "leader": "Naftali Bennet <br> Yair Lapid",
       "bloc": "Opposition - Center to Center Right",
       "website": "https://go.be-yahad.org.il/",
@@ -99,39 +102,28 @@
       "positions": [
         {
           "id": "beyahad_together_1",
-          "title": "Consitutional Reform",
-          "summary": "Create a Constitution in line with the principles of the Declaration of Independence\nTerm limits for Prime Ministers: Limited to 8 consecutive years",
+          "title": "Bringing the Beduins into Israeli society",
+          "summary": "Build the connection between the Bedouin community and the state, with economic stimulus, education, and sanctions.",
           "topics": [
-            "government"
+            "arab_citizens",
+            "periphery"
           ],
-          "source": [
-            "https://bennett2026.org.il/plans/",
-            "https://bennett2026.org.il/hok-yesod-1/"
-          ]
+          "source": "https://bennett2026.org.il/plans/negev/"
         },
         {
           "id": "beyahad_together_2",
-          "title": "Commission of Inquiry",
-          "summary": "Open a non-partisan, apolitical State Commission of Inquiry into the events of October 7th and the conduct of the state afterwards.",
+          "title": "Jews around the world",
+          "summary": "Recognize that Israel's political position directly impacts the diaspora.",
           "topics": [
-            "_oct7"
+            "aliyah",
+            "international_relations"
           ],
           "source": "https://bennett2026.org.il/plans/"
         },
         {
           "id": "beyahad_together_4",
-          "title": "Judicial Reform",
-          "summary": "Limiting and formalizing the courts' abilities of Judicial Review and striking basic laws, subject to broad consensus.",
-          "topics": [
-            "government",
-            "judiciary"
-          ],
-          "source": "https://bennett2026.org.il/plans/"
-        },
-        {
-          "id": "beyahad_together_5",
           "title": "Meeting the IDF Manpower Needs",
-          "summary": "Recruit 20,000 additional combat soldiers",
+          "summary": "Recruit 20,000 additional combat soldiers.",
           "topics": [
             "draft",
             "security"
@@ -139,43 +131,69 @@
           "source": "https://bennett2026.org.il/plans/"
         },
         {
+          "id": "beyahad_together_5",
+          "title": "Fighting the cost of living",
+          "summary": "Lower the cost of food by 30% within a year, by dismantling closed industries and opening Israel to foreign suppliers. \n<br> Adopt European food standards. Unite all food import bureaucracy under one authority. Prohibit monopolies from managing more than one food sector.\n<br>Prohibit contracts between suppliers and grocery stores/chains that made it harder for small importers to break into the market.\n<br>Abolish tariffs and instead subsidize farmers who are identified as being critical to Israel's food security, and invest in agriculture to make it more competitive. End production limits.\n<br>Break the Rabbinate monopoly on Kashrut through automatic recognition of foreign, recognized certifications.",
+          "topics": [
+            "economy",
+            "cost_of_living",
+            "religion_state"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/the-cost-of-living-en/"
+        },
+        {
           "id": "beyahad_together_7",
           "title": "Improving the education system",
-          "summary": "Improve quality of public education to meet the level of private schools\nImprove teacher salaries\nExtending the school day until 4:00 PM, and increasing classes, athletics, and provide a hot meal.",
+          "summary": "Improve quality of public education to meet the level of private schools\n<br>Improve teacher salaries, reward outstanding teachers.\n<br>Extending the school day until 4:00 PM, and increasing classes, athletics, and provide a hot meal.\n<br>Target closing the educational outcomes gap with the OECD average within 5 years.",
           "topics": [
             "education"
           ],
           "source": [
             "https://bennett2026.org.il/plans/",
             "https://x.com/yairlapid/status/2056645906309538005",
-            "https://www.instagram.com/p/DYhPo1qjA6I"
+            "https://www.instagram.com/p/DYhPo1qjA6I",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
           ]
         },
         {
           "id": "beyahad_together_8",
-          "title": "Improving the education system",
-          "summary": "Completely revamp the Ministry of Education",
+          "title": "Improving the Education System's Governance",
+          "summary": "Completely revamp the Ministry of Education. Dismantle bureaucracy and transfer powers (70% of descisions) to local governments and principals. The Ministry of Education will become a regulator, not an operator. \n<br>Set up a \"National Education Council\" to oversee all 4 streams and create a stable 5-year plan.",
           "topics": [
             "education",
-            "government"
-          ],
-          "source": "https://bennett2026.org.il/plans/"
-        },
-        {
-          "id": "beyahad_together_10",
-          "title": "Fighting organized crime",
-          "summary": "Focus on rooting out organized crime. Identify the top 3 families and top 100 criminals and go after them directly",
-          "topics": [
-            "internal_security",
-            "periphery"
+            "government",
+            "local_government"
           ],
           "source": [
             "https://bennett2026.org.il/plans/",
-            "https://bennett2026.org.il/plans/negev/"
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
           ]
         },
         {
+          "id": "beyahad_together_10",
+          "title": "Combatting incitement",
+          "summary": "Monitor the education system to make sure that incitement against the state isn't being taught",
+          "topics": [
+            "education",
+            "internal_security"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
           "id": "beyahad_together_11",
+          "title": "Consitutional Reform",
+          "summary": "Create a Constitution in line with the principles of the Declaration of Independence\nTerm limits for Prime Ministers: Limited to 8 consecutive years",
+          "topics": [
+            "government",
+            "constitution"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/hok-yesod-1/"
+          ]
+        },
+        {
+          "id": "beyahad_together_12",
           "title": "Improve the public service",
           "summary": "Improve the quality of the public service, through the use of KPIs.",
           "topics": [
@@ -184,27 +202,43 @@
           "source": "https://bennett2026.org.il/plans/"
         },
         {
-          "id": "beyahad_together_12",
-          "title": "Move authorities to local governments",
-          "summary": "Decentralize powers and give more authority to local regional governments",
+          "id": "beyahad_together_13",
+          "title": "Fight corruption though wasteful political spending",
+          "summary": "\"Coalition Funds\" (government funding for niche party priorities that is promised to get parties to join a coalition) will be cancelled. Useless government ministries will be closed. Estimated savings: 4.4 billion NIS Move away from political appointments to professional appointments.",
           "topics": [
-            "local_government",
             "government"
           ],
-          "source": "https://bennett2026.org.il/plans/"
-        },
-        {
-          "id": "beyahad_together_13",
-          "title": "Fighting the cost of living",
-          "summary": "Lower the cost of food by 30% within a year, by dismantling closed industries and opening Israel to foreign suppliers",
-          "topics": [
-            "economy",
-            "cost_of_living"
-          ],
-          "source": "https://bennett2026.org.il/plans/"
+          "source": "https://bennett2026.org.il/plans/meshartim/"
         },
         {
           "id": "beyahad_together_14",
+          "title": "Judicial Reform",
+          "summary": "Limiting and formalizing the courts' abilities of Judicial Review and striking basic laws, subject to broad consensus.",
+          "topics": [
+            "government",
+            "judiciary",
+            "constitution"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_15",
+          "title": "Creating a core curriculum",
+          "summary": "The state will only fund schools in the state education stream, which will be obligated to teach the core curriculum, making up a minimum of 60% of education hours.\n<br>Budgets will be focused on student needs, not classroom teaching hours, and will take into account socio-economics so every student succeeds.\n<br>Mandatory focus on values and leadership for Grade 12 students.",
+          "topics": [
+            "haredi",
+            "arab_citizens",
+            "education"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F",
+            "https://www.timesofisrael.com/at-new-partys-first-rally-bennett-vows-to-unite-the-nation-and-enact-constitution/",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
+          ]
+        },
+        {
+          "id": "beyahad_together_16",
           "title": "Draft Equality",
           "summary": "National Service Law (ie military service) will apply to all Israeli citizens, regardless of ethnicity, religious community, or gender. Laws that permit draft evasion will be repealed.\nDraft dodgers or draft evaders will have benefits removed, specifically:\n- Kindergarten subsidies\n- Property tax discounts\n- Bituach Leumi discounts and student status\n- Child support benefits\nEstimated savings: 4.4 billion NIS",
           "topics": [
@@ -221,22 +255,7 @@
           ]
         },
         {
-          "id": "beyahad_together_15",
-          "title": "Creating a core curriculum",
-          "summary": "The state will only fund schools in the state education stream, which will be obligated to teach the core curriculum, making up a minimum of 60% of education hours.",
-          "topics": [
-            "haredi",
-            "arab_citizens",
-            "education"
-          ],
-          "source": [
-            "https://bennett2026.org.il/plans/",
-            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F",
-            "https://www.timesofisrael.com/at-new-partys-first-rally-bennett-vows-to-unite-the-nation-and-enact-constitution/"
-          ]
-        },
-        {
-          "id": "beyahad_together_16",
+          "id": "beyahad_together_17",
           "title": "Benefits only to those who embrace Israeli society",
           "summary": "Benefits and government funding will only go to citizens and communities that work, enlist, and participate in the state education system.",
           "topics": [
@@ -252,153 +271,7 @@
           ]
         },
         {
-          "id": "beyahad_together_17",
-          "title": "Improving Israel's position internationally",
-          "summary": "Actively combat international anti-Israel sentiment and work to create a positive brand. Improve regional relationships and end international political isolation. Build regional alliances.",
-          "topics": [
-            "international_relations",
-            "peace_process"
-          ],
-          "source": "https://bennett2026.org.il/plans/"
-        },
-        {
           "id": "beyahad_together_19",
-          "title": "Jews around the world",
-          "summary": "Recognize that Israel's political position directly impacts the diaspora",
-          "topics": [
-            "aliyah"
-          ],
-          "source": "https://bennett2026.org.il/plans/"
-        },
-        {
-          "id": "beyahad_together_20",
-          "title": "Fighting crime in the Negev",
-          "summary": "Recognize that the Negev is in a state of emergency, and bring the Shin Bet to fight crime.",
-          "topics": [
-            "periphery",
-            "internal_security"
-          ],
-          "source": "https://bennett2026.org.il/plans/negev/"
-        },
-        {
-          "id": "beyahad_together_22",
-          "title": "Building the Periphery",
-          "summary": "Increase settlement of the Negev and the North, and clamp down on illegal construction",
-          "topics": [
-            "periphery",
-            "housing"
-          ],
-          "source": "https://bennett2026.org.il/plans/negev/"
-        },
-        {
-          "id": "beyahad_together_23",
-          "title": "Combatting incitement",
-          "summary": "Monitor the education system to make sure that incitement against the state isn't being taught",
-          "topics": [
-            "education",
-            "internal_security"
-          ],
-          "source": "https://bennett2026.org.il/plans/negev/"
-        },
-        {
-          "id": "beyahad_together_24",
-          "title": "Fighting polygamy",
-          "summary": "Enforce bans on polygamy, including closing loopholes with the PA, and ensuring that Bituach Leumi isn't providing illegal benefits",
-          "topics": [
-            "welfare",
-            "liberal_rights",
-            "arab_citizens"
-          ],
-          "source": "https://bennett2026.org.il/plans/negev/"
-        },
-        {
-          "id": "beyahad_together_25",
-          "title": "Bringing the Beduins into Israeli society",
-          "summary": "Build the connection between the Bedouin community and the state, with economic stimulus, education, and sanctions.",
-          "topics": [
-            "arab_citizens",
-            "periphery"
-          ],
-          "source": "https://bennett2026.org.il/plans/negev/"
-        },
-        {
-          "id": "beyahad_together_27",
-          "title": "Improve Miluimnik Benefits",
-          "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
-          "topics": [
-            "veterans",
-            "draft",
-            "housing",
-            "cost_of_living"
-          ],
-          "source": "https://bennett2026.org.il/plans/meshartim/"
-        },
-        {
-          "id": "beyahad_together_28",
-          "title": "Improve Veteran Benefits",
-          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
-          "topics": [
-            "veterans",
-            "draft",
-            "housing",
-            "cost_of_living"
-          ],
-          "source": "https://bennett2026.org.il/plans/meshartim/"
-        },
-        {
-          "id": "beyahad_together_29",
-          "title": "Fight corruption though wasteful political spending",
-          "summary": "\"Coalition Funds\" (government funding for niche party priorities that is promised to get parties to join a coalition) will be cancelled. Useless government ministries will be closed. Estimated savings: 4.4 billion NIS Move away from political appointments to professional appointments.",
-          "topics": [
-            "government"
-          ],
-          "source": "https://bennett2026.org.il/plans/meshartim/"
-        },
-        {
-          "id": "beyahad_together_31",
-          "title": "Building the North",
-          "summary": "Define Metula, Shlomi, and Kiryat Shemoneh as a National Reconstruction Area, with the goal of doubling the population (relative to before the war) within 10 years.",
-          "topics": [
-            "periphery",
-            "housing"
-          ],
-          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
-        },
-        {
-          "id": "beyahad_together_32",
-          "title": "Encouraging business in the North",
-          "summary": "Create a temporary (4 years) tax exempt zone in the North near Kiryat Shemonah:\n- No corporate tax for new local industries, tech companies, and defense companies\n- 50% discount on property taxes for businesses\n- Grants for expansion\n- Subsidize high salaries",
-          "topics": [
-            "periphery",
-            "economy"
-          ],
-          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
-        },
-        {
-          "id": "beyahad_together_33",
-          "title": "Encouraging living in the North",
-          "summary": "Encourage return and new settlement though economic benefits:\n- No income tax up to 1 million shekels (for 4 years)\n- Housing loan of 400,00 shekels for academics and professionals after 7 years of residence",
-          "topics": [
-            "periphery",
-            "cost_of_living",
-            "housing"
-          ],
-          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
-        },
-        {
-          "id": "beyahad_together_34",
-          "title": "Connecting the North with the rest of Israel",
-          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:\n- Build a protected emergency room\n- Build public transit access\n- Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion",
-          "topics": [
-            "periphery",
-            "cost_of_living",
-            "healthcare",
-            "transit"
-          ],
-          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
-        },
-        {
-          "id": "beyahad_together_35",
           "title": "Improve rehabilitation services for injured and disabled veterans",
           "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\nRemove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans. Publish benchmarks and scores to show if the rehabilitation system is improving.",
           "topics": [
@@ -408,9 +281,9 @@
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
         {
-          "id": "beyahad_together_38",
+          "id": "beyahad_together_20",
           "title": "Improving mental health access and capacity",
-          "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\nLowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
+          "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
           "topics": [
             "healthcare",
             "veterans",
@@ -423,7 +296,7 @@
           ]
         },
         {
-          "id": "beyahad_together_40",
+          "id": "beyahad_together_22",
           "title": "Housing for disabled veterans",
           "summary": "Create a new supportive housing path for wounded and disabled service veterans",
           "topics": [
@@ -433,46 +306,7 @@
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
         {
-          "id": "beyahad_together_43",
-          "title": "Improve Private and Public Transit",
-          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.",
-          "topics": [
-            "transit"
-          ],
-          "source": [
-            "https://x.com/yairlapid/status/2056645906309538005",
-            "https://www.instagram.com/p/DYhPo1qjA6I"
-          ]
-        },
-        {
-          "id": "beyahad_together_45",
-          "title": "Get local authorities involved in transit",
-          "summary": "Move responsibilities and authorities around transit to local regional authorities",
-          "topics": [
-            "transit",
-            "local_government"
-          ],
-          "source": [
-            "https://x.com/yairlapid/status/2056645906309538005",
-            "https://www.instagram.com/p/DYhPo1qjA6I"
-          ]
-        },
-        {
-          "id": "beyahad_together_46",
-          "title": "Supporting the elderly",
-          "summary": "Increase old age pensions by indexing them to the average salary. Doubling the pensions of retirees making below minimum wage, and gradually increasing pensions for those just above it.",
-          "topics": [
-            "welfare",
-            "retirees",
-            "cost_of_living"
-          ],
-          "source": [
-            "https://x.com/yairlapid/status/2056645906309538005",
-            "https://www.instagram.com/p/DYhPo1qjA6I"
-          ]
-        },
-        {
-          "id": "beyahad_together_48",
+          "id": "beyahad_together_23",
           "title": "Housing for veterans",
           "summary": "Expand the subsidized rental program by 250,000 units, and build a new city in the Merkaz specifically for young veterans.",
           "topics": [
@@ -486,7 +320,7 @@
           ]
         },
         {
-          "id": "beyahad_together_49",
+          "id": "beyahad_together_24",
           "title": "Improving access to housing",
           "summary": "Allow residents in the subsidized rental program to buy their apartment at cost, minus rent paid, after 10 years.",
           "topics": [
@@ -499,7 +333,125 @@
           ]
         },
         {
-          "id": "beyahad_together_50",
+          "id": "beyahad_together_25",
+          "title": "Fighting organized crime",
+          "summary": "Focus on rooting out organized crime. Identify the top 3 families and top 100 criminals and go after them directly",
+          "topics": [
+            "internal_security",
+            "periphery"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/plans/negev/"
+          ]
+        },
+        {
+          "id": "beyahad_together_27",
+          "title": "Improving Israel's position internationally",
+          "summary": "Actively combat international anti-Israel sentiment and work to create a positive brand. Improve regional relationships and end international political isolation. Build regional alliances.",
+          "topics": [
+            "international_relations",
+            "peace_process"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_28",
+          "title": "Move authorities to local governments",
+          "summary": "Decentralize powers and give more authority to local regional governments",
+          "topics": [
+            "local_government",
+            "government"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_29",
+          "title": "Commission of Inquiry",
+          "summary": "Open a non-partisan, apolitical State Commission of Inquiry into the events of October 7th and the conduct of the state afterwards.",
+          "topics": [
+            "_oct7"
+          ],
+          "source": "https://bennett2026.org.il/plans/"
+        },
+        {
+          "id": "beyahad_together_31",
+          "title": "Connecting the North with the rest of Israel",
+          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:\n- Build a protected emergency room\n- Build public transit access\n- Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion",
+          "topics": [
+            "periphery",
+            "cost_of_living",
+            "healthcare",
+            "transit"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_32",
+          "title": "Encouraging living in the North",
+          "summary": "Encourage return and new settlement though economic benefits:\n- No income tax up to 1 million shekels (for 4 years)\n- Housing loan of 400,00 shekels for academics and professionals after 7 years of residence",
+          "topics": [
+            "periphery",
+            "cost_of_living",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_33",
+          "title": "Encouraging business in the North",
+          "summary": "Create a temporary (4 years) tax exempt zone in the North near Kiryat Shemonah:\n- No corporate tax for new local industries, tech companies, and defense companies\n- 50% discount on property taxes for businesses\n- Grants for expansion\n- Subsidize high salaries",
+          "topics": [
+            "periphery",
+            "economy"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_34",
+          "title": "Building the Periphery",
+          "summary": "Increase settlement of the Negev and the North, and clamp down on illegal construction",
+          "topics": [
+            "periphery",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_35",
+          "title": "Building the North",
+          "summary": "Define Metula, Shlomi, and Kiryat Shemoneh as a National Reconstruction Area, with the goal of doubling the population (relative to before the war) within 10 years.",
+          "topics": [
+            "periphery",
+            "housing"
+          ],
+          "source": "https://bennett2026.org.il/plans/kiryat-shmona/"
+        },
+        {
+          "id": "beyahad_together_38",
+          "title": "Fighting crime in the Negev",
+          "summary": "Recognize that the Negev is in a state of emergency, and bring the Shin Bet to fight crime.",
+          "topics": [
+            "periphery",
+            "internal_security"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_40",
+          "title": "Civil Marriage",
+          "summary": "Break the Rabbanut monopoly on marriage, and facilitate civil marriages",
+          "topics": [
+            "religion_state",
+            "liberal_rights"
+          ],
+          "source": [
+            "https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/",
+            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F"
+          ]
+        },
+        {
+          "id": "beyahad_together_43",
           "title": "Public Transit on Shabbat",
           "summary": "Allow public transit on shabbat, based on the decision by the local regional authority.",
           "topics": [
@@ -513,17 +465,112 @@
           ]
         },
         {
-          "id": "beyahad_together_51",
-          "title": "Civil Marriage",
-          "summary": "Break the Rabbanut monopoly on marriage, and facilitate civil marriages",
+          "id": "beyahad_together_45",
+          "title": "Improve Private and Public Transit",
+          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.",
           "topics": [
-            "religion_state",
-            "liberal_rights"
+            "transit"
           ],
           "source": [
-            "https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/",
-            "https://yeshatid.org.il/%D7%A0%D7%97%D7%96%D7%95%D7%A8-%D7%A0%D7%AA%D7%A7%D7%9F"
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
           ]
+        },
+        {
+          "id": "beyahad_together_46",
+          "title": "Get local authorities involved in transit",
+          "summary": "Move responsibilities and authorities around transit to local regional authorities",
+          "topics": [
+            "transit",
+            "local_government"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_48",
+          "title": "Improve Miluimnik Benefits",
+          "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
+          "topics": [
+            "veterans",
+            "draft",
+            "housing",
+            "cost_of_living"
+          ],
+          "source": "https://bennett2026.org.il/plans/meshartim/"
+        },
+        {
+          "id": "beyahad_together_49",
+          "title": "Improve Veteran Benefits",
+          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
+          "topics": [
+            "veterans",
+            "draft",
+            "housing",
+            "cost_of_living"
+          ],
+          "source": "https://bennett2026.org.il/plans/meshartim/"
+        },
+        {
+          "id": "beyahad_together_50",
+          "title": "Fighting polygamy",
+          "summary": "Enforce bans on polygamy, including closing loopholes with the PA, and ensuring that Bituach Leumi isn't providing illegal benefits",
+          "topics": [
+            "welfare",
+            "liberal_rights",
+            "arab_citizens"
+          ],
+          "source": "https://bennett2026.org.il/plans/negev/"
+        },
+        {
+          "id": "beyahad_together_51",
+          "title": "Supporting the elderly",
+          "summary": "Increase old age pensions by indexing them to the average salary. Doubling the pensions of retirees making below minimum wage, and gradually increasing pensions for those just above it.",
+          "topics": [
+            "welfare",
+            "retirees",
+            "cost_of_living"
+          ],
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
+        },
+        {
+          "id": "beyahad_together_52",
+          "title": "Early childhood education",
+          "summary": "Move the early childhood education system (0-3 years) to the state education system, and subsidize working and serving parents.\n<br>Oversight will strengthen, with childcare requiring certifications and salaries for childcare providers increasing.",
+          "topics": [
+            "education",
+            "veterans",
+            "cost_of_living",
+            "workers"
+          ],
+          "source": [
+            "https://bennett2026.org.il/plans/meshartim/",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
+          ]
+        },
+        {
+          "id": "beyahad_together_53",
+          "title": "Give Students an AI Teacher",
+          "summary": "Create a AI system to act as an individualized private tutor for students, to allow teachers to focus on coaching and providing emotional and social support.",
+          "topics": [
+            "education",
+            "AI"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/rebuild-the-education/"
+        },
+        {
+          "id": "beyahad_together_54",
+          "title": "Connect schools with science",
+          "summary": "Establish 15 new STEM centers and create a link between schools, academia, and industry. Give students real world problems and embrace project based learning (PBL).",
+          "topics": [
+            "education"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/rebuild-the-education/"
         }
       ]
     },
@@ -768,7 +815,7 @@
             "pal_statehood",
             "palestinian_territories",
             "peace_process",
-            "periphary"
+            "periphery"
           ],
           "source": "https://hadash.org.il/"
         },
@@ -1437,6 +1484,247 @@
             "local_government"
           ],
           "source": "https://yes.democrats.org.il/topics/education"
+        }
+      ]
+    },
+    {
+      "id": "yashar_with_gadi_eisenkot",
+      "name": "Yashar with Gadi Eisenkot",
+      "color": "#64B9E1",
+      "leader": "Gadi Eisenkot",
+      "bloc": "Opposition - Center",
+      "website": "https://yasharwitheisenkot.com/",
+      "topline": "Israel needs a government that is professional, responsible, and unifying. A government that will lead Israel as a Jewish and Democratic state in the spirit of the Declaration of Independance, with safety and security. <br>Gadi Eisenkott and Yashar present an alternative with professionalism and integrity.",
+      "positions": [
+        {
+          "id": "yashar_with_gadi_eisenkot_1",
+          "title": "Draft and Service",
+          "summary": "Service is mandatory for every citizen, with the explicit goal of integrating the ultra-Orthodox and Arab communities in approproate frameworks. A special process will be made for encouraging and enforcing enlistment in the Haredi community.\n<br> The IDF gets priority on manpower, followed by civil and national service. Everyone will need to go through IDF screening.",
+          "topics": [
+            "arab_citizens",
+            "haredi",
+            "draft"
+          ],
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/service-for-all/"
+          ]
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_2",
+          "title": "Rule of Law and personal safety",
+          "summary": "Restore security to the streets. Combat organized crime, and make a plan to end violence in the Arab community. \n<br>Directly fight corruption, organized crime, and protectionism.",
+          "topics": [
+            "arab_citizens",
+            "internal_security",
+            "government"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_3",
+          "title": "Rebuild the State for the Jewish People",
+          "summary": "Rebuild the state as a Jewish, Democratic, progressive, and just state, in the spirit of the Declaration of Independance. Work to heal the rifts of war and sectarianism.\n<br>Work to ensure a Jewish demographic majority for generations, and promote an inclusive and respectful Judaism.\n<br>Respect majority decisions, minority rights, human rights, and an independent Judiciary.",
+          "topics": [
+            "government",
+            "religion_state"
+          ],
+          "source": "https://yasharwitheisenkot.com/topic/missions/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_4",
+          "title": "Establish a State Commission of Inquiry",
+          "summary": "Establish a State Commission of Inquiry to investigate October 7th, the decade before it, and the conduct of the war.",
+          "topics": [
+            "_oct7"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_5",
+          "title": "Improve rehabilitation services for impacted citizens",
+          "summary": "Develop and implement a system for caring for and rehabilitating bereaved families, former hostages, and victims of PTSD.",
+          "topics": [
+            "_oct7",
+            "healthcare"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_6",
+          "title": "Rehabilitate and invest in the North and the Western Negev",
+          "summary": "Rehabilitate and strengthen periphery areas impacted by the war.",
+          "topics": [
+            "periphery"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_7",
+          "title": "Strengthen the IDF and change the security philosophy",
+          "summary": "Current security strategies will be replaced with a systematic national strategy, based on planning and preemtive action. The IDF will be strengthened, the borders will be hardened, and Israel will be turned into a regional power.",
+          "topics": [
+            "security"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_8",
+          "title": "Expand peace agreements",
+          "summary": "Expand the \"circle of peace\"",
+          "topics": [
+            "security",
+            "international_relations"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_9",
+          "title": "Energize the economy",
+          "summary": "Integrate all sectors into the economy.",
+          "topics": [
+            "economy"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_10",
+          "title": "Lower the cost of living - competition",
+          "summary": "Dismantle monopolies, strengthen competition, align Israel to international standards to make imports easier.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_11",
+          "title": "State Benefits for those who contribute",
+          "summary": "State benefits (housing benefits, tax credits, ect) will be prioritized for those who serve in the army and for those who work and contribute to the economy. \n<br>Housing benefits, tax credits, civil service salaries, scholarships, arnona discounts, grants, Bituach Leumi status, bus pass discounts, after-school funding, ect, will be tiered: 1. Combat veterans, 2. General veterans, 3. National Service alumni",
+          "topics": [
+            "draft",
+            "welfare",
+            "workers",
+            "housing",
+            "veterans"
+          ],
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/service-for-all/"
+          ]
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_12",
+          "title": "Lower the cost of living - infrastructure",
+          "summary": "Invest in infrastructure, transportation, education, and healthcare in the center and the periphery. Invest in culture.",
+          "topics": [
+            "healthcare",
+            "education",
+            "periphery",
+            "transit",
+            "media"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_13",
+          "title": "Improve the public service",
+          "summary": "End political appointments and ensure appointments are made through a professional lens.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_14",
+          "title": "Constitutional Reform",
+          "summary": "Enact Basic Law: Legislation to strengthen the authority and independence of the Knesset. \n<br>Term limits for Prime Ministers - 2 terms.\n<br>Get rid of useless government ministries.",
+          "topics": [
+            "government",
+            "constitution",
+            "judiciary"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_15",
+          "title": "Local government",
+          "summary": "Expand the independance of local governments to made descisions that match their communities.",
+          "topics": [
+            "government",
+            "local_government"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_16",
+          "title": "Stop the brain drain and encourage Aliyah",
+          "summary": "Make a strategy to stop Israelis from fleeing the country.\n<br>Improve systems of Aliyah and absorbtion with the goal of having 1 million new olim by 2037 and another million by 2048.\n<br>Renew the connection between Israel and the Diaspora.",
+          "topics": [
+            "aliyah",
+            "economy"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_17",
+          "title": "Make a planning authority for getting to Israel's Centennial",
+          "summary": "Make a planning authority to lead the vision and long term plans for all parts of life, and get to 2048 with a prosporous and unified country.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://yasharwitheisenkot.com/agenda_point/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_18",
+          "title": "Reduce the burden on Reservists",
+          "summary": "During times that are neither major war nor peacetime, reserve duties will be capped at 50 days/year, with a hard limit of 150 days in 3 years.\n<br>Reservists will be given, under normal circumstances, at least 5 months advanced notice of service times.",
+          "topics": [
+            "draft",
+            "veterans"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/reservists-honour-and-compensation/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_19",
+          "title": "Benefits for reservists",
+          "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:\n<ul><li>Direct benefits</li>\n<li>Compensation for employers</li>\n<li>Advanced degree funding</li>\n<li>Family funding: childcare, babysitting, after school classes, travel.</li>\n<li>Housing benefits</li>\n</ul>",
+          "topics": [
+            "welfare",
+            "veterans",
+            "housing"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/reservists-honour-and-compensation/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_20",
+          "title": "Increased salaries for soldiers",
+          "summary": "Raise all soldiers salaries by 15%, and combat soldiers salaries by 50% after 3 years of service.",
+          "topics": [
+            "draft"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/reservists-honour-and-compensation/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_21",
+          "title": "Draft Deferment and Exceptions",
+          "summary": "A one year deferment of service will be available to a limited pool of individuals who exhibit extraordinary talents in the sports, sciences, arts, and humanities. \n<br>Deferment for persuing Torah studies will be available to a maximum of 3% of a years draftees. Selection will be through external criteria and be open to all applicants.\n<br>Everyone who defers will be required to complete basic training before their deferral begins",
+          "topics": [
+            "draft",
+            "media",
+            "haredi",
+            "religion_state"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/service-for-all/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_22",
+          "title": "Draft dodging",
+          "summary": "Draft dodgers will be criminally prosecuted, and will be denied civil and economic benefits:\n<ul><li>Participation in state tenders</li>\n<li>Scholarships</li>\n<li>Housing benefits/Arnona discounts</li>\n<li>Housing loans and rental assistance</li>\n<li>Long term rental eligibility</li>\n<li>Land allocations</li>\n<li>National Insurance/Bituach Leumi</li>\n<li>Public Transit discounts</li>\n<li>Parental benefits</li>\n<li>Skilled trade training vouchers</li>\n<li>Business funding</li>\n<li>Tax discounts</li>\n<li>Drivers License</li>\n<li>Right to leave the country</li>\n</ul>",
+          "topics": [
+            "draft",
+            "welfare"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/service-for-all/"
         }
       ]
     }
