@@ -259,7 +259,7 @@
             "draft",
             "education",
             "welfare",
-            "veterans"
+            "soldiers"
           ],
           "source": [
             "https://bennett2026.org.il/plans/",
@@ -272,7 +272,7 @@
           "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\nRemove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans. Publish benchmarks and scores to show if the rehabilitation system is improving.",
           "topics": [
             "healthcare",
-            "veterans"
+            "soldiers"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -282,7 +282,7 @@
           "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
           "topics": [
             "healthcare",
-            "veterans",
+            "soldiers",
             "education"
           ],
           "source": [
@@ -297,7 +297,7 @@
           "summary": "Create a new supportive housing path for wounded and disabled service veterans",
           "topics": [
             "housing",
-            "veterans"
+            "soldiers"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -307,7 +307,7 @@
           "summary": "Expand the subsidized rental program by 250,000 units, and build a new city in the Merkaz specifically for young veterans.",
           "topics": [
             "housing",
-            "veterans",
+            "soldiers",
             "welfare"
           ],
           "source": [
@@ -490,7 +490,7 @@
           "title": "Improve Miluimnik Benefits",
           "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
           "topics": [
-            "veterans",
+            "soldiers",
             "draft",
             "housing",
             "cost_of_living"
@@ -502,7 +502,7 @@
           "title": "Improve Veteran Benefits",
           "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
           "topics": [
-            "veterans",
+            "soldiers",
             "draft",
             "housing",
             "cost_of_living"
@@ -540,7 +540,7 @@
           "summary": "Move the early childhood education system (0-3 years) to the state education system, and subsidize working and serving parents.\n<br>Oversight will strengthen, with childcare requiring certifications and salaries for childcare providers increasing.",
           "topics": [
             "education",
-            "veterans",
+            "soldiers",
             "cost_of_living",
             "workers"
           ],
@@ -1126,7 +1126,7 @@
           "summary": "Recognize that Israel is viewed as an extremist pariah in the region, and rectify it. Build a regional alliance along with the USA and moderate Arab states, to collectively combat radical groups in the area. This group would also work to weaken Iran.\n<br> This requires recognizing that we need to make progress with the Palestinians to get regional buy in, and that regional partnerships benefit Israel's security.\n<br> The Democrats will also build normalization with Saudi Arabia, and support the India-Middle East-Europe infrastructure system in Israel.",
           "topics": [
             "international_relations",
-            "peace_process",
+            "war_peace",
             "security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
@@ -1146,7 +1146,7 @@
           "title": "End annexation and fight Jewish terrorism/settler violence",
           "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
           "topics": [
-            "palestinian_territories",
+            "territories_statehood",
             "internal_security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
