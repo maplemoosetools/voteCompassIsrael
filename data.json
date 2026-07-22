@@ -6,38 +6,36 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
+    { "id": "_oct7",           "label": "October 7th" },
     { "id": "AI",           "label": "Artificial Intelligence" },
-    { "id": "draft",           "label": "Army Enlistment and Draft" },
+    { "id": "aliyah",          "label": "Immigration & Diaspora" },
     { "id": "arab_citizens",   "label": "Arab Sector" },
-    { "id": "media",           "label": "Culture and Media" },
-    { "id": "cost_of_living",  "label": "Cost of Living" }, 
     { "id": "constitution",    "label": "Constitution" },
+    { "id": "cost_of_living",  "label": "Cost of Living" }, 
+    { "id": "draft",           "label": "Army Enlistment and Draft" },
     { "id": "economy",         "label": "Economy" },
     { "id": "education",       "label": "Education" },
-    { "id": "workers",         "label": "Employment and workers" },
     { "id": "environment",     "label": "Environment & Climate" },
     { "id": "government",      "label": "Government" },
     { "id": "haredi",          "label": "Haredi Sector" },
     { "id": "healthcare",      "label": "Healthcare" },
     { "id": "housing",         "label": "Housing" },
-    { "id": "aliyah",          "label": "Immigration & Diaspora" },
-    { "id": "international_relations",       "label": "International Relations" },     
     { "id": "internal_security","label": "Internal Security and Law Enforcement" },
+    { "id": "international_relations",       "label": "International Relations" },     
     { "id": "judiciary",       "label": "Judiciary & Rule of Law" },
     { "id": "liberal_rights",  "label": "Liberal Rights" },
     { "id": "local_government","label": "Local Government" },
-    { "id": "_oct7",           "label": "October 7th" },
-    { "id": "palestinians",    "label": "Palestinians, Statehood, & the Territories" },
-    { "id": "peace_process",   "label": "Peace Process & Two-State Solution" },
+    { "id": "media",           "label": "Culture and Media" },
     { "id": "periphery",       "label": "The Periphery" },
     { "id": "religion_state",  "label": "Religion, the State, & State Identity" },
     { "id": "retirees",        "label": "Retirees and Pensioners" },
     { "id": "security",        "label": "Security & Defense" },
-    { "id": "transit",         "label": "Transit and Transportation" },
     { "id": "soldiers",        "label": "Soldiers, Reservists, & Veterans" },
+    { "id": "territories_statehood",    "label": "Palestinians, Statehood, & the Territories" },
+    { "id": "transit",         "label": "Transit and Transportation" },
+    { "id": "war_peace",   "label": "The War, Peace Process & Two-State Solution" },
     { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
-    { "id": "war",         "label": "The War" }
-
+    { "id": "workers",         "label": "Employment and workers" }
   ],
   "parties": [
     {
@@ -261,7 +259,7 @@
             "draft",
             "education",
             "welfare",
-            "soldiers"
+            "veterans"
           ],
           "source": [
             "https://bennett2026.org.il/plans/",
@@ -274,7 +272,7 @@
           "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\nRemove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans. Publish benchmarks and scores to show if the rehabilitation system is improving.",
           "topics": [
             "healthcare",
-            "soldiers"
+            "veterans"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -284,7 +282,7 @@
           "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.",
           "topics": [
             "healthcare",
-            "soldiers",
+            "veterans",
             "education"
           ],
           "source": [
@@ -299,7 +297,7 @@
           "summary": "Create a new supportive housing path for wounded and disabled service veterans",
           "topics": [
             "housing",
-            "soldiers"
+            "veterans"
           ],
           "source": "https://bennett2026.org.il/plans/rehabilitation/"
         },
@@ -309,7 +307,7 @@
           "summary": "Expand the subsidized rental program by 250,000 units, and build a new city in the Merkaz specifically for young veterans.",
           "topics": [
             "housing",
-            "soldiers",
+            "veterans",
             "welfare"
           ],
           "source": [
@@ -349,7 +347,7 @@
           "summary": "Actively combat international anti-Israel sentiment and work to create a positive brand. Improve regional relationships and end international political isolation. Build regional alliances.",
           "topics": [
             "international_relations",
-            "peace_process"
+            "war_peace"
           ],
           "source": "https://bennett2026.org.il/plans/"
         },
@@ -492,7 +490,7 @@
           "title": "Improve Miluimnik Benefits",
           "summary": "Active Miluimnikim will get: \n- 1 million shekels towards their first home \n- Free daycare, free after-school programs, free summer school\n- 50% discount on all state service fees, including utilities, taxes, and car tests\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
           "topics": [
-            "soldiers",
+            "veterans",
             "draft",
             "housing",
             "cost_of_living"
@@ -504,7 +502,7 @@
           "title": "Improve Veteran Benefits",
           "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n- Priority in the housing lottery\n- Fully funded bachelor's degree (combat veterans will also get a Masters degree)\n- Free bus/train pass for 3 years (combat veterans will get for 5 years)\n- Fully funded after-school and summer schools\n- Daycare for 1000 NIS/month",
           "topics": [
-            "soldiers",
+            "veterans",
             "draft",
             "housing",
             "cost_of_living"
@@ -542,7 +540,7 @@
           "summary": "Move the early childhood education system (0-3 years) to the state education system, and subsidize working and serving parents.\n<br>Oversight will strengthen, with childcare requiring certifications and salaries for childcare providers increasing.",
           "topics": [
             "education",
-            "soldiers",
+            "veterans",
             "cost_of_living",
             "workers"
           ],
@@ -579,7 +577,7 @@
       "leader": "Avigdor Leiberman",
       "bloc": "Opposition - Right",
       "website": "https://beytenu.org.il/",
-      "topline": "Our government will reconstruct the damaged regions and heal the rifts in Israeli society. It will only contain Zionist parties, and make a modern, democratic, and liberal Jewish state, while also encouraging Aliyah and building ties with the Diaspora.",
+      "topline": "The 38th government of the State of Israel will be formed out of a sense of historical mission and deep responsibility for the future of the people and the state. After the October 7 massacre and the multi-front war that was forced upon Israel, the State of Israel faces the greatest challenge since its establishment. The next government will be committed to the reconstruction of the affected regions of the country, and to the healing of the rifts in Israeli society. It will consist exclusively of Zionist parties, and will work to implement the Zionist vision: a strong, democratic, modern, and egalitarian Jewish state – alongside the gathering of exiles, encouraging immigration, and strengthening ties with Diaspora Jewry.",
       "positions": [
         {
           "id": "yisrael_beiteinu_1",
@@ -657,8 +655,8 @@
           "title": "Gaza Strip",
           "summary": "Maintain freedom of IDF action in Gaza. \nEnd Israeli responsibility for Gaza, and stop suppying water, electricity, and maanging the border. \nTransfer responsibility to Egypt, and if Egypt doesn't agree, to the Palestinians to do whatever they want, without out management.",
           "topics": [
-            "peace_process",
-            "war",
+            "war_peace",
+            "territories_statehood",
             "security"
           ],
           "source": [
@@ -671,8 +669,8 @@
           "title": "West Bank",
           "summary": "Work with Jordan to increase security and economic development for Palestinians. Transfer Area A to Jordan, and keep areas B and C.",
           "topics": [
-            "peace_process",
-            "war",
+            "war_peace",
+            "territories_statehood",
             "security"
           ],
           "source": [
@@ -787,7 +785,7 @@
           "title": "Palestinian Statehood",
           "summary": "No Palestinian State. End the Oslo Accords. Transfer Gaza to Egypt and Area A of the West Bank to Jordan. Do not trust the PA.",
           "topics": [
-            "palestinians"
+            "territories_statehood"
           ],
           "source": [
             "https://beytenu.org.il/party-platform/",
@@ -801,7 +799,7 @@
       "name": "Hadash",
       "color": "#D61922",
       "leader": "Yousef Jabareen",
-      "bloc": "Opposition - Arab, Communist",
+      "bloc": "Opposition - Arab, Communist\n",
       "website": "https://hadash.org.il/",
       "positions": [
         {
@@ -810,8 +808,8 @@
           "summary": "Regional peace based on:\n1. Israeli withdrawal to the Green Line, including leaving 'Arab Jerusalem', which will become the capital of Palestine\n2. Israeli withdrawl from the Golan Heights, occupied Syria, and occupied Lebanon\n3. A solution to the Palestinian Refugee problem, per UN resolutions\n4. Dismantelling settlements in the West Bank",
           "topics": [
             "security",
-            "palestinians",
-            "peace_process",
+            "territories_statehood",
+            "war_peace",
             "periphery"
           ],
           "source": "https://hadash.org.il/"
@@ -833,7 +831,7 @@
           "topics": [
             "security",
             "economy",
-            "palestinians"
+            "territories_statehood"
           ],
           "source": "https://hadash.org.il/"
         },
@@ -967,7 +965,7 @@
           "summary": "Fight racism and fascism. Protect the freedom of the press, assembly, political activity, concience, and relgious rights.\nRecognize the right to refuse to serve in Palestinian territories.\nRepeal laws that enable religious coersion",
           "topics": [
             "religion_state",
-            "palestinians",
+            "territories_statehood",
             "liberal_rights",
             "media"
           ],
@@ -1138,7 +1136,7 @@
           "title": "End the \"Swords of Iron\" war on all fronts",
           "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. \n<br> Gaza will be demiliterized, Hamas removed, and governance provided by trusted international partners.\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border, and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
           "topics": [
-            "war",
+            "war_peace",
             "security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
@@ -1148,7 +1146,7 @@
           "title": "End annexation and fight Jewish terrorism/settler violence",
           "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
           "topics": [
-            "palestinians",
+            "palestinian_territories",
             "internal_security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
@@ -1158,8 +1156,8 @@
           "title": "Try to create a \"Palestinian Alternative\"",
           "summary": "Promote a \"moderate, stable, and effective\" alternative government for the Palestinians. No terrorist organizations will be allowed to grow into governments.",
           "topics": [
-            "peace_process",
-            "palestinians"
+            "war_peace",
+            "territories_statehood"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
         },
@@ -1722,6 +1720,53 @@
             "welfare"
           ],
           "source": "https://yasharwitheisenkot.com/principles/service-for-all/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_23",
+          "title": "Establish a State Education Council",
+          "summary": "Legislate a National Council for Education (similar to the National Security Council) comprised of academics, industry, and representatives of the 4 education streams. The council will define a 5 year educational plan and establish a core curriculum.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/education/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_24",
+          "title": "Define a core curriculum",
+          "summary": "The State Education Council will define a core curriculum comprising basic topics like citizenship, hebrew, STEM, democracy, Jewish-Israeli identity, ect. \n<br>A new law will enourage non-state schools, particulary Haredi systems, to integrate into the state system. Schools that don't join will have their funding reduced.",
+          "topics": [
+            "education",
+            "haredi"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/education/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_25",
+          "title": "Distribute responsibilities to local government and schools",
+          "summary": "Local authorities will be given responsibilities for managing the education system, including Early Childhood Education (ECE, 0-3 years). They will adust curriculums, manage budgets, and work with local industry.\n<br>Principals will be given dedicated grants to fund custom educational initiatives for their schools, will be able to structure the schedule of their school, and will be allowed to balance education with emotional support during war times.\n<br>Principals will be put on a new salary scale, and get additional support when they're struggling.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/education/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_26",
+          "title": "New employment tracks",
+          "summary": "A new, optional, employment track will be developed for teachers which rewards quality and productivity instead of just seniority.\n<br>Teaching time will be reduced and replaced with personal mentoring, dialogue, and addressing social problems.\n<br>National Service volunteers will be brought in to support the system and provide students with personal attention.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/education/"
+        },
+        {
+          "id": "yashar_with_gadi_eisenkot_27",
+          "title": "AI in Education",
+          "summary": "AI tools will be integrated into administrative systems to reduce bureaucratic work, including attendance, marking, adjusting the pace of learning, and making lesson plans, with the goal of freeing up more time for teachers to work with students.",
+          "topics": [
+            "AI",
+            "education"
+          ],
+          "source": "https://yasharwitheisenkot.com/principles/education/"
         }
       ]
     }

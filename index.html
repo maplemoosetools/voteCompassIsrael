@@ -454,7 +454,7 @@ fetch('data.json')
   .then(r => { if (!r.ok) throw new Error(); return r.json(); })
   .then(data => {
     DATA = data;
-    ['government', 'haredi', 'veterans', '_oct7'].forEach(t => selectedTopics.add(t));
+    ['government', 'haredi', 'soldiers', '_oct7'].forEach(t => selectedTopics.add(t));
     render();
   })
   .catch(() => {
