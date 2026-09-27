@@ -31,7 +31,7 @@
     { "id": "retirees",        "label": "Retirees and Pensioners" },
     { "id": "security",        "label": "Security & Defense" },
     { "id": "soldiers",        "label": "Soldiers, Reservists, & Veterans" },
-    { "id": "territories_statehood",    "label": "Palestinians, Statehood, & the Territories" },
+    { "id": "palestinians",    "label": "Palestinians, Statehood, & the Territories" },
     { "id": "transit",         "label": "Transit and Transportation" },
     { "id": "war_peace",   "label": "The War, Peace Process & Two-State Solution" },
     { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
@@ -608,7 +608,7 @@
           "summary": "Maintain freedom of IDF action in Gaza. \nEnd Israeli responsibility for Gaza, and stop suppying water, electricity, and maanging the border. \nTransfer responsibility to Egypt, and if Egypt doesn't agree, to the Palestinians to do whatever they want, without out management.",
           "topics": [
             "war_peace",
-            "territories_statehood",
+            "palestinians",
             "security"
           ],
           "source": [
@@ -622,7 +622,7 @@
           "summary": "Work with Jordan to increase security and economic development for Palestinians. Transfer Area A to Jordan, and keep areas B and C.",
           "topics": [
             "war_peace",
-            "territories_statehood",
+            "palestinians",
             "security"
           ],
           "source": [
@@ -737,7 +737,7 @@
           "title": "Palestinian Statehood",
           "summary": "No Palestinian State. End the Oslo Accords. Transfer Gaza to Egypt and Area A of the West Bank to Jordan. Do not trust the PA.",
           "topics": [
-            "territories_statehood"
+            "palestinians"
           ],
           "source": [
             "https://beytenu.org.il/party-platform/",
@@ -760,7 +760,7 @@
           "summary": "Regional peace based on:\n1. Israeli withdrawal to the Green Line, including leaving 'Arab Jerusalem', which will become the capital of Palestine\n2. Israeli withdrawl from the Golan Heights, occupied Syria, and occupied Lebanon\n3. A solution to the Palestinian Refugee problem, per UN resolutions\n4. Dismantelling settlements in the West Bank",
           "topics": [
             "security",
-            "territories_statehood",
+            "palestinians",
             "war_peace",
             "periphery"
           ],
@@ -783,7 +783,7 @@
           "topics": [
             "security",
             "economy",
-            "territories_statehood"
+            "palestinians"
           ],
           "source": "https://hadash.org.il/"
         },
@@ -917,7 +917,7 @@
           "summary": "Fight racism and fascism. Protect the freedom of the press, assembly, political activity, concience, and relgious rights.\nRecognize the right to refuse to serve in Palestinian territories.\nRepeal laws that enable religious coersion",
           "topics": [
             "religion_state",
-            "territories_statehood",
+            "palestinians",
             "liberal_rights",
             "media"
           ],
@@ -981,38 +981,44 @@
           "summary": "Recognize that Israel is viewed as an extremist pariah in the region, and rectify it. Build a regional alliance along with the USA and moderate Arab states, to collectively combat radical groups in the area. This group would also work to weaken Iran.\n<br> This requires recognizing that we need to make progress with the Palestinians to get regional buy in, and that regional partnerships benefit Israel's security.\n<br> The Democrats will also build normalization with Saudi Arabia, and support the India-Middle East-Europe infrastructure system in Israel.",
           "topics": [
             "international_relations",
-            "war_peace",
+            "palestinians",
             "security"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
         },
         {
           "id": "the_democrats_2",
-          "title": "End the \"Swords of Iron\" war on all fronts",
-          "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. \n<br> Gaza will be demiliterized, Hamas removed, and governance provided by trusted international partners.\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border, and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
+          "title": "End the Swords of Iron war on all fronts",
+          "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. \n<br> Gaza will be demiliterized, Hamas removed, and governance provided by trusted international partners.\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border (and all areas south of the Litani), and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
           "topics": [
             "war_peace",
             "security"
           ],
-          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/north_and_south"
+          ]
         },
         {
           "id": "the_democrats_3",
           "title": "End annexation and fight Jewish terrorism/settler violence",
-          "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
+          "summary": "All annexationist moves on the West Bank will be stopped.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. A national plan will be built to address the issue, incluidng coordination of all security agencies. Police in the Shomron and Yehudah district will be strengthened, given more political freedom to carry out investigations, intellegence, and enforcement, and make it a body that is equipped to the task. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
           "topics": [
-            "territories_statehood",
+            "palestinians",
             "internal_security"
           ],
-          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/public-safety"
+          ]
         },
         {
           "id": "the_democrats_4",
-          "title": "Try to create a \"Palestinian Alternative\"",
-          "summary": "Promote a \"moderate, stable, and effective\" alternative government for the Palestinians. No terrorist organizations will be allowed to grow into governments.",
+          "title": "Try to create a Palestinian Alternative",
+          "summary": "Promote a moderate, stable, and effective alternative government for the Palestinians. No terrorist organizations will be allowed to grow into governments.",
           "topics": [
             "war_peace",
-            "territories_statehood"
+            "palestinians"
           ],
           "source": "https://yes.democrats.org.il/topics/security-diplomatic"
         },
@@ -1039,12 +1045,16 @@
         {
           "id": "the_democrats_7",
           "title": "Strengthen and de-politicize the security establishment",
-          "summary": "Strengthen the IDF, Police, Shin Bet, ect. Make sure they have the manpower they need. \n<br> Remove politics from the defense sector and make it professional and independent. Make sure appointments are appropriate, and descisions are made by professionals.",
+          "summary": "Strengthen the IDF, Police, Shin Bet, ect. Make sure they have the manpower they need. \n<br> Remove politics from the defense sector and make it professional and independent. Make sure appointments are appropriate, and descisions are made by professionals.\n<br>Insulate the Israel Police Service from political interference, in both the descision making and appointments process. Appointments will be made in a standard, professional, and transparent process. Investments will be made into fighting corruption. \n<br> The IPS will be invested in, to ensure they have the manpower, training, and professionalism to address crime and other issues in Israel. To achieve this, a multi-year plan will be built to support the police, outside of political changes.",
           "topics": [
             "security",
-            "draft"
+            "draft",
+            "internal_security"
           ],
-          "source": "https://yes.democrats.org.il/topics/security-diplomatic"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/public-safety"
+          ]
         },
         {
           "id": "the_democrats_8",
@@ -1056,12 +1066,12 @@
             "judiciary",
             "government"
           ],
-          "source": "https://yes.democrats.org.il/topics/democracy-justice"
+          "source": "[\"https://yes.democrats.org.il/topics/democracy-justice\", 'https://yes.democrats.org.il/topics/arab-society\"]"
         },
         {
           "id": "the_democrats_9",
           "title": "Define the Knesset's role, powers, and supremacy",
-          "summary": "Enact \"Basic Law: Legislation\" to regulate the status and amendment procedure for Basic Laws, as well as regulate the court's ability for Judicial Review. \n<br> Strengthen the Knesset's ability to do its work by changing how committees and the plenum operate. Also strengthen the Ethics Committee, and improve the legislative process.",
+          "summary": "Enact Basic Law: Legislation to regulate the status and amendment procedure for Basic Laws, as well as regulate the court's ability for Judicial Review. \n<br> Strengthen the Knesset's ability to do its work by changing how committees and the plenum operate. Also strengthen the Ethics Committee, and improve the legislative process.",
           "topics": [
             "constitution",
             "government",
@@ -1112,12 +1122,15 @@
         {
           "id": "the_democrats_14",
           "title": "National Service for All Citizens",
-          "summary": "Equalize the burden in society by mandating national service for all citizens.",
+          "summary": "Equalize the burden in society by mandating national service for all citizens.\n<br> One option will be National Service in the healthcare system, which will be expanded.",
           "topics": [
             "haredi",
             "draft"
           ],
-          "source": "https://yes.democrats.org.il/topics/religion-state"
+          "source": [
+            "https://yes.democrats.org.il/topics/religion-state",
+            "https://yes.democrats.org.il/topics/health"
+          ]
         },
         {
           "id": "the_democrats_15",
@@ -1225,13 +1238,17 @@
         {
           "id": "the_democrats_24",
           "title": "Invest in the Periphery",
-          "summary": "Invest in the economy, education, health services, housing, culture, and transportation in the North and the South. Move money away from annexation and towards the Periphery.",
+          "summary": "Invest in the economy, education, health services, housing, culture, and transportation in the North and the South. Move money away from annexation and towards the Periphery.\n<br> Invest in hospitals in the North, increasing bed spaces. Build a new hospital in the Negev, and try to build new ones in the North.\n<br> Open regional specialist medical centers and buy new MRIs and CT scanners, plus other advenced medical equipment.\n<br> Create a national program to bring doctors to the North and South with housing, employment for spouces, internships, and R&D investments.",
           "topics": [
             "housing",
             "periphery",
-            "transit"
+            "transit",
+            "healthcare"
           ],
-          "source": "https://yes.democrats.org.il/topics/economy-society"
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/health"
+          ]
         },
         {
           "id": "the_democrats_25",
@@ -1319,21 +1336,230 @@
         {
           "id": "the_democrats_33",
           "title": "Mandatory Civics Classes",
-          "summary": "Add Democracy and Civics to the curriculum at the same status as Math and English. \n<br> Add study hours to all streams for Jewish-democratic-liberal identity, at a level currently used in the state-religious stream.\n<br> Fund pre-military academies and youth organziations that reflect these values.",
+          "summary": "Add Democracy and Civics to the curriculum at the same status as Math and English. \n<br> Add study hours to all streams for Jewish-democratic-liberal identity, at a level currently used in the state-religious stream.\n<br> Fund pre-military academies and youth organziations that reflect these values.\n<br> In addition to Democracy and Civics, Arab schools will have Hebrew and English classes strengthened, and leadership invested in.",
           "topics": [
             "education"
           ],
-          "source": "https://yes.democrats.org.il/topics/education"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
         },
         {
           "id": "the_democrats_34",
           "title": "Invest in Teachers and Principals",
-          "summary": "Reform the employment structure and strengthen the role of teachers and principals. Decentralize authority to local education boards and increase professional development in staff.",
+          "summary": "Reform the employment structure and strengthen the role of teachers and principals. Decentralize authority to local education boards and increase professional development in staff.\n<br>Bring Arab teachers into the Hebrew education system to address the lack of teachers crisis.",
           "topics": [
             "education",
             "local_government"
           ],
-          "source": "https://yes.democrats.org.il/topics/education"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
+        },
+        {
+          "id": "the_democrats_35",
+          "title": "Security in the Periphery",
+          "summary": "Beyond removing threat actors from the borders (Hamas, Hezbollah), defense systems that cover border communities and yeshuvim will be strengthened. Subterranian protections will be implemented against tunnels. Funding will be allocated to updgade protections.",
+          "topics": [
+            "security",
+            "periphery"
+          ],
+          "source": "https://yes.democrats.org.il/topics/north_and_south"
+        },
+        {
+          "id": "the_democrats_36",
+          "title": "Rejuvination of the Periphery",
+          "summary": "Supports for small busninesses and bridge funding for self-employed until their businesses fully recover. Quick compensation for damage due to the war, and give residents the right to choose if they are going to remain in their homes, stay elsewhere, or move permanently. <br>\nAdd 15 billion shekels to the 'Momentum for the North' plan, and create a specific law that governs the settlement of the North to streamline activities and ensure quick implimentation.\n<br>Invest in social services, healthcare, education, housing, public transit.",
+          "topics": [
+            "periphery",
+            "housing",
+            "welfare"
+          ],
+          "source": "https://yes.democrats.org.il/topics/north_and_south"
+        },
+        {
+          "id": "the_democrats_37",
+          "title": "Local Government",
+          "summary": "Expand the powers of local governments, and fund them so that they can plan their regions effectively.",
+          "topics": [
+            "local_government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/north_and_south"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Crime in the Arab Community: Task Force",
+          "summary": "Declare a State of Emergency and establish a cross-agency task force to tackle violence in Arab society. The task force will take the top 5% of elite officers in the Shabak, IDF, Police, and Prisonm Service, and will be overseen by a special \"Crime Cabinet\" of ministers. It will have a 1 billion shekel budget and the goal of eliminating criminal organizations.",
+          "topics": [
+            "arab_citizens",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/fight-crime"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Crime in the Arab Community: Strengthening Policing",
+          "summary": "Strengthen the police forces to be able to conduct their operations in the Arab areas, and strengthen the tools of justice.\n<ul><li>Improve detective and investigative skills in Arabic</li>\n<li>Improve relationships and cooperation between police and city leaders</li>\n<li>Incentivize results by promoting officers who lead to a decrease in crime</li>\n<li>Establish specialized courts for serious crimes</li>\n<li>Pass laws that will allow for increased penalties, using biometric data to find criminals, and fight money laundering</li></ul>",
+          "topics": [
+            "arab_citizens",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/fight-crime"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Crime in the Arab Community: Fighting Money Laundering",
+          "summary": "Create a new Financial Crimes Unit under the taskforce in the tradition of the Zalzal Unit that used to be part of the Mossad. This unit will have powers to get information from banks, interface with institutions around the world (including foreign governments), and work with all financial governance organizations and regulators in Israel.<br>\nPass a law barring 'dirty' companies from goverment contracts.\n<br>Create a governement insurance program to protect farmers and business owners who are threatened with Protection rackets",
+          "topics": [
+            "arab_citizens",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/fight-crime"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Crime in the Arab Community: Community Work",
+          "summary": "Create a new child-focused team within the taskforce to get children out of crime through education and welfare.\n<br> Make a treatment pathway for at-risk youth, with buy-in from city hall, welfare, community policing, securtiy, and education.\n<br> Add guidance counselors and youth counselors to Arab schools, with all counselors passing background checks and having professional guidance. Define a reporting path for inidvidual children.\n<br> Change prison sentences to focus on rehabiitation, to allow people to rejoin society.\n<br> Education will be invested in to get kids into the labour market and educated on democratic values, to reject crime.",
+          "topics": [
+            "arab_citizens",
+            "education"
+          ],
+          "source": [
+            "https://yes.democrats.org.il/topics/fight-crime",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Crime in the Arab Community: Corruption",
+          "summary": "Municipalities that are corrupt or taken over by criminal organzations will be run by a committee appointed by the Minister of the Interior, until they are running properly. This an already existing process called a \"ועדה קרואה\"",
+          "topics": [
+            "arab_citizens",
+            "local_government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/fight-crime"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Freedom of speech",
+          "summary": "Freedom of expression and protest will be protected from political interference.",
+          "topics": [
+            "liberal_rights",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/public-safety"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Civilian firearms",
+          "summary": "Civilian firearms are viewed as a necessity for security, and must be regulated appropriately:\n<ul><li>Local defense organizations will be authorized by the government on a national level, with formally granted powers, resources, and a professional operating model - in a way that implements lessons learned from Oct 7th. <br>The network will be armed and also regulated.</li>\n<li>Firearm licenses will be regulated more closely, to identify owners that might be dangerous to their community, and to ensure that those who are licensed are properly trained and are responsible.</li>\n</ul>",
+          "topics": [
+            "liberal_rights",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/public-safety"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Recognize neglect in Arab communities",
+          "summary": "The Arab communities have been neglected, and are full of fear, crime, and violence. The state has an obligation to fight crime, bring justice, bring safety, and develop Arab areas.",
+          "topics": [
+            "arab_citizens",
+            "liberal_rights",
+            "internal_security"
+          ],
+          "source": "https://yes.democrats.org.il/topics/arab-society"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Create plans for Arab towns and communities",
+          "summary": "Enact a policy of urban planning and regulation for Arab, Druze, and Bedouin settlements. New neighbourhoods and industrial areas will be planned and built, and new localities will be established.\n<br> The \"Kaminitz Law\" will be repealed.",
+          "topics": [
+            "arab_citizens",
+            "housing"
+          ],
+          "source": "https://yes.democrats.org.il/topics/arab-society"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Spur economic development in Arab towns",
+          "summary": "Recent plans will be built on, and a new 5 year plan for reducing the gaps between the Arab public and Jewish public in Israel will be implemened. There will be a focus on infrastructure, employment, and transit. Budgets will be allocated, with strong oversight systems to make sure that nothing is lost to corruption.",
+          "topics": [
+            "arab_citizens",
+            "transit",
+            "economy"
+          ],
+          "source": "https://yes.democrats.org.il/topics/arab-society"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Promote representation of Arab citizens in government",
+          "summary": "Promote the inclusion and representation of Arab citizens and communities in ministries, state owned companies, and descision making bodies.",
+          "topics": [
+            "arab_citizens",
+            "government"
+          ],
+          "source": "https://yes.democrats.org.il/topics/arab-society"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Invest in the healthcare system",
+          "summary": "Increase contributions to the national healthcare budget, and address gaps between Israel and the OECD average. \n<br> Plan for implementing new medicines, treatments, and technologies with preemptive funding, so that it can be implemented quickly.\n<br> Increase the planning capabilities of the Healthcare funds, so that they can provide services properly to all localities and keep waiting times down. Change how the funding calculations work so that healthcare funds are incentivized to invest in the periphery. \n<br> Invest in preventative medicine.",
+          "topics": [
+            "healthcare"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Healthcare technology",
+          "summary": "Invest in research and new technologies, and reduce regulatory and bureaucratic burdens. <br>\nAt the same time, make healthcare data more accessible and also more secure by making national rules and infrastructure for hosting health data for research, while fully protecting patient privacy.",
+          "topics": [
+            "healthcare"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Healthcare in the Arab Sector",
+          "summary": "Strengthen health service accessibility in Arab communities.",
+          "topics": [
+            "healthcare",
+            "arab_citizens"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Mental Health",
+          "summary": "Establish a national headquarters for mental rehabilitation and recovery. Invest in doctors and care providers. Invest in services. Recognize professions that aren't currently recognized, like art therapists.",
+          "topics": [
+            "healthcare"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "More medical professionals / Medical School",
+          "summary": "Increase the number of medical students to more than 2,000 per year, and at the same time increasing the standards and expectations.\n<br> Increase the number of nurses and grant specialist nurses more medical authority. Also work to create the role of physicians assistant, to reduce the load on doctors.\n<br> Work to bring Israeli doctors abroad back to Israel, and make it both easy for them to come back and also to stay (with strong professional opportunities).",
+          "topics": [
+            "healthcare",
+            "education",
+            "aliyah"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
+        },
+        {
+          "id": "the_democrats_nan",
+          "title": "Senior Medical Care",
+          "summary": "Prepare for senior citizens and retirees by strengthening community based geriatric medicine. Incentivize Health funds to prevent decline, not just to treat it after it happens. Expand rehabilitation.",
+          "topics": [
+            "healthcare",
+            "retirees"
+          ],
+          "source": "https://yes.democrats.org.il/topics/health"
         }
       ]
     },
