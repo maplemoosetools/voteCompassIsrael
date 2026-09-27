@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Vote Compass Israel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #f0f0f0;
+      --bg2:        #e4e4e4;
+      --card:       #FFFFFF;
+      --surface:    #F8F6F3;
+      --header-bg:  #0e4f97;
+      --header-bg2: #1e5ca3;
+      --text:       #000000;
+      --text-muted: #3f3e3c;
+      --text-faint: #A09890;
+      --divider:    #E0DDD8;
+      --radius:     10px;
+      --radius-sm:  5px;
+      --header-h:   56px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--header-bg);
+      height: var(--header-h);
+      display: flex; align-items: center;
+      padding: 0 24px; gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.78rem; font-weight: 500;
+      color: rgba(255,255,255,0.7);
+      background: none; border: none;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      transition: color .15s;
+      padding: 4px 0;
+    }
+    .back-btn:hover { color: #fff; }
+    .back-arrow { font-size: 1rem; line-height: 1; }
+    .hdr-gap { flex: 1; }
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.05rem; font-weight: 700; color: #fff; line-height: 1.15;
+      text-align: right;
+    }
+    .logo-sub {
+      display: block; font-family: 'DM Sans', sans-serif;
+      font-weight: 400; font-size: 0.64rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.07em; text-transform: uppercase; margin-top: 3px;
+    }
+
+    /* ── PAGE BODY ── */
+    .page-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+
+    .page-hero {
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+    .page-hero .emoji { font-size: 2.8rem; display: block; margin-bottom: 12px; }
+    .page-hero h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.6rem; font-weight: 700;
+      color: var(--header-bg);
+      margin-bottom: 8px;
+    }
+    .page-hero p {
+      font-size: 0.85rem; color: var(--text-muted);
+      line-height: 1.65; max-width: 480px; margin: 0 auto;
+    }
+
+    .about-block {
+      background: var(--card);
+      border: 1px solid var(--divider);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+    }
+    .about-block h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--header-bg);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .about-block p {
+      font-size: 0.81rem; color: var(--text-muted);
+      line-height: 1.7; margin-bottom: 10px;
+    }
+    .about-block p:last-child { margin-bottom: 0; }
+    .about-block ul, .about-block ol {
+      font-size: 0.81rem; color: var(--text-muted);
+      line-height: 1.7; padding-left: 1.3em;
+      margin-bottom: 10px;
+    }
+    .about-block ul:last-child, .about-block ol:last-child { margin-bottom: 0; }
+    .about-block li { margin-bottom: 5px; }
+    .about-block code {
+      font-size: 0.74rem; background: var(--bg2);
+      padding: 2px 6px; border-radius: 3px; font-family: monospace;
+    }
+    .about-block pre {
+      background: var(--bg2);
+      border: 1px solid var(--divider);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-size: 0.73rem; font-family: monospace;
+      overflow-x: auto; line-height: 1.55;
+      margin-top: 10px; white-space: pre;
+    }
+    .about-block a { color: var(--header-bg); text-decoration: none; }
+    .about-block a:hover { text-decoration: underline; }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--header-bg);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem; font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: background .15s;
+    }
+    .cta-btn:hover { background: var(--header-bg2); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back-btn" href="index.html">
+    <span class="back-arrow">←</span> Back to Compass
+  </a>
+  <div class="hdr-gap"></div>
+  <div class="logo">
+    Vote Compass Israel
+    <span class="logo-sub">About this tool</span>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <div class="page-hero">
+    <span class="emoji">🗳️</span>
+    <h1>Vote Compass Israel</h1>
+    <p>A side-by-side political platform comparison tool for the 2026 Israeli election.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>What it does</h2>
+    <ul>
+      <li>Compare any number of Israeli political parties side by side</li>
+      <li>Filter by topics you care about using the checkboxes at the bottom of each column</li>
+      <li>Each platform position is tagged with multiple relevant topics</li>
+      <li>Unchecked topics show a coloured tally of how many hidden positions each party has — so you never miss something relevant</li>
+      <li>Click any source button to go directly to the original party platform page</li>
+    </ul>
+  </div>
+
+  <div class="about-block">
+    <h2>Disclaimer</h2>
+    <p>This tool is a research aid for voters — not an endorsement of any party or position. Platform positions are simplified summaries of official platforms and public statements.</p>
+    <p>Always consult each party's official platform before making decisions. Data may be incomplete or out of date.</p>
+    <p>The publisher makes no claims about how up to date data is, and is presenting this as best effort, in good faith. 
+      The publisher also did their best to keep biases out of the summaries, and invites the reader to raise any issues.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>AI Disclosure</h2>
+    <p>Generative AI was used to build the code of the website, and to translate party platforms to English. 
+      AI was not used in reading or writing platform summaries - that was all done manually, by human by hand.</p>
+  </div>
+  
+  <div class="about-block">
+    <h2>Update log</h2>
+    <ul>
+      <li>27 Sept: Went live. Democrates platform mostly done.</li>
+
+    </ul>
+  </div>
+  </div>
+
+
+  <div class="about-block">
+    <h2>Get in touch</h2>
+    <p>Please email us at <a href="mailto:votecompassisrael@gmail.com">votecompassisrael@gmail.com</a></p>
+  </div>
+
+</div>
+
+</body>
+</html>

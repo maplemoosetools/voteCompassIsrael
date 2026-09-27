@@ -43,29 +43,6 @@
     }
 
     /* ── HEADER ── */
-    .phcard {
-      min-height: 0px;
-    }
-    .phc-topline {
-      font-size: 0.72rem;
-      font-style: italic;
-      color: var(--text-muted);
-      margin-top: 8px;
-      margin-left: 15px;
-      line-height: 1.45;
-    }
-    .phc-website {
-      display: inline-block;
-      font-size: 0.65rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      text-decoration: none;
-      margin-top: 7px;
-      margin-left: 15px;
-      letter-spacing: 0.02em;
-      transition: color .15s;
-    }
-    .phc-website:hover { color: var(--text); }
     header {
       position: relative;
       background: var(--header-bg);
@@ -73,11 +50,16 @@
       display: flex; align-items: center;
       padding: 0 24px; gap: 16px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+      z-index: 200;
     }
     .logo {
       font-family: 'Libre Baskerville', serif;
       font-size: 1.05rem; font-weight: 700; color: #fff; line-height: 1.15;
+      cursor: pointer;
+      user-select: none;
     }
+    .logo:hover { opacity: 0.85; }
     .logo-sub {
       display: block; font-family: 'DM Sans', sans-serif;
       font-weight: 400; font-size: 0.64rem;
@@ -85,14 +67,148 @@
       letter-spacing: 0.07em; text-transform: uppercase; margin-top: 3px;
     }
     .hdr-gap { flex: 1; }
-    .about-btn {
-      font-size: 0.72rem; color: rgba(255,255,255,0.5);
-      background: none; border: 1px solid rgba(255,255,255,0.18);
-      border-radius: var(--radius-sm); padding: 5px 13px;
-      cursor: pointer; font-family: 'DM Sans', sans-serif;
-      transition: color .15s, border-color .15s;
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      width: 36px; height: 36px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 5px;
+      cursor: pointer; background: none; border: none;
+      border-radius: var(--radius-sm);
+      padding: 6px;
+      transition: background .15s;
+      flex-shrink: 0;
     }
-    .about-btn:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+    .hamburger:hover { background: rgba(255,255,255,0.12); }
+    .hamburger span {
+      display: block; width: 20px; height: 2px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 2px;
+      transition: background .15s;
+    }
+    .hamburger:hover span { background: #fff; }
+
+    /* ── SLIDE-IN MENU ── */
+    .menu-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 400;
+    }
+    .menu-overlay.open { display: block; }
+    .menu-panel {
+      position: fixed;
+      top: 0; right: 0;
+      width: 340px; max-width: 92vw;
+      height: 100vh;
+      background: var(--card);
+      box-shadow: -4px 0 24px rgba(0,0,0,0.18);
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      z-index: 401;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .menu-overlay.open .menu-panel { transform: translateX(0); }
+
+    .menu-head {
+      background: var(--header-bg);
+      padding: 16px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .menu-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.95rem; font-weight: 700; color: #fff;
+    }
+    .menu-close {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,0.12); border: none;
+      border-radius: 50%; color: #fff; font-size: 1rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background .15s;
+    }
+    .menu-close:hover { background: rgba(255,255,255,0.22); }
+
+    .menu-nav {
+      display: flex; flex-direction: column;
+      border-bottom: 1px solid var(--divider);
+      flex-shrink: 0;
+    }
+    .menu-nav-item {
+      padding: 13px 20px;
+      font-size: 0.85rem; font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none; background: none;
+      text-align: left; font-family: 'DM Sans', sans-serif;
+      border-bottom: 1px solid var(--divider);
+      transition: background .1s, color .1s;
+    }
+    .menu-nav-item:last-child { border-bottom: none; }
+    .menu-nav-item:hover { background: var(--bg); color: var(--text); }
+    .menu-nav-item.active {
+      background: var(--header-bg);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .menu-content {
+      flex: 1; overflow-y: auto;
+      padding: 0;
+    }
+
+    /* ── ABOUT PAGE CONTENT ── */
+    .about-page {
+      padding: 24px 20px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .about-block {
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+    }
+    .about-block h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.9rem; font-weight: 700;
+      color: var(--header-bg);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .about-block p {
+      font-size: 0.79rem; color: var(--text-muted);
+      line-height: 1.65; margin-bottom: 8px;
+    }
+    .about-block p:last-child { margin-bottom: 0; }
+    .about-block ul {
+      font-size: 0.79rem; color: var(--text-muted);
+      line-height: 1.65; padding-left: 1.2em;
+      margin-bottom: 8px;
+    }
+    .about-block ul:last-child { margin-bottom: 0; }
+    .about-block li { margin-bottom: 4px; }
+    .about-block code {
+      font-size: 0.72rem; background: var(--bg2);
+      padding: 1px 5px; border-radius: 3px;
+      font-family: monospace;
+    }
+    .about-block pre {
+      background: var(--bg2);
+      border: 1px solid var(--divider);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: 0.71rem; font-family: monospace;
+      overflow-x: auto; line-height: 1.5;
+      margin-top: 8px;
+      white-space: pre;
+    }
+    .about-block a {
+      color: var(--header-bg); text-decoration: none;
+    }
+    .about-block a:hover { text-decoration: underline; }
+    .about-emoji { font-size: 1.4rem; margin-bottom: 6px; display: block; }
 
     /* ── PARTY SELECTOR BAR ── */
     .party-selector-bar {
@@ -102,6 +218,7 @@
       display: flex; align-items: center;
       gap: 8px; flex-wrap: wrap;
       border-bottom: 2px solid rgba(0,0,0,0.2);
+      flex-shrink: 0;
     }
     .sel-lbl {
       font-size: 0.64rem; font-weight: 600;
@@ -122,58 +239,33 @@
       transition: opacity .15s, transform .1s;
       white-space: nowrap;
     }
-    .party-btn.selected {
-      opacity: 1;
-      border-color: rgba(255,255,255,0.4);
-    }
-    .party-btn.unselected {
-      opacity: 0.38;
-    }
+    .party-btn.selected { opacity: 1; border-color: rgba(255,255,255,0.4); }
+    .party-btn.unselected { opacity: 0.38; }
     .party-btn.unselected:hover { opacity: 0.6; }
     .party-btn-dot {
       width: 8px; height: 8px; border-radius: 50%;
       background: rgba(255,255,255,0.6); flex-shrink: 0;
     }
-    .party-btn-rank {
-      position: absolute;
-      top: -5px; right: -5px;
-      background: rgba(255,255,255,0.9);
-      color: #333;
-      font-size: 0.55rem; font-weight: 700;
-      border-radius: 50%;
-      width: 14px; height: 14px;
-      display: flex; align-items: center; justify-content: center;
-      line-height: 1;
-    }
-
-    /* ── ADD PARTY DROPDOWN (kept for data compat, hidden) ── */
-    .add-dd { display: none; }
 
     /* ── PARTY HEADER — sticky ── */
     .party-header-scroll {
       overflow-x: scroll;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      position: sticky; top: 0; z-index: 100;
       background: var(--bg);
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       max-width: 100%;
     }
     .party-header-scroll::-webkit-scrollbar { display: none; }
     table.header-table {
-      border-collapse: collapse;
-      table-layout: fixed;
-      width: max-content;
-      min-width: unset;
+      border-collapse: collapse; table-layout: fixed;
+      width: max-content; min-width: unset;
     }
     .phcard-details {
       background: var(--card);
       border-left: 1px solid var(--divider);
       border-bottom: 12px solid var(--bg);
       padding: 10px 16px 12px;
-      margin: 0 4px;
-      height: 100%;
-      text-align: center;
+      margin: 0 4px; height: 100%; text-align: center;
     }
     tr.details-row td { padding: 0; vertical-align: top; height: 1px; }
     tr.details-row td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
@@ -182,47 +274,36 @@
 
     /* ── OUTER SCROLL ── */
     .outer {
-      overflow-x: scroll;
-      overflow-y: auto;
-      padding: 0 0 48px 0;
-      flex: 1;
+      overflow-x: scroll; overflow-y: auto;
+      padding: 0 0 48px 0; flex: 1;
     }
     .outer::-webkit-scrollbar { height: 8px; }
     .outer::-webkit-scrollbar-track { background: var(--bg2); }
     .outer::-webkit-scrollbar-thumb { background: #c8c3bc; border-radius: 4px; }
     .outer::-webkit-scrollbar-thumb:hover { background: #a8a39c; }
-    
+
     /* ── TABLE ── */
     table.ct {
-      border-collapse: collapse;
-      table-layout: fixed;
-      width: max-content;
-      min-width: unset;
+      border-collapse: collapse; table-layout: fixed;
+      width: max-content; min-width: unset;
     }
     col.lcol { width: var(--label-w); }
     col.pcol  { width: var(--col-width); }
 
-    /* corner cell */
     .lth-inner {
       background: var(--section-bg);
       border-bottom: 3px solid var(--label-border);
       border-right: 1px solid var(--divider);
-      height: 100%;
-      margin-left: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 100%; margin-left: 24px;
+      display: flex; align-items: center; justify-content: center;
     }
-
-    /* party header card */
     .phcard {
       background: var(--card);
       border-top: 4px solid var(--pc, #888);
       border-bottom: 3px solid var(--divider);
-      padding: 13px 16px 11px;
-      margin: 0 4px;
+      padding: 13px 16px 11px; margin: 0 4px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-      text-align: center;
+      text-align: center; min-height: 0;
     }
     thead th { padding: 0; vertical-align: bottom; background: var(--bg); }
     thead th.lth { position: sticky; left: 0; z-index: 80; height: 1px; background: var(--bg); }
@@ -235,144 +316,95 @@
       display: flex; align-items: center; justify-content: center; gap: 7px;
     }
     .phc-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .phc-leader { font-size: 0.68rem; color: var(--text-faint); margin-top: 4px; padding-left: 15px; }
+    .phc-leader { font-size: 0.68rem; color: var(--text-faint); margin-top: 4px; }
     .phc-bloc {
       display: inline-block; font-size: 0.58rem; font-weight: 600;
       letter-spacing: 0.04em; text-transform: uppercase;
       padding: 2px 7px; border-radius: 20px;
-      margin-top: 6px; margin-left: 15px; color: #fff;
+      margin-top: 6px; color: #fff;
     }
+    .phc-topline {
+      font-size: 0.72rem; font-style: italic;
+      color: var(--text-muted); margin-top: 8px; line-height: 1.45;
+    }
+    .phc-website {
+      display: inline-block; font-size: 0.65rem; font-weight: 500;
+      color: var(--text-faint); text-decoration: none;
+      margin-top: 7px; letter-spacing: 0.02em; transition: color .15s;
+    }
+    .phc-website:hover { color: var(--text); }
 
     /* ── DATA ROWS ── */
-    tr.drow td {
-      padding: 0; vertical-align: top; height: 1px;
-    }
-    tr.drow td.ltd {
-      position: sticky; left: 0; z-index: 20;
-      background: var(--bg);
-    }
+    tr.drow td { padding: 0; vertical-align: top; height: 1px; }
+    tr.drow td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
 
-    /* rotated section label cell */
     .section-label-cell {
-      background: var(--section-bg);
-      margin-left: 24px;
-      height: 100%;
+      background: var(--section-bg); margin-left: 24px; height: 100%;
       display: flex; align-items: center; justify-content: center;
-      border-bottom: 12px solid var(--bg);
-      border-right: 1px solid var(--divider);
+      border-bottom: 12px solid var(--bg); border-right: 1px solid var(--divider);
     }
     .section-label-text {
       font-family: 'Libre Baskerville', serif;
-      font-size: 0.72rem; font-weight: 700;
-      color: var(--section-text);
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      padding: 10px 10px;
+      font-size: 0.72rem; font-weight: 700; color: var(--section-text);
+      letter-spacing: 0.03em; white-space: nowrap;
+      writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px 10px;
     }
 
-    /* party position cell */
     .pos-cell {
       background: var(--card);
       border-left: 1px solid var(--divider);
       border-bottom: 12px solid var(--bg);
-      padding: 14px 16px;
-      height: 100%;
-      margin: 0 4px;
+      padding: 14px 16px; height: 100%; margin: 0 4px;
     }
     tr.drow td:nth-child(2) .pos-cell { margin-left: 0; }
     tr.drow td:last-child   .pos-cell { margin-right: 24px; }
-
     .pos-cell.empty { display: flex; align-items: center; }
     .pos-empty-dash { color: var(--text-faint); font-size: 1rem; }
 
     .pos-entry { padding-bottom: 12px; }
     .pos-entry:last-child { padding-bottom: 0; }
-    .pos-entry + .pos-entry {
-      border-top: 1px solid var(--divider);
-      padding-top: 12px;
-    }
-    .pos-title {
-      font-size: 0.81rem; font-weight: 600;
-      color: var(--text); line-height: 1.35; margin-bottom: 5px;
-    }
-    .pos-summary {
-      font-size: 0.75rem; color: var(--text-muted); line-height: 1.55;
-    }
-    .pos-summary ul, .pos-summary ol {
-      padding-left: 1.2em;
-    }
+    .pos-entry + .pos-entry { border-top: 1px solid var(--divider); padding-top: 12px; }
+    .pos-title { font-size: 0.81rem; font-weight: 600; color: var(--text); line-height: 1.35; margin-bottom: 5px; }
+    .pos-summary { font-size: 0.75rem; color: var(--text-muted); line-height: 1.55; }
+    .pos-summary ul, .pos-summary ol { padding-left: 1.2em; }
 
-    /* citations */
-    .pos-citations {
-      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px;
-    }
+    .pos-citations { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
     .pos-citation {
       font-size: 0.57rem; font-weight: 600; letter-spacing: 0.04em;
       text-transform: uppercase; padding: 2px 6px; border-radius: 3px;
       background: var(--bg2); color: var(--text-muted);
       border: 1px solid var(--label-border);
-      text-decoration: none;
-      transition: background .12s, color .12s;
+      text-decoration: none; transition: background .12s, color .12s;
     }
-    .pos-citation:hover {
-      background: var(--header-bg);
-      color: #fff;
-      border-color: var(--header-bg);
-    }
-    /* non-linked citation */
-    .pos-citation.no-link {
-      cursor: default; opacity: 0.5;
-    }
+    .pos-citation:hover { background: var(--header-bg); color: #fff; border-color: var(--header-bg); }
+    .pos-citation.no-link { cursor: default; opacity: 0.5; }
 
-    /* ── CHECKBOX FOOTER ROW ── */
+    /* ── CHECKBOX FOOTER ── */
     tr.crow td { padding: 0; vertical-align: top; height: 1px; }
     tr.crow td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
 
-    /* topics label — matches section-label-cell style */
     .cbox-label-cell {
-      background: var(--section-bg);
-      margin-left: 24px;
-      height: 100%;
+      background: var(--section-bg); margin-left: 24px; height: 100%;
       display: flex; align-items: center; justify-content: center;
       border-right: 1px solid var(--divider);
     }
     .cbox-label-text {
       font-family: 'Libre Baskerville', serif;
-      font-size: 0.72rem; font-weight: 700;
-      color: var(--section-text);
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      padding: 10px 0;
+      font-size: 0.72rem; font-weight: 700; color: var(--section-text);
+      letter-spacing: 0.03em; white-space: nowrap;
+      writing-mode: vertical-lr; transform: rotate(180deg); padding: 10px 0;
     }
-
     .cbox-card {
-      background: var(--surface);
-      border: 1px solid var(--divider);
-      border-top: none;
-      padding: 12px 14px 12px;
-      margin: 0 4px;
-      height: 100%;
+      background: var(--surface); border: 1px solid var(--divider);
+      border-top: none; padding: 12px 14px; margin: 0 4px; height: 100%;
     }
     tr.crow td:nth-child(2) .cbox-card { margin-left: 0; }
     tr.crow td:last-child   .cbox-card { margin-right: 24px; }
-
-    .cbox-head {
-      font-size: 0.62rem; font-weight: 600;
-      letter-spacing: 0.07em; text-transform: uppercase;
-      color: var(--text-faint); margin-bottom: 8px;
-    }
-    .cbox-item {
-      display: flex; align-items: center; gap: 7px;
-      padding: 3px 0; cursor: pointer; user-select: none;
-    }
+    .cbox-head { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 8px; }
+    .cbox-item { display: flex; align-items: center; gap: 7px; padding: 3px 0; cursor: pointer; user-select: none; }
     .cbox-item:hover .cbox-box { border-color: var(--header-bg); }
     .cbox-box {
-      width: 13px; height: 13px;
-      border: 1.5px solid var(--label-border);
+      width: 13px; height: 13px; border: 1.5px solid var(--label-border);
       border-radius: 2px; flex-shrink: 0; background: var(--card);
       display: flex; align-items: center; justify-content: center;
       transition: background .12s, border-color .12s;
@@ -386,11 +418,7 @@
     .cbox-item.on .cbox-box::after { display: block; }
     .cbox-lbl { font-size: 0.72rem; color: var(--text-muted); flex: 1; line-height: 1.3; }
     .cbox-item.on .cbox-lbl { color: var(--text); }
-    .cbox-badge {
-      font-size: 0.6rem; font-weight: 700; border-radius: 20px;
-      padding: 1px 5px; color: #fff; min-width: 16px;
-      text-align: center; flex-shrink: 0;
-    }
+    .cbox-badge { font-size: 0.6rem; font-weight: 700; border-radius: 20px; padding: 1px 5px; color: #fff; min-width: 16px; text-align: center; flex-shrink: 0; }
 
     /* ── STATES ── */
     .state-wrap { padding: 80px 24px; text-align: center; color: var(--text-muted); }
@@ -398,20 +426,6 @@
     .state-wrap h2 { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; color: var(--text); margin-bottom: 8px; }
     .state-wrap p { font-size: 0.8rem; max-width: 400px; margin: 6px auto; line-height: 1.65; }
     .state-wrap code { background: var(--bg2); padding: 1px 5px; border-radius: 3px; font-size: 0.77rem; }
-
-    /* ── MODAL ── */
-    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 500; align-items: center; justify-content: center; padding: 24px; }
-    .modal-bg.open { display: flex; }
-    .modal { background: var(--card); border-radius: var(--radius); padding: 28px; max-width: 450px; width: 100%; box-shadow: 0 24px 64px rgba(0,0,0,0.2); }
-    .modal h2 { font-family: 'Libre Baskerville', serif; color: var(--text); font-size: 1.1rem; margin-bottom: 12px; }
-    .modal p { font-size: 0.79rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 10px; }
-    .modal-close { margin-top: 10px; background: var(--header-bg); color: #fff; border: none; border-radius: var(--radius-sm); padding: 9px 20px; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500; cursor: pointer; }
-    .modal-close:hover { background: var(--header-bg2); }
-
-    /* ── FOOTER ── */
-    .page-footer { text-align: center; padding: 0 24px 32px; font-size: 0.69rem; color: var(--text-faint); }
-    .page-footer a { color: var(--text-muted); text-decoration: none; }
-    .page-footer a:hover { text-decoration: underline; }
 
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg2); }
@@ -421,40 +435,51 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
-  <div class="logo">Vote Compass Israel<span class="logo-sub">Party Platform Comparison</span></div>
+  <div class="logo" onclick="showCompass()">
+    Vote Compass Israel
+    <span class="logo-sub">Party Platform Comparison</span>
+  </div>
   <div class="hdr-gap"></div>
-  <button class="about-btn" onclick="document.getElementById('modal').classList.add('open')">About</button>
+  <button class="hamburger" onclick="openMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
+<!-- SLIDE-IN MENU -->
+<div class="menu-overlay" id="menuOverlay" onclick="handleOverlayClick(event)">
+  <div class="menu-panel" id="menuPanel">
+    <div class="menu-head">
+      <span class="menu-title">Menu</span>
+      <button class="menu-close" onclick="closeMenu()">✕</button>
+    </div>
+    <div class="menu-nav">
+      <button class="menu-nav-item active" id="navCompass" onclick="showCompass()">🗳️ &nbsp;Compare Platforms</button>
+      <button class="menu-nav-item" id="navAbout" onclick="showAbout()">ℹ️ &nbsp;About this tool</button>
+    </div>
+    <div class="menu-content" id="menuContent"></div>
+  </div>
+</div>
+
+<!-- PARTY SELECTOR BAR -->
 <div class="party-selector-bar" id="partySelectorBar">
   <span class="sel-lbl">Parties</span>
 </div>
 
-<div class="modal-bg" id="modal" onclick="if(event.target===this)this.classList.remove('open')">
-  <div class="modal">
-    <h2>About Vote Compass Israel</h2>
-    <p>This tool summarizes and compares the published platforms and public positions of Israeli political parties. It is a research aid for voters — not an endorsement of any party or position.</p>
-    <p>Platform positions are simplified summaries. Always consult each party's official platform before making decisions.</p>
-    <p>Data lives in <code>data.json</code> — contributions and corrections welcome via GitHub pull request.</p>
-    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">Got it</button>
-  </div>
-</div>
-
+<!-- MAIN AREA -->
 <div id="mainArea" style="flex:1; overflow:hidden; display:flex; flex-direction:column;"></div>
-
-
 
 <script>
 let DATA = null;
-let selectedParties = ['likud', 'beyahad_together','yisrael_beiteinu'];
+let selectedParties = ['the_democrats', 'beyahad_together'];
 let selectedTopics  = new Set();
 
 fetch('data.json')
   .then(r => { if (!r.ok) throw new Error(); return r.json(); })
   .then(data => {
     DATA = data;
-    ['government', 'haredi', 'soldiers', '_oct7'].forEach(t => selectedTopics.add(t));
+    ['government', 'haredi', 'draft', '_oct7'].forEach(t => selectedTopics.add(t));
     render();
   })
   .catch(() => {
@@ -466,6 +491,23 @@ fetch('data.json')
       </div>`;
   });
 
+/* ── MENU ── */
+function openMenu() { document.getElementById('menuOverlay').classList.add('open'); }
+function closeMenu() { document.getElementById('menuOverlay').classList.remove('open'); }
+function handleOverlayClick(e) { if (e.target === document.getElementById('menuOverlay')) closeMenu(); }
+
+function showCompass() {
+  closeMenu();
+  document.getElementById('navCompass').classList.add('active');
+  document.getElementById('navAbout').classList.remove('active');
+  document.getElementById('partySelectorBar').style.display = '';
+  document.getElementById('mainArea').style.display = '';
+}
+
+function showAbout() {
+  window.location.href = 'about.html';
+}
+
 function render() {
   renderSelectorBar();
   renderTable();
@@ -475,18 +517,11 @@ function render() {
 function renderSelectorBar() {
   if (!DATA) return;
   const bar = document.getElementById('partySelectorBar');
-
-  // unselected parties ordered by their rank (order they were deselected, or data order)
-  let unselectedRank = 1;
-
   const btns = DATA.parties.map(p => {
     const isSelected = selectedParties.includes(p.id);
-    const rank = isSelected ? null : unselectedRank++;
-    return { p, isSelected, rank };
+    return { p, isSelected };
   });
-
-  bar.innerHTML = `<span class="sel-lbl">Parties</span>` + btns.map(({ p, isSelected, rank }) => {
-    const rankBadge = '';
+  bar.innerHTML = `<span class="sel-lbl">Parties</span>` + btns.map(({ p, isSelected }) => {
     return `<button
       class="party-btn ${isSelected ? 'selected' : 'unselected'}"
       style="background:${p.color}"
@@ -494,14 +529,13 @@ function renderSelectorBar() {
     >
       <span class="party-btn-dot"></span>
       ${p.name}
-      ${rankBadge}
     </button>`;
   }).join('');
 }
 
 function toggleParty(id) {
   if (selectedParties.includes(id)) {
-    if (selectedParties.length === 1) return; // keep at least one
+    if (selectedParties.length === 1) return;
     selectedParties = selectedParties.filter(x => x !== id);
   } else {
     selectedParties.push(id);
@@ -512,19 +546,15 @@ function toggleParty(id) {
 function toggleTopic(tid) {
   selectedTopics.has(tid) ? selectedTopics.delete(tid) : selectedTopics.add(tid);
   const outer = document.querySelector('.outer');
-  const scrollTop = outer ? outer.scrollTop : 0;
+  const scrollTop  = outer ? outer.scrollTop : 0;
   const scrollLeft = outer ? outer.scrollLeft : 0;
-  const atBottom = outer ? (outer.scrollTop + outer.clientHeight >= outer.scrollHeight - 10) : false;
+  const atBottom   = outer ? (outer.scrollTop + outer.clientHeight >= outer.scrollHeight - 10) : false;
   render();
   requestAnimationFrame(() => requestAnimationFrame(() => {
     const newOuter = document.querySelector('.outer');
     if (!newOuter) return;
     newOuter.scrollLeft = scrollLeft;
-    if (atBottom) {
-      newOuter.scrollTop = newOuter.scrollHeight;
-    } else {
-      newOuter.scrollTop = scrollTop;
-    }
+    newOuter.scrollTop  = atBottom ? newOuter.scrollHeight : scrollTop;
   }));
 }
 
@@ -533,7 +563,7 @@ function renderTable() {
   const area = document.getElementById('mainArea');
   if (!DATA) return;
 
-  const parties = selectedParties.map(id => party(id));
+  const parties = selectedParties.map(id => party(id)).filter(Boolean);
 
   if (parties.length === 0) {
     area.innerHTML = `<div class="state-wrap"><div class="ico">🗳️</div><h2>No parties selected</h2>
@@ -551,12 +581,11 @@ function renderTable() {
     return { topic, byParty, hasAny };
   }).filter(g => g.hasAny);
 
-  /* colgroup shared by both tables */
   const colgroup = `<colgroup><col class="lcol" />${parties.map(() => `<col class="pcol" />`).join('')}</colgroup>`;
 
-  /* ── STICKY HEADER TABLE ── */
+  /* sticky header table */
   let html = `<div class="party-header-scroll"><table class="ct header-table">${colgroup}<thead><tr>`;
-  html += `<th class="lth"><div class="lth-inner" style="display:flex;align-items:center;justify-content:center;">
+  html += `<th class="lth"><div class="lth-inner">
     <span style="font-family:'Libre Baskerville',serif;font-size:0.72rem;font-weight:700;color:var(--section-text);letter-spacing:0.03em;white-space:nowrap;writing-mode:vertical-lr;transform:rotate(180deg);padding:10px 10px;">Party</span>
   </div></th>`;
   parties.forEach(p => {
@@ -566,28 +595,30 @@ function renderTable() {
   });
   html += `</tr></thead></table></div>`;
 
-  /* ── BODY TABLE ── */
+  /* body table */
   html += `<div class="outer"><table class="ct">${colgroup}<tbody>`;
+
+  /* details row */
   html += `<tr class="details-row">`;
   html += `<td class="ltd"><div class="section-label-cell" style="border-bottom:3px solid var(--divider);">
     <span class="section-label-text">Party Details</span>
   </div></td>`;
   parties.forEach(p => {
     html += `<td><div class="phcard-details">
-      <div class="phc-leader" style="margin-top:0; padding-left:0;">${p.leader}</div>
-      <span class="phc-bloc" style="background:${blocColor(p.bloc)};margin-left:0;">${p.bloc}</span>
-      ${p.topline ? `<div class="phc-topline" style="margin-left:0;">${p.topline}</div>` : ''}
-      ${p.website ? `<a class="phc-website" style="margin-left:0;" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
+      <div class="phc-leader">${p.leader}</div>
+      <span class="phc-bloc" style="background:${blocColor(p.bloc)}">${p.bloc}</span>
+      ${p.topline ? `<div class="phc-topline">${p.topline}</div>` : ''}
+      ${p.website ? `<a class="phc-website" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
     </div></td>`;
   });
   html += `</tr>`;
 
+  /* topic rows */
   groups.forEach(({ topic, byParty }) => {
     html += `<tr class="drow">`;
     html += `<td class="ltd"><div class="section-label-cell">
       <span class="section-label-text">${topic.label}</span>
     </div></td>`;
-
     parties.forEach(p => {
       const positions = byParty[p.id];
       if (positions.length === 0) {
@@ -595,20 +626,13 @@ function renderTable() {
       } else {
         html += `<td><div class="pos-cell">`;
         positions.forEach(pos => {
-          /* build citations */
-          const sources = Array.isArray(pos.source)
-            ? pos.source
-            : (pos.source ? [pos.source] : []);
+          const sources = Array.isArray(pos.source) ? pos.source : (pos.source ? [pos.source] : []);
           const citations = sources.length > 0
             ? sources.map((src, i) => {
                 const label = sources.length === 1 ? 'Source' : `Source ${i + 1}`;
-                if (src && src !== 'add') {
-                  return `<a class="pos-citation" href="${src}" target="_blank" rel="noopener">${label}</a>`;
-                }
+                if (src && src !== 'add') return `<a class="pos-citation" href="${src}" target="_blank" rel="noopener">${label}</a>`;
                 return `<span class="pos-citation no-link">${label}</span>`;
-              }).join('')
-            : '';
-
+              }).join('') : '';
           html += `<div class="pos-entry">
             <div class="pos-title">${pos.title}</div>
             <div class="pos-summary">${pos.summary}</div>
@@ -621,7 +645,7 @@ function renderTable() {
     html += `</tr>`;
   });
 
-  /* ── CHECKBOX FOOTER ── */
+  /* checkbox footer */
   html += `<tr class="crow">`;
   html += `<td class="ltd"><div class="cbox-label-cell">
     <span class="cbox-label-text">Topics</span>
@@ -630,12 +654,10 @@ function renderTable() {
     html += `<td><div class="cbox-card"><div class="cbox-head">${p.name}</div>`;
     DATA.topics.forEach(topic => {
       const on = selectedTopics.has(topic.id);
-      const hidden = !on ? p.positions.filter(pos => 
-        pos.topics.includes(topic.id) && 
-        !pos.topics.some(t => selectedTopics.has(t))
+      const hidden = !on ? p.positions.filter(pos =>
+        pos.topics.includes(topic.id) && !pos.topics.some(t => selectedTopics.has(t))
       ).length : 0;
-      const badge = (!on && hidden > 0)
-        ? `<span class="cbox-badge" style="background:${p.color}">${hidden}</span>` : '';
+      const badge = (!on && hidden > 0) ? `<span class="cbox-badge" style="background:${p.color}">${hidden}</span>` : '';
       html += `<div class="cbox-item ${on?'on':''}" onclick="toggleTopic('${topic.id}')">
         <div class="cbox-box"></div>
         <span class="cbox-lbl">${topic.label}</span>${badge}
@@ -647,8 +669,6 @@ function renderTable() {
 
   area.innerHTML = html;
 
-  /* sync horizontal scroll */
-  /* sync horizontal scroll + equalise header card heights */
   requestAnimationFrame(() => {
     const headerScroll = document.querySelector('.party-header-scroll');
     const bodyScroll   = document.querySelector('.outer');
@@ -656,14 +676,9 @@ function renderTable() {
     bodyScroll.addEventListener('scroll', () => {
       headerScroll.scrollLeft = bodyScroll.scrollLeft;
     });
-
-    /* make all party header cards the same height */
     const cards = headerScroll.querySelectorAll('.phcard');
     let maxH = 0;
-    cards.forEach(c => {
-      c.style.height = 'auto';
-      if (c.offsetHeight > maxH) maxH = c.offsetHeight;
-    });
+    cards.forEach(c => { c.style.height = 'auto'; if (c.offsetHeight > maxH) maxH = c.offsetHeight; });
     cards.forEach(c => { c.style.height = maxH + 'px'; });
   });
 }
@@ -671,16 +686,17 @@ function renderTable() {
 function party(id) { return DATA.parties.find(p => p.id === id); }
 function blocColor(bloc) {
   return ({
-    'Right':                    '#8B4513',
-    'Far Right':                '#6B0000',
-    'Center-Right':             '#A0522D',
-    'Center':                   '#4A6741',
-    'Center-Left':              '#2F4F6F',
-    'Left':                     '#1A4A6B',
-    'Arab-Jewish Left':         '#2D5A3D',
-    'Right (Haredi-Sephardi)':  '#4A2060',
-    'Opposition - Center':      '#4A6741',
-    'Opposition - Arab, Left':  '#2D5A3D',
+    'Right':                       '#8B4513',
+    'Far Right':                   '#6B0000',
+    'Center-Right':                '#A0522D',
+    'Center':                      '#4A6741',
+    'Center-Left':                 '#2F4F6F',
+    'Left':                        '#1A4A6B',
+    'Arab-Jewish Left':            '#2D5A3D',
+    'Right (Haredi-Sephardi)':     '#4A2060',
+    'Opposition - Center':         '#4A6741',
+    'Opposition - Center to Center Right': '#4A6741',
+    'Opposition - Arab, Left':     '#2D5A3D',
     'Opposition - Secular, Right': '#7A5020',
   })[bloc] || '#444';
 }
