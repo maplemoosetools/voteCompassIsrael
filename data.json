@@ -965,7 +965,6 @@
         }
       ]
     },
-
     {
       "id": "the_democrats",
       "name": "The Democrats",
@@ -1066,7 +1065,10 @@
             "judiciary",
             "government"
           ],
-          "source": "[\"https://yes.democrats.org.il/topics/democracy-justice\", 'https://yes.democrats.org.il/topics/arab-society\"]"
+          "source": [
+            "https://yes.democrats.org.il/topics/democracy-justice/", 
+            "https://yes.democrats.org.il/topics/arab-society/"
+          ]
         },
         {
           "id": "the_democrats_9",
