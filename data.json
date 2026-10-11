@@ -6,36 +6,126 @@
     "disclaimer": "Platform positions are summarized from official party platforms and public statements. Always consult primary sources."
   },
   "topics": [
-    { "id": "_oct7",           "label": "October 7th" },
-    { "id": "AI",           "label": "Artificial Intelligence" },
-    { "id": "aliyah",          "label": "Immigration & Diaspora" },
-    { "id": "arab_citizens",   "label": "Arab Sector" },
-    { "id": "constitution",    "label": "Constitution" },
-    { "id": "cost_of_living",  "label": "Cost of Living" }, 
-    { "id": "draft",           "label": "Army Enlistment and Draft" },
-    { "id": "economy",         "label": "Economy" },
-    { "id": "education",       "label": "Education" },
-    { "id": "environment",     "label": "Environment & Climate" },
-    { "id": "government",      "label": "Government" },
-    { "id": "haredi",          "label": "Haredi Sector" },
-    { "id": "healthcare",      "label": "Healthcare" },
-    { "id": "housing",         "label": "Housing" },
-    { "id": "internal_security","label": "Internal Security and Law Enforcement" },
-    { "id": "international_relations",       "label": "International Relations" },     
-    { "id": "judiciary",       "label": "Judiciary & Rule of Law" },
-    { "id": "liberal_rights",  "label": "Liberal Rights" },
-    { "id": "local_government","label": "Local Government" },
-    { "id": "media",           "label": "Culture and Media" },
-    { "id": "periphery",       "label": "The Periphery" },
-    { "id": "religion_state",  "label": "Religion, the State, & State Identity" },
-    { "id": "retirees",        "label": "Retirees and Pensioners" },
-    { "id": "security",        "label": "Security & Defense" },
-    { "id": "soldiers",        "label": "Soldiers, Reservists, & Veterans" },
-    { "id": "palestinians",    "label": "Palestinians, Statehood, & the Territories" },
-    { "id": "transit",         "label": "Transit and Transportation" },
-    { "id": "war_peace",   "label": "The War, Peace Process & Two-State Solution" },
-    { "id": "welfare",         "label": "Welfare & Bituach Leumi" },
-    { "id": "workers",         "label": "Employment and workers" }
+    {
+      "id": "_oct7",
+      "label": "October 7th"
+    },
+    {
+      "id": "AI",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "aliyah",
+      "label": "Immigration & Diaspora"
+    },
+    {
+      "id": "arab_citizens",
+      "label": "Arab Sector"
+    },
+    {
+      "id": "constitution",
+      "label": "Constitution"
+    },
+    {
+      "id": "cost_of_living",
+      "label": "Cost of Living"
+    },
+    {
+      "id": "draft",
+      "label": "Army Enlistment and Draft"
+    },
+    {
+      "id": "economy",
+      "label": "Economy"
+    },
+    {
+      "id": "education",
+      "label": "Education"
+    },
+    {
+      "id": "environment",
+      "label": "Environment & Climate"
+    },
+    {
+      "id": "government",
+      "label": "Government"
+    },
+    {
+      "id": "haredi",
+      "label": "Haredi Sector"
+    },
+    {
+      "id": "healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "id": "housing",
+      "label": "Housing"
+    },
+    {
+      "id": "internal_security",
+      "label": "Internal Security and Law Enforcement"
+    },
+    {
+      "id": "international_relations",
+      "label": "International Relations"
+    },
+    {
+      "id": "judiciary",
+      "label": "Judiciary & Rule of Law"
+    },
+    {
+      "id": "liberal_rights",
+      "label": "Liberal Rights"
+    },
+    {
+      "id": "local_government",
+      "label": "Local Government"
+    },
+    {
+      "id": "media",
+      "label": "Culture and Media"
+    },
+    {
+      "id": "periphery",
+      "label": "The Periphery"
+    },
+    {
+      "id": "religion_state",
+      "label": "Religion, the State, & State Identity"
+    },
+    {
+      "id": "retirees",
+      "label": "Retirees and Pensioners"
+    },
+    {
+      "id": "security",
+      "label": "Security & Defense"
+    },
+    {
+      "id": "soldiers",
+      "label": "Soldiers, Reservists, & Veterans"
+    },
+    {
+      "id": "palestinians",
+      "label": "Palestinians, Statehood, & the Territories"
+    },
+    {
+      "id": "transit",
+      "label": "Transit and Transportation"
+    },
+    {
+      "id": "war_peace",
+      "label": "The War, Peace Process & Two-State Solution"
+    },
+    {
+      "id": "welfare",
+      "label": "Welfare & Bituach Leumi"
+    },
+    {
+      "id": "workers",
+      "label": "Employment and workers"
+    }
   ],
   "parties": [
     {
@@ -45,18 +135,21 @@
       "leader": "Gadi Eisenkot",
       "bloc": "Opposition - Center",
       "website": "https://yasharwitheisenkot.com/",
-      "topline": "Israel needs a government that is professional, responsible, and unifying. A government that will lead Israel as a Jewish and Democratic state in the spirit of the Declaration of Independance, with safety and security. <br>Gadi Eisenkott and Yashar present an alternative with professionalism and integrity.",
+      "topline": "Israel needs a government that is professional, responsible, and unifying. A government that will lead Israel as a Jewish and Democratic state in the spirit of the Declaration of  Independence, with safety and security. <br>Gadi Eisenkott and Yashar present an alternative with professionalism and integrity.",
       "positions": [
         {
           "id": "yashar_1",
           "title": "Draft and Service",
-          "summary": "Service is mandatory for every citizen, with the explicit goal of integrating the ultra-Orthodox and Arab communities in approproate frameworks. A special process will be made for encouraging and enforcing enlistment in the Haredi community.\n<br> The IDF gets priority on manpower, followed by civil and national service. Everyone will need to go through IDF screening.",
+          "summary": "Service is mandatory for every citizen, with the explicit goal of integrating the ultra-Orthodox and Arab communities in appropriate frameworks. A special process will be made for encouraging and enforcing enlistment in the Haredi community.<br>\n<br> The IDF gets priority on manpower, followed by civil and national service. Everyone will need to go through IDF screening.",
           "topics": [
             "arab_citizens",
             "haredi",
             "draft"
           ],
-          "source": "[https://yasharwitheisenkot.com/agenda_point/, https://yasharwitheisenkot.com/principles/service-for-all/]"
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/service-for-all/"
+          ]
         },
         {
           "id": "yashar_2",
@@ -70,7 +163,7 @@
         {
           "id": "yashar_3",
           "title": "Strengthen the police force",
-          "summary": "Improve long term planning and funding to strengthen the police. Ensure its political independance from the government. <br>\nDevelop dedicated capabilities for fighting cyber crime.",
+          "summary": "Improve long term planning and funding to strengthen the police. Ensure its political independence from the government. <br><br>\nDevelop dedicated capabilities for fighting cyber crime.",
           "topics": [
             "internal_security"
           ],
@@ -79,7 +172,7 @@
         {
           "id": "yashar_4",
           "title": "Fight organized crime",
-          "summary": "Establish a dedicated system for fighting organized crime, with special units, prosecuters, and courts. This will increase outcomes and shorten timelines, as well as build enforcement tools and expertise.<br>\nAttack protectionism through enforcement, insurance, and witness protection.<br>\nTarget money laundering, control over territory by gangs, and other criminal infrastructure.",
+          "summary": "Establish a dedicated system for fighting organized crime, with special units, prosecutors, and courts. This will increase outcomes and shorten timelines, as well as build enforcement tools and expertise.<br><br>\nAttack protectionism through enforcement, insurance, and witness protection.<br><br>\nTarget money laundering, control over territory by gangs, and other criminal infrastructure.",
           "topics": [
             "internal_security"
           ],
@@ -126,16 +219,19 @@
         {
           "id": "yashar_9",
           "title": "Focus on soldiers, national service, and the middle class",
-          "summary": "Build an economic policy that focuses on those who serve, young people, and the working middle class.<br>\nTax benefits will go to those who work over those who don't, and will be based on socioeconomic circumstances rather than religious sector or life choices.",
+          "summary": "Build an economic policy that focuses on those who serve, young people, and the working middle class.<br><br>\nTax benefits will go to those who work over those who don't, and will be based on socioeconomic circumstances rather than religious sector or life choices.",
           "topics": [
             "economy"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/economics-en/, https://yasharwitheisenkot.com/principles/economics/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/economics-en/",
+            "https://yasharwitheisenkot.com/principles/economics/"
+          ]
         },
         {
           "id": "yashar_10",
           "title": "Rebuild the State for the Jewish People",
-          "summary": "Rebuild the state as a Jewish, Democratic, progressive, and just state, in the spirit of the Declaration of Independance. Work to heal the rifts of war and sectarianism.\n<br>Work to ensure a Jewish demographic majority for generations, and promote an inclusive and respectful Judaism.\n<br>Respect majority decisions, minority rights, human rights, and an independent Judiciary.",
+          "summary": "Rebuild the state as a Jewish, Democratic, progressive, and just state, in the spirit of the Declaration of Independence. Work to heal the rifts of war and sectarianism.<br>\n<br>Work to ensure a Jewish demographic majority for generations, and promote an inclusive and respectful Judaism.<br>\n<br>Respect majority decisions, minority rights, human rights, and an independent Judiciary.",
           "topics": [
             "government",
             "religion_state"
@@ -145,11 +241,14 @@
         {
           "id": "yashar_11",
           "title": "Establish a State Commission of Inquiry",
-          "summary": "Establish a State Commission of Inquiry to investigate October 7th, the decade before it, and the conduct of the war. <br>\nFocus on: \n<ul>\n<li>Policy and descision making</li>\n<li>Preparation and readiness</li>\n<li>How the government and army actually functioned on October 7th</li>\n<li>Descision making and conduct of the political and military leadership during the war</li>\n<li>Information and communications</li>\n<li>Were previous reccomendations actually implemented</li>\n</ul>",
+          "summary": "Establish a State Commission of Inquiry to investigate October 7th, the decade before it, and the conduct of the war. <br><br>\nFocus on: <br>\n<ul><br>\n<li>Policy and descision making</li><br>\n<li>Preparation and readiness</li><br>\n<li>How the government and army actually functioned on October 7th</li><br>\n<li>Descision making and conduct of the political and military leadership during the war</li><br>\n<li>Information and communications</li><br>\n<li>Were previous reccommendations actually implemented</li><br>\n</ul>",
           "topics": [
             "_oct7"
           ],
-          "source": "[https://yasharwitheisenkot.com/wp-content/uploads/2026/08/מתווה-ישר-לועדת-חקירה-ממלכתית-לטבח-ה-7-באוקטובר-טיוטה-לשיתוף-הציבור.pdf,https://yasharwitheisenkot.com/en/ ]"
+          "source": [
+            "https://yasharwitheisenkot.com/wp-content/uploads/2026/08/מתווה-ישר-לועדת-חקירה-ממלכתית-לטבח-ה-7-באוקטובר-טיוטה-לשיתוף-הציבור.pdf",
+            "https://yasharwitheisenkot.com/en/"
+          ]
         },
         {
           "id": "yashar_12",
@@ -163,20 +262,27 @@
         {
           "id": "yashar_13",
           "title": "Rehabilitate and invest in the Periphery",
-          "summary": "Rehabilitate and strengthen periphery areas impacted by the war.\n<br> Strengthen settlement of rural areas, and protect settlements along the periphery. Support the developement of schools, youth movements, and the economy. Subsidize urban renewal in the periphery, and ensure earthquake protections.\n<br>Provide business rehabilitation grants and reduce property taxes to businesses suffering damage. Provide state guaranteed loans. Reduce corporate tax to 2.5% for businesses on the confrontation line, and 5% for general North businesses on the Kiryat Kinneret line.",
+          "summary": "Rehabilitate and strengthen periphery areas impacted by the war.<br>\n<br> Strengthen settlement of rural areas, and protect settlements along the periphery. Support the development of schools, youth movements, and the economy. Subsidize urban renewal in the periphery, and ensure earthquake protections.<br>\n<br>Provide business rehabilitation grants and reduce property taxes to businesses suffering damage. Provide state guaranteed loans. Reduce corporate tax to 2.5% for businesses on the confrontation line, and 5% for general North businesses on the Kiryat Kinneret line.",
           "topics": [
             "periphery"
           ],
-          "source": "[https://yasharwitheisenkot.com/en/, https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/, https://yasharwitheisenkot.com/principles/housing/]"
+          "source": [
+            "https://yasharwitheisenkot.com/en/",
+            "https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/",
+            "https://yasharwitheisenkot.com/principles/housing/"
+          ]
         },
         {
           "id": "yashar_14",
           "title": "Strengthen the IDF and change the security philosophy",
-          "summary": "Current security strategies will be replaced with a systematic national strategy, based on planning and preemtive action. The IDF will be strengthened, the borders will be hardened, and Israel will be turned into a regional power.",
+          "summary": "Current security strategies will be replaced with a systematic national strategy, based on planning and preemptive action. The IDF will be strengthened, the borders will be hardened, and Israel will be turned into a regional power.",
           "topics": [
             "security"
           ],
-          "source": "[https://yasharwitheisenkot.com/topic/missions/, https://yasharwitheisenkot.com/agenda_point/]"
+          "source": [
+            "https://yasharwitheisenkot.com/topic/missions/",
+            "https://yasharwitheisenkot.com/agenda_point/"
+          ]
         },
         {
           "id": "yashar_15",
@@ -200,16 +306,20 @@
         {
           "id": "yashar_17",
           "title": "Lower the cost of living - competition",
-          "summary": "Dismantle monopolies, strengthen competition, align Israel to international standards to make imports easier. Reduce bureaucracies on manufacturers and barriers on importers. <br>\nStrengthen farmers' and consumers' bargaining power. Encourage direct to consumer sales to drop costs.",
+          "summary": "Dismantle monopolies, strengthen competition, align Israel to international standards to make imports easier. Reduce bureaucracies on manufacturers and barriers on importers. <br><br>\nStrengthen farmers' and consumers' bargaining power. Encourage direct to consumer sales to drop costs.",
           "topics": [
             "cost_of_living"
           ],
-          "source": "[https://yasharwitheisenkot.com/agenda_point/, https://yasharwitheisenkot.com/principles/agriculture/, https://yasharwitheisenkot.com/principles/youth-and-young-adults-en/]"
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/agriculture/",
+            "https://yasharwitheisenkot.com/principles/youth-and-young-adults-en/"
+          ]
         },
         {
           "id": "yashar_18",
           "title": "State Benefits for those who contribute",
-          "summary": "State benefits (housing benefits, tax credits, ect) will be prioritized for those who serve in the army and for those who work and contribute to the economy. \n<br>Housing benefits, tax credits, civil service salaries, scholarships, arnona discounts, grants, Bituach Leumi status, bus pass discounts, after-school funding, ect, will be tiered: 1. Combat veterans, 2. General veterans, 3. National Service alumni",
+          "summary": "State benefits (housing benefits, tax credits, ect) will be prioritized for those who serve in the army and for those who work and contribute to the economy. <br>\n<br>Housing benefits, tax credits, civil service salaries, scholarships, arnona discounts, grants, Bituach Leumi status, bus pass discounts, after-school funding, ect, will be tiered: 1. Combat veterans, 2. General veterans, 3. National Service alumni",
           "topics": [
             "draft",
             "welfare",
@@ -217,12 +327,16 @@
             "housing",
             "soldiers"
           ],
-          "source": "[https://yasharwitheisenkot.com/agenda_point/, https://yasharwitheisenkot.com/principles/service-for-all/, https://yasharwitheisenkot.com/principles/youth-and-young-adults-en/]"
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/service-for-all/",
+            "https://yasharwitheisenkot.com/principles/youth-and-young-adults-en/"
+          ]
         },
         {
           "id": "yashar_19",
           "title": "Kiryat Shmona",
-          "summary": "Define Kiryat Shmona as the capital of the Easter Galilee. Incentivize urban renewal and the construction of thousands of new housing units, upgrading common space, and expanding infrastrucutre. <br>\nMake a series of hubs for leadership in medical, educational, and cultural fields.",
+          "summary": "Define Kiryat Shmona as the capital of the Easter Galilee. Incentivize urban renewal and the construction of thousands of new housing units, upgrading common space, and expanding infrastrucutre. <br><br>\nMake a series of hubs for leadership in medical, educational, and cultural fields.",
           "topics": [
             "housing"
           ],
@@ -235,12 +349,15 @@
           "topics": [
             "government"
           ],
-          "source": "[https://yasharwitheisenkot.com/agenda_point/, https://yasharwitheisenkot.com/principles/economics/]"
+          "source": [
+            "https://yasharwitheisenkot.com/agenda_point/",
+            "https://yasharwitheisenkot.com/principles/economics/"
+          ]
         },
         {
           "id": "yashar_21",
           "title": "Constitutional Reform",
-          "summary": "Enact Basic Law: Legislation to strengthen the sovereignty, authority, independence of the Knesset. \n<br>Term limits for Prime Ministers - 2 terms.\n<br>Get rid of useless government ministries.",
+          "summary": "Enact Basic Law: Legislation to strengthen the sovereignty, authority, independence of the Knesset. <br>\n<br>Term limits for Prime Ministers - 2 terms.<br>\n<br>Get rid of useless government ministries.",
           "topics": [
             "government",
             "constitution",
@@ -251,7 +368,7 @@
         {
           "id": "yashar_22",
           "title": "Local government",
-          "summary": "Expand the independance of local governments to made descisions that match their communities.",
+          "summary": "Expand the independence of local governments to made descisions that match their communities.",
           "topics": [
             "government",
             "local_government"
@@ -261,7 +378,7 @@
         {
           "id": "yashar_23",
           "title": "Stop the brain drain and encourage Aliyah",
-          "summary": "Make a strategy to stop Israelis from fleeing the country.\n<br>Improve systems of Aliyah and absorbtion with the goal of having 1 million new olim by 2037 and another million by 2048.\n<br>Renew the connection between Israel and the Diaspora.\n<br>Make a body to plan the human capital needs of the country, and make sure we have the proper education, training, and immigration programs to meet the economic needs of the future. Develop a visa for talented professionals in research and business to come to Israel. Make a digital nomad visa.",
+          "summary": "Make a strategy to stop Israelis from fleeing the country.<br>\n<br>Improve systems of Aliyah and absorbtion with the goal of having 1 million new olim by 2037 and another million by 2048.<br>\n<br>Renew the connection between Israel and the Diaspora.<br>\n<br>Make a body to plan the human capital needs of the country, and make sure we have the proper education, training, and immigration programs to meet the economic needs of the future. Develop a visa for talented professionals in research and business to come to Israel. Make a digital nomad visa.",
           "topics": [
             "aliyah",
             "economy"
@@ -280,7 +397,7 @@
         {
           "id": "yashar_25",
           "title": "Reduce the burden on Reservists",
-          "summary": "During times that are neither major war nor peacetime, reserve duties will be capped at 50 days/year, with a hard limit of 150 days in 3 years.\n<br>Reservists will be given, under normal circumstances, at least 5 months advanced notice of service times.",
+          "summary": "During times that are neither major war nor peacetime, reserve duties will be capped at 50 days/year, with a hard limit of 150 days in 3 years.<br>\n<br>Reservists will be given, under normal circumstances, at least 5 months advanced notice of service times.",
           "topics": [
             "draft",
             "soldiers"
@@ -290,7 +407,7 @@
         {
           "id": "yashar_26",
           "title": "Benefits for reservists",
-          "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:\n<ul><li>Direct benefits</li>\n<li>Compensation for employers</li>\n<li>Advanced degree funding</li>\n<li>Family funding: childcare, babysitting, after school classes, travel.</li>\n<li>Housing benefits</li>\n</ul>",
+          "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.<br>\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.<br>\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:<br>\n<ul><li>Direct benefits</li><br>\n<li>Compensation for employers</li><br>\n<li>Advanced degree funding</li><br>\n<li>Family funding: childcare, babysitting, after school classes, travel.</li><br>\n<li>Housing benefits</li><br>\n</ul>",
           "topics": [
             "welfare",
             "soldiers",
@@ -310,7 +427,7 @@
         {
           "id": "yashar_28",
           "title": "Draft Deferment and Exceptions",
-          "summary": "A one year deferment of service will be available to a limited pool of individuals who exhibit extraordinary talents in the sports, sciences, arts, and humanities. \n<br>Deferment for persuing Torah studies will be available to a maximum of 3% of a years draftees. Selection will be through external criteria and be open to all applicants.\n<br>Everyone who defers will be required to complete basic training before their deferral begins",
+          "summary": "A one year deferment of service will be available to a limited pool of individuals who exhibit extraordinary talents in the sports, sciences, arts, and humanities. <br>\n<br>Deferment for persuing Torah studies will be available to a maximum of 3% of a years draftees. Selection will be through external criteria and be open to all applicants.<br>\n<br>Everyone who defers will be required to complete basic training before their deferral begins",
           "topics": [
             "draft",
             "media",
@@ -322,7 +439,7 @@
         {
           "id": "yashar_29",
           "title": "Draft dodging",
-          "summary": "Draft dodgers will be criminally prosecuted, and will be denied civil and economic benefits:\n<ul><li>Participation in state tenders</li>\n<li>Scholarships</li>\n<li>Housing benefits/Arnona discounts</li>\n<li>Housing loans and rental assistance</li>\n<li>Long term rental eligibility</li>\n<li>Land allocations</li>\n<li>National Insurance/Bituach Leumi</li>\n<li>Public Transit discounts</li>\n<li>Parental benefits</li>\n<li>Skilled trade training vouchers</li>\n<li>Business funding</li>\n<li>Tax discounts</li>\n<li>Drivers License</li>\n<li>Right to leave the country</li>\n</ul>",
+          "summary": "Draft dodgers will be criminally prosecuted, and will be denied civil and economic benefits:<br>\n<ul><li>Participation in state tenders</li><br>\n<li>Scholarships</li><br>\n<li>Housing benefits/Arnona discounts</li><br>\n<li>Housing loans and rental assistance</li><br>\n<li>Long term rental eligibility</li><br>\n<li>Land allocations</li><br>\n<li>National Insurance/Bituach Leumi</li><br>\n<li>Public Transit discounts</li><br>\n<li>Parental benefits</li><br>\n<li>Skilled trade training vouchers</li><br>\n<li>Business funding</li><br>\n<li>Tax discounts</li><br>\n<li>Drivers License</li><br>\n<li>Right to leave the country</li><br>\n</ul>",
           "topics": [
             "draft",
             "welfare"
@@ -341,7 +458,7 @@
         {
           "id": "yashar_31",
           "title": "Define a core curriculum",
-          "summary": "The State Education Council will define a core curriculum comprising basic topics like citizenship, hebrew, STEM, democracy, Jewish-Israeli identity, ect.\n<br>A new law will enourage non-state schools, particulary Haredi systems, to integrate into the state system. Schools that don't join will have their funding reduced.",
+          "summary": "The State Education Council will define a core curriculum comprising basic topics like citizenship, hebrew, STEM, democracy, Jewish-Israeli identity, ect.<br>\n<br>A new law will enourage non-state schools, particulary Haredi systems, to integrate into the state system. Schools that don't join will have their funding reduced.",
           "topics": [
             "education",
             "haredi"
@@ -351,7 +468,7 @@
         {
           "id": "yashar_32",
           "title": "Distribute responsibilities to local government and schools",
-          "summary": "Local authorities will be given responsibilities for managing the education system, including Early Childhood Education (ECE, 0-3 years). They will adust curriculums, manage budgets, and work with local industry.\n<br>Principals will be given dedicated grants to fund custom educational initiatives for their schools, will be able to structure the schedule of their school, and will be allowed to balance education with emotional support during war times.\n<br>Principals will be put on a new salary scale, and get additional support when they're struggling.",
+          "summary": "Local authorities will be given responsibilities for managing the education system, including Early Childhood Education (ECE, 0-3 years). They will adust curriculums, manage budgets, and work with local industry.<br>\n<br>Principals will be given dedicated grants to fund custom educational initiatives for their schools, will be able to structure the schedule of their school, and will be allowed to balance education with emotional support during war times.<br>\n<br>Principals will be put on a new salary scale, and get additional support when they're struggling.",
           "topics": [
             "education"
           ],
@@ -360,7 +477,7 @@
         {
           "id": "yashar_33",
           "title": "New employment tracks for teachers",
-          "summary": "A new, optional, employment track will be developed for teachers which rewards quality and productivity instead of just seniority.\n<br>Teaching time will be reduced and replaced with personal mentoring, dialogue, and addressing social problems.\n<br>National Service volunteers will be brought in to support the system and provide students with personal attention.",
+          "summary": "A new, optional, employment track will be developed for teachers which rewards quality and productivity instead of just seniority.<br>\n<br>Teaching time will be reduced and replaced with personal mentoring, dialogue, and addressing social problems.<br>\n<br>National Service volunteers will be brought in to support the system and provide students with personal attention.",
           "topics": [
             "education"
           ],
@@ -369,7 +486,7 @@
         {
           "id": "yashar_34",
           "title": "AI in Education",
-          "summary": "AI tools will be integrated into administrative systems to reduce bureaucratic work, including attendance, marking, adjusting the pace of learning, and making lesson plans, with the goal of freeing up more time for teachers to work with students.\n<br>AI tools will be made for students to support individualized learning, and AI will be a subject added to the curriculum.",
+          "summary": "AI tools will be integrated into administrative systems to reduce bureaucratic work, including attendance, marking, adjusting the pace of learning, and making lesson plans, with the goal of freeing up more time for teachers to work with students.<br>\n<br>AI tools will be made for students to support individualized learning, and AI will be a subject added to the curriculum.",
           "topics": [
             "AI",
             "education"
@@ -379,7 +496,7 @@
         {
           "id": "yashar_35",
           "title": "Early Childhood Education",
-          "summary": "ECE/childcare institutions will be required to get certified, with training and safety standards. Preschool teachers will be given grants for retraining. Certifications and education tracks will be formalized, as well as periodic skill update sessions, and all certifications will be available online for parents to check and confirm.\n<br> ECE will be consoditated to the Ministry of Education, instead of the current system where it is managed by several authorities. A salary scale will be developed for preschool teachers, and base salaries will be raised.\n<br>Subsidies will be expanded for soldiers and working families.",
+          "summary": "ECE/childcare institutions will be required to get certified, with training and safety standards. Preschool teachers will be given grants for retraining. Certifications and education tracks will be formalized, as well as periodic skill update sessions, and all certifications will be available online for parents to check and confirm.<br>\n<br> ECE will be consolidated to the Ministry of Education, instead of the current system where it is managed by several authorities. A salary scale will be developed for preschool teachers, and base salaries will be raised.<br>\n<br>Subsidies will be expanded for soldiers and working families.",
           "topics": [
             "education",
             "workers",
@@ -390,7 +507,7 @@
         {
           "id": "yashar_36",
           "title": "Reduction of exams",
-          "summary": "Bagruyot (matriculation/graduation exams) will be reduced and replaced with tests matching the international PISA indicators. \n<br>Memorization based tests will be replaced with Problem Based Learning (PBL) and portfolio work.",
+          "summary": "Bagruyot (matriculation/graduation exams) will be reduced and replaced with tests matching the international PISA indicators. <br>\n<br>Memorization based tests will be replaced with Problem Based Learning (PBL) and portfolio work.",
           "topics": [
             "education"
           ],
@@ -408,13 +525,16 @@
         {
           "id": "yashar_38",
           "title": "Higher Education",
-          "summary": "Shorten degree durations. Build the infrastructure for micro-credentials. Provide social and emotional support to students.\n<br>Invest in applied research, build labratories, fund researchers, and work to bring Israeli scientists back to Israel with hundreds of new research positions.",
+          "summary": "Shorten degree durations. Build the infrastructure for micro-credentials. Provide social and emotional support to students.<br>\n<br>Invest in applied research, build labratories, fund researchers, and work to bring Israeli scientists back to Israel with hundreds of new research positions.",
           "topics": [
             "education",
             "workers",
             "economy"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/education/, https://yasharwitheisenkot.com/principles/inlocation-and-aliya-en/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/education/",
+            "https://yasharwitheisenkot.com/principles/inlocation-and-aliya-en/"
+          ]
         },
         {
           "id": "yashar_39",
@@ -428,7 +548,7 @@
         {
           "id": "yashar_40",
           "title": "Improve the Aliyah landing system",
-          "summary": "Make a one-stop-shop to address and improve the aliyah process covering:\n<ul>\n<li>Learning hebrew</li>\n<li>Getting hired in your profession.</li>\n<li>Getting skills and licenses recognized</li>\n<li>Enrolling in schools</li>\n<li>Guidence and placement in the army or national service</li>\n<li>Incentives for moving to National Priority Areas</li>\n</ul>\nMake it so that Olim can start these processes before they land, and start other processes like opening a bank account.",
+          "summary": "Make a one-stop-shop to address and improve the aliyah process covering:<br>\n<ul><br>\n<li>Learning hebrew</li><br>\n<li>Getting hired in your profession.</li><br>\n<li>Getting skills and licenses recognized</li><br>\n<li>Enrolling in schools</li><br>\n<li>Guidence and placement in the army or national service</li><br>\n<li>Incentives for moving to National Priority Areas</li><br>\n</ul><br>\nMake it so that Olim can start these processes before they land, and start other processes like opening a bank account.",
           "topics": [
             "aliyah",
             "workers"
@@ -438,7 +558,7 @@
         {
           "id": "yashar_41",
           "title": "Make Aliyah easier",
-          "summary": "For communities: Encourage communities to make aliyah together with special processes and incentives.<br>\nFor workers: Make uplan more flexible and accessible, to be taken alongside a full work week. Make a provisional license program for Olim to start working immediately while documents are transfered.<br> \nFor late-career or retirees: Change taxation laws to make those with significant assets move more easily and without losses",
+          "summary": "For communities: Encourage communities to make aliyah together with special processes and incentives.<br><br>\nFor workers: Make uplan more flexible and accessible, to be taken alongside a full work week. Make a provisional license program for Olim to start working immediately while documents are transfered.<br> <br>\nFor late-career or retirees: Change taxation laws to make those with significant assets move more easily and without losses",
           "topics": [
             "aliyah"
           ],
@@ -457,7 +577,7 @@
         {
           "id": "yashar_43",
           "title": "Housing for Olim",
-          "summary": "Change how rental assistance works for Olim. Reduce wait times for low-income elderly Olim, and improve housing.<br>\nReduce reliance on absorption centers by making more housing available in communities.",
+          "summary": "Change how rental assistance works for Olim. Reduce wait times for low-income elderly Olim, and improve housing.<br><br>\nReduce reliance on absorption centers by making more housing available in communities.",
           "topics": [
             "aliyah",
             "housing"
@@ -509,11 +629,14 @@
         {
           "id": "yashar_48",
           "title": "Prevent loneliness and boredom among retirees",
-          "summary": "Combat loneliness among senior citizens, with targeted programs run by local governments. The programs will proactively reach out to seniors at risk, and provide solutions.<br>\nDevelop programs to allow senior citizens to continue working and contributing their expertise as long and they want. <br>\nDevelop volunteer programs for senior citizens, and establish a track in the Prefered Work program to help seniors.",
+          "summary": "Combat loneliness among senior citizens, with targeted programs run by local governments. The programs will proactively reach out to seniors at risk, and provide solutions.<br><br>\nDevelop programs to allow senior citizens to continue working and contributing their expertise as long and they want. <br><br>\nDevelop volunteer programs for senior citizens, and establish a track in the Prefered Work program to help seniors.",
           "topics": [
             "retirees"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/inlocation-and-aliya-en/, https://yasharwitheisenkot.com/principles/senior-citizens-en/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/inlocation-and-aliya-en/",
+            "https://yasharwitheisenkot.com/principles/senior-citizens-en/"
+          ]
         },
         {
           "id": "yashar_49",
@@ -556,7 +679,7 @@
         {
           "id": "yashar_53",
           "title": "Financial Education",
-          "summary": "Teach about finances and rights before people enter the job market, so that they can read a paycheck and understand their pension funds. Make sure that information about rights, benefits, and taxes are accessible. <br> \nCreate a central portal where a young adult can see all their accounts and entitelements in one single place.",
+          "summary": "Teach about finances and rights before people enter the job market, so that they can read a paycheck and understand their pension funds. Make sure that information about rights, benefits, and taxes are accessible. <br> <br>\nCreate a central portal where a young adult can see all their accounts and entitelements in one single place.",
           "topics": [
             "education"
           ],
@@ -570,7 +693,10 @@
             "retirees",
             "housing"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/housing/, https://yasharwitheisenkot.com/principles/senior-citizens-en/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/housing/",
+            "https://yasharwitheisenkot.com/principles/senior-citizens-en/"
+          ]
         },
         {
           "id": "yashar_55",
@@ -585,12 +711,15 @@
         {
           "id": "yashar_56",
           "title": "Agricultural financing and support",
-          "summary": "Make government funding and support more effective and transparent to increase productivity and security for the farmers. Legislate the status of the agricultural sector as an essential strategic sector. Create a mix of both grants and loans to support continuity.<br>\nFight protection rackets which are rife in the agricultural sector, and other forms of agricultural crime.\n<br> Expand the coverage of the Agricultural Natural Disaster Insurance Fund (AKIF) for farmers so that it covers natural disasters, wars, and damage from protectionism and organized crime.",
+          "summary": "Make government funding and support more effective and transparent to increase productivity and security for the farmers. Legislate the status of the agricultural sector as an essential strategic sector. Create a mix of both grants and loans to support continuity.<br><br>\nFight protection rackets which are rife in the agricultural sector, and other forms of agricultural crime.<br>\n<br> Expand the coverage of the Agricultural Natural Disaster Insurance Fund (AKIF) for farmers so that it covers natural disasters, wars, and damage from protectionism and organized crime.",
           "topics": [
             "economy",
             "internal_security"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/agriculture/, https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/agriculture/",
+            "https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/"
+          ]
         },
         {
           "id": "yashar_57",
@@ -622,7 +751,7 @@
         {
           "id": "yashar_60",
           "title": "Protect the North",
-          "summary": "Define protecting the north as an emergency project. Support reinforcing all housing units, schools, and clinics within 9 km of the border. Work to accelerate the completion of protection and reinforcement for buildings within 5 km by 2028, and the rest by 2030 - 5 years earlier than planned.<br>\nBring the protections in the north to the same levels as the western Negev, and achieve a standard of having clinics be able to operate during emergencies.\n<br>Establish a distric enforcement unit of 300 police officers headed by the Chief of Police to handle serious crime.",
+          "summary": "Define protecting the north as an emergency project. Support reinforcing all housing units, schools, and clinics within 9 km of the border. Work to accelerate the completion of protection and reinforcement for buildings within 5 km by 2028, and the rest by 2030 - 5 years earlier than planned.<br><br>\nBring the protections in the north to the same levels as the western Negev, and achieve a standard of having clinics be able to operate during emergencies.<br>\n<br>Establish a distric enforcement unit of 300 police officers headed by the Chief of Police to handle serious crime.",
           "topics": [
             "periphery",
             "security",
@@ -633,7 +762,7 @@
         {
           "id": "yashar_61",
           "title": "National Resilience",
-          "summary": "Establish independent local electical grids (micro-grids) containing generation, storage and consuption to remain online during emergencies.",
+          "summary": "Establish independent local electical grids (micro-grids) containing generation, storage and consumption to remain online during emergencies.",
           "topics": [
             "security"
           ],
@@ -652,7 +781,7 @@
         {
           "id": "yashar_63",
           "title": "Tourism in the North",
-          "summary": "Expand agricultural and rural toruism, and create a plan with local authorities for expansion. Invest ₪250 million into tourism in the North over 3 years.\n<br>Encourage year round tourims by investing in festivals and events outside of peak season, provide incentives to attract business tourism and conferencs, and host events for soldiers in the north.\n<br>Adapt the model being used in Eilat for financial incentives.",
+          "summary": "Expand agricultural and rural tourism, and create a plan with local authorities for expansion. Invest ₪250 million into tourism in the North over 3 years.<br>\n<br>Encourage year round tourims by investing in festivals and events outside of peak season, provide incentives to attract business tourism and conferences, and host events for soldiers in the north.<br>\n<br>Adapt the model being used in Eilat for financial incentives.",
           "topics": [
             "periphery",
             "economy"
@@ -662,7 +791,7 @@
         {
           "id": "yashar_64",
           "title": "Education in the North",
-          "summary": "Increase funding by ₪7,000/student/year in the north for pedagogical tools for 5 years, and then reduce it to the national average. Increase the informal education budget by ₪700/student/year. Transfer informal education budget to local authorities. Recruit hundreds of additional teachers, and provide salary incentives.<br>\nSubsidize Early Childhood Education ₪2,000/month if one parent served, and ₪3,000 if one is in active reserves, for families within 9km of the border.",
+          "summary": "Increase funding by ₪7,000/student/year in the north for pedagogical tools for 5 years, and then reduce it to the national average. Increase the informal education budget by ₪700/student/year. Transfer informal education budget to local authorities. Recruit hundreds of additional teachers, and provide salary incentives.<br><br>\nSubsidize Early Childhood Education ₪2,000/month if one parent served, and ₪3,000 if one is in active reserves, for families within 9km of the border.",
           "topics": [
             "periphery",
             "education"
@@ -672,14 +801,14 @@
         {
           "id": "yashar_65",
           "title": "Encourage settlement in the North",
-          "summary": "Increase the income tax benefit maximum for cities close to the border to 25%, settlements to 20%, and the north in general by 4% above where they are right now. <br>\nWork to expand the kibbutzim and moshavim, with critical professions getting benefits like long term rentals and rent-to-own, unemployment for spouses, insurance against salary decreases. Make work-from-home easier with co-working spaces and local branches of government offices.<br>\nSubsidize urban renewal in the periphery, and ensure earthquake protections.",
+          "summary": "Increase the income tax benefit maximum for cities close to the border to 25%, settlements to 20%, and the north in general by 4% above where they are right now. <br><br>\nWork to expand the kibbutzim and moshavim, with critical professions getting benefits like long term rentals and rent-to-own, unemployment for spouses, insurance against salary decreases. Make work-from-home easier with co-working spaces and local branches of government offices.<br><br>\nSubsidize urban renewal in the periphery, and ensure earthquake protections.",
           "topics": [
             "periphery",
             "cost_of_living",
             "workers",
             "housing"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/]"
+          "source": "https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/"
         },
         {
           "id": "yashar_66",
@@ -703,7 +832,7 @@
         {
           "id": "yashar_68",
           "title": "Redefine roles and relationships of planning authorities",
-          "summary": "Create a \"National Planning Cabinet\" in the government. Expand the National Planning Headquarters, put it under the Housing Cabinet, and make it responsible for coordinating the other bodies.<br>\nDefine the roles and relationships between the planning and building bodies, such as the Planning Administration, Israel Land Authority, Development Authority, Urban Renewal Authority, Geographical Committee, and Housing Ministry. <br>\nChange the objectives of planning bodies to increasing home occupancy, and add provision of infrastructure and public goods to the Land Authority objective.\n<br>Work to coordinate different bodies, including synchronizing district maps, decentralization of powers, build clusters and regions, and build infrastructure to make sure that building will result in a high quality of life. Update planning committees to be run by professionals and not sectoal representatives.",
+          "summary": "Create a \"National Planning Cabinet\" in the government. Expand the National Planning Headquarters, put it under the Housing Cabinet, and make it responsible for coordinating the other bodies.<br><br>\nDefine the roles and relationships between the planning and building bodies, such as the Planning Administration, Israel Land Authority, Development Authority, Urban Renewal Authority, Geographical Committee, and Housing Ministry. <br><br>\nChange the objectives of planning bodies to increasing home occupancy, and add provision of infrastructure and public goods to the Land Authority objective.<br>\n<br>Work to coordinate different bodies, including synchronizing district maps, decentralization of powers, build clusters and regions, and build infrastructure to make sure that building will result in a high quality of life. Update planning committees to be run by professionals and not sectoral representatives.",
           "topics": [
             "housing",
             "government"
@@ -713,7 +842,7 @@
         {
           "id": "yashar_69",
           "title": "Decentralize housing planning",
-          "summary": "Build task forces for local authorities that have planned but unbuilt housing, to issue permits more quickly and make updates to urban plans. Shorten the approval process. Transfer planning powers to local planning committes, along with funding and support. Examine creating subcommittees for the regions that include local governemtn representation.",
+          "summary": "Build task forces for local authorities that have planned but unbuilt housing, to issue permits more quickly and make updates to urban plans. Shorten the approval process. Transfer planning powers to local planning committes, along with funding and support. Examine creating subcommittees for the regions that include local government representation.",
           "topics": [
             "housing",
             "local_government"
@@ -723,7 +852,7 @@
         {
           "id": "yashar_70",
           "title": "Incentivize building and make it easier",
-          "summary": "Incentivize contractors with bonuses for progress and fines for delays. Bring in tens of thousands of new workers for the construction sector. Reduce regulations to bring in innovative construction techniques and technologies. Make project management easier with digital tools and AI.\n<br>Redistribute taxes from industrial areas between municipalities. Tax vacant land to encourage construction.",
+          "summary": "Incentivize contractors with bonuses for progress and fines for delays. Bring in tens of thousands of new workers for the construction sector. Reduce regulations to bring in innovative construction techniques and technologies. Make project management easier with digital tools and AI.<br>\n<br>Redistribute taxes from industrial areas between municipalities. Tax vacant land to encourage construction.",
           "topics": [
             "housing",
             "AI"
@@ -733,7 +862,7 @@
         {
           "id": "yashar_71",
           "title": "Urban Renewal",
-          "summary": "Prioritize urban renewal (TAMA, Pinui Binui). Make a system for adding more building permissions to plans, to make them more viable. Potentially give local committees the right to add floors to existing projects.<br>\nChange the Urban Renewal Law to focus on large scale projects. Add a focus on improving infrastructure while construction is happening, so that construction in an area all happens at once. Add protected spaces and improve quality of life in a space at the same time.<br>\nAdd, as a consideration, systems to maintain the new buildings, be that a capital fund or rental spaces managed by the developer and building committees.",
+          "summary": "Prioritize urban renewal (TAMA, Pinui Binui). Make a system for adding more building permissions to plans, to make them more viable. Potentially give local committees the right to add floors to existing projects.<br><br>\nChange the Urban Renewal Law to focus on large scale projects. Add a focus on improving infrastructure while construction is happening, so that construction in an area all happens at once. Add protected spaces and improve quality of life in a space at the same time.<br><br>\nAdd, as a consideration, systems to maintain the new buildings, be that a capital fund or rental spaces managed by the developer and building committees.",
           "topics": [
             "housing"
           ],
@@ -742,7 +871,7 @@
         {
           "id": "yashar_72",
           "title": "Quality of life in neighbourhoods",
-          "summary": "Add conditions to approving new buildings and complexes to encourage inclusion of infrastructure like transit, water and electricity, shelters, schools, employment centers, open spaces, and cultural spaces.\nPlan housing around public transit and build Transit Oriented Development, so that the densest housing is near high capacity transit stations plus commercial and governemtn centers. <br>Additionally, will promote environmental construction practices and preserve green spaces. Will restore areas after disasters. Will encourage development to be prepared for climate change.",
+          "summary": "Add conditions to approving new buildings and complexes to encourage inclusion of infrastructure like transit, water and electricity, shelters, schools, employment centers, open spaces, and cultural spaces.<br>\nPlan housing around public transit and build Transit Oriented Development, so that the densest housing is near high capacity transit stations plus commercial and government centers. <br>Additionally, will promote environmental construction practices and preserve green spaces. Will restore areas after disasters. Will encourage development to be prepared for climate change.",
           "topics": [
             "housing",
             "environment",
@@ -762,7 +891,7 @@
         {
           "id": "yashar_74",
           "title": "Make renting fairer",
-          "summary": "Make rental contract prices public (in an anonymous form), so that everyone knows what the going rate is for a street or neighbourhood.<br>\nChange the law to make it illegal for agents hired by a landlord to get paid by the tenants, and enforce it through the Consumer Protection Authority.<br>\nMove towards a digital system for contracts, with AI and government supervision, to make sure they are fair. Provide legal supports to youth and olim for housing issues, and require towns with a lot of rentals to operate tenant assistance programs and a mediation department. Will open arbitration and fast tracked small claims processes to solve disputes quickly.",
+          "summary": "Make rental contract prices public (in an anonymous form), so that everyone knows what the going rate is for a street or neighbourhood.<br><br>\nChange the law to make it illegal for agents hired by a landlord to get paid by the tenants, and enforce it through the Consumer Protection Authority.<br><br>\nMove towards a digital system for contracts, with AI and government supervision, to make sure they are fair. Provide legal supports to youth and olim for housing issues, and require towns with a lot of rentals to operate tenant assistance programs and a mediation department. Will open arbitration and fast tracked small claims processes to solve disputes quickly.",
           "topics": [
             "housing",
             "aliyah",
@@ -792,7 +921,7 @@
         {
           "id": "yashar_77",
           "title": "Pensions and Old Age Security",
-          "summary": "Increase old age benefits for low income seniors. Lock benefits against inflation. Proactively find benefits and don't make the elderly apply for them.<br>\nInvestigate bringing in mandatory long-term care insurance to pay for fees when needed.",
+          "summary": "Increase old age benefits for low income seniors. Lock benefits against inflation. Proactively find benefits and don't make the elderly apply for them.<br><br>\nInvestigate bringing in mandatory long-term care insurance to pay for fees when needed.",
           "topics": [
             "retirees",
             "welfare"
@@ -812,7 +941,7 @@
         {
           "id": "yashar_79",
           "title": "Healthcare for seniors",
-          "summary": "Ensure high quality healthcare for senior citizens, including preventative care. Strengthen the care provided at home and in the community. Invest in preventative medicine and early diagnoses.<br>\nIncrease the number of geriatric hospital beds and train more geriatric doctors. Expand care technologies to make healthcare more accessible. <br>\nAmend the perscription laws so that seniors don't need to renew perscriptions that will be with them the rest of their lives.",
+          "summary": "Ensure high quality healthcare for senior citizens, including preventative care. Strengthen the care provided at home and in the community. Invest in preventative medicine and early diagnoses.<br><br>\nIncrease the number of geriatric hospital beds and train more geriatric doctors. Expand care technologies to make healthcare more accessible. <br><br>\nAmend the prescription laws so that seniors don't need to renew perscriptions that will be with them the rest of their lives.",
           "topics": [
             "retirees",
             "healthcare"
@@ -822,7 +951,7 @@
         {
           "id": "yashar_80",
           "title": "Leadership in Aging",
-          "summary": "Create a national plan of optimal aging to address all the needs facing seniors.<br>\nEstablish a National Council for Senior Citizens to develop policies annd bring together experts.",
+          "summary": "Create a national plan of optimal aging to address all the needs facing seniors.<br><br>\nEstablish a National Council for Senior Citizens to develop policies annd bring together experts.",
           "topics": [
             "retirees"
           ],
@@ -831,7 +960,7 @@
         {
           "id": "yashar_81",
           "title": "Preventing elder abuse and fraud",
-          "summary": "Strengthen oversight of people with power of attourney, to prevent financial exploitation. Establish a care system for seniors who report abuse by family members, so they don't stay quiet out of fear of losing care. Increase the penalties on financial crimes targeting seniors, and fund enforcement. Allow credit card transactions to be delayed when fraud is suspected, so its easier to get money back.",
+          "summary": "Strengthen oversight of people with power of attorney, to prevent financial exploitation. Establish a care system for seniors who report abuse by family members, so they don't stay quiet out of fear of losing care. Increase the penalties on financial crimes targeting seniors, and fund enforcement. Allow credit card transactions to be delayed when fraud is suspected, so its easier to get money back.",
           "topics": [
             "retirees",
             "internal_security"
@@ -841,7 +970,7 @@
         {
           "id": "yashar_82",
           "title": "Dignity and accessibility in aging",
-          "summary": "Require the Home Front Command and local authorities to develop plans to evacuate seniors in emergency situations, while continuing access to care.<br>\nMake sure that voting locations are close and accessible, that essential services like banks and health funds are accessible, and that the government is easy to access through a single portal and senior citizen programming units.",
+          "summary": "Require the Home Front Command and local authorities to develop plans to evacuate seniors in emergency situations, while continuing access to care.<br><br>\nMake sure that voting locations are close and accessible, that essential services like banks and health funds are accessible, and that the government is easy to access through a single portal and senior citizen programming units.",
           "topics": [
             "retirees"
           ],
@@ -870,11 +999,14 @@
         {
           "id": "yashar_85",
           "title": "Mental Health and Resilience",
-          "summary": "Develop a national program for mental health and resilience, to address psychological stresses. This will cover everyone from students to soldiers to workers. <br>\nEnsure ongoing support for veterans to prevent PTSD and alleviate the symptoms. Slowly move from treatment to prevention. <br>\nEnsure every citizen gets a personalized response and treatment when they are dealing with issues. Patients will get increased choice on their treatment paths, and professionals will be trained to more therapies. Communities and local government will be brought in to make sure that care is accessible and supportive.",
+          "summary": "Develop a national program for mental health and resilience, to address psychological stresses. This will cover everyone from students to soldiers to workers. <br><br>\nEnsure ongoing support for veterans to prevent PTSD and alleviate the symptoms. Slowly move from treatment to prevention. <br><br>\nEnsure every citizen gets a personalized response and treatment when they are dealing with issues. Patients will get increased choice on their treatment paths, and professionals will be trained to more therapies. Communities and local government will be brought in to make sure that care is accessible and supportive.",
           "topics": [
             "healthcare"
           ],
-          "source": "[https://yasharwitheisenkot.com/principles/post-traumatic-stress-recovery/, https://yasharwitheisenkot.com/principles/youth-and-young-adults/]"
+          "source": [
+            "https://yasharwitheisenkot.com/principles/post-traumatic-stress-recovery/",
+            "https://yasharwitheisenkot.com/principles/youth-and-young-adults/"
+          ]
         },
         {
           "id": "yashar_86",
@@ -898,18 +1030,21 @@
         {
           "id": "yashar_88",
           "title": "Improve rehabilitation services for impacted citizens",
-          "summary": "Develop and implement a system for caring for and rehabilitating bereaved families, former hostages, and victims of PTSD. Every veteran will be entiteld to continuing care.<br>\nBereaved family and close friends will also be eligable for care.",
+          "summary": "Develop and implement a system for caring for and rehabilitating bereaved families, former hostages, and victims of PTSD. Every veteran will be entitled to continuing care.<br><br>\nBereaved family and close friends will also be eligable for care.",
           "topics": [
             "_oct7",
             "healthcare",
             "soldier"
           ],
-          "source": "[https://yasharwitheisenkot.com/en/, https://yasharwitheisenkot.com/principles/post-traumatic-stress-recovery/]"
+          "source": [
+            "https://yasharwitheisenkot.com/en/",
+            "https://yasharwitheisenkot.com/principles/post-traumatic-stress-recovery/"
+          ]
         },
         {
           "id": "yashar_89",
           "title": "Appoint a Minister for Rehabilitation",
-          "summary": "Appoint a minister for rehabilitation to be responsible for the system, remove barriers, and streamline the process.<br>\nMonitor the impacts of the rehabilitation system to see if it is successful at getting people back to work and families, and learn best practices.",
+          "summary": "Appoint a minister for rehabilitation to be responsible for the system, remove barriers, and streamline the process.<br><br>\nMonitor the impacts of the rehabilitation system to see if it is successful at getting people back to work and families, and learn best practices.",
           "topics": [
             "healthcare",
             "government"
@@ -951,12 +1086,15 @@
         {
           "id": "beyahad_1",
           "title": "Bringing the Beduins into Israeli society",
-          "summary": "Build the connection between the Bedouin community and the state, with economic stimulus, education, and sanctions.<br>\nIntroduce state education and enlistment in the IDF.",
+          "summary": "Build the connection between the Bedouin community and the state, with economic stimulus, education, and sanctions.<br><br>\nIntroduce state education and enlistment in the IDF.",
           "topics": [
             "arab_citizens",
             "periphery"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/ ,https://be-yahad.org.il/en/plans/negev-law-and-order/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/",
+            "https://be-yahad.org.il/en/plans/negev-law-and-order/"
+          ]
         },
         {
           "id": "beyahad_2",
@@ -982,7 +1120,7 @@
         {
           "id": "beyahad_4",
           "title": "Fighting the cost of living",
-          "summary": "Lower the cost of food by 30% within a year, by dismantling closed industries and opening Israel to foreign suppliers. \n<br> Adopt European food standards. Unite all food import bureaucracy under one authority. Prohibit monopolies from managing more than one food sector.\n<br>Prohibit contracts between suppliers and grocery stores/chains that made it harder for small importers to break into the market.\n<br>Abolish tariffs and instead subsidize farmers who are identified as being critical to Israel's food security, and invest in agriculture to make it more competitive. End production limits.\n<br>Break the Rabbinate monopoly on Kashrut through automatic recognition of foreign, recognized certifications.",
+          "summary": "Lower the cost of food by 30% within a year, by dismantling closed industries and opening Israel to foreign suppliers. <br>\n<br> Adopt European food standards. Unite all food import bureaucracy under one authority. Prohibit monopolies from managing more than one food sector.<br>\n<br>Prohibit contracts between suppliers and grocery stores/chains that made it harder for small importers to break into the market.<br>\n<br>Abolish tariffs and instead subsidize farmers who are identified as being critical to Israel's food security, and invest in agriculture to make it more competitive. End production limits.<br>\n<br>Break the Rabbinate monopoly on Kashrut through automatic recognition of foreign, recognized certifications.",
           "topics": [
             "economy",
             "cost_of_living",
@@ -993,43 +1131,54 @@
         {
           "id": "beyahad_5",
           "title": "Improving the education system",
-          "summary": "Improve quality of public education to meet the level of private schools\n<br>Improve teacher salaries (bring the minimum to 12,000 NIS) and reward outstanding teachers.\n<br>Extending the school day until 4:00 PM, and increasing classes, athletics, and provide a hot meal. Every child will get a voucher for extracurricular activities.\n<br>Target closing the educational outcomes gap with the OECD average within 5 years.",
+          "summary": "Improve quality of public education to meet the level of private schools<br>\n<br>Improve teacher salaries (bring the minimum to 12,000 NIS) and reward outstanding teachers.<br>\n<br>Extending the school day until 4:00 PM, and increasing classes, athletics, and provide a hot meal. Every child will get a voucher for extracurricular activities.<br>\n<br>Target closing the educational outcomes gap with the OECD average within 5 years.",
           "topics": [
             "education"
           ],
-          "source": "[https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I, https://be-yahad.org.il/en/plans/rebuild-the-education/]"
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
+          ]
         },
         {
           "id": "beyahad_6",
           "title": "Improving the Education System's Governance",
-          "summary": "Completely revamp the Ministry of Education. Dismantle bureaucracy and transfer powers (70% of descisions) to local governments and principals. The Ministry of Education will become a regulator, not an operator. \n<br>Set up a National Education Council to oversee all 4 streams and create a stable 5-year plan.",
+          "summary": "Completely revamp the Ministry of Education. Dismantle bureaucracy and transfer powers (70% of descisions) to local governments and principals. The Ministry of Education will become a regulator, not an operator. <br>\n<br>Set up a National Education Council to oversee all 4 streams and create a stable 5-year plan.",
           "topics": [
             "education",
             "government",
             "local_government"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/rebuild-the-education/]"
+          "source": "https://be-yahad.org.il/en/plans/rebuild-the-education/"
         },
         {
           "id": "beyahad_7",
           "title": "Combatting incitement, managing behaviour",
-          "summary": "Monitor the education system to make sure that incitement against the state isn't being taught.<br>\nRestore discipline to classrooms: Give teachers the backing to enforce a policy of zero-torelance for violence and provide emotional support to students in distress.<br>\nMake schools safe for LGBT students and for students from LGBT families, promoting loerance and actively fighting homophobia.",
+          "summary": "Monitor the education system to make sure that incitement against the state isn't being taught.<br><br>\nRestore discipline to classrooms: Give teachers the backing to enforce a policy of zero-torelance for violence and provide emotional support to students in distress.<br><br>\nMake schools safe for LGBT students and for students from LGBT families, promoting loerance and actively fighting homophobia.",
           "topics": [
             "education",
             "internal_security",
             "liberal_rights"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/negev-law-and-order/, https://be-yahad.org.il/en/plans/rebuild-the-education/, https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/negev-law-and-order/",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/",
+            "https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/"
+          ]
         },
         {
           "id": "beyahad_8",
           "title": "Consitutional Reform",
-          "summary": "Create a Constitution in line with the principles of the Declaration of Independence\nTerm limits for Prime Ministers: Limited to 8 consecutive years",
+          "summary": "Create a Constitution in line with the principles of the Declaration of Independence<br>\nTerm limits for Prime Ministers: Limited to 8 consecutive years",
           "topics": [
             "government",
             "constitution"
           ],
-          "source": "[https://bennett2026.org.il/plans/,https://bennett2026.org.il/hok-yesod-1/]"
+          "source": [
+            "https://bennett2026.org.il/plans/",
+            "https://bennett2026.org.il/hok-yesod-1/"
+          ]
         },
         {
           "id": "beyahad_9",
@@ -1063,18 +1212,22 @@
         {
           "id": "beyahad_12",
           "title": "Creating a core curriculum",
-          "summary": "The state will only fund schools in the state education stream, which will be obligated to teach 100% of the core curriculum, making up a minimum of 60% of education hours. 20% will be decided by the school board, and 20% by the identity based stream.\n<br>Budgets will be focused on student needs, not classroom teaching hours, and will take into account socio-economics so every student succeeds.\n<br>Mandatory focus on values and leadership for Grade 12 students.",
+          "summary": "The state will only fund schools in the state education stream, which will be obligated to teach 100% of the core curriculum, making up a minimum of 60% of education hours. 20% will be decided by the school board, and 20% by the identity based stream.<br>\n<br>Budgets will be focused on student needs, not classroom teaching hours, and will take into account socio-economics so every student succeeds.<br>\n<br>Mandatory focus on values and leadership for Grade 12 students.",
           "topics": [
             "haredi",
             "arab_citizens",
             "education"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/, https://www.timesofisrael.com/at-new-partys-first-rally-bennett-vows-to-unite-the-nation-and-enact-constitution/, https://be-yahad.org.il/en/plans/rebuild-the-education/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
+            "https://www.timesofisrael.com/at-new-partys-first-rally-bennett-vows-to-unite-the-nation-and-enact-constitution/",
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/"
+          ]
         },
         {
           "id": "beyahad_13",
           "title": "Draft Equality",
-          "summary": "National Service Law (ie military service) will apply to all Israeli citizens, regardless of ethnicity, religious community, or gender. Laws that permit draft evasion will be repealed.\nDraft dodgers or draft evaders will have benefits removed, specifically:\n- Kindergarten subsidies\n- Property tax discounts\n- Bituach Leumi discounts and student status\n- Child support benefits\nEstimated savings: 4.4 billion NIS",
+          "summary": "National Service Law (ie military service) will apply to all Israeli citizens, regardless of ethnicity, religious community, or gender. Laws that permit draft evasion will be repealed.<br>\nDraft dodgers or draft evaders will have benefits removed, specifically:<br>\n- Kindergarten subsidies<br>\n- Property tax discounts<br>\n- Bituach Leumi discounts and student status<br>\n- Child support benefits<br>\nEstimated savings: 4.4 billion NIS",
           "topics": [
             "haredi",
             "arab_citizens",
@@ -1083,7 +1236,10 @@
             "security",
             "welfare"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/,https://bennett2026.org.il/plans/meshartim/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
+            "https://bennett2026.org.il/plans/meshartim/"
+          ]
         },
         {
           "id": "beyahad_14",
@@ -1096,12 +1252,15 @@
             "welfare",
             "soldiers"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/, https://bennett2026.org.il/plans/meshartim/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
+            "https://bennett2026.org.il/plans/meshartim/"
+          ]
         },
         {
           "id": "beyahad_15",
           "title": "Improve rehabilitation services for injured and disabled veterans",
-          "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. \n<br>Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.\n<br>Remove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans.",
+          "summary": "Create a National Rehabilitation Directorate under the Prime Minister's Office, to complement the activities of the Rehabilitation Division of the Ministry of Defense by creating a coordinating body for the relevant offices in Finance, Health, Housing, and Justice. <br>\n<br>Provide lawyers at the expense of the state to every injured veteran, from the first meeting. Unblock bureaucracy around rehabilitation, including making all requests and forms digital and streamlined.<br>\n<br>Remove roadblocks from injured veterans returning to the workforce without losing support and rights. Give local authorities and communities funding and tools to support disabled veterans.",
           "topics": [
             "healthcare",
             "soldiers"
@@ -1111,12 +1270,17 @@
         {
           "id": "beyahad_16",
           "title": "Improving mental health access and capacity",
-          "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.\n<br>Tailor mental health supports to critical communities, including the LGBTQ community",
+          "summary": "Expand access to mental health supports, by increasing the number of students in mental health fields and incentivising joining the public health services. Also create tools for self care and self support.<br>\n<br>Lowering prices for mental health care for youth. Strengthen resilience centers and mental health first aid centers.<br>\n<br>Tailor mental health supports to critical communities, including the LGBTQ community",
           "topics": [
             "healthcare",
             "soldiers"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-the-rehabilitation-system-for-our-wounded-veterans/, https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/,https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-the-rehabilitation-system-for-our-wounded-veterans/",
+            "https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/",
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
         },
         {
           "id": "beyahad_17",
@@ -1138,7 +1302,11 @@
             "soldiers",
             "welfare"
           ],
-          "source": "[https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I,https://be-yahad.org.il/en/plans/together-well-repair-the-rehabilitation-system-for-our-wounded-veterans/]"
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I",
+            "https://be-yahad.org.il/en/plans/together-well-repair-the-rehabilitation-system-for-our-wounded-veterans/"
+          ]
         },
         {
           "id": "beyahad_19",
@@ -1148,7 +1316,10 @@
             "housing",
             "welfare"
           ],
-          "source": "[https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I]"
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
         },
         {
           "id": "beyahad_20",
@@ -1192,34 +1363,43 @@
         {
           "id": "beyahad_24",
           "title": "Connecting the North with the rest of Israel",
-          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:\n- Build a protected emergency room\n- Build public transit access\n- Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion\n<br>\nOverall increase the quality of infrastructure, housing, transit, tourism, education, ect in the north near the borders.",
+          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:<br>\n- Build a protected emergency room<br>\n- Build public transit access<br>\n- Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion<br>\n<br><br>\nOverall increase the quality of infrastructure, housing, transit, tourism, education, ect in the north near the borders.",
           "topics": [
             "periphery",
             "cost_of_living",
             "healthcare",
             "transit"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/kiryat-shmona-en/, https://be-yahad.org.il/en/plans/frontline-communities-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/kiryat-shmona-en/",
+            "https://be-yahad.org.il/en/plans/frontline-communities-en/"
+          ]
         },
         {
           "id": "beyahad_25",
           "title": "Encouraging living in the North",
-          "summary": "Encourage return and new settlement though economic benefits:<ul>\n<li> No income tax up to 1 million shekels (for 4 years)</li>\n<li>Housing loan of 400,00 shekels for academics and professionals after 7 years of residence.</li>\n<li> Arnona discounts</li>\n</ul>",
+          "summary": "Encourage return and new settlement though economic benefits:<ul><br>\n<li> No income tax up to 1 million shekels (for 4 years)</li><br>\n<li>Housing loan of 400,00 shekels for academics and professionals after 7 years of residence.</li><br>\n<li> Arnona discounts</li><br>\n</ul>",
           "topics": [
             "periphery",
             "cost_of_living",
             "housing"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/kiryat-shmona-en/, https://be-yahad.org.il/en/plans/frontline-communities-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/kiryat-shmona-en/",
+            "https://be-yahad.org.il/en/plans/frontline-communities-en/"
+          ]
         },
         {
           "id": "beyahad_26",
           "title": "Encouraging business in the North",
-          "summary": "Create a temporary (4 years) tax exempt zone in the North near Kiryat Shemonah:\n- No corporate tax for new local industries, tech companies, and defense companies. Reductions for companies near the borders.\n- 50% discount on property taxes for businesses\n- Grants for expansion\n- Subsidize high salaries",
+          "summary": "Create a temporary (4 years) tax exempt zone in the North near Kiryat Shemonah:<br>\n- No corporate tax for new local industries, tech companies, and defense companies. Reductions for companies near the borders.<br>\n- 50% discount on property taxes for businesses<br>\n- Grants for expansion<br>\n- Subsidize high salaries",
           "topics": [
             "periphery"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/kiryat-shmona-en/, https://be-yahad.org.il/en/plans/frontline-communities-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/kiryat-shmona-en/",
+            "https://be-yahad.org.il/en/plans/frontline-communities-en/"
+          ]
         },
         {
           "id": "beyahad_27",
@@ -1229,32 +1409,43 @@
             "periphery",
             "housing"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/negev-law-and-order/,https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/, https://be-yahad.org.il/en/plans/together-well-fix-israels-housing-crisis-en/, https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/negev-law-and-order/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-israels-housing-crisis-en/",
+            "https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/"
+          ]
         },
         {
           "id": "beyahad_28",
           "title": "Building the North",
-          "summary": "Define Metula, Shlomi, and Kiryat Shemoneh as a National Reconstruction Area, with the goal of doubling the population (relative to before the war) within 10 years.<br>\nEnact a \"Frontline Communities\" Law that formalizes the plan for a decade. Make benefits and incentives scale with how close a community is to the border and how much damage it has recieved.",
+          "summary": "Define Metula, Shlomi, and Kiryat Shemoneh as a National Reconstruction Area, with the goal of doubling the population (relative to before the war) within 10 years.<br><br>\nEnact a \"Frontline Communities\" Law that formalizes the plan for a decade. Make benefits and incentives scale with how close a community is to the border and how much damage it has recieved.",
           "topics": [
             "periphery",
             "housing"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/kiryat-shmona-en/, https://be-yahad.org.il/en/plans/frontline-communities-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/kiryat-shmona-en/",
+            "https://be-yahad.org.il/en/plans/frontline-communities-en/"
+          ]
         },
         {
           "id": "beyahad_29",
           "title": "Fighting crime in the Negev",
-          "summary": "Recognize that the Negev is in a state of emergency, and bring the Shin Bet to fight crime.<br> \nFocus on rooting out organized crime. Identify the top 3 families and top 100 criminals and go after them directly.<br>\nDouble the amount of police stations in the southern district. Add mandatory minimums to sentencing.",
+          "summary": "Recognize that the Negev is in a state of emergency, and bring the Shin Bet to fight crime.<br> <br>\nFocus on rooting out organized crime. Identify the top 3 families and top 100 criminals and go after them directly.<br><br>\nDouble the amount of police stations in the southern district. Add mandatory minimums to sentencing.",
           "topics": [
             "periphery",
             "internal_security"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/negev-law-and-order/, https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/negev-law-and-order/",
+            "https://be-yahad.org.il/en/plans/restoring-sovereignty-and-personal-security-en/"
+          ]
         },
         {
           "id": "beyahad_30",
           "title": "Civil Unions",
-          "summary": "Break the Rabbanut monopoly on marriage, and facilitate civil unions through registration with the Interior Ministry. This will allow all the rights of a married couple to any couple, including same sex or different religion couples.<br>\nAdoption, surrogacy, and child registration will be made easier. Partners of a biological parent will be able to be immediately registered as a parent.",
+          "summary": "Break the Rabbanut monopoly on marriage, and facilitate civil unions through registration with the Interior Ministry. This will allow all the rights of a married couple to any couple, including same sex or different religion couples.<br><br>\nAdoption, surrogacy, and child registration will be made easier. Partners of a biological parent will be able to be immediately registered as a parent.",
           "topics": [
             "religion_state",
             "liberal_rights"
@@ -1270,16 +1461,23 @@
             "transit",
             "local_government"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/, https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
+            "https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/"
+          ]
         },
         {
           "id": "beyahad_32",
           "title": "Improve Private and Public Transit",
-          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.<br>\nEnact a Metropolitan Transportation Authorities Law with the goal of making public transit more efficient.",
+          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.<br><br>\nEnact a Metropolitan Transportation Authorities Law with the goal of making public transit more efficient.",
           "topics": [
             "transit"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/,https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/",
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
         },
         {
           "id": "beyahad_33",
@@ -1289,24 +1487,31 @@
             "transit",
             "local_government"
           ],
-          "source": "[https://x.com/yairlapid/status/2056645906309538005,https://www.instagram.com/p/DYhPo1qjA6I]"
+          "source": [
+            "https://x.com/yairlapid/status/2056645906309538005",
+            "https://www.instagram.com/p/DYhPo1qjA6I"
+          ]
         },
         {
           "id": "beyahad_34",
           "title": "Improve Miluimnik Benefits",
-          "summary": "Active Miluimnikim will get: <ul>\n<li>1 million shekels towards their first home </li>\n<li> Priority on land tenders, with the target of every reservist getting a tender within 4 years of applying</li>\n<li>Highly subsizided daycare, free after-school programs, free summer school</li>\n<li>50% discount on all state service fees, including utilities, taxes, and car tests</li>\n</ul>\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
+          "summary": "Active Miluimnikim will get: <ul><br>\n<li>1 million shekels towards their first home </li><br>\n<li> Priority on land tenders, with the target of every reservist getting a tender within 4 years of applying</li><br>\n<li>Highly subsizided daycare, free after-school programs, free summer school</li><br>\n<li>50% discount on all state service fees, including utilities, taxes, and car tests</li><br>\n</ul><br>\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
           "topics": [
             "soldiers",
             "draft",
             "housing",
             "cost_of_living"
           ],
-          "source": "[https://bennett2026.org.il/plans/meshartim/, https://be-yahad.org.il/en/plans/together-well-fix-israels-housing-crisis-en/, https://be-yahad.org.il/en/plans/together-well-take-care-of-reservists-families-en/]"
+          "source": [
+            "https://bennett2026.org.il/plans/meshartim/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-israels-housing-crisis-en/",
+            "https://be-yahad.org.il/en/plans/together-well-take-care-of-reservists-families-en/"
+          ]
         },
         {
           "id": "beyahad_35",
           "title": "Improve Veterans Benefits",
-          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:\n<ul>\n<li>Priority in the housing lottery</li>\n<li>Fully funded bachelor's degree (combat veterans will also get a Masters degree)</li>\n<li>Free bus/train pass for 3 years (combat veterans will get for 5 years)</li>\n<li>Fully funded after-school and summer schools</li>\n<li>Daycare funding of 1000 NIS/month</li>\n</ul>",
+          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:<br>\n<ul><br>\n<li>Priority in the housing lottery</li><br>\n<li>Fully funded bachelor's degree (combat veterans will also get a Masters degree)</li><br>\n<li>Free bus/train pass for 3 years (combat veterans will get for 5 years)</li><br>\n<li>Fully funded after-school and summer schools</li><br>\n<li>Daycare funding of 1000 NIS/month</li><br>\n</ul>",
           "topics": [
             "soldiers",
             "draft",
@@ -1334,7 +1539,10 @@
             "welfare",
             "retirees"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/, https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/",
+            "https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/"
+          ]
         },
         {
           "id": "beyahad_38",
@@ -1376,7 +1584,7 @@
         {
           "id": "beyahad_42",
           "title": "Supporting the Homefront - Reservists families",
-          "summary": "Support the spouses, parents, and families of serving reservists. Spouses and parents will get an official designation and rights, and will be able to apply for benefits under their own ID.<br>\nMore funding for families that serve more. Incentives for companies to employ spouses of reservists.",
+          "summary": "Support the spouses, parents, and families of serving reservists. Spouses and parents will get an official designation and rights, and will be able to apply for benefits under their own ID.<br><br>\nMore funding for families that serve more. Incentives for companies to employ spouses of reservists.",
           "topics": [
             "soldiers"
           ],
@@ -1385,7 +1593,7 @@
         {
           "id": "beyahad_43",
           "title": "Recognize foreign qualifications",
-          "summary": "Make it easier to have foreign quailications, work experience, and internships/stague get recognized in Israel. Shorten the foreign credential recognition process, and expand the automatic recognitions from other countries.<br>\nCreate targeted suplementary education processes to bring a foreign profession into the Israeli system. Combine professional instruction in hebrew with training and job placement. Connect Olim with in-demand industries.<br>\nMake opening a business easier for Olim.",
+          "summary": "Make it easier to have foreign quailications, work experience, and internships/stague get recognized in Israel. Shorten the foreign credential recognition process, and expand the automatic recognitions from other countries.<br><br>\nCreate targeted suplementary education processes to bring a foreign profession into the Israeli system. Combine professional instruction in hebrew with training and job placement. Connect Olim with in-demand industries.<br><br>\nMake opening a business easier for Olim.",
           "topics": [
             "aliyah",
             "workers"
@@ -1395,12 +1603,15 @@
         {
           "id": "beyahad_44",
           "title": "Conversions",
-          "summary": "Move authority for overseeing conversions to community rabbis, rather than the central rabbanut. The process will be state-Orthodox.<br>\nSpecial tracks will be made for soldiers and for Olim.",
+          "summary": "Move authority for overseeing conversions to community rabbis, rather than the central rabbanut. The process will be state-Orthodox.<br><br>\nSpecial tracks will be made for soldiers and for Olim.",
           "topics": [
             "religion_state",
             "aliyah"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/, https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/",
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/"
+          ]
         },
         {
           "id": "beyahad_45",
@@ -1424,7 +1635,7 @@
         {
           "id": "beyahad_47",
           "title": "Add supports to the education system for students and parents",
-          "summary": "Make information about the education system more accessible for parents. Improve hebrew instruction and social supports for children of Olim. Combat discrimmination",
+          "summary": "Make information about the education system more accessible for parents. Improve hebrew instruction and social supports for children of Olim. Combat discrimination",
           "topics": [
             "aliyah",
             "education"
@@ -1454,11 +1665,15 @@
         {
           "id": "beyahad_50",
           "title": "Fund community for the elderly",
-          "summary": "Promote recreation and volunteer opportunities for seniors, and fund community centers. Implement a national plan to combat loneliness. Build a National Service program for retirees.\n<br>Make employment accessible.<br>\nMake specific funding for programs for Holocaust survivors",
+          "summary": "Promote recreation and volunteer opportunities for seniors, and fund community centers. Implement a national plan to combat loneliness. Build a National Service program for retirees.<br>\n<br>Make employment accessible.<br><br>\nMake specific funding for programs for Holocaust survivors",
           "topics": [
             "retirees"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/, https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/, https://be-yahad.org.il/en/plans/together-well-take-care-of-our-holocaust-survivors-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/",
+            "https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/",
+            "https://be-yahad.org.il/en/plans/together-well-take-care-of-our-holocaust-survivors-en/"
+          ]
         },
         {
           "id": "beyahad_51",
@@ -1469,7 +1684,11 @@
             "economy",
             "healthcare"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/, https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/, https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-make-aliyah-easier/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/",
+            "https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/"
+          ]
         },
         {
           "id": "beyahad_52",
@@ -1484,7 +1703,7 @@
         {
           "id": "beyahad_53",
           "title": "More doctors and nurses",
-          "summary": "Make a body to plan the healthcare workforce, to make sure there are enough doctors for the upcoming needs. This body will regulate training, set standards, and allocate staff where needed. <br>\nBring medical professionals from abroad.<br>",
+          "summary": "Make a body to plan the healthcare workforce, to make sure there are enough doctors for the upcoming needs. This body will regulate training, set standards, and allocate staff where needed. <br><br>\nBring medical professionals from abroad.<br>",
           "topics": [
             "healthcare"
           ],
@@ -1497,7 +1716,10 @@
           "topics": [
             "healthcare"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/, https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-fix-our-healthcare-system-en/",
+            "https://be-yahad.org.il/en/plans/a-national-plan-for-aging-with-dignity-en/"
+          ]
         },
         {
           "id": "beyahad_55",
@@ -1520,7 +1742,7 @@
         {
           "id": "beyahad_57",
           "title": "Dead Sea",
-          "summary": "Mineral extraction contracts at the Dead Sea will be changed with the renegotiation, so that the footprint is smaller and the company has to fix old environemental damage. Fees for pumping water will be imposed. <br>\nLong term solutions to stop the Dead Sea from dropping will be sought.",
+          "summary": "Mineral extraction contracts at the Dead Sea will be changed with the renegotiation, so that the footprint is smaller and the company has to fix old environmental damage. Fees for pumping water will be imposed. <br><br>\nLong term solutions to stop the Dead Sea from dropping will be sought.",
           "topics": [
             "environment"
           ],
@@ -1529,7 +1751,7 @@
         {
           "id": "beyahad_58",
           "title": "Garbage and Recycling",
-          "summary": "Targets for recycling will be raised, and landfills will be seen as a limited last case resort. Sorting and recycling will be funded. A regulator for the waste industry will be established.<br>\nBurning garbage in Judea and Samaria will be stopped, by working with COGAT and the Palestinian Authority.",
+          "summary": "Targets for recycling will be raised, and landfills will be seen as a limited last case resort. Sorting and recycling will be funded. A regulator for the waste industry will be established.<br><br>\nBurning garbage in Judea and Samaria will be stopped, by working with COGAT and the Palestinian Authority.",
           "topics": [
             "environment",
             "palestinians"
@@ -1539,7 +1761,7 @@
         {
           "id": "beyahad_59",
           "title": "Polluting power plants and factories",
-          "summary": "Close old coal fired power plants that don't have scubbers, and transition to cleaner sources. <br>\nMove the petrochemical industry away from Haifa Bay.",
+          "summary": "Close old coal fired power plants that don't have scubbers, and transition to cleaner sources. <br><br>\nMove the petrochemical industry away from Haifa Bay.",
           "topics": [
             "environment"
           ],
@@ -1557,7 +1779,7 @@
         {
           "id": "beyahad_61",
           "title": "Protect Nature",
-          "summary": "Preserve open space and ecological continuity, and make national ecological corridores. Focus new housing on existing cities through urban renewal, and reduce sprawl. <br> \nFund restoration of streams, prevent oil spills at sea, preserve biodiversity.",
+          "summary": "Preserve open space and ecological continuity, and make national ecological corridores. Focus new housing on existing cities through urban renewal, and reduce sprawl. <br> <br>\nFund restoration of streams, prevent oil spills at sea, preserve biodiversity.",
           "topics": [
             "environment"
           ],
@@ -1566,7 +1788,7 @@
         {
           "id": "beyahad_62",
           "title": "Make Long Term Leases a real alternative to ownership",
-          "summary": "<ul>\n<li>Build 100,000 new long term rental apartments within 10 years, for young families and reservists</li>\n<li>Of that 100,000, 40% will be subsidized at 30% below market rate.</li>\n<li>Tax benefits for landlonds who offer long term (at least 5 year) leases</li>\n<li></li>\n</ul>",
+          "summary": "<ul><br>\n<li>Build 100,000 new long term rental apartments within 10 years, for young families and reservists</li><br>\n<li>Of that 100,000, 40% will be subsidized at 30% below market rate.</li><br>\n<li>Tax benefits for landlords who offer long term (at least 5 year) leases</li><br>\n<li></li><br>\n</ul>",
           "topics": [
             "housing"
           ],
@@ -1575,7 +1797,7 @@
         {
           "id": "beyahad_63",
           "title": "Build more housing",
-          "summary": "<ul>\n<li>Cut the time for urban renewal (Pinui Binui) from 10 years to 5</li>\n<li>Transfer planning powers to local governments, to make them faster.</li>\n<li>Expand the number of cinstruction workers brought in from abroad, with flexible quotas and 7 year visas</li>\n<li>Increase the number of civil engineers by expanding engineering programs at colleges.</li>\n</ul>",
+          "summary": "<ul><br>\n<li>Cut the time for urban renewal (Pinui Binui) from 10 years to 5</li><br>\n<li>Transfer planning powers to local governments, to make them faster.</li><br>\n<li>Expand the number of cinstruction workers brought in from abroad, with flexible quotas and 7 year visas</li><br>\n<li>Increase the number of civil engineers by expanding engineering programs at colleges.</li><br>\n</ul>",
           "topics": [
             "housing"
           ],
@@ -1584,12 +1806,15 @@
         {
           "id": "beyahad_64",
           "title": "Equality for Women",
-          "summary": "Repeal laws that make it easy to discriminate against women, including the expansion of Beit Dins and gender degregation in academia. \n<br>Mandate 50% female represenetation in descision making roles in the government.\n<br>Promote equal pay though regulations and incentives.",
+          "summary": "Repeal laws that make it easy to discriminate against women, including the expansion of Beit Dins and gender degregation in academia. <br>\n<br>Mandate 50% female represenetation in descision making roles in the government.<br>\n<br>Promote equal pay though regulations and incentives.",
           "topics": [
             "religion_state",
             "liberal_rights"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/well-fix-whats-broken-and-strengthen-the-standing-of-women-in-israel-en/, https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/well-fix-whats-broken-and-strengthen-the-standing-of-women-in-israel-en/",
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/"
+          ]
         },
         {
           "id": "beyahad_65",
@@ -1604,17 +1829,21 @@
         {
           "id": "beyahad_66",
           "title": "Equality for the LGBT Community",
-          "summary": "Enact Basic Law: Equality. <br> \nEnact Sagi Laws for Equality, a pack of laws in memory of a Sagi Golan who fell on Oct 7th:\n<ul>\n<li>Marriage equality with Civil Partnership </li>\n<li>Allowing parental registry for any spouse of a biological parent.</li>\n<li>Add gender identity and sexual orientation to protected charateristics under discrimination laws</li>\n<li>Prohibit discrimination in housing (rentals and sales)</li>\n<li>Ban conversion therapy</li>\n<li>Recognize and compensate victims of hate crimes</li>\n<li>Make incitement against LQBTQ communities a criminal offense</li>\n<li>Allocate budget to LGBT community institutions though law. Expand support for those who have been displaced form their homes, and provide transitional housing, shelter, and mental health support.</li>\n<li>Regulate the use of sperm of murdered men, and allow male partners to be able to manage the process and be recognized as the father of the child.</li>\n</ul>",
+          "summary": "Enact Basic Law: Equality. <br> <br>\nEnact Sagi Laws for Equality, a pack of laws in memory of a Sagi Golan who fell on Oct 7th:<br>\n<ul><br>\n<li>Marriage equality with Civil Partnership </li><br>\n<li>Allowing parental registry for any spouse of a biological parent.</li><br>\n<li>Add gender identity and sexual orientation to protected characteristics under discrimination laws</li><br>\n<li>Prohibit discrimination in housing (rentals and sales)</li><br>\n<li>Ban conversion therapy</li><br>\n<li>Recognize and compensate victims of hate crimes</li><br>\n<li>Make incitement against LQBTQ communities a criminal offense</li><br>\n<li>Allocate budget to LGBT community institutions though law. Expand support for those who have been displaced form their homes, and provide transitional housing, shelter, and mental health support.</li><br>\n<li>Regulate the use of sperm of murdered men, and allow male partners to be able to manage the process and be recognized as the father of the child.</li><br>\n</ul>",
           "topics": [
             "religion_state",
             "liberal_rights"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/, https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/, https://book.sagi-golan.com/equalitybook.html]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
+            "https://be-yahad.org.il/en/plans/together-well-bring-about-equality-for-the-lgbt-community-en/",
+            "https://book.sagi-golan.com/equalitybook.html"
+          ]
         },
         {
           "id": "beyahad_67",
           "title": "Support people with disabilities - make Israel accessible",
-          "summary": "Create employement targets in the civil service. Fund training and adaptive technologies. Change benefit rules so that you don't lose them when you go back to work.<br>\nOpen real draft opportunities in the IDF based on abilities and skills.<br>\nIncentivize builders to make at least 5% of new apartments accessible.",
+          "summary": "Create employement targets in the civil service. Fund training and adaptive technologies. Change benefit rules so that you don't lose them when you go back to work.<br><br>\nOpen real draft opportunities in the IDF based on abilities and skills.<br><br>\nIncentivize builders to make at least 5% of new apartments accessible.",
           "topics": [
             "economy",
             "liberal_rights"
@@ -1624,7 +1853,7 @@
         {
           "id": "beyahad_68",
           "title": "Make tourism accessible",
-          "summary": "Make tourist sites and transportation accessible for those with disabilities. Establish a standard for accessible hotel rooms.\n<br>Make it easy to fly, even with a mobility aid.",
+          "summary": "Make tourist sites and transportation accessible for those with disabilities. Establish a standard for accessible hotel rooms.<br>\n<br>Make it easy to fly, even with a mobility aid.",
           "topics": [
             "economy",
             "liberal_rights"
@@ -1634,7 +1863,7 @@
         {
           "id": "beyahad_69",
           "title": "Attract investment through stability and infrastructure",
-          "summary": "Make the government more stable and the regulatory environment more predictable, so that companies and investors don't want to leave.<br>\nAttract large companies by offering access to national infrastracture and incentivize companies to stay and build operations here.",
+          "summary": "Make the government more stable and the regulatory environment more predictable, so that companies and investors don't want to leave.<br><br>\nAttract large companies by offering access to national infrastructure and incentivize companies to stay and build operations here.",
           "topics": [
             "economy",
             "government"
@@ -1658,7 +1887,10 @@
           "topics": [
             "economy"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/, https://be-yahad.org.il/en/plans/together-well-fix-whats-hurting-small-businesses-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-whats-hurting-small-businesses-en/"
+          ]
         },
         {
           "id": "beyahad_72",
@@ -1672,30 +1904,36 @@
         {
           "id": "beyahad_73",
           "title": "Early childhood education: System",
-          "summary": "Raise salaries of daycare staff and fill vacant positions, to stop daycares from closing. Establish a system of state-supervised daycares, that people can opt-in to.\n<br>Oversight will strengthen, with childcare requiring certifications and training, weith real knowlege of ECE.",
+          "summary": "Raise salaries of daycare staff and fill vacant positions, to stop daycares from closing. Establish a system of state-supervised daycares, that people can opt-in to.<br>\n<br>Oversight will strengthen, with childcare requiring certifications and training, with real knowledge of ECE.",
           "topics": [
             "education",
             "soldiers",
             "cost_of_living",
             "workers"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/rebuild-the-education/, https://be-yahad.org.il/en/plans/together-well-fix-early-childhood-education-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/rebuild-the-education/",
+            "https://be-yahad.org.il/en/plans/together-well-fix-early-childhood-education-en/"
+          ]
         },
         {
           "id": "beyahad_74",
           "title": "Early childhood education: Families",
-          "summary": "Miluimnikim will have fully subsidized childacre, and vetrans will have partial subsidies. <br>\nFurther supports will be given to working families, to help the parents get back into the workforce and advance their careers.",
+          "summary": "Miluimnikim will have fully subsidized childacre, and vetrans will have partial subsidies. <br><br>\nFurther supports will be given to working families, to help the parents get back into the workforce and advance their careers.",
           "topics": [
             "education",
             "cost_of_living",
             "workers"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-fix-early-childhood-education-en/, https://be-yahad.org.il/en/plans/service-law-en/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-fix-early-childhood-education-en/",
+            "https://be-yahad.org.il/en/plans/service-law-en/"
+          ]
         },
         {
           "id": "beyahad_75",
           "title": "Supports for Holocaust Survivors",
-          "summary": "Increase the annual grant for holocaust survivors from 7700 shekels to 12000 shekels. Raise the monthly allowance by 10% per year instead of just inflation. Expand utility and Arnona discounts. Ear-mark any surpluses in direct government funding to alternative programs.\n<br> Make services available in Russian.\n<br> Give disability funding automatically up to a 49% level, without needing to go to a committee. Fund transpotation to hospitals and medical treatments.",
+          "summary": "Increase the annual grant for holocaust survivors from 7700 shekels to 12000 shekels. Raise the monthly allowance by 10% per year instead of just inflation. Expand utility and Arnona discounts. Ear-mark any surpluses in direct government funding to alternative programs.<br>\n<br> Make services available in Russian.<br>\n<br> Give disability funding automatically up to a 49% level, without needing to go to a committee. Fund transpotation to hospitals and medical treatments.",
           "topics": [
             "retirees",
             "welfare"
@@ -1723,7 +1961,7 @@
         {
           "id": "beyahad_78",
           "title": "Improve the state of the Police",
-          "summary": "Strengthen police by assigning the Border police to stations, expanding patrols, and encouraging veterans to join the IPS. <br>\nLegislate police independance, and keep politics out of civil policing.<br>\nImprove compensation and reward good behaviour.",
+          "summary": "Strengthen police by assigning the Border police to stations, expanding patrols, and encouraging veterans to join the IPS. <br><br>\nLegislate police independence, and keep politics out of civil policing.<br><br>\nImprove compensation and reward good behaviour.",
           "topics": [
             "internal_security",
             "government"
@@ -1743,7 +1981,7 @@
         {
           "id": "beyahad_80",
           "title": "Make Israel more accessible to Diaspora youth",
-          "summary": "Double the number of young Jews who visit Israel.<br>\nMake Hebrew education accessible to every Jew around the world though in-person instruction or online learning.",
+          "summary": "Double the number of young Jews who visit Israel.<br><br>\nMake Hebrew education accessible to every Jew around the world though in-person instruction or online learning.",
           "topics": [
             "aliyah",
             "education"
@@ -1758,7 +1996,10 @@
             "aliyah",
             "international_relations"
           ],
-          "source": "[https://be-yahad.org.il/en/plans/together-well-repair-ties-between-israel-and-world-jewry-en/, https://be-yahad.org.il/en/plans/national-security-en-2/]"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-ties-between-israel-and-world-jewry-en/",
+            "https://be-yahad.org.il/en/plans/national-security-en-2/"
+          ]
         },
         {
           "id": "beyahad_82",
@@ -1773,7 +2014,7 @@
         {
           "id": "beyahad_83",
           "title": "Fighting domestic violence and sexual assault",
-          "summary": "Make fighting domestic violence and violence against women a top priority for Israel Police. Expand the definition of violence to include psychological, economic, and religious violence. Fund preventment, tretment, and rehabilitation with 250 million shekels per year.<br>\nSynchronize data with the Firearms Licencing office to make sure violent men do not have access to guns.<br> \nAbolish the statute of limitations of sexual crimes against minors. Establish special courts for sexual crimes. Increase police capabilities and cut processing times. Ensure care for victims in police stations.",
+          "summary": "Make fighting domestic violence and violence against women a top priority for Israel Police. Expand the definition of violence to include psychological, economic, and religious violence. Fund prevention, treatment, and rehabilitation with 250 million shekels per year.<br><br>\nSynchronize data with the Firearms licensing office to make sure violent men do not have access to guns.<br> <br>\nAbolish the statute of limitations of sexual crimes against minors. Establish special courts for sexual crimes. Increase police capabilities and cut processing times. Ensure care for victims in police stations.",
           "topics": [
             "internal_security"
           ],
@@ -1811,7 +2052,7 @@
         {
           "id": "beyahad_87",
           "title": "Destroy Iran, Declare Qatar an enemy state",
-          "summary": "React to missiles from Hezbollah with strikes on Iran. Prevent Iran from getting nuclear weapons, and work to collapse the Iranian regime.<br>\nReplace Qatar and Turkey with Egypt in dealing with the Palestinians. Activate the Mossad, Shin Bet, and IDF against Qatari activities in Israel.",
+          "summary": "React to missiles from Hezbollah with strikes on Iran. Prevent Iran from getting nuclear weapons, and work to collapse the Iranian regime.<br><br>\nReplace Qatar and Turkey with Egypt in dealing with the Palestinians. Activate the Mossad, Shin Bet, and IDF against Qatari activities in Israel.",
           "topics": [
             "security",
             "international_relations"
@@ -1867,12 +2108,12 @@
       "leader": "Yair Golan",
       "bloc": "Opposition - Left",
       "website": "https://democrats.org.il/",
-      "topline": "Fight for a strong, secure, and just Israel, which is Jewish and Democratioc, liberal, egalitarian, and in the spirit of the Declaration of Independance.",
+      "topline": "Fight for a strong, secure, and just Israel, which is Jewish and Democratic, liberal, egalitarian, and in the spirit of the Declaration of Independence.",
       "positions": [
         {
           "id": "the_democrats_1",
           "title": "Regional Peace and Normalization with Saudi Arabia",
-          "summary": "Recognize that Israel is viewed as an extremist pariah in the region, and rectify it. Build a regional alliance along with the USA and moderate Arab states, to collectively combat radical groups in the area. This group would also work to weaken Iran.\n<br> This requires recognizing that we need to make progress with the Palestinians to get regional buy in, and that regional partnerships benefit Israel's security.\n<br> The Democrats will also build normalization with Saudi Arabia, and support the India-Middle East-Europe infrastructure system in Israel.",
+          "summary": "Recognize that Israel is viewed as an extremist pariah in the region, and rectify it. Build a regional alliance along with the USA and moderate Arab states, to collectively combat radical groups in the area. This group would also work to weaken Iran.<br>\n<br> This requires recognizing that we need to make progress with the Palestinians to get regional buy in, and that regional partnerships benefit Israel's security.<br>\n<br> The Democrats will also build normalization with Saudi Arabia, and support the India-Middle East-Europe infrastructure system in Israel.",
           "topics": [
             "international_relations",
             "palestinians",
@@ -1883,22 +2124,30 @@
         {
           "id": "the_democrats_2",
           "title": "End the Swords of Iron war on all fronts",
-          "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. \n<br> Gaza will be demiliterized, Hamas removed, and governance provided by trusted international partners with a stabilization force.\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border (and all areas south of the Litani), and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
+          "summary": "End the war in all areas - Gaza, Syria, and Lebanon, though real agreements and mechanisms that make Israel safer. <br>\n<br> Gaza will be demilitarized, Hamas removed, and governance provided by trusted international partners with a stabilization force.<br>\n<br> The Lebanese army will be strengthened with International forces, Hezbollah will be removed from the border (and all areas south of the Litani), and Iranian smuggling will be ended. Israeli freedom of response to any violations is non-negotiable.<br>\n<br> A security agreement will be made with Syria to stop terrorist groups, stop smuggling to Hezbollah, and make peace on the border.",
           "topics": [
             "war_peace",
             "security"
           ],
-          "source": "[https://yes.democrats.org.il/topics/security-diplomatic, https://yes.democrats.org.il/topics/north_and_south, https://yes.democrats.org.il/topics/reservists]"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/north_and_south",
+            "https://yes.democrats.org.il/topics/reservists"
+          ]
         },
         {
           "id": "the_democrats_3",
           "title": "End annexation and fight Jewish terrorism/settler violence",
-          "summary": "All annexationist moves on the West Bank will be stopped. Outposts and new isolated settlements will be evacuated, lowering the strain on IDF troops.\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. A national plan will be built to address the issue, including coordination of all security agencies. Police in the Shomron and Yehudah district will be strengthened, given more political freedom to carry out investigations, intelligence, and enforcement, and make it a body that is equipped to the task. Settlements that generate violent actors will be evacuated. \n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
+          "summary": "All annexationist moves on the West Bank will be stopped. Outposts and new isolated settlements will be evacuated, lowering the strain on IDF troops.<br>\n<br> Settler violence against Palestinians will be cracked down on with zero tolerance. A national plan will be built to address the issue, including coordination of all security agencies. Police in the Shomron and Yehudah district will be strengthened, given more political freedom to carry out investigations, intelligence, and enforcement, and make it a body that is equipped to the task. Settlements that generate violent actors will be evacuated. <br>\n<br> The PA will be strengthened to allow it to crack down on Palestinian terrorism.",
           "topics": [
             "palestinians",
             "internal_security"
           ],
-          "source": "[https://yes.democrats.org.il/topics/security-diplomatic, https://yes.democrats.org.il/topics/public-safety, https://yes.democrats.org.il/topics/reservists]"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/public-safety",
+            "https://yes.democrats.org.il/topics/reservists"
+          ]
         },
         {
           "id": "the_democrats_4",
@@ -1933,30 +2182,33 @@
         {
           "id": "the_democrats_7",
           "title": "Strengthen and de-politicize the security establishment",
-          "summary": "Strengthen the IDF, Police, Shin Bet, ect. Make sure they have the manpower they need. \n<br> Remove politics from the defense sector and make it professional and independent. Make sure appointments are appropriate, and descisions are made by professionals.\n<br>Insulate the Israel Police Service from political interference, in both the descision making and appointments process. Appointments will be made in a standard, professional, and transparent process. Investments will be made into fighting corruption. \n<br> The IPS will be invested in, to ensure they have the manpower, training, and professionalism to address crime and other issues in Israel. To achieve this, a multi-year plan will be built to support the police, outside of political changes.",
+          "summary": "Strengthen the IDF, Police, Shin Bet, ect. Make sure they have the manpower they need. <br>\n<br> Remove politics from the defense sector and make it professional and independent. Make sure appointments are appropriate, and descisions are made by professionals.<br>\n<br>Insulate the Israel Police Service from political interference, in both the descision making and appointments process. Appointments will be made in a standard, professional, and transparent process. Investments will be made into fighting corruption. <br>\n<br> The IPS will be invested in, to ensure they have the manpower, training, and professionalism to address crime and other issues in Israel. To achieve this, a multi-year plan will be built to support the police, outside of political changes.",
           "topics": [
             "security",
             "draft",
             "internal_security"
           ],
-          "source": "[https://yes.democrats.org.il/topics/security-diplomatic, https://yes.democrats.org.il/topics/public-safety]"
+          "source": [
+            "https://yes.democrats.org.il/topics/security-diplomatic",
+            "https://yes.democrats.org.il/topics/public-safety"
+          ]
         },
         {
           "id": "the_democrats_8",
           "title": "Increase civil rights in Basic Laws/Constitution",
-          "summary": "Add human and social rights (equality, freedom of expression, freedom of protest, freedom of and from religion, healthcare, education, and housing) to the Basic Laws of Israel and give that law 'Supreme Constitutional Status' [editors note: it is unclear if this is a plan for a Constitution]\n<br> Amend the Nation State Law to reflect Israel's Jewish and Democratic nature.",
+          "summary": "Add human and social rights (equality, freedom of expression, freedom of protest, freedom of and from religion, healthcare, education, and housing) to the Basic Laws of Israel and give that law 'Supreme Constitutional Status' [editors note: it is unclear if this is a plan for a Constitution]<br>\n<br> Amend the Nation State Law to reflect Israel's Jewish and Democratic nature.",
           "topics": [
             "constitution",
             "liberal_rights",
             "judiciary",
             "government"
           ],
-          "source": "[\"https://yes.democrats.org.il/topics/democracy-justice\", 'https://yes.democrats.org.il/topics/arab-society\"]"
+          "source": "https://yes.democrats.org.il/topics/democracy-justice\", 'https://yes.democrats.org.il/topics/arab-society"
         },
         {
           "id": "the_democrats_9",
           "title": "Define the Knesset's role, powers, and supremacy",
-          "summary": "Enact Basic Law: Legislation to regulate the status and amendment procedure for Basic Laws, as well as regulate the court's ability for Judicial Review. \n<br> Strengthen the Knesset's ability to do its work by changing how committees and the plenum operate. Also strengthen the Ethics Committee, and improve the legislative process.",
+          "summary": "Enact Basic Law: Legislation to regulate the status and amendment procedure for Basic Laws, as well as regulate the court's ability for Judicial Review. <br>\n<br> Strengthen the Knesset's ability to do its work by changing how committees and the plenum operate. Also strengthen the Ethics Committee, and improve the legislative process.",
           "topics": [
             "constitution",
             "government",
@@ -1967,7 +2219,7 @@
         {
           "id": "the_democrats_10",
           "title": "Strengthen Ethics and Professional rules on the Government",
-          "summary": "Enact binding ethical rules and standards of service on government ministers and civil service employees.\n<br> Formalize legislation around legal advice and the binding status of legal opinions.\n<br> Ensure professional appointments procedures for senior appoinments, and protect politically sensitive civil servants from political pressure.\n<br> Punish government corruption and misuse of public funds.",
+          "summary": "Enact binding ethical rules and standards of service on government ministers and civil service employees.<br>\n<br> Formalize legislation around legal advice and the binding status of legal opinions.<br>\n<br> Ensure professional appointments procedures for senior appoinments, and protect politically sensitive civil servants from political pressure.<br>\n<br> Punish government corruption and misuse of public funds.",
           "topics": [
             "government"
           ],
@@ -1976,7 +2228,7 @@
         {
           "id": "the_democrats_11",
           "title": "Term Limits for Prime Ministers",
-          "summary": "8 year term limits for Prime Ministers.\n<br> Establish systems for impeachement\n<br> Prohibit holding government office while under indictment.",
+          "summary": "8 year term limits for Prime Ministers.<br>\n<br> Establish systems for impeachement<br>\n<br> Prohibit holding government office while under indictment.",
           "topics": [
             "government",
             "constitution"
@@ -1986,7 +2238,7 @@
         {
           "id": "the_democrats_12",
           "title": "Judicial Reform",
-          "summary": "Repeal legislation designed to weaken the Judicial system, specifically changes to the Judicial Selection Committee and increased powers of the religious courts.\n<br> Formalize through legislation the powers and limitations of Judicial Review.\n<br> Reform the judicial system by appointing judges, estabilishing more appeal courts, and streamline the judicial process.\n<br> Make dispute resolution more accessible through simple processes, community focused solutions, and improving accss to the courts.",
+          "summary": "Repeal legislation designed to weaken the Judicial system, specifically changes to the Judicial Selection Committee and increased powers of the religious courts.<br>\n<br> Formalize through legislation the powers and limitations of Judicial Review.<br>\n<br> Reform the judicial system by appointing judges, establishing more appeal courts, and streamline the judicial process.<br>\n<br> Make dispute resolution more accessible through simple processes, community focused solutions, and improving access to the courts.",
           "topics": [
             "government",
             "judiciary"
@@ -1996,7 +2248,7 @@
         {
           "id": "the_democrats_13",
           "title": "Life Cycle Events, Kashrut, Conversion",
-          "summary": "Break the Rabbinate monopoly on Kashrut. Recognize non-Rabbanut conversion and non-Orthodox conversion.\n<br> Recognize liberal streams of Judaism and subsidize them as much as Orthodoxy. \n<br> Fund non-orthodox and non-religious burial ceremonies.",
+          "summary": "Break the Rabbinate monopoly on Kashrut. Recognize non-Rabbanut conversion and non-Orthodox conversion.<br>\n<br> Recognize liberal streams of Judaism and subsidize them as much as Orthodoxy. <br>\n<br> Fund non-orthodox and non-religious burial ceremonies.",
           "topics": [
             "liberal_rights",
             "religion_state",
@@ -2007,17 +2259,21 @@
         {
           "id": "the_democrats_14",
           "title": "National Service for All Citizens",
-          "summary": "Equalize the burden in society by mandating national service for all citizens. The IDF will have priority, followed by other agencies (police, sheirut leumi, government work, ect). Mandatory draft targets will be brought it, and recruit thousands of additional soldiers including from the Haredi and Arab communities. \n<br> One option will be National Service in the healthcare system, which will be expanded. \n<br>Individuals who avoid the draft or have outstanding non-compliance orders with the IDF will have government benefits frozen, including school program discounts, Arnona discounts, and more. <br>\nEducational institutions that encourage draft avoidance will not be funded.",
+          "summary": "Equalize the burden in society by mandating national service for all citizens. The IDF will have priority, followed by other agencies (police, sheirut leumi, government work, ect). Mandatory draft targets will be brought it, and recruit thousands of additional soldiers including from the Haredi and Arab communities. <br>\n<br> One option will be National Service in the healthcare system, which will be expanded. <br>\n<br>Individuals who avoid the draft or have outstanding non-compliance orders with the IDF will have government benefits frozen, including school program discounts, Arnona discounts, and more. <br><br>\nEducational institutions that encourage draft avoidance will not be funded.",
           "topics": [
             "haredi",
             "draft"
           ],
-          "source": "[https://yes.democrats.org.il/topics/religion-state, https://yes.democrats.org.il/topics/health, https://yes.democrats.org.il/topics/sharing-the-burden]"
+          "source": [
+            "https://yes.democrats.org.il/topics/religion-state",
+            "https://yes.democrats.org.il/topics/health",
+            "https://yes.democrats.org.il/topics/sharing-the-burden"
+          ]
         },
         {
           "id": "the_democrats_15",
           "title": "Religion in the public square",
-          "summary": "Develop 'clear rules' for religious practice in public spaces, ensuring that spaces are are open to all citizens and that religion and prayer services can not be used as a pretext to deny access or discriminate in public spaces.\nLocal authorities will have powers to regulate public spaces, under the restriction of laws that ensure that discrimination is not permitted. They will try to create a balance between freedom of expression and worship and the right to freedom from religion and accessing public spaces.\n<br>\nFight the 'religiousization' of the IDF, education system, and public sphere. Stop units and divisions from excluding women in order to integrate Haredim.",
+          "summary": "Develop 'clear rules' for religious practice in public spaces, ensuring that spaces are open to all citizens and that religion and prayer services can not be used as a pretext to deny access or discriminate in public spaces.<br>\nLocal authorities will have powers to regulate public spaces, under the restriction of laws that ensure that discrimination is not permitted. They will try to create a balance between freedom of expression and worship and the right to freedom from religion and accessing public spaces.<br>\n<br><br>\nFight the 'religiousization' of the IDF, education system, and public sphere. Stop units and divisions from excluding women in order to integrate Haredim.",
           "topics": [
             "haredi",
             "religion_state",
@@ -2039,17 +2295,21 @@
         {
           "id": "the_democrats_17",
           "title": "Marriage & Parenthood Rights",
-          "summary": "Break the Rabbinate monopoly on marriage and divorce, and legislate full choice in religious or civil marriage. Also work on civil divorce solutions for people who have religious marriages.\n<br> Allow same-sex marriage, same-sex parental registration, and surrogacy for same-sex couples. Implement full equality in all government bodies, like the Interior Ministry and Bituach Leumi.",
+          "summary": "Break the Rabbinate monopoly on marriage and divorce, and legislate full choice in religious or civil marriage. Also work on civil divorce solutions for people who have religious marriages.<br>\n<br> Allow same-sex marriage, same-sex parental registration, and surrogacy for same-sex couples. Implement full equality in all government bodies, like the Interior Ministry and Bituach Leumi.",
           "topics": [
             "liberal_rights",
             "religion_state"
           ],
-          "source": "[https://yes.democrats.org.il/topics/lgbtq-equality, https://yes.democrats.org.il/topics/religion-state, https://yes.democrats.org.il/topics/women-gender]"
+          "source": [
+            "https://yes.democrats.org.il/topics/lgbtq-equality",
+            "https://yes.democrats.org.il/topics/religion-state",
+            "https://yes.democrats.org.il/topics/women-gender"
+          ]
         },
         {
           "id": "the_democrats_18",
           "title": "Protect the LGBTQ Community",
-          "summary": "Prohibit conversion therapy. Recognize, by law, victims of hate crimes. Amend the Criminal Code to include incitement against LGBTQ people and increase punishments for hate crimes based on gender identity. \n<br> Add sexual orientation and gender identity to protected characteristics under laws prohibiting discrimination.\n<br> End government support for groups that promote discriminating against the LGBTQ community.\n<br> Promote a national plan to combat homophobia.\n<br> Create up to date procedures for the Trans community in Israeli prisons.",
+          "summary": "Prohibit conversion therapy. Recognize, by law, victims of hate crimes. Amend the Criminal Code to include incitement against LGBTQ people and increase punishments for hate crimes based on gender identity. <br>\n<br> Add sexual orientation and gender identity to protected characteristics under laws prohibiting discrimination.<br>\n<br> End government support for groups that promote discriminating against the LGBTQ community.<br>\n<br> Promote a national plan to combat homophobia.<br>\n<br> Create up to date procedures for the Trans community in Israeli prisons.",
           "topics": [
             "liberal_rights",
             "internal_security"
@@ -2059,7 +2319,7 @@
         {
           "id": "the_democrats_19",
           "title": "Fund initiatives to grow tolerance and support the LGBTQ Community",
-          "summary": "Expand budgets for programs that build tolerance and support LGBTQ youth. Add contents on issues facing the community to the education system.\n<br> Expant the Division for the Advancement of the LGBT Population in the Ministry of Social Equality.\n<br> Fund shelters for youth, and develop programs for youth, seniors, the periphery, in Arab and Haredi society.\n<br> Fund culture within the LGBTQ community. Work on training and job placement for people who are discriminated against.",
+          "summary": "Expand budgets for programs that build tolerance and support LGBTQ youth. Add contents on issues facing the community to the education system.<br>\n<br> Expand the Division for the Advancement of the LGBT Population in the Ministry of Social Equality.<br>\n<br> Fund shelters for youth, and develop programs for youth, seniors, the periphery, in Arab and Haredi society.<br>\n<br> Fund culture within the LGBTQ community. Work on training and job placement for people who are discriminated against.",
           "topics": [
             "liberal_rights",
             "haredi",
@@ -2070,7 +2330,7 @@
         {
           "id": "the_democrats_20",
           "title": "Redirect funds from political communities to welfare and economy",
-          "summary": "Stop funding politically advantagious communities and programs in the West Bank. Instead, use that money for Israel's Social Safety Net and to grow the economy.",
+          "summary": "Stop funding politically advantageous communities and programs in the West Bank. Instead, use that money for Israel's Social Safety Net and to grow the economy.",
           "topics": [
             "economy",
             "welfare",
@@ -2087,44 +2347,58 @@
             "workers",
             "education"
           ],
-          "source": "[https://yes.democrats.org.il/topics/economy-society, https://yes.democrats.org.il/topics/women-gender]"
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/women-gender"
+          ]
         },
         {
           "id": "the_democrats_22",
           "title": "Lower the cost of living and invest in transit",
-          "summary": "Dismantle monopolies and bring in competition. Add more products to the price regulation list.\n<br> Strengthen farmers' power and remove barriers and brokers so that there are fewer middle-men and both the farmer and consumer benefit. Manage trade policy to protect local producers and also reduce prices.\n<br> Lower the cost of public transit and build it out, so that by 2040 Israel is a leading country. Additionally, invest in sidewalks and bike paths, and non-car infrastructure.",
+          "summary": "Dismantle monopolies and bring in competition. Add more products to the price regulation list.<br>\n<br> Strengthen farmers' power and remove barriers and brokers so that there are fewer middle-men and both the farmer and consumer benefit. Manage trade policy to protect local producers and also reduce prices.<br>\n<br> Lower the cost of public transit and build it out, so that by 2040 Israel is a leading country. Additionally, invest in sidewalks and bike paths, and non-car infrastructure.",
           "topics": [
             "cost_of_living",
             "transit",
             "economy"
           ],
-          "source": "[https://yes.democrats.org.il/topics/economy-society, https://yes.democrats.org.il/topics/environment-animals, https://yes.democrats.org.il/topics/countryside_and_agriculture]"
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/environment-animals",
+            "https://yes.democrats.org.il/topics/countryside_and_agriculture"
+          ]
         },
         {
           "id": "the_democrats_23",
-          "title": "Address housing costs though urban planning, and environemental protection",
-          "summary": "Build more housing, particularly near transit. Expand long term rental and public housing options.\n<br> Strengthen the independance and quality of planning institutions, environmental oversight systems, and public participation. Add more local and public representation onto planning committes.\n<br> Ensure the participation of environmental organizations on planning committees.\n<br> Encourage Urban Renewal over new towns and sprawl.",
+          "title": "Address housing costs though urban planning, and environmental protection",
+          "summary": "Build more housing, particularly near transit. Expand long term rental and public housing options.<br>\n<br> Strengthen the independence and quality of planning institutions, environmental oversight systems, and public participation. Add more local and public representation onto planning committes.<br>\n<br> Ensure the participation of environmental organizations on planning committees.<br>\n<br> Encourage Urban Renewal over new towns and sprawl.",
           "topics": [
             "housing"
           ],
-          "source": "[https://yes.democrats.org.il/topics/economy-society, https://yes.democrats.org.il/topics/environment-animals]"
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/environment-animals"
+          ]
         },
         {
           "id": "the_democrats_24",
           "title": "Invest in the Periphery",
-          "summary": "Focus on settling the periphery and the borders as a security decision, and actively build border communities. \n<br> Invest in the economy, education, health services, housing, culture, and transportation in the North and the South. Move money away from annexation and towards the Periphery.\n<br> Invest in hospitals in the North, increasing bed spaces. Build a new hospital in the Negev, and try to build new ones in the North. Open regional specialist medical centers and buy new MRIs and CT scanners, plus other advenced medical equipment. Create a national program to bring doctors to the North and South with housing, employment for spouces, internships, and R&D investments.",
+          "summary": "Focus on settling the periphery and the borders as a security decision, and actively build border communities. <br>\n<br> Invest in the economy, education, health services, housing, culture, and transportation in the North and the South. Move money away from annexation and towards the Periphery.<br>\n<br> Invest in hospitals in the North, increasing bed spaces. Build a new hospital in the Negev, and try to build new ones in the North. Open regional specialist medical centers and buy new MRIs and CT scanners, plus other advanced medical equipment. Create a national program to bring doctors to the North and South with housing, employment for spouces, internships, and R&D investments.",
           "topics": [
             "housing",
             "periphery",
             "transit",
             "healthcare"
           ],
-          "source": "[https://yes.democrats.org.il/topics/economy-society, https://yes.democrats.org.il/topics/health, https://yes.democrats.org.il/topics/countryside_and_agriculture]"
+          "source": [
+            "https://yes.democrats.org.il/topics/economy-society",
+            "https://yes.democrats.org.il/topics/health",
+            "https://yes.democrats.org.il/topics/countryside_and_agriculture"
+          ]
         },
         {
           "id": "the_democrats_25",
           "title": "Create a Basic Law: The Environment and Climate",
-          "summary": "Protect the environment by creating a Basic Law that will guarentee the right to a healthy environment and require the State to preserve natural resources.\n<br> Re-establish the Future Generations Commission [a Knesset committee from the early 2000s that had the right to intervene in legislation that could negatively affect future generations].\n<br> Enact a Climate Law, targetting reducing emissions to 50% by 2030 and 100% by 2050.",
+          "summary": "Protect the environment by creating a Basic Law that will guarentee the right to a healthy environment and require the State to preserve natural resources.<br>\n<br> Re-establish the Future Generations Commission [a Knesset committee from the early 2000s that had the right to intervene in legislation that could negatively affect future generations].<br>\n<br> Enact a Climate Law, targeting reducing emissions to 50% by 2030 and 100% by 2050.",
           "topics": [
             "environment",
             "constitution",
@@ -2135,17 +2409,20 @@
         {
           "id": "the_democrats_26",
           "title": "Transition to Clean Industries and Clean Energy",
-          "summary": "Close coal power plants. Rehabilitate the Haifa Bay. End industries and factories that are sources of pollution. Increase enforcement against pollution, noise, radiation, and other things that impact public health.\n<br> Reduce energy consumption and strengthen energy resilience though a transition to a cleaner and more distributed system. Accelerate the transition to renewables, deploy solar all over the country, and invest in Israeli R&D in energy and climate. \n<br> Coordinate planning of the energy sector, and make long term plans that balance energy security with economic and environmental considerations.",
+          "summary": "Close coal power plants. Rehabilitate the Haifa Bay. End industries and factories that are sources of pollution. Increase enforcement against pollution, noise, radiation, and other things that impact public health.<br>\n<br> Reduce energy consumption and strengthen energy resilience though a transition to a cleaner and more distributed system. Accelerate the transition to renewables, deploy solar all over the country, and invest in Israeli R&D in energy and climate. <br>\n<br> Coordinate planning of the energy sector, and make long term plans that balance energy security with economic and environmental considerations.",
           "topics": [
             "economy",
             "environment"
           ],
-          "source": "[https://yes.democrats.org.il/topics/environment-animals, https://yes.democrats.org.il/topics/countryside_and_agriculture]"
+          "source": [
+            "https://yes.democrats.org.il/topics/environment-animals",
+            "https://yes.democrats.org.il/topics/countryside_and_agriculture"
+          ]
         },
         {
           "id": "the_democrats_27",
           "title": "Address the garbage crisis",
-          "summary": "Reform the waste system by:\n<ul><li>Establishing a national waste authority</li>\n<li>Encouraging and investing in recycling and waste reduction to reduce the amount of trash in landfills</li>\n<li>Making producers responsible for end of life disposal, and for reducing single use packaging materials</li>\n</ul>\n<br>\nEncourage local food production and create a natonal food security plan, and then use that to reduce food waste.",
+          "summary": "Reform the waste system by:<br>\n<ul><li>Establishing a national waste authority</li><br>\n<li>Encouraging and investing in recycling and waste reduction to reduce the amount of trash in landfills</li><br>\n<li>Making producers responsible for end of life disposal, and for reducing single use packaging materials</li><br>\n</ul><br>\n<br><br>\nEncourage local food production and create a natifonal food security plan, and then use that to reduce food waste.",
           "topics": [
             "environment"
           ],
@@ -2154,7 +2431,7 @@
         {
           "id": "the_democrats_28",
           "title": "Protect plants and animals",
-          "summary": "Work with Jordan and the PA to protect the environment and water, and restore the lower Jordan and the Dead Sea.\n<br> Fight the illegal trade for plants and animals, and amend Money Laundering and Animal Cruelty laws to address them.\n<br> Make 30% of Israeli land and sea into nature preseves by 2030.\n<br> Make a national action plan to preserve and restore biodiversity, with funding.\n<br> Take more State revenues from natural resource extraction.",
+          "summary": "Work with Jordan and the PA to protect the environment and water, and restore the lower Jordan and the Dead Sea.<br>\n<br> Fight the illegal trade for plants and animals, and amend Money Laundering and Animal Cruelty laws to address them.<br>\n<br> Make 30% of Israeli land and sea into nature preserves by 2030.<br>\n<br> Make a national action plan to preserve and restore biodiversity, with funding.<br>\n<br> Take more State revenues from natural resource extraction.",
           "topics": [
             "environment",
             "international_relations",
@@ -2165,7 +2442,7 @@
         {
           "id": "the_democrats_29",
           "title": "Even out funding for students between religious streams",
-          "summary": "End the current situation where state-religious schools are being funded 26% more than state-hebrew schools and 39% more than state-arab schools.\nFunding will based solely on a school's number of students and the socio-economic background.",
+          "summary": "End the current situation where state-religious schools are being funded 26% more than state-hebrew schools and 39% more than state-arab schools.<br>\nFunding will based solely on a school's number of students and the socio-economic background.",
           "topics": [
             "education",
             "religion_state",
@@ -2191,7 +2468,10 @@
             "cost_of_living",
             "workers"
           ],
-          "source": "[https://yes.democrats.org.il/topics/education, https://yes.democrats.org.il/topics/women-gender]"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/women-gender"
+          ]
         },
         {
           "id": "the_democrats_32",
@@ -2202,26 +2482,35 @@
             "religion_state",
             "haredi"
           ],
-          "source": "[https://yes.democrats.org.il/topics/education, https://yes.democrats.org.il/topics/sharing-the-burden]"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/sharing-the-burden"
+          ]
         },
         {
           "id": "the_democrats_33",
           "title": "Mandatory Civics Classes",
-          "summary": "Add Democracy and Civics to the curriculum at the same status as Math and English. \n<br> Add study hours to all streams for Jewish-democratic-liberal identity, at a level currently used in the state-religious stream.\n<br> Fund pre-military academies and youth organziations that reflect these values.\n<br> In addition to Democracy and Civics, Arab schools will have Hebrew and English classes strengthened, and leadership invested in.",
+          "summary": "Add Democracy and Civics to the curriculum at the same status as Math and English. <br>\n<br> Add study hours to all streams for Jewish-democratic-liberal identity, at a level currently used in the state-religious stream.<br>\n<br> Fund pre-military academies and youth organizations that reflect these values.<br>\n<br> In addition to Democracy and Civics, Arab schools will have Hebrew and English classes strengthened, and leadership invested in.",
           "topics": [
             "education"
           ],
-          "source": "[https://yes.democrats.org.il/topics/education, https://yes.democrats.org.il/topics/arab-society]"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
         },
         {
           "id": "the_democrats_34",
           "title": "Invest in Teachers and Principals",
-          "summary": "Reform the employment structure and strengthen the role of teachers and principals. Decentralize authority to local education boards and increase professional development in staff.\n<br>Bring Arab teachers into the Hebrew education system to address the lack of teachers crisis.",
+          "summary": "Reform the employment structure and strengthen the role of teachers and principals. Decentralize authority to local education boards and increase professional development in staff.<br>\n<br>Bring Arab teachers into the Hebrew education system to address the lack of teachers crisis.",
           "topics": [
             "education",
             "local_government"
           ],
-          "source": "[https://yes.democrats.org.il/topics/education, https://yes.democrats.org.il/topics/arab-society]"
+          "source": [
+            "https://yes.democrats.org.il/topics/education",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
         },
         {
           "id": "the_democrats_35",
@@ -2236,7 +2525,7 @@
         {
           "id": "the_democrats_36",
           "title": "Rejuvination of the Periphery",
-          "summary": "Supports for small busninesses and bridge funding for self-employed until their businesses fully recover. Quick compensation for damage due to the war, and give residents the right to choose if they are going to remain in their homes, stay elsewhere, or move permanently. <br>\nAdd 15 billion shekels to the 'Momentum for the North' plan, and create a specific law that governs the settlement of the North to streamline activities and ensure quick implimentation.\n<br>Invest in social services, healthcare, education, housing, public transit.",
+          "summary": "Supports for small busninesses and bridge funding for self-employed until their businesses fully recover. Quick compensation for damage due to the war, and give residents the right to choose if they are going to remain in their homes, stay elsewhere, or move permanently. <br><br>\nAdd 15 billion shekels to the 'Momentum for the North' plan, and create a specific law that governs the settlement of the North to streamline activities and ensure quick implementation.<br>\n<br>Invest in social services, healthcare, education, housing, public transit.",
           "topics": [
             "periphery",
             "housing",
@@ -2256,7 +2545,7 @@
         {
           "id": "the_democrats_38",
           "title": "Crime in the Arab Community: Task Force",
-          "summary": "Declare a State of Emergency and establish a cross-agency task force to tackle violence in Arab society. The task force will take the top 5% of elite officers in the Shabak, IDF, Police, and Prisonm Service, and will be overseen by a special \"Crime Cabinet\" of ministers. It will have a 1 billion shekel budget and the goal of eliminating criminal organizations.",
+          "summary": "Declare a State of Emergency and establish a cross-agency task force to tackle violence in Arab society. The task force will take the top 5% of elite officers in the Shabak, IDF, Police, and Prison Service, and will be overseen by a special \"Crime Cabinet\" of ministers. It will have a 1 billion shekel budget and the goal of eliminating criminal organizations.",
           "topics": [
             "arab_citizens",
             "internal_security"
@@ -2266,7 +2555,7 @@
         {
           "id": "the_democrats_39",
           "title": "Crime in the Arab Community: Strengthening Policing",
-          "summary": "Strengthen the police forces to be able to conduct their operations in the Arab areas, and strengthen the tools of justice.\n<ul><li>Improve detective and investigative skills in Arabic</li>\n<li>Improve relationships and cooperation between police and city leaders</li>\n<li>Incentivize results by promoting officers who lead to a decrease in crime</li>\n<li>Establish specialized courts for serious crimes</li>\n<li>Pass laws that will allow for increased penalties, using biometric data to find criminals, and fight money laundering</li></ul>",
+          "summary": "Strengthen the police forces to be able to conduct their operations in the Arab areas, and strengthen the tools of justice.<br>\n<ul><li>Improve detective and investigative skills in Arabic</li><br>\n<li>Improve relationships and cooperation between police and city leaders</li><br>\n<li>Incentivize results by promoting officers who lead to a decrease in crime</li><br>\n<li>Establish specialized courts for serious crimes</li><br>\n<li>Pass laws that will allow for increased penalties, using biometric data to find criminals, and fight money laundering</li></ul>",
           "topics": [
             "arab_citizens",
             "internal_security"
@@ -2276,7 +2565,7 @@
         {
           "id": "the_democrats_40",
           "title": "Crime in the Arab Community: Fighting Money Laundering",
-          "summary": "Create a new Financial Crimes Unit under the taskforce in the tradition of the Zalzal Unit that used to be part of the Mossad. This unit will have powers to get information from banks, interface with institutions around the world (including foreign governments), and work with all financial governance organizations and regulators in Israel.<br>\nPass a law barring 'dirty' companies from goverment contracts.\n<br>Create a governement insurance program to protect farmers and business owners who are threatened with Protection rackets",
+          "summary": "Create a new Financial Crimes Unit under the taskforce in the tradition of the Zalzal Unit that used to be part of the Mossad. This unit will have powers to get information from banks, interface with institutions around the world (including foreign governments), and work with all financial governance organizations and regulators in Israel.<br><br>\nPass a law barring 'dirty' companies from goverment contracts.<br>\n<br>Create a governement insurance program to protect farmers and business owners who are threatened with Protection rackets",
           "topics": [
             "arab_citizens",
             "internal_security"
@@ -2286,17 +2575,20 @@
         {
           "id": "the_democrats_41",
           "title": "Crime in the Arab Community: Community Work",
-          "summary": "Create a new child-focused team within the taskforce to get children out of crime through education and welfare.\n<br> Make a treatment pathway for at-risk youth, with buy-in from city hall, welfare, community policing, securtiy, and education.\n<br> Add guidance counselors and youth counselors to Arab schools, with all counselors passing background checks and having professional guidance. Define a reporting path for inidvidual children.\n<br> Change prison sentences to focus on rehabiitation, to allow people to rejoin society.\n<br> Education will be invested in to get kids into the labour market and educated on democratic values, to reject crime.",
+          "summary": "Create a new child-focused team within the taskforce to get children out of crime through education and welfare.<br>\n<br> Make a treatment pathway for at-risk youth, with buy-in from city hall, welfare, community policing, securtiy, and education.<br>\n<br> Add guidance counselors and youth counselors to Arab schools, with all counselors passing background checks and having professional guidance. Define a reporting path for individual children.<br>\n<br> Change prison sentences to focus on rehabiitation, to allow people to rejoin society.<br>\n<br> Education will be invested in to get kids into the labour market and educated on democratic values, to reject crime.",
           "topics": [
             "arab_citizens",
             "education"
           ],
-          "source": "[https://yes.democrats.org.il/topics/fight-crime, https://yes.democrats.org.il/topics/arab-society]"
+          "source": [
+            "https://yes.democrats.org.il/topics/fight-crime",
+            "https://yes.democrats.org.il/topics/arab-society"
+          ]
         },
         {
           "id": "the_democrats_42",
           "title": "Crime in the Arab Community: Corruption",
-          "summary": "Municipalities that are corrupt or taken over by criminal organzations will be run by a committee appointed by the Minister of the Interior, until they are running properly. This an already existing process called a \"ועדה קרואה\"",
+          "summary": "Municipalities that are corrupt or taken over by criminal organizations will be run by a committee appointed by the Minister of the Interior, until they are running properly. This an already existing process called a \"ועדה קרואה\"",
           "topics": [
             "arab_citizens",
             "local_government"
@@ -2316,7 +2608,7 @@
         {
           "id": "the_democrats_44",
           "title": "Civilian firearms",
-          "summary": "Civilian firearms are viewed as a necessity for security, and must be regulated appropriately:\n<ul><li>Local defense organizations will be authorized by the government on a national level, with formally granted powers, resources, and a professional operating model - in a way that implements lessons learned from Oct 7th. <br>The network will be armed and also regulated.</li>\n<li>Firearm licenses will be regulated more closely, to identify owners that might be dangerous to their community, and to ensure that those who are licensed are properly trained and are responsible.</li>\n</ul>",
+          "summary": "Civilian firearms are viewed as a necessity for security, and must be regulated appropriately:<br>\n<ul><li>Local defense organizations will be authorized by the government on a national level, with formally granted powers, resources, and a professional operating model - in a way that implements lessons learned from Oct 7th. <br>The network will be armed and also regulated.</li><br>\n<li>Firearm licenses will be regulated more closely, to identify owners that might be dangerous to their community, and to ensure that those who are licensed are properly trained and are responsible.</li><br>\n</ul>",
           "topics": [
             "liberal_rights",
             "internal_security"
@@ -2337,7 +2629,7 @@
         {
           "id": "the_democrats_46",
           "title": "Create plans for Arab towns and communities",
-          "summary": "Enact a policy of urban planning and regulation for Arab, Druze, and Bedouin settlements. New neighbourhoods and industrial areas will be planned and built, and new localities will be established.\n<br> The \"Kaminitz Law\" (which allows for demolition of illegal structures without a court order) will be repealed.",
+          "summary": "Enact a policy of urban planning and regulation for Arab, Druze, and Bedouin settlements. New neighbourhoods and industrial areas will be planned and built, and new localities will be established.<br>\n<br> The \"Kaminitz Law\" (which allows for demolition of illegal structures without a court order) will be repealed.",
           "topics": [
             "arab_citizens",
             "housing"
@@ -2368,7 +2660,7 @@
         {
           "id": "the_democrats_49",
           "title": "Invest in the healthcare system",
-          "summary": "Increase contributions to the national healthcare budget, and address gaps between Israel and the OECD average. \n<br> Plan for implementing new medicines, treatments, and technologies with preemptive funding, so that it can be implemented quickly.\n<br> Increase the planning capabilities of the Healthcare funds, so that they can provide services properly to all localities and keep waiting times down. Change how the funding calculations work so that healthcare funds are incentivized to invest in the periphery. \n<br> Invest in preventative medicine.",
+          "summary": "Increase contributions to the national healthcare budget, and address gaps between Israel and the OECD average. <br>\n<br> Plan for implementing new medicines, treatments, and technologies with preemptive funding, so that it can be implemented quickly.<br>\n<br> Increase the planning capabilities of the Healthcare funds, so that they can provide services properly to all localities and keep waiting times down. Change how the funding calculations work so that healthcare funds are incentivized to invest in the periphery. <br>\n<br> Invest in preventative medicine.",
           "topics": [
             "healthcare"
           ],
@@ -2377,7 +2669,7 @@
         {
           "id": "the_democrats_50",
           "title": "Healthcare technology",
-          "summary": "Invest in research and new technologies, and reduce regulatory and bureaucratic burdens. <br>\nAt the same time, make healthcare data more accessible and also more secure by making national rules and infrastructure for hosting health data for research, while fully protecting patient privacy.",
+          "summary": "Invest in research and new technologies, and reduce regulatory and bureaucratic burdens. <br><br>\nAt the same time, make healthcare data more accessible and also more secure by making national rules and infrastructure for hosting health data for research, while fully protecting patient privacy.",
           "topics": [
             "healthcare"
           ],
@@ -2405,7 +2697,7 @@
         {
           "id": "the_democrats_53",
           "title": "More medical professionals / Medical School",
-          "summary": "Increase the number of medical students to more than 2,000 per year, and at the same time increasing the standards and expectations.\n<br> Increase the number of nurses and grant specialist nurses more medical authority. Also work to create the role of physicians assistant, to reduce the load on doctors.\n<br> Work to bring Israeli doctors abroad back to Israel, and make it both easy for them to come back and also to stay (with strong professional opportunities).",
+          "summary": "Increase the number of medical students to more than 2,000 per year, and at the same time increasing the standards and expectations.<br>\n<br> Increase the number of nurses and grant specialist nurses more medical authority. Also work to create the role of physicians assistant, to reduce the load on doctors.<br>\n<br> Work to bring Israeli doctors abroad back to Israel, and make it both easy for them to come back and also to stay (with strong professional opportunities).",
           "topics": [
             "healthcare",
             "education",
@@ -2416,17 +2708,20 @@
         {
           "id": "the_democrats_54",
           "title": "Senior Medical Care",
-          "summary": "Prepare for senior citizens and retirees by strengthening community based geriatric medicine. Incentivize Health funds to prevent decline, not just to treat it after it happens. Expand rehabilitation. Allow for home visits.\n<br> Give senior citizens priority on scheduling doctors appointments. Increase the number of beds in geriatric hospitals.\n<br> Create a National Long-Term Care Insurance Law, to cover people who need long term care. Recognize caregivers and support them.",
+          "summary": "Prepare for senior citizens and retirees by strengthening community based geriatric medicine. Incentivize Health funds to prevent decline, not just to treat it after it happens. Expand rehabilitation. Allow for home visits.<br>\n<br> Give senior citizens priority on scheduling doctors appointments. Increase the number of beds in geriatric hospitals.<br>\n<br> Create a National Long-Term Care Insurance Law, to cover people who need long term care. Recognize caregivers and support them.",
           "topics": [
             "healthcare",
             "retirees"
           ],
-          "source": "[https://yes.democrats.org.il/topics/health, https://yes.democrats.org.il/topics/seniors]"
+          "source": [
+            "https://yes.democrats.org.il/topics/health",
+            "https://yes.democrats.org.il/topics/seniors"
+          ]
         },
         {
           "id": "the_democrats_55",
           "title": "Mental Health",
-          "summary": "Create a national headquarters for managing the ongoing mental health crisis. Invest 1.5 billion shekels into mental health care. Increase the number of therapists and psychologists. Open up treatment alternatives to hospitals, including community care.\n<br> Overall, create a proactive approach to dealing with mental health concerns, particularly focusing on populations at risk such as IDF soldiers, victims of terror, bereaved families, and evacuees.",
+          "summary": "Create a national headquarters for managing the ongoing mental health crisis. Invest 1.5 billion shekels into mental health care. Increase the number of therapists and psychologists. Open up treatment alternatives to hospitals, including community care.<br>\n<br> Overall, create a proactive approach to dealing with mental health concerns, particularly focusing on populations at risk such as IDF soldiers, victims of terror, bereaved families, and evacuees.",
           "topics": [
             "healthcare"
           ],
@@ -2440,12 +2735,15 @@
             "healthcare",
             "soldiers"
           ],
-          "source": "[https://yes.democrats.org.il/topics/mental, https://yes.democrats.org.il/topics/sharing-the-burden]"
+          "source": [
+            "https://yes.democrats.org.il/topics/mental",
+            "https://yes.democrats.org.il/topics/sharing-the-burden"
+          ]
         },
         {
           "id": "the_democrats_57",
           "title": "Gender Equity in Politics",
-          "summary": "Beyond committing to having 50% of the Democrats party list comprised of women (alternating, in the 'zipper' method), a Basic Law: Equity will make party lists need to have at least 40% women. Parties that don't comply will have funding removed.\n<br>40% of government companies will have to be run by appointed women.",
+          "summary": "Beyond committing to having 50% of the Democrats party list comprised of women (alternating, in the 'zipper' method), a Basic Law: Equity will make party lists need to have at least 40% women. Parties that don't comply will have funding removed.<br>\n<br>40% of government companies will have to be run by appointed women.",
           "topics": [
             "liberal_rights",
             "constitution"
@@ -2455,26 +2753,32 @@
         {
           "id": "the_democrats_58",
           "title": "Violence against women and the elderly",
-          "summary": "Establish an independant authority to tackle volence against women. Work to expand the definition to include economic, psychological, sexual, and digital violence.<br>\nCreate a national plan to target financial fraud against the elderly and elder abuse. Increase the punishments.",
+          "summary": "Establish an independant authority to tackle violence against women. Work to expand the definition to include economic, psychological, sexual, and digital violence.<br><br>\nCreate a national plan to target financial fraud against the elderly and elder abuse. Increase the punishments.",
           "topics": [
             "internal_security",
             "retirees"
           ],
-          "source": "[https://yes.democrats.org.il/topics/women-gender, https://yes.democrats.org.il/topics/seniors]"
+          "source": [
+            "https://yes.democrats.org.il/topics/women-gender",
+            "https://yes.democrats.org.il/topics/seniors"
+          ]
         },
         {
           "id": "the_democrats_59",
           "title": "Invest in culture",
-          "summary": "Increase the budget going towards Israeli culture, doubling within 2 years and targetting 1% of the government budget within a decade. Remove politics from cultural institutions. \n<br>Return Israeli culture to the international stage.\n<br>Require streaming services to invest 8% of their Israeli profits into Israeli productions.",
+          "summary": "Increase the budget going towards Israeli culture, doubling within 2 years and targeting 1% of the government budget within a decade. Remove politics from cultural institutions. <br>\n<br>Return Israeli culture to the international stage.<br>\n<br>Require streaming services to invest 8% of their Israeli profits into Israeli productions.",
           "topics": [
             "media"
           ],
-          "source": "[https://yes.democrats.org.il/topics/culture, https://yes.democrats.org.il/topics/media]"
+          "source": [
+            "https://yes.democrats.org.il/topics/culture",
+            "https://yes.democrats.org.il/topics/media"
+          ]
         },
         {
           "id": "the_democrats_60",
           "title": "Repeal the attacks on media",
-          "summary": "Repeal the laws put in place by the current government. Cancel the closing of Galei Tzahal and Galgalatz. Protect Kan and public broadcasting by law. Secure the independance of media.",
+          "summary": "Repeal the laws put in place by the current government. Cancel the closing of Galei Tzahal and Galgalatz. Protect Kan and public broadcasting by law. Secure the independence of media.",
           "topics": [
             "media"
           ],
@@ -2483,7 +2787,7 @@
         {
           "id": "the_democrats_61",
           "title": "Regulate Channel 14",
-          "summary": "End excemptions that benefit Channel 14:\n<ul>\n<li>Investing in original programming</li>\n<li>Editorial independance of the newsroom</li>\n<li>Permission for a major shareholder to also own a radio channel (Radio Kol Chai)</li>\n</ul>",
+          "summary": "End excemptions that benefit Channel 14:<br>\n<ul><br>\n<li>Investing in original programming</li><br>\n<li>Editorial independence of the newsroom</li><br>\n<li>Permission for a major shareholder to also own a radio channel (Radio Kol Chai)</li><br>\n</ul>",
           "topics": [
             "media"
           ],
@@ -2501,7 +2805,7 @@
         {
           "id": "the_democrats_63",
           "title": "Regulate Social Media and Fight Disinformation",
-          "summary": "Regulate social media with tools from the European Union, to prevent disinformation, fight bots, and protect children. <br>\nAt the same time, fight online disinformation campaigns coming from enemy states.",
+          "summary": "Regulate social media with tools from the European Union, to prevent disinformation, fight bots, and protect children. <br><br>\nAt the same time, fight online disinformation campaigns coming from enemy states.",
           "topics": [
             "media"
           ],
@@ -2510,7 +2814,7 @@
         {
           "id": "the_democrats_64",
           "title": "Benefits for soldiers and changes to the system",
-          "summary": "<ul>\n<li>Fully funded bachelors degree (also for those who complete national service. Combat soldiers get more)</li>\n<li>1,000 NIS for each day of reserve duty, on top of salary replacements that they currently get.</li>\n<li>More control over Miluim scheduling</li>\n<li>Self employed reservists will get special benefits, loans, and grants.</li>\n</ul>",
+          "summary": "<ul><br>\n<li>Fully funded bachelors degree (also for those who complete national service. Combat soldiers get more)</li><br>\n<li>1,000 NIS for each day of reserve duty, on top of salary replacements that they currently get.</li><br>\n<li>More control over Miluim scheduling</li><br>\n<li>Self employed reservists will get special benefits, loans, and grants.</li><br>\n</ul>",
           "topics": [
             "soldiers"
           ],
@@ -2519,7 +2823,7 @@
         {
           "id": "the_democrats_65",
           "title": "Kibbutzim",
-          "summary": "Create policies that benefit kibbutzim, moshavim, and small rural communities. Strengthen the economy of these commnuities so that they can renew their populations.",
+          "summary": "Create policies that benefit kibbutzim, moshavim, and small rural communities. Strengthen the economy of these communities so that they can renew their populations.",
           "topics": [
             "environment",
             "housing"
@@ -2529,7 +2833,7 @@
         {
           "id": "the_democrats_66",
           "title": "Food supply security",
-          "summary": "Make a national plan to ensure local production and emergency food stocks as part of Israel's national security. Create financial supports for farmers to ensure security needs are met and that Israeli farms can adapt to climate change.<br>\nPreserve open and agricultural spaces.",
+          "summary": "Make a national plan to ensure local production and emergency food stocks as part of Israel's national security. Create financial supports for farmers to ensure security needs are met and that Israeli farms can adapt to climate change.<br><br>\nPreserve open and agricultural spaces.",
           "topics": [
             "environment",
             "economy",
@@ -2549,7 +2853,7 @@
         {
           "id": "the_democrats_68",
           "title": "Support Senior Living",
-          "summary": "Make a plan to support senior citizens living with dignity, across all government ministries. <br>\nIncrease senior pensions and link the pension to the average salary, and increase it to account for not keeping up with the cost of living in the past 20 years. Work towards increased pension top-ups, and rental assistance for retirees. Add tax points for seniors who pay tax on their pensions and increase the discounts for taxes and utilities.<br>\nMake assisted living more affordable, and build new affordable apartments. Encourage elders to share houses and not live alone.\n<br> Require public bodies and private businesses to make their services more accessible to the elderly.",
+          "summary": "Make a plan to support senior citizens living with dignity, across all government ministries. <br><br>\nIncrease senior pensions and link the pension to the average salary, and increase it to account for not keeping up with the cost of living in the past 20 years. Work towards increased pension top-ups, and rental assistance for retirees. Add tax points for seniors who pay tax on their pensions and increase the discounts for taxes and utilities.<br><br>\nMake assisted living more affordable, and build new affordable apartments. Encourage elders to share houses and not live alone.<br>\n<br> Require public bodies and private businesses to make their services more accessible to the elderly.",
           "topics": [
             "retirees",
             "welfare"
@@ -2569,8 +2873,8 @@
         },
         {
           "id": "the_democrats_70",
-          "title": "Dignity for Holocaut Survivors",
-          "summary": "A Minister-level role will be created to coordinate and champion rights for Holocaust survivors. Pensions will be increased. A special monthly pension will be given to survivors from the former USSR who mostly live below the poverty line.<br>\nFunding will be increased for nursing hours (particularly for dementia patients) and health care will be made more accessible.",
+          "title": "Dignity for Holocaust Survivors",
+          "summary": "A Minister-level role will be created to coordinate and champion rights for Holocaust survivors. Pensions will be increased. A special monthly pension will be given to survivors from the former USSR who mostly live below the poverty line.<br><br>\nFunding will be increased for nursing hours (particularly for dementia patients) and health care will be made more accessible.",
           "topics": [
             "retirees",
             "welfare"
@@ -2580,7 +2884,7 @@
         {
           "id": "the_democrats_71",
           "title": "People with Special Needs",
-          "summary": "Work to move people into community living, instead of institutions. Increase the pension for disabled people, and encourage joining the workforce though training, supports, and inventives.<br>\nImprove accessibility in the healthcare system for those with special needs. Make sure that public and private spaces are accessible.<br>\nEnsure that shelters and emergency response tools are available for those with accessibility needs.",
+          "summary": "Work to move people into community living, instead of institutions. Increase the pension for disabled people, and encourage joining the workforce though training, supports, and incentives.<br><br>\nImprove accessibility in the healthcare system for those with special needs. Make sure that public and private spaces are accessible.<br><br>\nEnsure that shelters and emergency response tools are available for those with accessibility needs.",
           "topics": [
             "welfare",
             "healthcare"
@@ -2590,7 +2894,7 @@
         {
           "id": "the_democrats_72",
           "title": "Special Education",
-          "summary": "Strengthen the care and support systems from early childhood to make sure that issues and needs are identified early. Invest in training and manpower to make sure there are enough professionals in schools and enough special education classes.\n<br>Focus on inclusive and accomodating educational environments.",
+          "summary": "Strengthen the care and support systems from early childhood to make sure that issues and needs are identified early. Invest in training and manpower to make sure there are enough professionals in schools and enough special education classes.<br>\n<br>Focus on inclusive and accommodating educational environments.",
           "topics": [
             "education"
           ],
@@ -2912,7 +3216,7 @@
         {
           "id": "joint_list_25",
           "title": "Protect Local Authorities, Public Officials, Witnesses and Whistleblowers",
-          "summary": "Reduce the organised crime targeted at local authorities and public servants by providing them tools, budget and protection, giving them independence to support/provide for their residents.\nExpand the protection system for witnesses, whistleblowers, and elected officials threatened by criminal organisations",
+          "summary": "Reduce the organised crime targeted at local authorities and public servants by providing them tools, budget and protection, giving them independence to support/provide for their residents.<br>\nExpand the protection system for witnesses, whistleblowers, and elected officials threatened by criminal organisations",
           "topics": [
             "internal_security"
           ],
@@ -2968,7 +3272,7 @@
       "leader": "Ofer Winter",
       "bloc": "Right",
       "website": "https://amchaisrael.co.il/",
-      "topline": "Fight for a Jewish, Zionist, soverign state focused on security, IDF/reservist rights and transparency in government.",
+      "topline": "Fight for a Jewish, Zionist, sovereign state focused on security, IDF/reservist rights and transparency in government.",
       "positions": [
         {
           "id": "amcha_yisrael_1",
@@ -3179,7 +3483,7 @@
         {
           "id": "amcha_yisrael_22",
           "title": "End Funding for Anti-Zionist Education",
-          "summary": "No funding to ani-Zionist education programs.",
+          "summary": "No funding to Anti-Zionist education programs.",
           "topics": [
             "education"
           ],
@@ -3206,7 +3510,7 @@
         {
           "id": "amcha_yisrael_25",
           "title": "Promote Free Markets and Break Up Monopolies",
-          "summary": "Strive for a free market and the break up of monopoles.",
+          "summary": "Strive for a free market and the break up of monopolies.",
           "topics": [
             "economy"
           ],
@@ -3282,7 +3586,7 @@
         {
           "id": "amcha_yisrael_33",
           "title": "Investigate All Relevant Institutions and Officials Regarding October 7",
-          "summary": "Investigate the government, the Knesset, the defense establishment, intelligence officials, the judicial system and the professional systems in the inquiry of October 7. Leave no stone unturned, full power to investigate anyone or anything or relevance.",
+          "summary": "Investigate the government, the Knesset, the defense establishment, intelligence officials, the judicial system and the professional systems in the inquiry of October 7. Leave no stone unturned, full power to investigate anyone or anything of relevance.",
           "topics": [
             "_oct7"
           ],
@@ -3338,7 +3642,7 @@
         {
           "id": "amcha_yisrael_39",
           "title": "Use Territorial Control as a Security Measure Against Enemies",
-          "summary": "Enemies who go to war with Israel lose territory. Enemy areas used for a base of attack and come under Israel security control will not be automatically.",
+          "summary": "Enemies who go to war with Israel lose territory. Enemy areas used for a base of attack and come under Israeli security control will not be automatically return to the enemy.",
           "topics": [
             "security",
             "war_peace"
@@ -3398,7 +3702,7 @@
         {
           "id": "amcha_yisrael_45",
           "title": "Maintain Strategic Positions and Counter Threats in Syria and Lebanon",
-          "summary": "Preserve the achievements in Syria by not giving up key territories that the IDF controls, strangling Hezbollah in Labanin, preventing hostile Turkish entrenchment, and protecting members of the Druze community from massacres by extremist Muslim militias in the country.",
+          "summary": "Preserve the achievements in Syria by not giving up key territories that the IDF controls, strangling Hezbollah in Lebanon, preventing hostile Turkish entrenchment, and protecting members of the Druze community from massacres by extremist Muslim militias in the country.",
           "topics": [
             "security",
             "war_peace"
@@ -3487,8 +3791,8 @@
       "positions": [
         {
           "id": "yisraelbeiteinu_1",
-          "title": "Zionist Government Composition",
-          "summary": "The government will be solely composed of Zionistic parties.",
+          "title": "Government Composition",
+          "summary": "The government will be solely composed of Zionist parties.",
           "topics": [
             "government"
           ],
@@ -4931,6 +5235,5 @@
         }
       ]
     }
-
   ]
 }
