@@ -60,7 +60,7 @@ def convert(csv_path):
         if key and key != 'nan':
             meta[key] = val
 
-    party_id = slugify(meta.get('name', 'party'))
+    party_id = slugify(meta.get('id', meta.get('name', 'party')))
     topline  = meta.get('Top Line', '').replace('\\n', '\n')
     website  = meta.get('Website', '')
 
