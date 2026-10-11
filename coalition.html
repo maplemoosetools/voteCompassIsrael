@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coalition Compatibility — Vote Compass Israel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f0f0f0;
+      --card:        #FFFFFF;
+      --surface:     #F8F9FA;
+      --header-bg:   #0e4f97;
+      --navy:        #1B2E5E;
+      --navy-light:  #2A3F73;
+      --text:        #111318;
+      --text-muted:  #4A4E5A;
+      --text-faint:  #9098A8;
+      --divider:     #E2E6EC;
+      --row-alt:     #F5F7FA;
+      --label-border:#CDD2DC;
+      --radius-sm:   4px;
+      --header-h:    56px;
+
+      /* verdict colours — border only */
+      --c-yes:     #1A7A3A;
+      --c-no:      #C0292B;
+      --c-support: #B07000;
+      --c-cond:    #0B6E8C;
+      --c-unknown: #B0B8C8;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--header-bg);
+      height: var(--header-h);
+      display: flex; align-items: center;
+      padding: 0 24px; gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.78rem; font-weight: 500;
+      color: rgba(255,255,255,0.7); background: none; border: none;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      text-decoration: none; transition: color .15s;
+    }
+    .back-btn:hover { color: #fff; }
+    .hdr-gap { flex: 1; }
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.05rem; font-weight: 700; color: #fff;
+      line-height: 1.15; text-align: right;
+    }
+    .logo-sub {
+      display: block; font-family: 'DM Sans', sans-serif;
+      font-weight: 400; font-size: 0.64rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.07em; text-transform: uppercase; margin-top: 3px;
+    }
+
+    /* ── PAGE LAYOUT ── */
+    .page-wrap {
+      padding: 28px 24px 64px;
+      display: flex; gap: 28px; align-items: flex-start;
+    }
+
+    .matrix-side { flex: 1; min-width: 0; }
+
+    .page-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.4rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 6px;
+    }
+    .page-sub {
+      font-size: 0.8rem; color: var(--text-muted);
+      line-height: 1.6; margin-bottom: 20px;
+      max-width: 600px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--navy);
+    }
+
+    /* ── MATRIX SCROLL ── */
+    .matrix-scroll { overflow-x: auto; }
+    .matrix-scroll::-webkit-scrollbar { height: 6px; }
+    .matrix-scroll::-webkit-scrollbar-track { background: var(--bg); }
+    .matrix-scroll::-webkit-scrollbar-thumb { background: #bbc; border-radius: 3px; }
+
+    /* ── TABLE ── */
+    table.matrix {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: max-content;
+      min-width: 100%;
+    }
+
+    /* ── THEAD ── */
+    table.matrix thead tr.roles-row th {
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      text-align: center;
+      padding: 8px 10px;
+    }
+    table.matrix thead tr.roles-row th.roles-label {
+      text-align: left;
+      min-width: 170px;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    table.matrix thead tr.party-row th {
+      background: var(--navy-light);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.78rem; font-weight: 600;
+      text-align: center;
+      padding: 10px 8px;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      min-width: 130px;
+    }
+    table.matrix thead tr.party-row th.corner {
+      background: var(--navy);
+      border-left: none;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    .corner-text {
+      font-size: 0.65rem; font-weight: 500;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.04em;
+      line-height: 1.5;
+    }
+    .party-col-name {
+      display: flex; align-items: center;
+      justify-content: center; gap: 6px;
+    }
+    .party-col-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+
+    /* ── TBODY ── */
+    table.matrix tbody tr { background: var(--card); }
+    table.matrix tbody tr:nth-child(even) { background: var(--row-alt); }
+
+    table.matrix tbody tr td {
+      border-bottom: 1px solid var(--divider);
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    /* Row label */
+    td.row-label {
+      padding: 10px 14px 10px 12px;
+      border-right: 3px solid var(--navy);
+    }
+    .row-label-inner {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .row-label-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .row-label-name {
+      font-size: 0.8rem; font-weight: 600; color: var(--text);
+      line-height: 1.3;
+    }
+
+    /* Data cell */
+    td.data-cell {
+      padding: 4px 6px;
+      border-left: 1px solid var(--divider);
+      vertical-align: middle;
+    }
+
+    .cell-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 6px 8px;
+      border-radius: var(--radius-sm);
+      width: 100%;
+      text-align: center;
+    }
+
+    .cell-verdict {
+      font-size: 0.74rem; font-weight: 600; line-height: 1.25;
+    }
+    .cell-inner.yes     .cell-verdict { color: var(--c-yes); }
+    .cell-inner.no      .cell-verdict { color: var(--c-no); }
+    .cell-inner.support .cell-verdict { color: var(--c-support); }
+    .cell-inner.cond    .cell-verdict { color: var(--c-cond); }
+    .cell-inner.unknown .cell-verdict { color: var(--c-unknown); font-weight: 400; font-style: italic; }
+    .cell-inner.self    .cell-verdict { color: var(--divider); }
+
+    .cell-sources { display: flex; flex-wrap: wrap; gap: 3px; }
+    .cell-citation {
+      font-size: 0.57rem; font-weight: 600; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 2px 5px; border-radius: 3px;
+      background: #eef; color: var(--text-muted);
+      border: 1px solid var(--label-border);
+      text-decoration: none; transition: background .12s, color .12s;
+    }
+    .cell-citation:hover { background: var(--header-bg); color: #fff; border-color: var(--header-bg); }
+    .cell-citation.no-link { cursor: default; opacity: 0.5; }
+
+    /* ── LEGEND SIDEBAR ── */
+    .legend-side {
+      width: 200px;
+      flex-shrink: 0;
+      position: sticky;
+      top: calc(var(--header-h) + 28px);
+    }
+    .legend-card {
+      background: var(--card);
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .legend-head {
+      background: var(--navy);
+      color: #fff;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.85rem; font-weight: 700;
+      padding: 10px 14px;
+      text-align: center;
+    }
+    .legend-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .legend-item:last-child { border-bottom: none; }
+    .legend-bar {
+      width: 4px; min-height: 32px; border-radius: 2px;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .legend-text { flex: 1; }
+    .legend-label {
+      font-size: 0.75rem; font-weight: 700;
+      line-height: 1.3; margin-bottom: 2px;
+    }
+    .legend-desc {
+      font-size: 0.68rem; color: var(--text-muted); line-height: 1.4;
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      font-size: 0.72rem; color: var(--text-faint); line-height: 1.6;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DC6YECNX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-76DC6YECNX', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+<header>
+  <a class="back-btn" href="index.html">← Back to Compass</a>
+  <div class="hdr-gap"></div>
+  <div class="logo">Vote Compass Israel<span class="logo-sub">Coalition Compatibility</span></div>
+</header>
+
+<div class="page-wrap">
+  <div class="matrix-side">
+    <h1 class="page-title">Will these parties work together?</h1>
+    <p class="page-sub">Each cell shows whether the <strong>row party</strong> has stated willingness to sit in a government with the <strong>column party</strong>. This reflects stated positions, not predictions.</p>
+
+    <div class="matrix-scroll">
+      <div id="matrixContainer">Loading…</div>
+    </div>
+
+    <p class="disclaimer">Positions reflect public statements  Coalition dynamics change frequently — always consult primary sources.</p>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend-side">
+    <div class="legend-card">
+      <div class="legend-head">Key</div>
+      <div class="legend-item">
+        <div class="legend-bar" style="background:var(--c-yes)"></div>
+        <div class="legend-text">
+          <div class="legend-label" style="color:var(--c-yes)">Yes</div>
+          <div class="legend-desc">Would join a coalition government</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-bar" style="background:var(--c-no)"></div>
+        <div class="legend-text">
+          <div class="legend-label" style="color:var(--c-no)">No</div>
+          <div class="legend-desc">Has ruled out sitting together</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-bar" style="background:var(--c-support)"></div>
+        <div class="legend-text">
+          <div class="legend-label" style="color:var(--c-support)">Support from outside</div>
+          <div class="legend-desc">Would support the government but not join it</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-bar" style="background:var(--c-cond)"></div>
+        <div class="legend-text">
+          <div class="legend-label" style="color:var(--c-cond)">With conditions</div>
+          <div class="legend-desc">Would join only under specific conditions. Some of those conditions may be impossible</div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-bar" style="background:var(--c-unknown)"></div>
+        <div class="legend-text">
+          <div class="legend-label" style="color:var(--c-unknown)">Not stated</div>
+          <div class="legend-desc">No public position found</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const COALITION = {
+  relations: [
+    // { from: 'party_id', to: 'party_id', verdict: 'yes'|'no'|'support'|'cond', sources: [] }
+        { from: 'beyahad', to: 'yashar', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'beyahad', to: 'the_democrats', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'beyahad', to: 'likud', verdict: 'cond', sources: ['https://www.timesofisrael.com/bennett-says-netanyahu-tearing-the-state-of-israel-apart-vows-to-replace-him/'] },
+        { from: 'beyahad', to: 'beyahad', verdict: 'self', sources: [] },
+        { from: 'beyahad', to: 'yisraelbeiteinu', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'beyahad', to: 'joint_list', verdict: 'no', sources: ['https://www.timesofisrael.com/arab-majority-hadash-taal-and-balad-parties-agree-on-joint-run-after-striking-deal/'] },
+
+        { from: 'beyahad', to: 'religZion', verdict: 'cond', sources: ['https://www.timesofisrael.com/bennett-says-netanyahu-tearing-the-state-of-israel-apart-vows-to-replace-him/'] },
+        { from: 'beyahad', to: 'otzYehud', verdict: 'no', sources: ['https://www.timesofisrael.com/bennett-says-netanyahu-tearing-the-state-of-israel-apart-vows-to-replace-him/'] },
+        { from: 'beyahad', to: 'utj', verdict: 'cond', sources: ['https://www.jpost.com/israel-election-2026/article-907517'] },
+        { from: 'beyahad', to: 'raam', verdict: 'no', sources: ['https://www.timesofisrael.com/arab-majority-hadash-taal-and-balad-parties-agree-on-joint-run-after-striking-deal/'] },
+        { from: 'beyahad', to: 'shas', verdict: 'cond', sources: ['https://www.jpost.com/israel-election-2026/article-907517'] },
+        { from: 'yashar', to: 'yashar', verdict: 'self', sources: [] },
+        { from: 'yashar', to: 'the_democrats', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yashar', to: 'joint_list', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'yashar', to: 'beyahad', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yashar', to: 'yisraelbeiteinu', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yashar', to: 'utj', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'yashar', to: 'raam', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'yashar', to: 'shas', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'the_democrats', to: 'yashar', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'the_democrats', to: 'the_democrats', verdict: 'self', sources: [] },
+        { from: 'the_democrats', to: 'likud', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-910100'] },
+        { from: 'the_democrats', to: 'joint_list', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-910100'] },
+        { from: 'the_democrats', to: 'beyahad', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'the_democrats', to: 'yisraelbeiteinu', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'the_democrats', to: 'otzYehud', verdict: 'no', sources: ['https://www.israelnationalnews.com/news/433836'] },
+        { from: 'the_democrats', to: 'utj', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-910100'] },
+        { from: 'the_democrats', to: 'raam', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-910100'] },
+        { from: 'the_democrats', to: 'shas', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-910100'] },
+        { from: 'the_democrats', to: 'religZion', verdict: 'no', sources: ['https://www.ynet.co.il/news/article/h1dbrnzvmg'] },
+        { from: 'likud', to: 'likud', verdict: 'self', sources: [] },
+        { from: 'likud', to: 'religZion', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-910758'] },
+        { from: 'joint_list', to: 'yashar', verdict: 'support', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'the_democrats', verdict: 'support', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'likud', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'joint_list', verdict: 'self', sources: [] },
+        { from: 'joint_list', to: 'beyahad', verdict: 'support', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'yisraelbeiteinu', verdict: 'support', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'religZion', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'otzYehud', verdict: 'no', sources: ['https://www.ynetnews.com/article/rjshx11difl'] },
+        { from: 'joint_list', to: 'raam', verdict: 'yes', sources: ['https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/'] },
+        { from: 'amcha_yisrael', to: 'the_democrats', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'amcha_yisrael', to: 'likud', verdict: 'cond', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'amcha_yisrael', to: 'joint_list', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'amcha_yisrael', to: 'amcha_yisrael', verdict: 'self', sources: [] },
+        { from: 'amcha_yisrael', to: 'utj', verdict: 'cond', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'amcha_yisrael', to: 'raam', verdict: 'no', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'amcha_yisrael', to: 'shas', verdict: 'cond', sources: ['https://www.jpost.com/israel-election-2026/article-911244'] },
+        { from: 'yisraelbeiteinu', to: 'yashar', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yisraelbeiteinu', to: 'the_democrats', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yisraelbeiteinu', to: 'joint_list', verdict: 'no', sources: ['https://www.timesofisrael.com/liveblog_entry/yisrael-beytenu-says-it-backs-barring-raam-joint-list-from-running/'] },
+        { from: 'yisraelbeiteinu', to: 'beyahad', verdict: 'yes', sources: ['https://www.jns.org/news/israel-news/israeli-opposition-leaders-sign-cooperation-pact-to-oust-netanyahu'] },
+        { from: 'yisraelbeiteinu', to: 'yisraelbeiteinu', verdict: 'self', sources: [] },
+        { from: 'yisraelbeiteinu', to: 'raam', verdict: 'no', sources: ['https://www.timesofisrael.com/liveblog_entry/yisrael-beytenu-says-it-backs-barring-raam-joint-list-from-running/'] },
+        { from: 'yisraelbeiteinu', to: 'shas', verdict: 'no', sources: ['https://www.mako.co.il/news-israel-elections/2026/Article-51afd77bd443e91027.htm'] },
+        { from: 'yisraelbeiteinu', to: 'utj', verdict: 'no', sources: ['https://www.mako.co.il/news-israel-elections/2026/Article-51afd77bd443e91027.htm'] },
+
+        { from: 'religZion', to: 'likud', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-910758'] },
+        { from: 'religZion', to: 'religZion', verdict: 'self', sources: [] },
+        { from: 'otzYehud', to: 'otzYehud', verdict: 'self', sources: [] },
+        { from: 'utj', to: 'utj', verdict: 'self', sources: [] },
+        { from: 'utj', to: 'shas', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-908924'] },
+        { from: 'raam', to: 'joint_list', verdict: 'yes', sources: ['https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/'] },
+        { from: 'raam', to: 'raam', verdict: 'self', sources: [] },
+        { from: 'shas', to: 'shas', verdict: 'self', sources: [] },
+        { from: 'shas', to: 'utj', verdict: 'yes', sources: ['https://www.jpost.com/israel-election-2026/article-908924'] },
+
+
+  ]
+};
+
+const LABELS = {
+  yes:     'Yes',
+  no:      'No',
+  support: 'Support from outside',
+  cond:    'With conditions',
+  unknown: 'Not stated',
+  self:    '—',
+};
+
+// Fallback party definitions for parties not yet in data.json
+const FALLBACK_PARTIES = [
+  { id: 'likud',        name: 'Likud',                    color: '#1A5DC8' },
+  { id: 'religZion',    name: 'Religious Zionism',        color: '#E07B00' },
+  { id: 'otzYehud',     name: 'Otzma Yehudit',            color: '#8B0000' },
+  { id: 'utj',          name: 'UTJ',                      color: '#2C4A1E' },
+  { id: 'shas',         name: 'Shas',                     color: '#6B24A8' },
+  { id: 'raam',         name: "Ra'am",                    color: '#1A7A3A' },
+  { id: 'joint_list',   name: 'Joint List',               color: '#C41E3A' },
+  { id: 'amcha_yisrael',name: "Amcha Yisrael",            color: '#888888' },
+];
+
+// Order in which parties appear in the matrix
+const PARTY_ORDER = [
+  'beyahad', 'yashar', 'the_democrats',
+  'yisrael_beiteinu', 'joint_list', 'raam',
+  'likud', 'religZion', 'otzYehud', 'utj', 'shas', 'amcha_yisrael',
+];
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    // Merge data.json parties with fallbacks, in PARTY_ORDER
+    const fromData = {};
+    data.parties.forEach(p => { fromData[p.id] = p; });
+    const fromFallback = {};
+    FALLBACK_PARTIES.forEach(p => { fromFallback[p.id] = p; });
+
+    const parties = PARTY_ORDER
+      .map(id => fromData[id] || fromFallback[id])
+      .filter(Boolean);
+
+    renderMatrix(parties);
+  })
+  .catch(() => {
+    document.getElementById('matrixContainer').innerHTML =
+      '<p style="color:#c00;font-size:0.85rem;padding:20px">Could not load data.json — serve via XAMPP or a local server.</p>';
+  });
+
+function renderMatrix(parties) {
+  // lookup
+  const lookup = {};
+  COALITION.relations.forEach(r => {
+    if (!lookup[r.from]) lookup[r.from] = {};
+    lookup[r.from][r.to] = r;
+  });
+
+  let html = '<table class="matrix">';
+
+  // thead — row 1: "Roles" span
+  html += '<thead>';
+  html += `<tr class="roles-row">
+    <th class="roles-label">Row party ↓ &nbsp;&nbsp;sits with →</th>
+    <th colspan="${parties.length}" style="text-align:center;letter-spacing:0.1em;">Column Party</th>
+  </tr>`;
+
+  // thead — row 2: party names
+  html += '<tr class="party-row"><th class="corner"><span class="corner-text">Will row party<br>join a government<br>with column party?</span></th>';
+  parties.forEach(p => {
+    html += `<th>
+      <div class="party-col-name">
+        <span class="party-col-dot" style="background:${p.color}"></span>
+        ${p.name}
+      </div>
+    </th>`;
+  });
+  html += '</tr></thead><tbody>';
+
+  // rows
+  parties.forEach(rowParty => {
+    html += '<tr>';
+    html += `<td class="row-label">
+      <div class="row-label-inner">
+        <span class="row-label-dot" style="background:${rowParty.color}"></span>
+        <span class="row-label-name">${rowParty.name}</span>
+      </div>
+    </td>`;
+
+    parties.forEach(colParty => {
+      html += '<td class="data-cell">';
+      if (rowParty.id === colParty.id) {
+        html += `<div class="cell-inner self"><span class="cell-verdict">—</span></div>`;
+      } else {
+        const rel = lookup[rowParty.id]?.[colParty.id];
+        const verdict = rel?.verdict || 'unknown';
+        const sources = rel?.sources || [];
+        const citations = sources.map((src, i) => {
+          const label = sources.length === 1 ? 'Source' : `Source ${i+1}`;
+          if (src && src !== 'add')
+            return `<a class="cell-citation" href="${src}" target="_blank" rel="noopener">${label}</a>`;
+          return `<span class="cell-citation no-link">${label}</span>`;
+        }).join('');
+        html += `<div class="cell-inner ${verdict}">
+          <span class="cell-verdict">${LABELS[verdict]}</span>
+          ${citations ? `<div class="cell-sources">${citations}</div>` : ''}
+        </div>`;
+      }
+      html += '</td>';
+    });
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('matrixContainer').innerHTML = html;
+}
+</script>
+</body>
+</html>

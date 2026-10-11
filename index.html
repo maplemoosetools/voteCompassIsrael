@@ -466,6 +466,7 @@
       <button class="menu-nav-item active" id="navCompass" onclick="showCompass()">🗳️ &nbsp;Compare Platforms</button>
       <button class="menu-nav-item" id="navAbout" onclick="showAbout()">ℹ️ &nbsp;About this tool</button>
       <button class="menu-nav-item" onclick="showPrivacy()">🔒 &nbsp;Privacy Policy</button>
+      <button class="menu-nav-item" onclick="showCoalition()">🤝 &nbsp;Coalition Compatibility</button>
     </div>
     <div class="menu-content" id="menuContent"></div>
   </div>
@@ -481,7 +482,7 @@
 
 <script>
 let DATA = null;
-let selectedParties = ['the_democrats', 'beyahad_together'];
+let selectedParties = ['the_democrats', 'together'];
 let selectedTopics  = new Set();
 
 fetch('data.json')
@@ -515,6 +516,7 @@ function showCompass() {
 
 function showAbout() { window.location.href = 'about.html'; }
 function showPrivacy() { window.location.href = 'privacy.html'; }
+function showCoalition() { window.location.href = 'coalition.html'; }
 
 function render() {
   renderSelectorBar();

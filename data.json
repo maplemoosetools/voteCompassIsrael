@@ -40,7 +40,7 @@
   "parties": [
 
     {
-      "id": "beyahad_together",
+      "id": "beyahad",
       "name": "BeYahad (Together)",
       "color": "#23C2EB",
       "leader": "Naftali Bennet <br> Yair Lapid",
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "id": "yisrael_beiteinu",
+      "id": "yisraelbeiteinu",
       "name": "Yisrael Beiteinu",
       "color": "#23C2EB",
       "leader": "Avigdor Leiberman",
@@ -1566,7 +1566,7 @@
       ]
     },
     {
-      "id": "yashar_with_gadi_eisenkot",
+      "id": "yashar",
       "name": "Yashar with Gadi Eisenkot",
       "color": "#64B9E1",
       "leader": "Gadi Eisenkot",
