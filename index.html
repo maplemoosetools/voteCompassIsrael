@@ -305,8 +305,8 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.12);
       text-align: center; min-height: 0;
     }
-    thead th { padding: 0; vertical-align: bottom; background: var(--bg); }
-    thead th.lth { position: sticky; left: 0; z-index: 80; height: 1px; background: var(--bg); }
+    thead th { padding: 0; vertical-align: bottom; background: var(--bg); position: sticky; top: var(--header-h); z-index: 60; }
+    thead th.lth { position: sticky; left: 0; top: var(--header-h); z-index: 80; height: 1px; background: var(--bg); }
     thead th:nth-child(2) .phcard { margin-left: 0; }
     thead th:last-child   .phcard { margin-right: 24px; }
 
@@ -336,6 +336,13 @@
 
     /* ── DATA ROWS ── */
     tr.drow td { padding: 0; vertical-align: top; height: 1px; }
+    @-moz-document url-prefix() {
+      tr.drow td { height: 100%; }
+      tr.drow { display: table-row; }
+      tr.drow td > div { min-height: 60px; }
+      tr.details-row td { height: 100%; }
+      tr.crow td { height: 100%; }
+    }
     tr.drow td.ltd { position: sticky; left: 0; z-index: 20; background: var(--bg); }
 
     .section-label-cell {
@@ -431,6 +438,135 @@
     ::-webkit-scrollbar-track { background: var(--bg2); }
     ::-webkit-scrollbar-thumb { background: #c8c3bc; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #a8a39c; }
+    /* ── MOBILE LAYOUT ── */
+    .mobile-view { display: none; }
+
+    @media (max-width: 768px) {
+      body {
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      #mainArea {
+        overflow: visible !important;
+        display: block !important;
+        height: auto !important;
+        flex: unset !important;
+      }
+      .party-header-scroll { display: none !important; }
+      .outer { display: none !important; }
+      .party-selector-bar { display: none !important; }
+      .mobile-view { display: block !important; }
+
+      .mobile-tabs {
+        display: flex;
+        overflow-x: auto;
+        background: var(--header-bg2);
+        padding: 8px 12px 0;
+        gap: 6px;
+        flex-shrink: 0;
+        position: sticky;
+        top: 0;
+        z-index: 80;
+      }
+      .mobile-tabs::-webkit-scrollbar { display: none; }
+      .mobile-tab {
+        display: inline-flex; align-items: center; gap: 5px;
+        padding: 7px 12px;
+        border-radius: 6px 6px 0 0;
+        font-size: 0.74rem; font-weight: 600;
+        color: rgba(255,255,255,0.55);
+        background: rgba(255,255,255,0.08);
+        border: none; cursor: pointer;
+        font-family: 'DM Sans', sans-serif;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background .15s, color .15s;
+      }
+      .mobile-tab.active {
+        background: var(--card);
+        color: var(--text);
+      }
+      .mobile-tab-dot {
+        width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+      }
+      .mobile-card {
+        background: var(--card);
+      }
+      .mobile-party-head {
+        padding: 16px;
+        border-bottom: 1px solid var(--divider);
+        border-top: 4px solid var(--pc, #888);
+      }
+      .mobile-party-name {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.1rem; font-weight: 700;
+        color: var(--text);
+        display: flex; align-items: center; gap: 8px;
+        margin-bottom: 4px;
+      }
+      .mobile-party-leader {
+        font-size: 0.72rem; color: var(--text-faint); margin-bottom: 6px;
+      }
+      .mobile-party-bloc {
+        display: inline-block;
+        font-size: 0.6rem; font-weight: 600;
+        letter-spacing: 0.04em; text-transform: uppercase;
+        padding: 2px 8px; border-radius: 20px;
+        color: #fff; margin-bottom: 8px;
+      }
+      .mobile-party-topline {
+        font-size: 0.78rem; font-style: italic;
+        color: var(--text-muted); line-height: 1.5; margin-bottom: 6px;
+      }
+      .mobile-party-website {
+        font-size: 0.7rem; color: var(--text-faint); text-decoration: none;
+      }
+      .mobile-party-website:hover { color: var(--text); }
+      .mobile-topic {
+        border-bottom: 1px solid var(--divider);
+      }
+      .mobile-topic-header {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 16px;
+        cursor: pointer; user-select: none;
+        background: var(--surface);
+        gap: 8px;
+      }
+      .mobile-topic-header:active { background: var(--bg2); }
+      .mobile-topic-name {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 0.8rem; font-weight: 700;
+        color: var(--section-text);
+      }
+      .mobile-topic-arrow {
+        font-size: 0.7rem; color: var(--text-faint);
+        transition: transform .2s; flex-shrink: 0;
+      }
+      .mobile-topic.open .mobile-topic-arrow { transform: rotate(180deg); }
+      .mobile-topic-body { display: none; }
+      .mobile-topic.open .mobile-topic-body { display: block; }
+      .mobile-position {
+        padding: 13px 16px;
+        border-top: 1px solid var(--divider);
+      }
+      .mobile-position:first-child { border-top: none; }
+      .mobile-pos-title {
+        font-size: 0.82rem; font-weight: 600;
+        color: var(--text); margin-bottom: 5px; line-height: 1.35;
+      }
+      .mobile-pos-summary {
+        font-size: 0.76rem; color: var(--text-muted); line-height: 1.55;
+      }
+      .mobile-pos-summary ul,
+      .mobile-pos-summary ol { padding-left: 1.2em; }
+      .mobile-pos-citations {
+        display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px;
+      }
+    }
+
+    /* Hide mobile view on desktop */
+    .mobile-view { display: none; }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DC6YECNX"></script>
   <script>
@@ -521,6 +657,7 @@ function showCoalition() { window.location.href = 'coalition.html'; }
 function render() {
   renderSelectorBar();
   renderTable();
+  renderMobile();
 }
 
 /* ── SELECTOR BAR ── */
@@ -559,7 +696,8 @@ function toggleTopic(tid) {
   const scrollTop  = outer ? outer.scrollTop : 0;
   const scrollLeft = outer ? outer.scrollLeft : 0;
   const atBottom   = outer ? (outer.scrollTop + outer.clientHeight >= outer.scrollHeight - 10) : false;
-  render();
+  renderSelectorBar();
+  renderTable();
   requestAnimationFrame(() => requestAnimationFrame(() => {
     const newOuter = document.querySelector('.outer');
     if (!newOuter) return;
@@ -691,6 +829,131 @@ function renderTable() {
     cards.forEach(c => { c.style.height = 'auto'; if (c.offsetHeight > maxH) maxH = c.offsetHeight; });
     cards.forEach(c => { c.style.height = maxH + 'px'; });
   });
+}
+function renderMobile() {
+  const existing = document.getElementById('mobileView');
+  if (existing) existing.remove();
+
+  if (!DATA) return;
+
+  const parties = DATA.parties;
+  if (parties.length === 0) return;
+
+  // On mobile, show ALL topics regardless of selectedTopics
+  const allTopics = DATA.topics;
+
+  const view = document.createElement('div');
+  view.className = 'mobile-view';
+  view.id = 'mobileView';
+
+  // Tab bar
+  const tabBar = document.createElement('div');
+  tabBar.className = 'mobile-tabs';
+  parties.forEach((p, i) => {
+    const tab = document.createElement('button');
+    tab.className = 'mobile-tab' + (i === 0 ? ' active' : '');
+    tab.innerHTML = `<span class="mobile-tab-dot" style="background:${p.color}"></span>${p.name}`;
+    tab.addEventListener('click', () => {
+      // Find currently open topic index before switching
+      const currentCard = view.querySelector('.mobile-card[style*="block"]');
+      let openTopicIndex = 0;
+      if (currentCard) {
+        const openTopic = currentCard.querySelector('.mobile-topic.open');
+        if (openTopic) openTopicIndex = parseInt(openTopic.dataset.topicIndex);
+      }
+
+      tabBar.querySelectorAll('.mobile-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      view.querySelectorAll('.mobile-card').forEach((c, j) => {
+        c.style.display = j === i ? 'block' : 'none';
+        if (j === i) {
+          // Apply same open topic to new card
+          c.querySelectorAll('.mobile-topic.open').forEach(t => t.classList.remove('open'));
+          const matchingTopic = c.querySelector(`.mobile-topic[data-topic-index="${openTopicIndex}"]`);
+          if (matchingTopic) matchingTopic.classList.add('open');
+        }
+      });
+    });
+    tabBar.appendChild(tab);
+  });
+  view.appendChild(tabBar);
+
+  // Cards — one per party
+  parties.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'mobile-card';
+    card.style.display = i === 0 ? 'block' : 'none';
+
+    // Party header
+    let html = `<div class="mobile-party-head" style="--pc:${p.color}; border-top-color:${p.color}">
+      <div class="mobile-party-name">
+        <span class="phc-dot" style="background:${p.color}"></span>
+        ${p.name}
+      </div>
+      <div class="mobile-party-leader">${p.leader}</div>
+      <span class="mobile-party-bloc" style="background:${blocColor(p.bloc)}">${p.bloc}</span>
+      ${p.topline ? `<div class="mobile-party-topline">${p.topline}</div>` : ''}
+      ${p.website ? `<a class="mobile-party-website" href="${p.website}" target="_blank" rel="noopener">Official website ↗</a>` : ''}
+    </div>`;
+
+    // Topic accordions — all topics, accordion closes others when one opens
+    allTopics.forEach((topic, topicIndex) => {
+      const positions = p.positions.filter(pos => pos.topics.includes(topic.id));
+      const count = positions.length;
+
+      const positionsHTML = count > 0 ? positions.map(pos => {
+        const sources = Array.isArray(pos.source) ? pos.source : (pos.source ? [pos.source] : []);
+        const citations = sources.map((src, si) => {
+          const label = sources.length === 1 ? 'Source' : `Source ${si + 1}`;
+          if (src && src !== 'add')
+            return `<a class="pos-citation" href="${src}" target="_blank" rel="noopener">${label}</a>`;
+          return `<span class="pos-citation no-link">${label}</span>`;
+        }).join('');
+        return `<div class="mobile-position">
+          <div class="mobile-pos-title">${pos.title}</div>
+          <div class="mobile-pos-summary">${pos.summary}</div>
+          ${citations ? `<div class="mobile-pos-citations">${citations}</div>` : ''}
+        </div>`;
+      }).join('') : `<div class="mobile-position" style="color:var(--text-faint);font-style:italic;font-size:0.78rem;">No positions recorded for this topic.</div>`;
+
+      html += `<div class="mobile-topic${topicIndex === 0 ? ' open' : ''}" data-party="${p.id}" data-topic-index="${topicIndex}">
+        <div class="mobile-topic-header" onclick="mobileToggleTopic(this)">
+          <span class="mobile-topic-name">${topic.label}</span>
+          <span style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+            <span style="font-size:0.65rem;font-weight:600;color:var(--text-faint);background:var(--bg2);padding:2px 7px;border-radius:20px;">${count}</span>
+            <span class="mobile-topic-arrow">▼</span>
+          </span>
+        </div>
+        <div class="mobile-topic-body">${positionsHTML}</div>
+      </div>`;
+    });
+
+    card.innerHTML = html;
+    view.appendChild(card);
+  });
+
+  document.getElementById('mainArea').appendChild(view);
+}
+
+function mobileToggleTopic(headerEl) {
+  const topic = headerEl.parentElement;
+  const card = topic.closest('.mobile-card');
+  const isOpen = topic.classList.contains('open');
+
+  // Close all topics in this card
+  card.querySelectorAll('.mobile-topic.open').forEach(t => t.classList.remove('open'));
+
+  // If it wasn't already open, open it — otherwise keep first topic open
+  if (!isOpen) {
+    topic.classList.add('open');
+  } else {
+    // Don't allow closing the last open one — reopen it
+    topic.classList.add('open');
+  }
+
+  setTimeout(() => {
+    headerEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 150);
 }
 
 function party(id) { return DATA.parties.find(p => p.id === id); }
