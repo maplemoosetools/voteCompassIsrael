@@ -773,7 +773,7 @@
           "title": "Renewables and the Energy Grid",
           "summary": "Use the untapped renewable energy. Establish agro-voltaic generating failities.",
           "topics": [
-            "environement",
+            "environment",
             "economy"
           ],
           "source": "https://yasharwitheisenkot.com/principles/north-reconstruction-and-prosperity/"
@@ -895,7 +895,7 @@
           "topics": [
             "housing",
             "aliyah",
-            "judicial"
+            "judiciary"
           ],
           "source": "https://yasharwitheisenkot.com/principles/housing/"
         },
@@ -1034,7 +1034,7 @@
           "topics": [
             "_oct7",
             "healthcare",
-            "soldier"
+            "soldiers"
           ],
           "source": [
             "https://yasharwitheisenkot.com/en/",
@@ -5197,10 +5197,129 @@
       "positions": [
         {
           "id": "otzyehud_1",
-          "title": "No Platform Published",
-          "summary": "No updated platform has been published",
+          "title": "Voluntary Migration for Palestinians",
+          "summary": "Encourage Palestinians to migrate from Gaza, Judea, and Samaria to other countries. Provide economic assistance and an absorption program.<br>Establish a government ministry responsible for making it a reality, with a minister, budget, and international relationships.",
           "topics": [
-          ]
+            "palestinians",
+            "war_peace",
+            "government"
+          ],
+          "source": "[https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים/, https://710.ozma-yeudit.co.il/#trigger-intro]"
+        },
+        {
+          "id": "otzyehud_2",
+          "title": "Abandon Containment",
+          "summary": "Abandon the idea of containment for dealing with Palestinian terrorism. Disarm the Palestinian Authority and arrest senior supporters of terrorism",
+          "topics": [
+            "palestinians",
+            "war_peace"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_3",
+          "title": "Change live fire rules",
+          "summary": "Change the rules of live fire, and back up soldiers who shoot.",
+          "topics": [
+            "soldiers",
+            "internal_security"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_4",
+          "title": "Soldier compensation",
+          "summary": "Increase wages for soldiers. Give free land to combat soldiers.",
+          "topics": [
+            "soldiers",
+            "housing"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_5",
+          "title": "IDF Ethics",
+          "summary": "Change the ethical framework of the IDF Ruach Tzahal",
+          "topics": [
+            "security"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_6",
+          "title": "Expand elite units",
+          "summary": "Expand elite units in the IDF like 8200 to the entire population.",
+          "topics": [
+            "security"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_7",
+          "title": "Fire the Attorney General",
+          "summary": "Immediately fire the Attorney General upon the formation of the next government.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_8",
+          "title": "Supreme Court",
+          "summary": "Supreme Court judges will be appointed through a hearing of the Knesset's Constitution Committee, with approval fo 2/3rds of the committee.<br>The Court's powers will be redefined, and some matters will be made non-judicial.",
+          "topics": [
+            "judiciary"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_9",
+          "title": "Judge Selection",
+          "summary": "The 'Judicial Candidate Screening Course' (a week long assessment run by the court administration to see if lawyers will make good judges) will be cancelled.",
+          "topics": [
+            "judiciary"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_10",
+          "title": "Increase punishments",
+          "summary": "Increase punishments for criminals and terrorists, to act as a deterrence.",
+          "topics": [
+            "judiciary",
+            "internal_security"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_11",
+          "title": "State Attorney Independence on Investigations",
+          "summary": "Allow the State Attorney to open investigations into politically sensitive things like incitement, rebellion, and calls for disobedience without needing approval from the Attorney General.",
+          "topics": [
+            "judiciary",
+            "government"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/בן-גביר-לביטחון-גוטליב-למשפטים"
+        },
+        {
+          "id": "otzyehud_12",
+          "title": "End the division of Judea and Samaria",
+          "summary": "End the separation of Judea and Samaria into areas A, B, and C. The entire region will be like Area C, and settlement will be promoted.",
+          "topics": [
+            "palestinians",
+            "war_peace",
+            "housing"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/השר-בן-גביר-מסמן-יעד-״a-ו-b-יהיו-בדיוק-כמו-c/"
+        },
+        {
+          "id": "otzyehud_13",
+          "title": "Druze Israelis",
+          "summary": "Strengthen the connection between the Jewish community and the Druze community",
+          "topics": [
+            "arab_citizens"
+          ],
+          "source": "https://cdn.ozma-yeudit.co.il/עוצמה-יהודית-הוקם-מטה-המגזר-הדרוזי-במפ"
         }
       ]
     }
