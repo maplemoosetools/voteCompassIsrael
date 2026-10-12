@@ -73,8 +73,13 @@
     /* ── PAGE LAYOUT ── */
     .page-wrap {
       padding: 28px 24px 64px;
-      display: flex; gap: 28px; align-items: flex-start;
     }
+    .page-header-row {
+      display: flex; gap: 28px; align-items: flex-start;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .page-header-text { flex: 1; min-width: 280px; }
 
     .matrix-side { flex: 1; min-width: 0; }
 
@@ -218,42 +223,42 @@
 
     /* ── LEGEND SIDEBAR ── */
     .legend-side {
-      width: 200px;
       flex-shrink: 0;
-      position: sticky;
-      top: calc(var(--header-h) + 28px);
     }
     .legend-card {
       background: var(--card);
       border: 1px solid var(--divider);
       border-radius: 8px;
       overflow: hidden;
+      display: flex;
+      align-items: stretch;
     }
     .legend-head {
       background: var(--navy);
       color: #fff;
       font-family: 'Libre Baskerville', serif;
       font-size: 0.85rem; font-weight: 700;
-      padding: 10px 14px;
-      text-align: center;
+      padding: 10px 16px;
+      display: flex; align-items: center;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
     .legend-item {
-      display: flex; align-items: flex-start; gap: 10px;
+      display: flex; align-items: center; gap: 6px;
       padding: 10px 14px;
-      border-bottom: 1px solid var(--divider);
+      border-left: 1px solid var(--divider);
+      flex-shrink: 0;
     }
-    .legend-item:last-child { border-bottom: none; }
     .legend-bar {
-      width: 4px; min-height: 32px; border-radius: 2px;
-      flex-shrink: 0; margin-top: 2px;
+      width: 4px; height: 20px; border-radius: 2px; flex-shrink: 0;
     }
-    .legend-text { flex: 1; }
+    .legend-text { }
     .legend-label {
-      font-size: 0.75rem; font-weight: 700;
-      line-height: 1.3; margin-bottom: 2px;
+      font-size: 0.72rem; font-weight: 700;
+      line-height: 1.2; margin-bottom: 1px; white-space: nowrap;
     }
     .legend-desc {
-      font-size: 0.68rem; color: var(--text-muted); line-height: 1.4;
+      font-size: 0.64rem; color: var(--text-muted); line-height: 1.3; white-space: nowrap;
     }
 
     .disclaimer {
@@ -278,10 +283,54 @@
 </header>
 
 <div class="page-wrap">
-  <div class="matrix-side">
-    <h1 class="page-title">Will these parties work together?</h1>
-    <p class="page-sub">Each cell shows whether the <strong>row party</strong> has stated willingness to sit in a government with the <strong>column party</strong>. This reflects stated positions, not predictions.</p>
+  <div class="page-header-row">
+    <div class="page-header-text">
+      <h1 class="page-title">Will these parties work together?</h1>
+      <p class="page-sub">Each cell shows whether the <strong>row party</strong> has stated willingness to sit in a government with the <strong>column party</strong>. This reflects stated positions, not predictions.</p>
+    </div>
+    <div class="legend-side">
+      <div class="legend-card">
+        <div class="legend-head">Key</div>
+        <div class="legend-item">
+          <div class="legend-bar" style="background:var(--c-yes)"></div>
+          <div class="legend-text">
+            <div class="legend-label" style="color:var(--c-yes)">Yes</div>
+            <div class="legend-desc">Would join a coalition government</div>
+          </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-bar" style="background:var(--c-no)"></div>
+          <div class="legend-text">
+            <div class="legend-label" style="color:var(--c-no)">No</div>
+            <div class="legend-desc">Has ruled out sitting together</div>
+          </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-bar" style="background:var(--c-support)"></div>
+          <div class="legend-text">
+            <div class="legend-label" style="color:var(--c-support)">Support from outside</div>
+            <div class="legend-desc">Would support but not join</div>
+          </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-bar" style="background:var(--c-cond)"></div>
+          <div class="legend-text">
+            <div class="legend-label" style="color:var(--c-cond)">With conditions</div>
+            <div class="legend-desc">Would join only under specific conditions</div>
+          </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-bar" style="background:var(--c-unknown)"></div>
+          <div class="legend-text">
+            <div class="legend-label" style="color:var(--c-unknown)">Not stated</div>
+            <div class="legend-desc">No public position recorded</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="matrix-side">
     <div class="matrix-scroll">
       <div id="matrixContainer">Loading…</div>
     </div>
@@ -289,47 +338,7 @@
     <p class="disclaimer">Positions reflect public statements  Coalition dynamics change frequently — always consult primary sources.</p>
   </div>
 
-  <!-- LEGEND -->
-  <div class="legend-side">
-    <div class="legend-card">
-      <div class="legend-head">Key</div>
-      <div class="legend-item">
-        <div class="legend-bar" style="background:var(--c-yes)"></div>
-        <div class="legend-text">
-          <div class="legend-label" style="color:var(--c-yes)">Yes</div>
-          <div class="legend-desc">Would join a coalition government</div>
-        </div>
-      </div>
-      <div class="legend-item">
-        <div class="legend-bar" style="background:var(--c-no)"></div>
-        <div class="legend-text">
-          <div class="legend-label" style="color:var(--c-no)">No</div>
-          <div class="legend-desc">Has ruled out sitting together</div>
-        </div>
-      </div>
-      <div class="legend-item">
-        <div class="legend-bar" style="background:var(--c-support)"></div>
-        <div class="legend-text">
-          <div class="legend-label" style="color:var(--c-support)">Support from outside</div>
-          <div class="legend-desc">Would support the government but not join it</div>
-        </div>
-      </div>
-      <div class="legend-item">
-        <div class="legend-bar" style="background:var(--c-cond)"></div>
-        <div class="legend-text">
-          <div class="legend-label" style="color:var(--c-cond)">With conditions</div>
-          <div class="legend-desc">Would join only under specific conditions. Some of those conditions may be impossible</div>
-        </div>
-      </div>
-      <div class="legend-item">
-        <div class="legend-bar" style="background:var(--c-unknown)"></div>
-        <div class="legend-text">
-          <div class="legend-label" style="color:var(--c-unknown)">Not stated</div>
-          <div class="legend-desc">No public position found</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 <script>

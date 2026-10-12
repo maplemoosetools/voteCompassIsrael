@@ -130,7 +130,7 @@
   "parties": [
     {
       "id": "yashar",
-      "name": "Yashar with Gadi Eisenkot",
+      "name": "Yashar!",
       "color": "#64B9E1",
       "leader": "Gadi Eisenkot",
       "bloc": "Opposition - Center",
@@ -241,7 +241,7 @@
         {
           "id": "yashar_11",
           "title": "Establish a State Commission of Inquiry",
-          "summary": "Establish a State Commission of Inquiry to investigate October 7th, the decade before it, and the conduct of the war. <br><br>\nFocus on: <br>\n<ul><br>\n<li>Policy and descision making</li><br>\n<li>Preparation and readiness</li><br>\n<li>How the government and army actually functioned on October 7th</li><br>\n<li>Descision making and conduct of the political and military leadership during the war</li><br>\n<li>Information and communications</li><br>\n<li>Were previous reccommendations actually implemented</li><br>\n</ul>",
+          "summary": "Establish a State Commission of Inquiry to investigate October 7th, the decade before it, and the conduct of the war. <br><br>\nFocus on: <br>\n<ul><br><li>Policy and descision making</li><br><li>Preparation and readiness</li><br><li>How the government and army actually functioned on October 7th</li><br><li>Descision making and conduct of the political and military leadership during the war</li><br><li>Information and communications</li><br><li>Were previous reccommendations actually implemented</li><br>\n</ul>",
           "topics": [
             "_oct7"
           ],
@@ -407,7 +407,7 @@
         {
           "id": "yashar_26",
           "title": "Benefits for reservists",
-          "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.<br>\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.<br>\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:<br>\n<ul><li>Direct benefits</li><br>\n<li>Compensation for employers</li><br>\n<li>Advanced degree funding</li><br>\n<li>Family funding: childcare, babysitting, after school classes, travel.</li><br>\n<li>Housing benefits</li><br>\n</ul>",
+          "summary": "Every servicemember will be paid their entitlements automatically, without needing to apply or jump through bureaucratic loops.<br>\n<br>The government will invest 20 billion shekels into reservists over 3 years, for the reservists, their families, and their businesses.<br>\n<br>During reserve service, soldiers will recieve benefits worth, on average, hundereds of thousands of shekels:<br>\n<ul><li>Direct benefits</li><br><li>Compensation for employers</li><br><li>Advanced degree funding</li><br><li>Family funding: childcare, babysitting, after school classes, travel.</li><br><li>Housing benefits</li><br>\n</ul>",
           "topics": [
             "welfare",
             "soldiers",
@@ -439,7 +439,7 @@
         {
           "id": "yashar_29",
           "title": "Draft dodging",
-          "summary": "Draft dodgers will be criminally prosecuted, and will be denied civil and economic benefits:<br>\n<ul><li>Participation in state tenders</li><br>\n<li>Scholarships</li><br>\n<li>Housing benefits/Arnona discounts</li><br>\n<li>Housing loans and rental assistance</li><br>\n<li>Long term rental eligibility</li><br>\n<li>Land allocations</li><br>\n<li>National Insurance/Bituach Leumi</li><br>\n<li>Public Transit discounts</li><br>\n<li>Parental benefits</li><br>\n<li>Skilled trade training vouchers</li><br>\n<li>Business funding</li><br>\n<li>Tax discounts</li><br>\n<li>Drivers License</li><br>\n<li>Right to leave the country</li><br>\n</ul>",
+          "summary": "Draft dodgers will be criminally prosecuted, and will be denied civil and economic benefits:<br>\n<ul><li>Participation in state tenders</li><br><li>Scholarships</li><br><li>Housing benefits/Arnona discounts</li><br><li>Housing loans and rental assistance</li><br><li>Long term rental eligibility</li><br><li>Land allocations</li><br><li>National Insurance/Bituach Leumi</li><br><li>Public Transit discounts</li><br><li>Parental benefits</li><br><li>Skilled trade training vouchers</li><br><li>Business funding</li><br><li>Tax discounts</li><br><li>Drivers License</li><br><li>Right to leave the country</li><br>\n</ul>",
           "topics": [
             "draft",
             "welfare"
@@ -548,7 +548,7 @@
         {
           "id": "yashar_40",
           "title": "Improve the Aliyah landing system",
-          "summary": "Make a one-stop-shop to address and improve the aliyah process covering:<br>\n<ul><br>\n<li>Learning hebrew</li><br>\n<li>Getting hired in your profession.</li><br>\n<li>Getting skills and licenses recognized</li><br>\n<li>Enrolling in schools</li><br>\n<li>Guidence and placement in the army or national service</li><br>\n<li>Incentives for moving to National Priority Areas</li><br>\n</ul><br>\nMake it so that Olim can start these processes before they land, and start other processes like opening a bank account.",
+          "summary": "Make a one-stop-shop to address and improve the aliyah process covering:<br>\n<ul><br><li>Learning hebrew</li><br><li>Getting hired in your profession.</li><br><li>Getting skills and licenses recognized</li><br><li>Enrolling in schools</li><br><li>Guidence and placement in the army or national service</li><br><li>Incentives for moving to National Priority Areas</li><br>\n</ul><br>\nMake it so that Olim can start these processes before they land, and start other processes like opening a bank account.",
           "topics": [
             "aliyah",
             "workers"
@@ -1378,7 +1378,7 @@
         {
           "id": "beyahad_25",
           "title": "Encouraging living in the North",
-          "summary": "Encourage return and new settlement though economic benefits:<ul><br>\n<li> No income tax up to 1 million shekels (for 4 years)</li><br>\n<li>Housing loan of 400,00 shekels for academics and professionals after 7 years of residence.</li><br>\n<li> Arnona discounts</li><br>\n</ul>",
+          "summary": "Encourage return and new settlement though economic benefits:<ul><br><li> No income tax up to 1 million shekels (for 4 years)</li><br><li>Housing loan of 400,00 shekels for academics and professionals after 7 years of residence.</li><br><li> Arnona discounts</li><br>\n</ul>",
           "topics": [
             "periphery",
             "cost_of_living",
@@ -1495,7 +1495,7 @@
         {
           "id": "beyahad_34",
           "title": "Improve Miluimnik Benefits",
-          "summary": "Active Miluimnikim will get: <ul><br>\n<li>1 million shekels towards their first home </li><br>\n<li> Priority on land tenders, with the target of every reservist getting a tender within 4 years of applying</li><br>\n<li>Highly subsizided daycare, free after-school programs, free summer school</li><br>\n<li>50% discount on all state service fees, including utilities, taxes, and car tests</li><br>\n</ul><br>\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
+          "summary": "Active Miluimnikim will get: <ul><br><li>1 million shekels towards their first home </li><br><li> Priority on land tenders, with the target of every reservist getting a tender within 4 years of applying</li><br><li>Highly subsizided daycare, free after-school programs, free summer school</li><br><li>50% discount on all state service fees, including utilities, taxes, and car tests</li><br>\n</ul><br>\n*Defined as reservists who served 20 days in reserves over 3 years, or 15 days in combat rolls",
           "topics": [
             "soldiers",
             "draft",
@@ -1511,7 +1511,7 @@
         {
           "id": "beyahad_35",
           "title": "Improve Veterans Benefits",
-          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:<br>\n<ul><br>\n<li>Priority in the housing lottery</li><br>\n<li>Fully funded bachelor's degree (combat veterans will also get a Masters degree)</li><br>\n<li>Free bus/train pass for 3 years (combat veterans will get for 5 years)</li><br>\n<li>Fully funded after-school and summer schools</li><br>\n<li>Daycare funding of 1000 NIS/month</li><br>\n</ul>",
+          "summary": "Veterans (including those who did National Service/Sheirut Leumi) will get:<br>\n<ul><br><li>Priority in the housing lottery</li><br><li>Fully funded bachelor's degree (combat veterans will also get a Masters degree)</li><br><li>Free bus/train pass for 3 years (combat veterans will get for 5 years)</li><br><li>Fully funded after-school and summer schools</li><br><li>Daycare funding of 1000 NIS/month</li><br>\n</ul>",
           "topics": [
             "soldiers",
             "draft",
@@ -1788,7 +1788,7 @@
         {
           "id": "beyahad_62",
           "title": "Make Long Term Leases a real alternative to ownership",
-          "summary": "<ul><br>\n<li>Build 100,000 new long term rental apartments within 10 years, for young families and reservists</li><br>\n<li>Of that 100,000, 40% will be subsidized at 30% below market rate.</li><br>\n<li>Tax benefits for landlords who offer long term (at least 5 year) leases</li><br>\n<li></li><br>\n</ul>",
+          "summary": "<ul><br><li>Build 100,000 new long term rental apartments within 10 years, for young families and reservists</li><br><li>Of that 100,000, 40% will be subsidized at 30% below market rate.</li><br><li>Tax benefits for landlords who offer long term (at least 5 year) leases</li><br><li></li><br>\n</ul>",
           "topics": [
             "housing"
           ],
@@ -1797,7 +1797,7 @@
         {
           "id": "beyahad_63",
           "title": "Build more housing",
-          "summary": "<ul><br>\n<li>Cut the time for urban renewal (Pinui Binui) from 10 years to 5</li><br>\n<li>Transfer planning powers to local governments, to make them faster.</li><br>\n<li>Expand the number of cinstruction workers brought in from abroad, with flexible quotas and 7 year visas</li><br>\n<li>Increase the number of civil engineers by expanding engineering programs at colleges.</li><br>\n</ul>",
+          "summary": "<ul><br><li>Cut the time for urban renewal (Pinui Binui) from 10 years to 5</li><br><li>Transfer planning powers to local governments, to make them faster.</li><br><li>Expand the number of cinstruction workers brought in from abroad, with flexible quotas and 7 year visas</li><br><li>Increase the number of civil engineers by expanding engineering programs at colleges.</li><br>\n</ul>",
           "topics": [
             "housing"
           ],
@@ -1829,7 +1829,7 @@
         {
           "id": "beyahad_66",
           "title": "Equality for the LGBT Community",
-          "summary": "Enact Basic Law: Equality. <br> <br>\nEnact Sagi Laws for Equality, a pack of laws in memory of a Sagi Golan who fell on Oct 7th:<br>\n<ul><br>\n<li>Marriage equality with Civil Partnership </li><br>\n<li>Allowing parental registry for any spouse of a biological parent.</li><br>\n<li>Add gender identity and sexual orientation to protected characteristics under discrimination laws</li><br>\n<li>Prohibit discrimination in housing (rentals and sales)</li><br>\n<li>Ban conversion therapy</li><br>\n<li>Recognize and compensate victims of hate crimes</li><br>\n<li>Make incitement against LQBTQ communities a criminal offense</li><br>\n<li>Allocate budget to LGBT community institutions though law. Expand support for those who have been displaced form their homes, and provide transitional housing, shelter, and mental health support.</li><br>\n<li>Regulate the use of sperm of murdered men, and allow male partners to be able to manage the process and be recognized as the father of the child.</li><br>\n</ul>",
+          "summary": "Enact Basic Law: Equality. <br> <br>\nEnact Sagi Laws for Equality, a pack of laws in memory of a Sagi Golan who fell on Oct 7th:<br>\n<ul><br><li>Marriage equality with Civil Partnership </li><br><li>Allowing parental registry for any spouse of a biological parent.</li><br><li>Add gender identity and sexual orientation to protected characteristics under discrimination laws</li><br><li>Prohibit discrimination in housing (rentals and sales)</li><br><li>Ban conversion therapy</li><br><li>Recognize and compensate victims of hate crimes</li><br><li>Make incitement against LQBTQ communities a criminal offense</li><br><li>Allocate budget to LGBT community institutions though law. Expand support for those who have been displaced form their homes, and provide transitional housing, shelter, and mental health support.</li><br><li>Regulate the use of sperm of murdered men, and allow male partners to be able to manage the process and be recognized as the father of the child.</li><br>\n</ul>",
           "topics": [
             "religion_state",
             "liberal_rights"
@@ -2422,7 +2422,7 @@
         {
           "id": "the_democrats_27",
           "title": "Address the garbage crisis",
-          "summary": "Reform the waste system by:<br>\n<ul><li>Establishing a national waste authority</li><br>\n<li>Encouraging and investing in recycling and waste reduction to reduce the amount of trash in landfills</li><br>\n<li>Making producers responsible for end of life disposal, and for reducing single use packaging materials</li><br>\n</ul><br>\n<br><br>\nEncourage local food production and create a natifonal food security plan, and then use that to reduce food waste.",
+          "summary": "Reform the waste system by:<br>\n<ul><li>Establishing a national waste authority</li><br><li>Encouraging and investing in recycling and waste reduction to reduce the amount of trash in landfills</li><br><li>Making producers responsible for end of life disposal, and for reducing single use packaging materials</li><br>\n</ul><br>\n<br><br>\nEncourage local food production and create a natifonal food security plan, and then use that to reduce food waste.",
           "topics": [
             "environment"
           ],
@@ -2555,7 +2555,7 @@
         {
           "id": "the_democrats_39",
           "title": "Crime in the Arab Community: Strengthening Policing",
-          "summary": "Strengthen the police forces to be able to conduct their operations in the Arab areas, and strengthen the tools of justice.<br>\n<ul><li>Improve detective and investigative skills in Arabic</li><br>\n<li>Improve relationships and cooperation between police and city leaders</li><br>\n<li>Incentivize results by promoting officers who lead to a decrease in crime</li><br>\n<li>Establish specialized courts for serious crimes</li><br>\n<li>Pass laws that will allow for increased penalties, using biometric data to find criminals, and fight money laundering</li></ul>",
+          "summary": "Strengthen the police forces to be able to conduct their operations in the Arab areas, and strengthen the tools of justice.<br>\n<ul><li>Improve detective and investigative skills in Arabic</li><br><li>Improve relationships and cooperation between police and city leaders</li><br><li>Incentivize results by promoting officers who lead to a decrease in crime</li><br><li>Establish specialized courts for serious crimes</li><br><li>Pass laws that will allow for increased penalties, using biometric data to find criminals, and fight money laundering</li></ul>",
           "topics": [
             "arab_citizens",
             "internal_security"
@@ -2608,7 +2608,7 @@
         {
           "id": "the_democrats_44",
           "title": "Civilian firearms",
-          "summary": "Civilian firearms are viewed as a necessity for security, and must be regulated appropriately:<br>\n<ul><li>Local defense organizations will be authorized by the government on a national level, with formally granted powers, resources, and a professional operating model - in a way that implements lessons learned from Oct 7th. <br>The network will be armed and also regulated.</li><br>\n<li>Firearm licenses will be regulated more closely, to identify owners that might be dangerous to their community, and to ensure that those who are licensed are properly trained and are responsible.</li><br>\n</ul>",
+          "summary": "Civilian firearms are viewed as a necessity for security, and must be regulated appropriately:<br>\n<ul><li>Local defense organizations will be authorized by the government on a national level, with formally granted powers, resources, and a professional operating model - in a way that implements lessons learned from Oct 7th. <br>The network will be armed and also regulated.</li><br><li>Firearm licenses will be regulated more closely, to identify owners that might be dangerous to their community, and to ensure that those who are licensed are properly trained and are responsible.</li><br>\n</ul>",
           "topics": [
             "liberal_rights",
             "internal_security"
@@ -2787,7 +2787,7 @@
         {
           "id": "the_democrats_61",
           "title": "Regulate Channel 14",
-          "summary": "End excemptions that benefit Channel 14:<br>\n<ul><br>\n<li>Investing in original programming</li><br>\n<li>Editorial independence of the newsroom</li><br>\n<li>Permission for a major shareholder to also own a radio channel (Radio Kol Chai)</li><br>\n</ul>",
+          "summary": "End excemptions that benefit Channel 14:<br>\n<ul><br><li>Investing in original programming</li><br><li>Editorial independence of the newsroom</li><br><li>Permission for a major shareholder to also own a radio channel (Radio Kol Chai)</li><br>\n</ul>",
           "topics": [
             "media"
           ],
@@ -2814,7 +2814,7 @@
         {
           "id": "the_democrats_64",
           "title": "Benefits for soldiers and changes to the system",
-          "summary": "<ul><br>\n<li>Fully funded bachelors degree (also for those who complete national service. Combat soldiers get more)</li><br>\n<li>1,000 NIS for each day of reserve duty, on top of salary replacements that they currently get.</li><br>\n<li>More control over Miluim scheduling</li><br>\n<li>Self employed reservists will get special benefits, loans, and grants.</li><br>\n</ul>",
+          "summary": "<ul><br><li>Fully funded bachelors degree (also for those who complete national service. Combat soldiers get more)</li><br><li>1,000 NIS for each day of reserve duty, on top of salary replacements that they currently get.</li><br><li>More control over Miluim scheduling</li><br><li>Self employed reservists will get special benefits, loans, and grants.</li><br>\n</ul>",
           "topics": [
             "soldiers"
           ],
