@@ -1285,13 +1285,16 @@
         {
           "id": "beyahad_17",
           "title": "Invest in Higher Education",
-          "summary": "Strengthen Academia to deliver economic growth. Make AI infrastructure accessible to industry and researchers.",
+          "summary": "Strengthen Academia to deliver economic growth. Make AI infrastructure accessible to industry and researchers.<br>Establish a national lab for adaption of AI. Invest into AI human expertise.",
           "topics": [
             "education",
             "economy",
             "AI"
           ],
-          "source": "https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/"
+          "source": [
+            "https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/",
+            "https://be-yahad.org.il/en/plans/together-well-lead-the-world-in-ai"]
+
         },
         {
           "id": "beyahad_18",
@@ -1363,7 +1366,7 @@
         {
           "id": "beyahad_24",
           "title": "Connecting the North with the rest of Israel",
-          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:<ul><li>Build a protected emergency room</li><li>Build public transit access</li><li>Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion</li></ul>Overall increase the quality of infrastructure, housing, transit, tourism, education, ect in the north near the borders.",
+          "summary": "Improve transit services, healthcare services, and transit access in Kiryat Shemona:<ul><li>Build a protected emergency room</li><li>Build public transit access</li><li>Provide subsidized flights at 99 shekels to Tel Aviv Ben Gurion</li><li>Build a rail connection</li></ul>Overall increase the quality of infrastructure, housing, transit, tourism, education, ect in the north near the borders.",
           "topics": [
             "periphery",
             "cost_of_living",
@@ -1463,20 +1466,20 @@
           ],
           "source": [
             "https://be-yahad.org.il/en/plans/together-well-repair-relations-between-religion-and-state-en/",
-            "https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/"
+            "https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/",
+            "http://be-yahad.org.il/plans/transport/"
           ]
         },
         {
           "id": "beyahad_32",
-          "title": "Improve Private and Public Transit",
-          "summary": "Invest into public transit, increase the amount of high speed rail, and improve bus reliability. Create a national plan to reduce congestion.<br><br>\nEnact a Metropolitan Transportation Authorities Law with the goal of making public transit more efficient.",
+          "title": "Improve Public Transit",
+          "summary": "Create a rapid bus network. Add 200km of bus lanes, and give buses priority though the traffic lights. Give bus companies bonuses when they provide good service.<br>Increase the frequency of trains to 6 per hour between Jerusalem, Tel Aviv, Haifa, and Beersheva, and keep them running longer.<br>\nEnact a Metropolitan Transportation Authorities Law with the goal of making public transit more efficient.",
           "topics": [
             "transit"
           ],
           "source": [
             "https://be-yahad.org.il/en/plans/together-well-protect-our-environment-en/",
-            "https://x.com/yairlapid/status/2056645906309538005",
-            "https://www.instagram.com/p/DYhPo1qjA6I"
+            "http://be-yahad.org.il/plans/transport/"
           ]
         },
         {
@@ -1873,12 +1876,12 @@
         {
           "id": "beyahad_70",
           "title": "Invest in AI infrastructure",
-          "summary": "Build the national infrastructure needed for computing and AI, and make sure that critical technologies are inside our borders.",
+          "summary": "Build the national infrastructure needed for computing and AI, and make sure that critical technologies, like clouds, quantum, and energy infrastructure, are inside our borders.",
           "topics": [
             "economy",
             "AI"
           ],
-          "source": "https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/"
+          "source": ["https://be-yahad.org.il/en/plans/together-well-repair-hi-tech-en/","https://be-yahad.org.il/en/plans/together-well-lead-the-world-in-ai/"]
         },
         {
           "id": "beyahad_71",
@@ -2098,7 +2101,120 @@
             "economy"
           ],
           "source": "https://be-yahad.org.il/en/plans/well-fix-whats-broken-and-strengthen-tourism-in-israel-en/"
+        },
+        {
+          "id": "beyahad_92",
+          "title": "Move animal protection to Environment Ministry",
+          "summary": "Move the responsibilities for prevention of cruelty to animals from the Ministry of Agriculture to the Ministry of Environmental Protection, and create a new, independent agency to administer it.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-care-for-animals-en/"
+        },
+        {
+          "id": "beyahad_93",
+          "title": "Cats and Dogs",
+          "summary": "Require dog and cat owners to register their pets online, and pay fees. Owners of sterilized dogs will be exempt from fees. Wild dogs will be spayed/neutered. Breeding and selling dogs will be outlawed. \nFor cats, intensive spay/neuter campaigns will be run in cooperation with community cat feeders.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-care-for-animals-en/"
+        },
+        {
+          "id": "beyahad_94",
+          "title": "Farm and wild animals",
+          "summary": "Reduce the use of battery cages for chickens and transition the industry to pens. Reduce live animal imports by 50%. Replace culling wild animals with preventative measures.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-care-for-animals-en/"
+        },
+        {
+          "id": "beyahad_95",
+          "title": "End animal abuse and promote welfare",
+          "summary": "Increase the funding towards animal welfare, and centralize all the activities under one single body. Increase enforcement and fines as a revenue stream.\nIncrease penalties on animal abuse, and enforce the animal welfare law.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-care-for-animals-en/"
+        },
+        {
+          "id": "beyahad_96",
+          "title": "AI Research",
+          "summary": "Develop sovereign AI models for Israeli use and for the defense system. Use AI as a diplomatic tool.",
+          "topics": [
+            "AI",
+            "economy",
+            "international_relations"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-lead-the-world-in-ai/"
+        },
+        {
+          "id": "beyahad_97",
+          "title": "AI for government",
+          "summary": "Use AI to provide government services to citizens, with the government becoming a major AI customer.\nDevelop regulations that allow for rapid experimentation and testing while maintaining oversight and privacy protection.",
+          "topics": [
+            "AI",
+            "government"
+          ],
+          "source": "https://be-yahad.org.il/en/plans/together-well-lead-the-world-in-ai/"
+        },
+        {
+          "id": "beyahad_98",
+          "title": "Driving",
+          "summary": "Fight deaths from traffic accidents, and require safety systems. Invest in safer infrastructure. Educate on road safety.\nImplement smart traffic lights to make traffic flow better.",
+          "topics": [
+            "transit"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
+        },
+        {
+          "id": "beyahad_99",
+          "title": "Build metro systems",
+          "summary": "Accelerate the construction of metro systems in Gush Dan, Jerusalem, Beersheva, and Haifa.",
+          "topics": [
+            "transit"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
+        },
+        {
+          "id": "beyahad_100",
+          "title": "Bike Paths",
+          "summary": "Pave shaded cycling and walking paths.",
+          "topics": [
+            "transit"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
+        },
+        {
+          "id": "beyahad_101",
+          "title": "Transit fees",
+          "summary": "Reduce fees for public transit, moving away from the \"Justice in Transit\" program which created two tiers of payments.",
+          "topics": [
+            "transit"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
+        },
+        {
+          "id": "beyahad_102",
+          "title": "Air Travel",
+          "summary": "Increase competition in air travel, bringing more international airlines in. \nBuild a new international airport.",
+          "topics": [
+            "transit"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
+        },
+        {
+          "id": "beyahad_103",
+          "title": "International Rail",
+          "summary": "Build the IMEC - the India-Middle East-Europe Corridor that connects Saudi Arabia to Israel by rail and keeps Israel connected even in emergency situations.",
+          "topics": [
+            "transit",
+            "international_relations"
+          ],
+          "source": "http://be-yahad.org.il/plans/transport/"
         }
+
       ]
     },
     {
@@ -2978,7 +3094,7 @@
       "color": "#01B2AC",
       "leader": "Yousef Jabareen",
       "bloc": "Arab",
-      "website": "jointlist.org.il/en",
+      "website": "https://jointlist.org.il/en",
       "topline": "Fight for an equal state between Israelis and Arabs, by reducing crime, strengthening Arab resources and identity and socialising the economy.",
       "positions": [
         {
@@ -5192,7 +5308,7 @@
       "color": "#FF4500",
       "leader": "Itamar Ben Gvir",
       "bloc": "Government - Far Right",
-      "website": "ozma-yeudit.co.il",
+      "website": "https://ozma-yeudit.co.il",
       "topline": "Complete the land of Israel by annexing Judea and Samaria/West Bank. Strengthening Jewish identity in Education, and reforming the government to strengthen the Jewish character of Israel.",
       "positions": [
         {
@@ -5320,6 +5436,781 @@
             "arab_citizens"
           ],
           "source": "https://cdn.ozma-yeudit.co.il/עוצמה-יהודית-הוקם-מטה-המגזר-הדרוזי-במפ"
+        }
+      ]
+    },
+    {
+      "id": "reserv",
+      "name": "HaMiluimnikim-Economic",
+      "color": "#6D712E",
+      "leader": "Yoaz Hendel <br> Yaron Zelekha",
+      "bloc": "Unaligned - Center",
+      "website": "https://milu-kal.co.il",
+      "topline": "We deserve to live in a country where we can make ends meet, build a future, and know that responsibility is shared by everyone. To do this, we need to dismantle monopolies, lower the cost of living, and lead a draft for everyone – with real support for service members and their families.",
+      "positions": [
+        {
+          "id": "reserv_1",
+          "title": "Draft for all",
+          "summary": "Everyone must draft into the IDF or do national service, with a single recruitment authority deciding which track people go to based on the IDF's needs. \nNational service will cover internal security, search and rescue, health, education, welfare, agriculture, and other public systems.",
+          "topics": [
+            "draft",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.themiluimnikim.org.il/platform/#platform-base]"
+        },
+        {
+          "id": "reserv_2",
+          "title": "Draft in the Arab Sector",
+          "summary": "Civilian and national service tracks will be built specifically for the Arab sector.",
+          "topics": [
+            "draft",
+            "arab_citizens"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_3",
+          "title": "Eliminate tariffs and quotas",
+          "summary": "End tariffs on imports, particularly food and agricultural products, to allow for more competition and lower prices. Completely eliminate quotas which define how much of a product can be imported and who is allowed to import it.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_4",
+          "title": "Regulate importers",
+          "summary": "Make it illegal for a local producer, particularly a monopoly, to import and sell competing products. Prevent one company from controlling several sectors, or one importer having exclusive deals with several competing foreign manufacturers.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.hakalkalit.org/מצע-המפלגה-הכלכלית]"
+        },
+        {
+          "id": "reserv_5",
+          "title": "Enforce anti-trust laws",
+          "summary": "Increase enforcement against monopolies, cartels, production councils, and supply management. End the Milk Board, Egg Board, and Honey Board, while making a system to protect small producers against large monopolies.\nEnd the phenomenon of mergers, especially when large conglomerates buy small startups.\nReduce fees for class action lawsuits to allow for more active challenging of monopolies by the public.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.hakalkalit.org/מצע-המפלגה-הכלכלית]"
+        },
+        {
+          "id": "reserv_6",
+          "title": "Reduce VAT and Income Tax",
+          "summary": "Reduce VAT to 12% (currently 18%) and Income Tax. Set the maximum income tax (including Bituach Leumi and the health tax) to 40%, decreasing over 5 years from the current 50%.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.hakalkalit.org/מצע-המפלגה-הכלכלית]"
+        },
+        {
+          "id": "reserv_7",
+          "title": "Draft in the Haredi Sector",
+          "summary": "Special draft tracks will be designed for the Haredi sector which will combine service with study. Yeshivas will be built along the borders and confrontation lines to allow for Torah study with security missions. \nOutstanding scholars would get a deferral similar to outstanding athletes, with the same check ins and obligation to complete service later.",
+          "topics": [
+            "draft",
+            "haredi"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_8",
+          "title": "Draft as economic training",
+          "summary": "The draft will be used as a tool to give Haredi, Arab, and other youths high quality skills that will serve them in the workforce, strengthening the economy.",
+          "topics": [
+            "draft",
+            "haredi",
+            "arab_citizens",
+            "economy"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_9",
+          "title": "Benefits for those who serve",
+          "summary": "Those who serve, and especially those who serve in combat units and reserves, will be given priority on benefits from the government.\nIncluding:<ul><li>Daycare discounts and benefits</li><li>Mortgage and Arnona benefits</li><li>Income tax credits</li></ul>",
+          "topics": [
+            "soldiers",
+            "draft",
+            "haredi",
+            "cost_of_living"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_10",
+          "title": "Special benefits for reservists",
+          "summary": "<ul><li>Land allocations in national priority areas</li><li>Priority in recruitment for government jobs</li><li>Priority to win government tenders for reservist owned businesses</li><li>Government assistance programs</li><li>Financial compensation for employers of reservists who serve more than 15 days per year</li><li>Funding to support small reservist owned businesses</li><li>Rent and insurance support during and immediately surrounding call ups</li><li>Educational grants</li><li>Improved compensation for loss of income during service for self employed reservists</li></ul>",
+          "topics": [
+            "soldiers"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_11",
+          "title": "Sanctions on draft avoiders/refusers",
+          "summary": "Those who don't serve without a valid reason will have subsidies, funding, benefits, and job opportunities removed. This includes:\n<ul><li>Scholarships</li><li>Mortgage and Arnona benefits</li><li>Income tax credits</li><li>Welfare funding</li><li>Government backed loans</li><li>Discounted housing</li><li>Public/Civil Service jobs (including mashgiach or dayan)</li><li>Drivers licenses</li><li>The right to vote and stand for elections</li><li>The right to leave the country</li></ul>\nFurthermore, organizations that have benefits from the government like tax-free/charitable status will be forbidden from providing any services such as scholarships to those who avoid service.",
+          "topics": [
+            "draft",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.themiluimnikim.org.il/platform/#platform-base]"
+        },
+        {
+          "id": "reserv_12",
+          "title": "Regularizing Draft status",
+          "summary": "Citizens who avoided drafting in the past will be able to draft in a manner that is appropriate for their age, qualifications, and the needs of the state. Sanctions will end upon the start of their service.",
+          "topics": [
+            "draft",
+            "haredi",
+            "arab_citizens"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_13",
+          "title": "Medical excemptions",
+          "summary": "Medical exemptions will be available.",
+          "topics": [
+            "draft"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_14",
+          "title": "Palestinian Refugees",
+          "summary": "No right of return for Palestinians. Palestinian refugees must settle outside of sovereign Israel. Action will be taken to dismantle UNRWA and end the perpetuation of Palestinian refugee status.\nEncourage Palestinian leadership to accept the Jewish right to self determination.",
+          "topics": [
+            "palestinians"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_15",
+          "title": "Active advocacy",
+          "summary": "Be active instead of reactive in defending Zionism and Israel. Push Jews' right to self determination, and demand that allies and countries in the region be clear in whether they accept that Israel is a Jewish State.",
+          "topics": [
+            "international_relations",
+            "religion_state"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_16",
+          "title": "Rebuild Gaza",
+          "summary": "Rebuild Gaza with changes to institutions and political identities, with fresh governance and a rejection of the idea of Palestinians returning to Israel. Require an end to anti-Israel propaganda in Gazan schools as a precondition to any new political arrangement.\nControl the Philadelphi Corridor. Settle and farm Gaza up to the Yellow line.\nEstablish a voluntary emigration administration to allow Gazans to emigrate to other countries.",
+          "topics": [
+            "palestinians",
+            "war_peace",
+            "security"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.themiluimnikim.org.il/platform/#platform-base, https://www.hakalkalit.org/ביטחון]"
+        },
+        {
+          "id": "reserv_17",
+          "title": "Regional Partnership",
+          "summary": "Build relationships with Arab countries in the region, and work to change their citizens' views of Jews, Israel, and Zionism.",
+          "topics": [
+            "international_relations"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_18",
+          "title": "Only Zionist parties",
+          "summary": "Only Zionist parties, not Haredi or Arab ones, should form a government.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_19",
+          "title": "Commission of Inquiry",
+          "summary": "A commission of inquiry to investigate October 7th must happen",
+          "topics": [
+            "_oct7"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_20",
+          "title": "No Palestinian State",
+          "summary": "Prevent the establishment of a Palestinian State though diplomatic means, political means, and changing the facts on the ground. No withdrawal from Judea and Samaria.",
+          "topics": [
+            "palestinians"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base, https://www.hakalkalit.org/ביטחון]"
+        },
+        {
+          "id": "reserv_21",
+          "title": "Constitutional Reform",
+          "summary": "Prime Minster's term limited to 8 years.\nGet rid of extraneous or unneeded government ministries.\nPass a Basic Law: Legislation to define the relationships between the different branches of government.",
+          "topics": [
+            "constitution",
+            "government",
+            "judiciary"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base,https://www.hakalkalit.org/מצע-המפלגה-הכלכלית]"
+        },
+        {
+          "id": "reserv_22",
+          "title": "Judicial Reform",
+          "summary": "Implement an independent oversight of the Judicial system.\nSplit the role of the Attorney General.\nCorrect the checks and balances between branches of government in Israel.",
+          "topics": [
+            "constitution",
+            "government",
+            "judiciary"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_23",
+          "title": "Judea and Samaria",
+          "summary": "Establish control over all the borders, the settlements, and hills overlooking settlements. Maintain security and freedom of action throughout all of Judea and Samaria.\nIncrease settlement and take active ownership of Area C. Turn the Jordan Valley into a settlement objective.",
+          "topics": [
+            "palestinians",
+            "security"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base, https://www.hakalkalit.org/ביטחון]"
+        },
+        {
+          "id": "reserv_24",
+          "title": "Hezbollah",
+          "summary": "If Hezbollah doesn't disarm, launch a campaign to disarm Hezbollah and take over strategic mountains in Lebanon. \nOtherwise, control the high ridges of Lebanon and Mount Hermon.",
+          "topics": [
+            "security"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_25",
+          "title": "Iran",
+          "summary": "Promote regional cooperation to weaken Iran and the Iranian axis.",
+          "topics": [
+            "international_relations",
+            "iran"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_26",
+          "title": "Crimefighting Infrastructure",
+          "summary": "Reorganize the police force. Recruit high quality personnel. Increase their powers for fighting crime. \nHave the Shin Bet lead enforcement until the police are rebuilt. Get financial crime fighting bodies in the Ministry of Finance, Tax Authority, Money Laundering Agency, ect involved. Establish an umbrella crime fighting authority in the Ministry of National Security for synchronizing activity.\nDouble the number of judges in district courts, and monitor KPIs in the courts like time to sentencing, early releases, ect. Establish special courts for agricultural crime, weapons offenses, and release of prisoners.\nIncrease the powers of civilian/local law enforcement teams. Build up emergency response teams and give them police powers.",
+          "topics": [
+            "internal_security",
+            "judiciary"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base, https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית]"
+        },
+        {
+          "id": "reserv_27",
+          "title": "Fight crime in the Arab Sector",
+          "summary": "Build additional police points in the Negev, Galilee, and generally in Arab areas. Fight polygamy. \nAdd 'Fighting Crime in the Arab Sector' as an official mandate of the Shin Bet.",
+          "topics": [
+            "arab_citizens",
+            "internal_security"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base, https://www.themiluimnikim.org.il/תוכנית-המשילות/]"
+        },
+        {
+          "id": "reserv_28",
+          "title": "Judaize the Negev and Galilee",
+          "summary": "Encourage Jewish settlement of the Negev and Galilee as a national priority. Also build Druze settlements",
+          "topics": [
+            "periphery",
+            "religion_state"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/platform/#platform-base, https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית]"
+        },
+        {
+          "id": "reserv_29",
+          "title": "Agriculture",
+          "summary": "Support agriculture by improving efficiency, investing in farms, and investing in R&D. \nImplement a civilian model of protecting agricultural lands from theft in the style of HaShomer HaChadash",
+          "topics": [
+            "periphery",
+            "economy"
+          ],
+          "source": "https://www.themiluimnikim.org.il/platform/#platform-base"
+        },
+        {
+          "id": "reserv_30",
+          "title": "Growing the Periphery",
+          "summary": "Provide tax benefits to high-tech companies that employ most of their workforce (above 70%) in the Periphery.",
+          "topics": [
+            "periphery",
+            "economy"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_31",
+          "title": "Bringing in research investment",
+          "summary": "Incentivize large companies to bring research and development centers to Israel.",
+          "topics": [
+            "economy"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_32",
+          "title": "Make it easier to run a business",
+          "summary": "Create a civilian task force with the legislative authority to make it easier to run a business in Israel.\nEliminate tax laws that discriminate against small businesses. Reduce property taxes for small businesses. \nCreate an economic safety net for the self employed, and a small business credit fund.",
+          "topics": [
+            "economy"
+          ],
+          "source": "[https://milu-kal.co.il/platform/, https://www.hakalkalit.org/מצע-המפלגה-הכלכלית]"
+        },
+        {
+          "id": "reserv_33",
+          "title": "Government reporting on goals",
+          "summary": "Require the Government to publish 3 major objectives for reforms each year, and report on their progress at the end of the year.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://milu-kal.co.il/platform/"
+        },
+        {
+          "id": "reserv_34",
+          "title": "Local policing",
+          "summary": "Establish police forces under the administration of the local municipality, so that local governments can fund and direct them independently. These police forces will be supervised by the national Israel Police.",
+          "topics": [
+            "local_government",
+            "internal_security"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/תוכנית-המשילות/, https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית]"
+        },
+        {
+          "id": "reserv_35",
+          "title": "Fighting Crime",
+          "summary": "Create mandatory minimums for certain crimes. Increase penalties for shootings, illegal weapons, and agricultural crime.",
+          "topics": [
+            "internal_security"
+          ],
+          "source": "https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית"
+        },
+        {
+          "id": "reserv_36",
+          "title": "Rebuilding the Police",
+          "summary": "Provide a grant of ₪50,000 for veterans after serving two years in the Police. Double the study grants while service in a local police force. Give local police force officers the option to join a local service reserve program after two years.",
+          "topics": [
+            "internal_security"
+          ],
+          "source": "https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית"
+        },
+        {
+          "id": "reserv_37",
+          "title": "Stand your ground in home invasions",
+          "summary": "Amend the \"Dromi Law\" (which covers defense of your residence, work, or fields) to say that any intrusion into a private residence at night with a weapon can be considered an imminent threat to life, and automatically allows for self-defence.",
+          "topics": [
+            "internal_security"
+          ],
+          "source": "https://www.themiluimnikim.org.il/הקמת-משטרה-מקומית"
+        },
+        {
+          "id": "reserv_38",
+          "title": "Wounded vetrans",
+          "summary": "Appoint a ministerial committee for wounded soldiers and veterans, to fast track legislation and coordinate government action.",
+          "topics": [
+            "soldiers",
+            "healthcare"
+          ],
+          "source": "https://www.themiluimnikim.org.il/חוזרים-מהקרב"
+        },
+        {
+          "id": "reserv_39",
+          "title": "PTSD",
+          "summary": "Create an overarching authority to oversee the military mental health system and rehabilitation system to deal with PTSD. Operate an emergency life for combat soldiers. Work to develop early detection techniques and prevent initial trauma.\nStart a 'Big Brother' program to help soldiers though the diagnosis and treatment process, and be there as a support though legal, emotional, and rehabilitation tasks.\nIn academia, provide flexible admissions, accommodations, and support for traumatized soldiers.\nIncrease the number of mental healthcare professionals.",
+          "topics": [
+            "soldiers",
+            "healthcare",
+            "education"
+          ],
+          "source": "[https://www.themiluimnikim.org.il/חוזרים-מהקרב, https://www.hakalkalit.org/הרווחה]"
+        },
+        {
+          "id": "reserv_40",
+          "title": "Support for reservists",
+          "summary": "Increase processing and resilience days, and make them an integral part of the reserve process.",
+          "topics": [
+            "soldiers"
+          ],
+          "source": "https://www.themiluimnikim.org.il/חוזרים-מהקרב"
+        },
+        {
+          "id": "reserv_41",
+          "title": "Regulate lawyer fees for veterans",
+          "summary": "Making lawyers more affordable for veterans, including requiring transparent fees, cancelling the percentage payment system, and requiring lawyers to explain free assistance available.",
+          "topics": [
+            "soldiers"
+          ],
+          "source": "https://www.themiluimnikim.org.il/חוזרים-מהקרב"
+        },
+        {
+          "id": "reserv_42",
+          "title": "Lower relative house prices",
+          "summary": "Lower the average cost of an apartment to the equivalent of 10 years salary, by improving the Israeli economy to the point where there are better investment tracks for investors than housing.",
+          "topics": [
+            "housing",
+            "economy"
+          ],
+          "source": "https://www.hakalkalit.org/מצע-המפלגה-הכלכלית"
+        },
+        {
+          "id": "reserv_43",
+          "title": "Make the government more efficient",
+          "summary": "Move expensive infrastructure projects to the private sector instead of state owned companies.\nImplement external auditing to find violations of the contracts that make contracts more expensive for the government.",
+          "topics": [
+            "economy",
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/מצע-המפלגה-הכלכלית"
+        },
+        {
+          "id": "reserv_44",
+          "title": "Banks",
+          "summary": "Open a new private bank by providing state funding to a foreign bank (that has a good reputation and good governance).\nReesetablish government backed credit and loans.\nRequire banks to pay interest on money in checking and savings accounts.\nMove the complaints department from the Bank of Israel to the Consumer Protection Authority.",
+          "topics": [
+            "cost_of_living"
+          ],
+          "source": "https://www.hakalkalit.org/מצע-המפלגה-הכלכלית"
+        },
+        {
+          "id": "reserv_45",
+          "title": "Kashrut",
+          "summary": "Privatize kashrut certification, and allow any Rabbi with recognized Smicha to provide supervision, subject to government supervision.",
+          "topics": [
+            "cost_of_living",
+            "religion_state"
+          ],
+          "source": "https://www.hakalkalit.org/מצע-המפלגה-הכלכלית"
+        },
+        {
+          "id": "reserv_46",
+          "title": "Aliyah and Absorbtion",
+          "summary": "Fund local absorption centers across the country, with counseling, career guidance, and professional workshops. Provide work training and skills that are needed in the job market.\nQuickly recognize foreign credentials for professionals and academics.\nEncourage settlement in the Periphery though tax incentives, building infrastructure, and employment.\nIncrease the Sal Klita (immigrant grants).",
+          "topics": [
+            "aliyah"
+          ],
+          "source": "https://www.hakalkalit.org/מצע-המפלגה-הכלכלית"
+        },
+        {
+          "id": "reserv_47",
+          "title": "Palestinian workers",
+          "summary": "End the system of Palestinians getting work visas. Replace them with foreign workers from abroad.",
+          "topics": [
+            "palestinians"
+          ],
+          "source": "https://www.hakalkalit.org/ביטחון"
+        },
+        {
+          "id": "reserv_48",
+          "title": "Retirees and Pensions",
+          "summary": "Increase economic activity to increase pension fund yields. Increase competition in the banking sector so that management fees fall. Define a maximum market share so that competition is maintained.\nIncrease government pensions for retirees below the poverty line.\nDevelop a national program for digital and financial education for seniors, and to fight loneliness.",
+          "topics": [
+            "retirees"
+          ],
+          "source": "[https://www.hakalkalit.org/פנסיה, https://www.hakalkalit.org/הרווחה]"
+        },
+        {
+          "id": "reserv_49",
+          "title": "Support for people with disabilities",
+          "summary": "Increase funding for people with disabilities. \nGet children in special education and those with disabilities involved with youth movements.",
+          "topics": [
+            "welfare"
+          ],
+          "source": "[https://www.hakalkalit.org/הרווחה, https://www.hakalkalit.org/חינוך-בלתי-פורמאלי]"
+        },
+        {
+          "id": "reserv_50",
+          "title": "Public Housing",
+          "summary": "Transfer ownership of public housing apartments to the residents that have been living in them for decades. \nIncrease the budgets for rental assistance.",
+          "topics": [
+            "welfare",
+            "housing"
+          ],
+          "source": "https://www.hakalkalit.org/הרווחה"
+        },
+        {
+          "id": "reserv_51",
+          "title": "University funding for the Periphery",
+          "summary": "Fund university studies for youth from the periphery.",
+          "topics": [
+            "periphery",
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/הרווחה"
+        },
+        {
+          "id": "reserv_52",
+          "title": "Education",
+          "summary": "Reduce the number of school hours. Reduce the number of students per class to 18.\nIntroduce mandatory financial skills training from elementary school.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/חינוך"
+        },
+        {
+          "id": "reserv_53",
+          "title": "Educational System",
+          "summary": "Move responsibilities from the Ministry of Education to local principals, and increase the salaries of principals. Make it easier to fire principals for poor performance.",
+          "topics": [
+            "education",
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/חינוך"
+        },
+        {
+          "id": "reserv_54",
+          "title": "Higher Education",
+          "summary": "Change the budgets provided through the Council of Higher Education to expand professional programs like engineering, technology, and medicine.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/חינוך"
+        },
+        {
+          "id": "reserv_55",
+          "title": "Early Childhood Education",
+          "summary": "Subsidize daycares.",
+          "topics": [
+            "workers",
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/חינוך"
+        },
+        {
+          "id": "reserv_56",
+          "title": "Youth Movements",
+          "summary": "Increase budgets to youth movements. Encourage collaboration between schools and youth movements. \nIncrease the number of participants in Service Years (ShinShinim) to allow more youth to get involved. \nProvide subsidies to support youth who can't afford these programs.",
+          "topics": [
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/חינוך-בלתי-פורמאלי"
+        },
+        {
+          "id": "reserv_57",
+          "title": "Integrating the Haredi Sector into the Israeli Economy",
+          "summary": "Teach modern skills. Build more State-Haredi stream schools.\nGive Haredi youth between 18 and 22 school vouchers in exchange for monthly community service hours. Build academic programs in seminaries for women, in partnership with colleges.",
+          "topics": [
+            "haredi"
+          ],
+          "source": "https://www.hakalkalit.org/שילוב-חרדים"
+        },
+        {
+          "id": "reserv_58",
+          "title": "Domestic and Gender based violence",
+          "summary": "Increase the punishments for domestic violence, and protect women who complain about violenceand abuse.\nIncrease budgets to fight gender based violence and to train police to deal with complaints with skill and compassion.\nBuild shelters for women fleeing violence and increase funding to provide therapy for violent men.\nWork to eradicate sexual violence against women, and to improve the handling for sexual offenses.",
+          "topics": [
+            "internal_security"
+          ],
+          "source": "https://www.hakalkalit.org/נשים-ואלימות-במשפחה"
+        },
+        {
+          "id": "reserv_59",
+          "title": "Prostitution",
+          "summary": "End prostitution, and rehabilitate women in prostitution.",
+          "topics": [
+            "internal_security"
+          ],
+          "source": "https://www.hakalkalit.org/נשים-ואלימות-במשפחה"
+        },
+        {
+          "id": "reserv_60",
+          "title": "Gender equality in the workplace",
+          "summary": "Advance legislation to ensure equality in wages, promotions, and pensions between genders.",
+          "topics": [
+            "workers",
+            "liberal_rights"
+          ],
+          "source": "https://www.hakalkalit.org/נשים-ואלימות-במשפחה"
+        },
+        {
+          "id": "reserv_61",
+          "title": "Gender equality in religion",
+          "summary": "Fight against the exclusion of women in public spaces, and legislate an end to public events with gender segregation. \nWork to fix agunot and get refusers.",
+          "topics": [
+            "religion_state",
+            "liberal_rights"
+          ],
+          "source": "https://www.hakalkalit.org/נשים-ואלימות-במשפחה"
+        },
+        {
+          "id": "reserv_62",
+          "title": "Gender equality in the government",
+          "summary": "Pass laws to require gender parity in state and public institutional leadership, particularly senior positions.",
+          "topics": [
+            "liberal_rights",
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/נשים-ואלימות-במשפחה"
+        },
+        {
+          "id": "reserv_63",
+          "title": "Transit",
+          "summary": "Establish a \"Transit Cabinet\" of ministers to advance transportation infrastructure improvements, headed by the Minister of Finance.\nPromote public transit and carpooling. Promote electric cars.",
+          "topics": [
+            "transit",
+            "government"
+          ],
+          "source": "[https://www.hakalkalit.org/תחבורה, https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים]"
+        },
+        {
+          "id": "reserv_64",
+          "title": "Cost of cars",
+          "summary": "Split up importers so that each one can only import one type of car. Importers that have a monopoly on a car will be declared monopolies.\nPrevent car importers from owning service and repair garages.\nLimit the gap between what a rental company can buy a car at with what the general public can.\nAmend the tax law so that a company car is taxed at 5.2% of its present (\"blue book\") value, not the price of a brand new one.",
+          "topics": [
+            "transit",
+            "cost_of_living"
+          ],
+          "source": "https://www.hakalkalit.org/מחירי-הרכב"
+        },
+        {
+          "id": "reserv_65",
+          "title": "Support the High Tech sector",
+          "summary": "Increase the number of workers in the high tech sector by encouraging more people into the field. Make it easier to pay for university. Make it easier to get in after a high school diploma without technical classes.\nIncrease the number of soldiers in high tech units in the IDF, particularly from the periphery.",
+          "topics": [
+            "economy",
+            "workers"
+          ],
+          "source": "https://www.hakalkalit.org/תמיכה-בענפי-ההיי-טק"
+        },
+        {
+          "id": "reserv_66",
+          "title": "Digital Government",
+          "summary": "Move government services completely online.",
+          "topics": [
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/תמיכה-בענפי-ההיי-טק"
+        },
+        {
+          "id": "reserv_67",
+          "title": "More Doctors and Nurses",
+          "summary": "Increase the number of doctors and nurses in the system, with a focus on young doctors.\nImprove the salaries of medical interns and resident doctors.\nGive grants to medical interns to work in the periphery.",
+          "topics": [
+            "healthcare",
+            "periphery"
+          ],
+          "source": "https://www.hakalkalit.org/בריאות"
+        },
+        {
+          "id": "reserv_68",
+          "title": "Health funding and improving the system",
+          "summary": "Increase funding for the healthcare system from 7.3% to 8%. Ensure healthcare funds (kupot) get paid on time.\nDevelop KPIs to track the performance of the medical system. Bring in new drugs. Build new emergency centers. Strengthen community healthcare and preventative healthcare.",
+          "topics": [
+            "healthcare"
+          ],
+          "source": "https://www.hakalkalit.org/בריאות"
+        },
+        {
+          "id": "reserv_69",
+          "title": "New hospitals",
+          "summary": "Open 3 new hospitals and a new medical school in the periphery, and increase the number of medical students and nursing students. New emergency medical centers and front line emergency rooms.",
+          "topics": [
+            "healthcare",
+            "periphery",
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/בריאות"
+        },
+        {
+          "id": "reserv_70",
+          "title": "Climate change",
+          "summary": "Declare a climate emergency.\nTransition to renewables, with a target of 30% by 2030 and 100% by 2050.\nInvest ₪10 billion into preparation and resilience to climate change and promoting environmental quality.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_71",
+          "title": "Environment Damage",
+          "summary": "Pass a law to be prepared and prevent damage of oil spills in the Mediterranean Sea.\nPrevent the renewal of the Dead Sea mining contract in 2030, and rehabilitate the land, sea, and Jordan River afterwards.\nFine companies that cause environmental damage.\nClose the Haifa Bay refineries.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_72",
+          "title": "Preserve the Sea",
+          "summary": "Declare Marine Nature Preserves in unique sea environments.\nRequire ships to use low sulfur oil or electric motors.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_73",
+          "title": "Recycling",
+          "summary": "Expand recycling.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_74",
+          "title": "Air Pollution",
+          "summary": "Publish warnings when air pollution is high.\nRequire air quality monitoring in public and private buildings with more than 20 people, at the cost of the building owner.",
+          "topics": [
+            "environment",
+            "healthcare",
+            "workers"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_75",
+          "title": "Strengthen the Ministry of Enivornmental Protection",
+          "summary": "Change the Ministry from a passive regulator to an active ministry.",
+          "topics": [
+            "environment",
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_76",
+          "title": "Animals",
+          "summary": "​End live shipments of animals to Israel within 5 years. Change the chicken industry to be cage free. Ban hunting.\nMove enforcement of Animal Cruelty laws to the Ministry of Environmental Protection. Increase punishments on animal abusers.",
+          "topics": [
+            "environment",
+            "government"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_77",
+          "title": "Green construction",
+          "summary": "Encourage green construction and efficient management.",
+          "topics": [
+            "environment"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_78",
+          "title": "Environmental Education",
+          "summary": "Add the environment, climate, and sustainability to the curriculum as a mandatory course, with a focus on climate issues and treatment of animals.",
+          "topics": [
+            "environment",
+            "education"
+          ],
+          "source": "https://www.hakalkalit.org/איכות-הסביבה-קיימות-וזכויות-בעלי-חיים"
+        },
+        {
+          "id": "reserv_79",
+          "title": "Agriculture",
+          "summary": "Protect farmers from monopolistic practices of distributers.\nFarmers north of Hadera and south of Gadera will receive subsidies. Anti-dumping laws will be enforced on imports.\nAgricultural land can only be used for agriculture, and if it isn't being used, it will be returned to agricultural councils for redistribution.",
+          "topics": [
+            "economy"
+          ],
+          "source": "https://www.hakalkalit.org/חלקאות-וייצור-מזון-מקומי"
         }
       ]
     }
